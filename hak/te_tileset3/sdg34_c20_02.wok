@@ -1,0 +1,26 @@
+# Rewritten by CleanModels 3 Version 3.1.1c Sun Apr 19 04:09:01 2009
+#MAXWALKMESH  ASCII
+beginwalkmeshgeom sdg34_c20_02
+node aabb line2757
+  parent sdg34_c20_02
+  orientation 0 0 0 0
+  wirecolor 0.34375 0.34375 0.34375
+  ambient 0.2 0.2 0.2
+  diffuse 0.8 0.8 0.8
+  specular 0 0 0
+  shininess 1
+  bitmap NULL
+  position 0 0 0
+  verts 4
+    -5 5 -13.4
+    -5 -5 -13.4
+    5 -5 -13.4
+    5 5 -13.4
+  faces 2
+    0 1 2 1 0 0 0 15
+    0 2 3 1 0 0 0 15
+  aabb     -5 -5 -13.4 5 5 -13.4 -1
+    -5 -5 -13.4 5 5 -13.4 0
+    -5 -5 -13.4 5 5 -13.4 1
+endnode
+endwalkmeshgeom sdg34_c20_02

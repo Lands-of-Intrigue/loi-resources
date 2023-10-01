@@ -1,0 +1,200 @@
+# Rewritten by CleanModels 3 Version 3.2.2.1 Fri May 01 17:23:43 2009
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel scv03_a08_01
+setsupermodel scv03_a08_01 null
+setanimationscale 1
+classification TILE
+#MAXGEOM ASCII
+beginmodelgeom scv03_a08_01
+node dummy scv03_a08_01
+  parent NULL
+endnode
+node trimesh black470
+  parent scv03_a08_01
+  position 0 0 -6
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  ambient 0 0 0
+  diffuse 0 0 0
+  specular 0 0 0
+  shininess 1
+  bitmap tno01_black01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 0
+  verts 4
+    -5 5 0
+    -5 -5 0
+    5 5 0
+    5 -5 0
+  faces 2
+    0 1 2 1 0 1 2 1
+    3 2 1 1 3 2 1 1
+  tverts 4
+    0 1 0
+    0 0 0
+    1 1 0
+    1 0 0
+endnode
+node aabb wmesh40
+  parent scv03_a08_01
+  position 0 0 0
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  ambient 0 0 0
+  diffuse 0 0 0
+  specular 0 0 0
+  shininess 0
+  bitmap NULL
+  verts 4
+    -5 5 -6
+    -5 -5 -6
+    5 5 -6
+    5 -5 -6
+  faces 2
+    0 1 2 1 0 0 0 16
+    3 2 1 1 0 0 0 16
+  aabb     -5 -5 -6 5 5 -6 -1
+    -5 -5 -6 5 5 -6 0
+    -5 -5 -6 5 5 -6 1
+endnode
+node trimesh rockya158
+  parent scv03_a08_01
+  position 0 0 9.15
+  orientation 0 0 0 0
+  wirecolor 0.882813 0.882813 0.882813
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  bitmap sdg_sto11
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 0
+  verts 25
+    2.5 2.5 -0.65
+    2.5 5 -0.65
+    5 5 -1.15
+    5 2.5 -0.65
+    0 2.5 -0.15
+    0 5 -0.15
+    -2.5 2.5 -0.65
+    -2.5 5 -0.65
+    -5 2.5 -0.65
+    -5 5 -1.15
+    2.5 0 -0.15
+    5 0 -0.15
+    0 0 -0.0300004
+    -2.5 0 -0.15
+    -5 0 -0.15
+    2.5 -2.5 -0.65
+    5 -2.5 -0.65
+    0 -2.5 -0.15
+    -2.5 -2.5 -0.65
+    -5 -2.5 -0.65
+    2.5 -5 -0.65
+    5 -5 -1.15
+    0 -5 -0.15
+    -2.5 -5 -0.65
+    -5 -5 -1.15
+  faces 32
+    0 1 2 1 0 1 2 0
+    2 3 0 1 2 3 0 0
+    4 5 1 1 4 5 1 0
+    1 0 4 1 1 0 4 0
+    6 7 5 1 6 7 5 0
+    5 4 6 1 5 4 6 0
+    8 9 7 1 8 9 7 0
+    7 6 8 1 7 6 8 0
+    10 0 3 1 10 0 3 0
+    3 11 10 1 3 11 10 0
+    12 4 0 1 12 4 0 0
+    0 10 12 1 0 10 12 0
+    13 6 4 1 13 6 4 0
+    4 12 13 1 4 12 13 0
+    14 8 6 1 14 8 6 0
+    6 13 14 1 6 13 14 0
+    15 10 11 1 15 10 11 0
+    11 16 15 1 11 16 15 0
+    17 12 10 1 17 12 10 0
+    10 15 17 1 10 15 17 0
+    18 13 12 1 18 13 12 0
+    12 17 18 1 12 17 18 0
+    19 14 13 1 19 14 13 0
+    13 18 19 1 13 18 19 0
+    20 15 16 1 20 15 16 0
+    16 21 20 1 16 21 20 0
+    22 17 15 1 22 17 15 0
+    15 20 22 1 15 20 22 0
+    23 18 17 1 23 18 17 0
+    17 22 23 1 17 22 23 0
+    24 19 18 1 24 19 18 0
+    18 23 24 1 18 23 24 0
+  tverts 25
+    0.92401 2 0
+    0.92401 2.5 0
+    0.42401 2.5 0
+    0.42401 2 0
+    1.424 2 0
+    1.424 2.5 0
+    1.924 2 0
+    1.924 2.5 0
+    2.424 2 0
+    2.424 2.5 0
+    0.92401 1.5 0
+    0.42401 1.5 0
+    1.424 1.5 0
+    1.924 1.5 0
+    2.424 1.5 0
+    0.92401 1 0
+    0.42401 1 0
+    1.424 1 0
+    1.924 1 0
+    2.424 1 0
+    0.92401 0.5 0
+    0.42401 0.5 0
+    1.424 0.5 0
+    1.924 0.5 0
+    2.424 0.5 0
+endnode
+node light scv03_a08_01ml1
+  parent scv03_a08_01
+  position 1.5 1.5 3.5
+  orientation 0 0 0 0
+  wirecolor 0.570313 0.570313 0.570313
+  radius 1400
+  multiplier 1
+  color 0.00392157 0.00392157 0.00392157
+  ambientonly 0
+  ndynamictype 1
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  lensflares 0
+  fadinglight 1
+endnode
+node light scv03_a08_01ml2
+  parent scv03_a08_01
+  position -1.5 -1.5 4
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+  radius 500
+  multiplier 1
+  color 0.00392157 0.00392157 0.00392157
+  ambientonly 0
+  ndynamictype 1
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  lensflares 0
+  fadinglight 1
+endnode
+endmodelgeom scv03_a08_01
+donemodel scv03_a08_01

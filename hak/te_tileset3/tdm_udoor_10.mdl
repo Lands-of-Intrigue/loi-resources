@@ -1,0 +1,144 @@
+# Rewritten by CleanModels 3 Version 3.2.2.1 Sat May 02 03:13:27 2009
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel tdm_udoor_10
+setsupermodel tdm_udoor_10 null
+setanimationscale 1
+classification DOOR
+#MAXGEOM ASCII
+beginmodelgeom tdm_udoor_10
+node dummy tdm_udoor_10
+  parent NULL
+endnode
+node trimesh sam
+  parent tdm_udoor_10
+  ambient 0.2 0.2 0.2
+  diffuse 0.8 0.8 0.8
+  specular 0 0 0
+  shininess 1
+  shadow 0
+  bitmap NULL
+  position 0.00855483 -0.531143 2.676
+  orientation 0 0 1 -3.14159
+  alpha 0
+  scale 1
+  selfillumcolor 0 0 1
+  verts 8
+    1.99794 -0.560059 2.58211
+    -1.99794 -0.560059 2.58211
+    1.99794 -0.560059 -2.656
+    -1.99794 -0.560059 -2.656
+    -1.99794 -0.455389 2.58211
+    1.99794 -0.455389 2.58211
+    1.99794 -0.455389 -2.656
+    -1.99794 -0.455389 -2.656
+  faces 4
+    0 1 2 1 0 0 0 5
+    3 2 1 1 0 0 0 5
+    4 5 6 1 0 0 0 5
+    6 7 4 1 0 0 0 5
+endnode
+node dummy tdm_udoor_10hhit
+  parent tdm_udoor_10
+  position -0.0238523 0.509919 2.30191
+  orientation 0 0 0 0
+endnode
+node dummy tdm_udoor_10impc
+  parent tdm_udoor_10
+  position -0.0238523 0.509919 1.14654
+  orientation 0 0 0 0
+endnode
+node dummy tdm_udoor_10head
+  parent tdm_udoor_10
+  position -0.0238523 0.509919 2.5615
+  orientation 0 0 0 0
+endnode
+node dummy tdm_udoor_10grnd
+  parent tdm_udoor_10
+  position -0.0238523 0.509919 0.0593678
+  orientation 0 0 0 0
+endnode
+endmodelgeom tdm_udoor_10
+
+#MAXANIM ASCII
+newanim default tdm_udoor_10
+  length 0.0333333
+  transtime 0.25
+  animroot tdm_udoor_10
+  node dummy tdm_udoor_10
+    parent NULL
+  endnode
+  node trimesh sam
+    parent tdm_udoor_10
+    alphakey
+      0 0
+      0.0333333 0
+    endlist
+  endnode
+  node dummy tdm_udoor_10hhit
+    parent tdm_udoor_10
+  endnode
+  node dummy tdm_udoor_10impc
+    parent tdm_udoor_10
+  endnode
+  node dummy tdm_udoor_10head
+    parent tdm_udoor_10
+  endnode
+  node dummy tdm_udoor_10grnd
+    parent tdm_udoor_10
+  endnode
+  node dummy tdm_udoor_10_dwk
+    parent tdm_udoor_10
+  endnode
+  node dummy 10_dwk_dp_closed_02
+    parent tdm_udoor_10_dwk
+  endnode
+  node dummy 10_dwk_dp_closed_01
+    parent tdm_udoor_10_dwk
+  endnode
+  node dummy 10_dwk_wg_closed
+    parent tdm_udoor_10_dwk
+  endnode
+doneanim default tdm_udoor_10
+
+#MAXANIM ASCII
+newanim trans tdm_udoor_10
+  length 0.0333333
+  transtime 0.25
+  animroot tdm_udoor_10
+  node dummy tdm_udoor_10
+    parent NULL
+  endnode
+  node trimesh sam
+    parent tdm_udoor_10
+    alphakey
+      0 0.25
+      0.0333333 0.25
+    endlist
+  endnode
+  node dummy tdm_udoor_10hhit
+    parent tdm_udoor_10
+  endnode
+  node dummy tdm_udoor_10impc
+    parent tdm_udoor_10
+  endnode
+  node dummy tdm_udoor_10head
+    parent tdm_udoor_10
+  endnode
+  node dummy tdm_udoor_10grnd
+    parent tdm_udoor_10
+  endnode
+  node dummy tdm_udoor_10_dwk
+    parent tdm_udoor_10
+  endnode
+  node dummy 10_dwk_dp_closed_02
+    parent tdm_udoor_10_dwk
+  endnode
+  node dummy 10_dwk_dp_closed_01
+    parent tdm_udoor_10_dwk
+  endnode
+  node dummy 10_dwk_wg_closed
+    parent tdm_udoor_10_dwk
+  endnode
+doneanim trans tdm_udoor_10
+donemodel tdm_udoor_10
