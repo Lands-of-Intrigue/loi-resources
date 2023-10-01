@@ -1,0 +1,7 @@
+2DA V2.0
+
+ LABEL ReqType ReqParam1 ReqParam2
+0 Base_Attack BAB 4 ****
+1 BG_Feat_Wolf FEAT 1175 ****
+2 BG_Feat_Tiefling **** **** ****
+3 BG_Feat_Dhampir **** **** ****

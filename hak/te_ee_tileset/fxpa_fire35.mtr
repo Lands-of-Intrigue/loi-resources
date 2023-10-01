@@ -1,0 +1,6 @@
+ customshadervs md_vslitc_nm  
+ customshaderfs fxpa_fire35
+ renderhint NormalAndSpecMapped
+ texture0 fxpa_fire35
+ texture1 tx_black
+ texture2 tx_black

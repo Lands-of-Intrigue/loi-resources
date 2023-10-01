@@ -1,0 +1,5965 @@
+# Rewritten by CleanModels 3 Version 3.1.1c Sat Apr 11 12:52:47 2009
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel sdg13_b01_06
+setsupermodel sdg13_b01_06 null
+setanimationscale 1
+classification TILE
+#MAXGEOM ASCII
+beginmodelgeom sdg13_b01_06
+node dummy sdg13_b01_06
+  parent NULL
+endnode
+node light sdg13_b01_06ml1
+  parent sdg13_b01_06
+  position 0 2.90033 5
+  orientation 0 0 0 0
+  wirecolor 0.34375 0.34375 0.34375
+  radius 1400
+  multiplier 1
+  color 0 0 0
+  ambientonly 0
+  ndynamictype 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  lensflares 0
+  fadinglight 1
+endnode
+node light sdg13_b01_06ml2
+  parent sdg13_b01_06
+  position -2.37167 -3.11932 2.41147
+  orientation 0 0 0 0
+  wirecolor 0.527344 0.527344 0.527344
+  radius 500
+  multiplier 1
+  color 0 0 0
+  ambientonly 0
+  ndynamictype 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  lensflares 0
+  fadinglight 1
+endnode
+node danglymesh bush1092_01
+  parent sdg13_b01_06
+  position 2.12455 4.01107 -4.81694
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -2.07367 -1.03635 -0.450001
+    0 0 3.42
+    -2.07367 -1.03635 -0.450001
+    0 0 3.42
+    1.97877 0.988928 -0.45
+    1.97877 0.988928 -0.272896
+    1.97877 0.988928 -0.272896
+    1.97877 0.988928 -0.45
+  faces 4
+    0 4 1 1 0 2 1 1
+    5 1 4 1 3 1 2 1
+    2 3 7 1 0 1 2 1
+    6 7 3 1 3 2 1 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+    0.0367693 0.000111094 0
+    0.0367275 0.0445416 0
+  constraints 8
+    126
+    1
+    126
+    1
+    136
+    150
+    150
+    136
+  colors 8
+    0.523218 0.523218 0.523218
+    1 1 1
+    0.523218 0.523218 0.523218
+    1 1 1
+    0.56431 0.56431 0.56431
+    0.575256 0.575256 0.575256
+    0.575256 0.575256 0.575256
+    0.56431 0.56431 0.56431
+endnode
+node danglymesh bush1093_01
+  parent sdg13_b01_06
+  position 1.18419 5.14027 -4.89609
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -1.06977 -1.61241 -0.375001
+    -1.06977 -1.61241 -0.375001
+    -0.0930606 -0.140265 -0.375
+    -0.0930633 -0.140293 2.56945
+    -0.0930633 -0.140292 2.56945
+    -0.0930605 -0.140265 -0.375
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.985428 0.000111094 0
+    0.54222 0.000111094 0
+    0.541386 0.886528 0
+  constraints 6
+    110
+    110
+    250
+    0
+    0
+    250
+  colors 6
+    0.414087 0.414087 0.414087
+    0.414087 0.414087 0.414087
+    0.974518 0.974518 0.974518
+    0 0 0
+    0 0 0
+    0.974518 0.974518 0.974518
+endnode
+node danglymesh bush1094_01
+  parent sdg13_b01_06
+  position 1.18419 5.14027 -5.15908
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.86917 -1.72875 -0.105
+    0.86917 -1.72875 -0.105
+    0.0705217 -0.140264 -0.105
+    0.0705245 -0.140292 2.85833
+    0.0705246 -0.140293 2.85833
+    0.0705217 -0.140264 -0.105
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.985428 0.000111094 0
+    0.539378 0.000111094 0
+    0.538539 0.892212 0
+  constraints 6
+    140
+    140
+    246
+    0
+    1
+    246
+  colors 6
+    0.541775 0.541775 0.541775
+    0.541775 0.541775 0.541775
+    0.995647 0.995647 0.995647
+    0 0 0
+    1 1 1
+    0.995647 0.995647 0.995647
+endnode
+node danglymesh bush1096_01
+  parent sdg13_b01_06
+  position 0.923223 5.42355 -4.84681
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -1.52142 -0.556716 -0.27
+    -1.52142 -0.556716 -0.27
+    -0.863311 -0.423555 -0.27
+    -1.45557 -0.423563 -0.137131
+    -1.45557 -0.423563 -0.137131
+    -0.863311 -0.423555 -0.27
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 3 1 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.781917 0.000111094 0
+    0.957812 0.0552388 0
+    0.957812 0.0552389 0
+  constraints 6
+    1
+    1
+    160
+    40
+    40
+    160
+  colors 6
+    1 1 1
+    1 1 1
+    0.63018 0.63018 0.63018
+    0.141105 0.141105 0.141105
+    0.141105 0.141105 0.141105
+    0.63018 0.63018 0.63018
+endnode
+node danglymesh bush1097_01
+  parent sdg13_b01_06
+  position 0.888735 4.89777 -4.84681
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    1.40796 -0.808125 -0.27
+    -1.14092 -1.42115 2.07
+    1.40796 -0.808125 -0.27
+    -1.14092 -1.42115 2.07
+    0.259099 0.102233 -0.27
+    -1.11996 0.102229 0.701245
+    -1.11996 0.102229 0.701245
+    0.259099 0.102233 -0.27
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    3 6 2 1 1 3 0 1
+    7 2 6 1 4 0 3 1
+  tverts 5
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+    0.541586 0.000111094 0
+    0.215661 0.403084 0
+    0.541585 0.000111094 0
+  constraints 8
+    158
+    0
+    158
+    0
+    250
+    200
+    200
+    250
+  colors 8
+    0.643938 0.643938 0.643938
+    0 0 0
+    0.643938 0.643938 0.643938
+    0 0 0
+    0.980216 0.980216 0.980216
+    0.769072 0.769072 0.769072
+    0.769072 0.769072 0.769072
+    0.980216 0.980216 0.980216
+endnode
+node danglymesh bush1098_01
+  parent sdg13_b01_06
+  position 1.47669 4.89857 -4.84681
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -0.204438 -1.61047 -0.27
+    1.83042 0.045666 2.07
+    1.83042 0.045666 2.07
+    -0.204438 -1.61047 -0.27
+    1.75512 0.101412 1.9861
+    -0.239285 0.101433 -0.27
+    -0.239285 0.101433 -0.27
+    1.75512 0.101412 1.9861
+  faces 4
+    0 1 5 1 0 1 3 1
+    4 5 1 1 2 3 1 1
+    3 6 2 1 0 3 1 1
+    7 2 6 1 2 1 3 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.499078 0.970985 0
+    0.516516 0.936174 0
+    0.532072 0.000111094 0
+  constraints 8
+    158
+    1
+    1
+    158
+    20
+    250
+    250
+    20
+  colors 8
+    0.645386 0.645386 0.645386
+    1 1 1
+    1 1 1
+    0.645386 0.645386 0.645386
+    0.0788373 0.0788373 0.0788373
+    0.981611 0.981611 0.981611
+    0.981611 0.981611 0.981611
+    0.0788373 0.0788373 0.0788373
+endnode
+node danglymesh bush1099_01
+  parent sdg13_b01_06
+  position 2.12455 4.01107 -5.1325
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -0.148794 -2.31344 -0.135
+    0 0 3.735
+    -0.148794 -2.31344 -0.135
+    0 0 3.735
+    0.0636052 0.988921 -0.135
+    0.0636032 0.988927 2.0807
+    0.0636032 0.988927 2.0807
+    0.0636052 0.988921 -0.135
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    2 3 7 1 0 1 2 1
+    6 7 3 1 3 2 1 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+    0.292482 0.000111094 0
+    0.29196 0.555968 0
+  constraints 8
+    160
+    1
+    160
+    1
+    240
+    160
+    160
+    240
+  colors 8
+    0.613457 0.613457 0.613457
+    1 1 1
+    0.613457 0.613457 0.613457
+    1 1 1
+    0.9283 0.9283 0.9283
+    0.619267 0.619267 0.619267
+    0.619267 0.619267 0.619267
+    0.9283 0.9283 0.9283
+endnode
+node danglymesh bush1100_01
+  parent sdg13_b01_06
+  position 2.12455 4.01107 -5.1325
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    1.93737 -1.28539 -0.135
+    0 0 3.735
+    0 0 3.735
+    1.93737 -1.28539 -0.135
+    -1.49053 0.988925 0.757584
+    -1.49053 0.988924 -0.135
+    -1.49053 0.988924 -0.135
+    -1.49053 0.988925 0.757584
+  faces 4
+    1 4 0 1 1 2 0 1
+    5 0 4 1 3 0 2 1
+    2 3 7 1 1 0 2 1
+    6 7 3 1 3 2 0 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.499078 0.970985 0
+    0.873255 0.224035 0
+    0.873466 0.000111094 0
+  constraints 8
+    160
+    1
+    1
+    160
+    190
+    200
+    200
+    190
+  colors 8
+    0.611199 0.611199 0.611199
+    1 1 1
+    1 1 1
+    0.611199 0.611199 0.611199
+    0.729496 0.729496 0.729496
+    0.769331 0.769331 0.769331
+    0.769331 0.769331 0.769331
+    0.729496 0.729496 0.729496
+endnode
+node danglymesh bush1101_01
+  parent sdg13_b01_06
+  position 2.02333 4.46207 -4.7578
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    1.73679 -0.882291 -0.33
+    -1.91863 0.336856 -0.33
+    -1.91863 0.336856 -0.33
+    1.73679 -0.882291 -0.33
+    1.23657 0.537928 1.02313
+    -1.61683 0.537928 -0.00428424
+    -1.61683 0.537928 -0.00428364
+    1.23657 0.537928 1.02313
+  faces 4
+    0 4 1 1 0 2 1 1
+    5 1 4 1 3 1 2 1
+    3 2 7 1 0 1 2 1
+    6 7 2 1 3 2 1 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.247046 0.46597 0
+    0.929253 0.112249 0
+  constraints 8
+    1
+    0
+    0
+    1
+    70
+    70
+    70
+    70
+  colors 8
+    1 1 1
+    0 0 0
+    0 0 0
+    1 1 1
+    0.266018 0.266018 0.266018
+    0.256223 0.256223 0.256223
+    0.256223 0.256223 0.256223
+    0.266018 0.266018 0.266018
+endnode
+node danglymesh bush1102_01
+  parent sdg13_b01_06
+  position 1.67201 3.93635 -4.7578
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    0.968926 -1.68691 -0.33
+    -2.04507 -0.803285 2.49
+    0.968926 -1.68691 -0.33
+    -2.04507 -0.803285 2.49
+    -0.111505 1.06365 -0.33
+    -0.931096 1.06365 0.536639
+    -0.931096 1.06365 0.536639
+    -0.111505 1.06365 -0.33
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    3 6 2 1 1 3 0 1
+    7 2 6 1 2 0 3 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+    0.239256 0.000111094 0
+    0.163457 0.298479 0
+  constraints 8
+    158
+    0
+    158
+    0
+    230
+    194
+    194
+    230
+  colors 8
+    0.646943 0.646943 0.646943
+    0 0 0
+    0.646943 0.646943 0.646943
+    0 0 0
+    0.886406 0.886406 0.886406
+    0.79268 0.79268 0.79268
+    0.79268 0.79268 0.79268
+    0.886406 0.886406 0.886406
+endnode
+node danglymesh bush1103_01
+  parent sdg13_b01_06
+  position 2.28352 3.58441 -4.7578
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -1.17806 -1.55855 -0.33
+    1.92439 -1.06077 2.49
+    1.92439 -1.06077 2.49
+    -1.17806 -1.55855 -0.33
+    0.847402 1.41559 0.0689761
+    0.446943 1.41559 -0.33
+    0.446943 1.41559 -0.33
+    0.847402 1.41559 0.0689759
+  faces 4
+    1 4 0 1 1 2 0 1
+    5 0 4 1 3 0 2 1
+    2 3 7 1 1 0 2 1
+    6 7 3 1 3 2 0 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.499078 0.970985 0
+    0.916619 0.137471 0
+    0.868285 0.000111094 0
+  constraints 8
+    158
+    0
+    0
+    158
+    182
+    192
+    192
+    182
+  colors 8
+    0.644034 0.644034 0.644034
+    0 0 0
+    0 0 0
+    0.644034 0.644034 0.644034
+    0.752758 0.752758 0.752758
+    0.790313 0.790313 0.790313
+    0.790313 0.790313 0.790313
+    0.752758 0.752758 0.752758
+endnode
+node danglymesh bush1104_01
+  parent sdg13_b01_06
+  position -1.60814 5.14182 -5.03397
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.746349 -1.12492 -0.255
+    -0.746349 -1.12492 -0.255
+    -0.0940934 -0.14182 -0.255
+    -0.0940953 -0.141808 1.71134
+    -0.0940953 -0.141808 1.71134
+    -0.0940934 -0.14182 -0.255
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 3 1 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.561191 0.000111094 0
+    0.560393 0.848586 0
+    0.560393 0.848585 0
+  constraints 6
+    84
+    84
+    250
+    0
+    0
+    250
+  colors 6
+    0.361815 0.361815 0.361815
+    0.361815 0.361815 0.361815
+    0.968221 0.968221 0.968221
+    0 0 0
+    0 0 0
+    0.968221 0.968221 0.968221
+endnode
+node danglymesh bush1105_01
+  parent sdg13_b01_06
+  position -1.60814 5.14182 -5.21806
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.60176 -1.20929 -0.075
+    0.60176 -1.20929 -0.075
+    0.0705717 -0.141821 -0.0749999
+    0.0705706 -0.141807 1.92437
+    0.0705705 -0.141807 1.92437
+    0.0705718 -0.141821 -0.0749999
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.985428 0.000111094 0
+    0.556921 0.000111094 0
+    0.556115 0.857125 0
+  constraints 6
+    130
+    130
+    244
+    1
+    0
+    244
+  colors 6
+    0.509119 0.509119 0.509119
+    0.509119 0.509119 0.509119
+    0.991761 0.991761 0.991761
+    1 1 1
+    0 0 0
+    0.991761 0.991761 0.991761
+endnode
+node danglymesh bush1107_01
+  parent sdg13_b01_06
+  position -1.79082 5.34012 -4.99947
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -1.06832 -0.389282 -0.195
+    -1.06832 -0.389282 -0.195
+    -0.825341 -0.340117 -0.195
+    -1.04382 -0.340116 -0.145447
+    -1.04382 -0.340116 -0.145447
+    -0.825341 -0.340117 -0.195
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.985428 0.000111094 0
+    0.878391 0.000111094 0
+    0.970822 0.029269 0
+  constraints 6
+    0
+    0
+    100
+    20
+    20
+    100
+  colors 6
+    0 0 0
+    0 0 0
+    0.372672 0.372672 0.372672
+    0.0785069 0.0785069 0.0785069
+    0.0785069 0.0785069 0.0785069
+    0.372672 0.372672 0.372672
+endnode
+node danglymesh bush1108_01
+  parent sdg13_b01_06
+  position -1.81497 4.97209 -4.99947
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    0.991404 -0.567754 -0.195
+    -0.80488 -0.996103 1.455
+    0.991404 -0.567754 -0.195
+    -0.80488 -0.996103 1.455
+    0.242975 0.0279147 -0.195
+    -0.788577 0.0279115 0.534103
+    -0.788577 0.0279115 0.534103
+    0.242975 0.0279147 -0.195
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    3 6 2 1 1 3 0 1
+    7 2 6 1 2 0 3 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+    0.574223 0.000111094 0
+    0.228656 0.429122 0
+  constraints 8
+    156
+    1
+    156
+    1
+    250
+    186
+    186
+    250
+  colors 8
+    0.642472 0.642472 0.642472
+    1 1 1
+    0.642472 0.642472 0.642472
+    1 1 1
+    0.973958 0.973958 0.973958
+    0.758348 0.758348 0.758348
+    0.758348 0.758348 0.758348
+    0.973958 0.973958 0.973958
+endnode
+node danglymesh bush1109_01
+  parent sdg13_b01_06
+  position -1.4034 4.97264 -4.99947
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.138938 -1.13189 -0.195
+    -0.138938 -1.13189 -0.195
+    1.27569 0.0273463 1.44849
+    -0.167225 0.0273712 -0.195
+    -0.167225 0.0273712 -0.195
+    1.27569 0.0273464 1.44849
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.497166 0.967153 0
+    0.51465 0.000111094 0
+  constraints 6
+    156
+    156
+    1
+    250
+    250
+    0
+  colors 6
+    0.640784 0.640784 0.640784
+    0.640784 0.640784 0.640784
+    1 1 1
+    0.98209 0.98209 0.98209
+    0.98209 0.98209 0.98209
+    0 0 0
+endnode
+node danglymesh bush1110_01
+  parent sdg13_b01_06
+  position -0.949897 4.35141 -4.97855
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -1.45448 -0.727108 -0.315001
+    0 0 2.4
+    -1.45448 -0.727108 -0.315001
+    0 0 2.4
+    1.29742 0.648593 -0.315
+    1.29742 0.648593 -0.0218286
+    1.29742 0.648593 -0.0218286
+    1.29742 0.648593 -0.315
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    2 3 7 1 0 1 2 1
+    6 7 3 1 3 2 1 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+    0.0669725 0.000111094 0
+    0.0668739 0.104948 0
+  constraints 8
+    126
+    1
+    126
+    1
+    160
+    152
+    152
+    160
+  colors 8
+    0.52371 0.52371 0.52371
+    1 1 1
+    0.52371 0.52371 0.52371
+    1 1 1
+    0.617499 0.617499 0.617499
+    0.634643 0.634643 0.634643
+    0.634643 0.634643 0.634643
+    0.617499 0.617499 0.617499
+endnode
+node danglymesh bush1111_01
+  parent sdg13_b01_06
+  position -0.949897 4.35141 -5.19947
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -0.104565 -1.62273 -0.09
+    0 0 2.625
+    -0.104565 -1.62273 -0.09
+    0 0 2.625
+    0.0417944 0.648597 -0.0899999
+    0.0417945 0.648593 1.53983
+    0.0417945 0.648593 1.53983
+    0.0417944 0.648597 -0.0899999
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    2 3 7 1 0 1 2 1
+    6 7 3 1 3 2 1 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+    0.305965 0.000111094 0
+    0.305416 0.582932 0
+  constraints 8
+    160
+    1
+    160
+    1
+    240
+    142
+    142
+    240
+  colors 8
+    0.615085 0.615085 0.615085
+    1 1 1
+    0.615085 0.615085 0.615085
+    1 1 1
+    0.93752 0.93752 0.93752
+    0.594594 0.594594 0.594594
+    0.594594 0.594594 0.594594
+    0.93752 0.93752 0.93752
+endnode
+node danglymesh bush1112_01
+  parent sdg13_b01_06
+  position -0.949897 4.35141 -5.19947
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    1.34991 -0.895625 -0.09
+    0 0 2.625
+    0 0 2.625
+    1.34991 -0.895625 -0.09
+    -0.97759 0.648594 0.658831
+    -0.97759 0.648595 -0.0899999
+    -0.97759 0.648595 -0.0899999
+    -0.97759 0.648594 0.658831
+  faces 4
+    1 4 0 1 1 2 0 1
+    5 0 4 1 3 0 2 1
+    2 3 7 1 1 0 2 1
+    6 7 3 1 3 2 0 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.499078 0.970985 0
+    0.851286 0.26789 0
+    0.851538 0.000111094 0
+  constraints 8
+    160
+    1
+    1
+    160
+    190
+    196
+    196
+    190
+  colors 8
+    0.617959 0.617959 0.617959
+    1 1 1
+    1 1 1
+    0.617959 0.617959 0.617959
+    0.737263 0.737263 0.737263
+    0.799081 0.799081 0.799081
+    0.799081 0.799081 0.799081
+    0.737263 0.737263 0.737263
+endnode
+node danglymesh bush1113_01
+  parent sdg13_b01_06
+  position -1.02075 4.66709 -4.93716
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    1.20785 -0.621383 -0.225
+    -1.33597 0.238358 -0.225
+    -1.33597 0.238358 -0.225
+    1.20785 -0.621383 -0.225
+    0.880385 0.332904 0.678952
+    -1.19332 0.332903 -0.0719923
+    -1.19332 0.332903 -0.071993
+    0.880385 0.332904 0.678952
+  faces 4
+    0 4 1 1 0 2 1 1
+    5 1 4 1 3 1 2 1
+    3 2 7 1 0 1 2 1
+    6 7 2 1 3 2 1 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.237448 0.446739 0
+    0.947558 0.0757096 0
+  constraints 8
+    1
+    0
+    0
+    1
+    66
+    50
+    50
+    66
+  colors 8
+    0 0 0
+    0.00177991 0.00177991 0.00177991
+    0.00177991 0.00177991 0.00177991
+    0 0 0
+    0.289476 0.289476 0.289476
+    0.187584 0.187584 0.187584
+    0.187584 0.187584 0.187584
+    0.289476 0.289476 0.289476
+endnode
+node danglymesh bush1114_01
+  parent sdg13_b01_06
+  position -1.26668 4.29908 -4.93716
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    0.672429 -1.18418 -0.225
+    -1.43405 -0.560677 1.74
+    0.672429 -1.18418 -0.225
+    -1.43405 -0.560677 1.74
+    -0.057173 0.700914 -0.225
+    -0.680906 0.700916 0.432124
+    -0.680906 0.700916 0.432124
+    -0.057173 0.700914 -0.225
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    3 6 2 1 1 3 0 1
+    7 2 6 1 2 0 3 1
+  tverts 4
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+    0.258861 0.000111094 0
+    0.176586 0.324786 0
+  constraints 8
+    170
+    0
+    170
+    0
+    230
+    192
+    192
+    230
+  colors 8
+    0.647105 0.647105 0.647105
+    0 0 0
+    0.647105 0.647105 0.647105
+    0 0 0
+    0.899013 0.899013 0.899013
+    0.788523 0.788523 0.788523
+    0.788523 0.788523 0.788523
+    0.899013 0.899013 0.899013
+endnode
+node danglymesh bush1115_01
+  parent sdg13_b01_06
+  position -0.838621 4.05273 -4.93716
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -0.817141 -1.09596 -0.225
+    1.34955 -0.733392 1.74
+    1.34955 -0.733392 1.74
+    -0.817141 -1.09596 -0.225
+    0.610911 0.947282 0.0948914
+    0.290176 0.947281 -0.225
+    0.290176 0.947281 -0.225
+    0.610911 0.947282 0.0948914
+  faces 4
+    1 4 0 1 1 2 0 1
+    5 0 4 1 3 0 2 1
+    2 3 7 1 1 0 2 1
+    6 7 3 1 3 2 0 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.499078 0.970985 0
+    0.906253 0.158164 0
+    0.851555 0.000111094 0
+  constraints 8
+    158
+    1
+    1
+    158
+    188
+    210
+    210
+    188
+  colors 8
+    0.643665 0.643665 0.643665
+    1 1 1
+    1 1 1
+    0.643665 0.643665 0.643665
+    0.762463 0.762463 0.762463
+    0.808389 0.808389 0.808389
+    0.808389 0.808389 0.808389
+    0.762463 0.762463 0.762463
+endnode
+node danglymesh bush1091_01
+  parent sdg13_b01_06
+  position 1.5295 -0.483184 -7.33812
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.225898 0.86932 0.179373
+    -0.225898 -0.738109 -0.493035
+    0 -0.513256 1.22697
+    -0.225898 -0.738109 -0.493035
+    0 -0.513256 1.22697
+    0.225898 0.86932 0.179373
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    128
+    128
+    1
+    128
+    1
+    128
+  colors 6
+    0.525751 0.525751 0.525751
+    0.525751 0.525751 0.525751
+    1 1 1
+    0.525751 0.525751 0.525751
+    1 1 1
+    0.525751 0.525751 0.525751
+endnode
+node danglymesh bush1090_01
+  parent sdg13_b01_06
+  position 1.5295 -0.43582 -7.45134
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.64208 0.601757 0.197529
+    0.64208 -0.563163 -0.289782
+    0 -0.563445 1.3469
+    0.64208 -0.563163 -0.289782
+    0 -0.563445 1.3469
+    -0.64208 0.601757 0.197529
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    160
+    160
+    0
+    160
+    0
+    160
+  colors 6
+    0.618409 0.618409 0.618409
+    0.618409 0.618409 0.618409
+    0 0 0
+    0.618409 0.618409 0.618409
+    0 0 0
+    0.618409 0.618409 0.618409
+endnode
+node danglymesh bush1089_01
+  parent sdg13_b01_06
+  position 1.5295 -0.43582 -7.45134
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.867978 0.240527 0.0464209
+    -0.867981 -0.201932 -0.138674
+    0 -0.563445 1.3469
+    -0.867981 -0.201932 -0.138674
+    0 -0.563445 1.3469
+    0.867978 0.240527 0.0464209
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    160
+    160
+    0
+    160
+    0
+    160
+  colors 6
+    0.618409 0.618409 0.618409
+    0.618409 0.618409 0.618409
+    0 0 0
+    0.618409 0.618409 0.618409
+    0 0 0
+    0.618409 0.618409 0.618409
+endnode
+node danglymesh bush1088_01
+  parent sdg13_b01_06
+  position 1.37127 -0.413398 -7.28399
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.703423 0.310761 -0.0109149
+    -0.588704 -0.390372 -0.304212
+    -0.430193 0.300374 1.17711
+    -0.588704 -0.390372 -0.304212
+    -0.430193 0.300374 1.17711
+    0.703423 0.310761 -0.0109149
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    158
+    1
+    158
+    1
+    158
+  colors 6
+    0.643868 0.643868 0.643868
+    0.643868 0.643868 0.643868
+    0 0 0
+    0.643868 0.643868 0.643868
+    0 0 0
+    0.643868 0.643868 0.643868
+endnode
+node danglymesh bush1087_01
+  parent sdg13_b01_06
+  position 1.43604 -0.632207 -7.37553
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.67113 0.382266 0.0189898
+    0.748218 -0.0811724 -0.174868
+    -0.290793 -1.11486 0.585082
+    0.748218 -0.0811724 -0.174868
+    -0.290793 -1.11486 0.585082
+    -0.67113 0.382266 0.0189898
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    156
+    156
+    1
+    156
+    1
+    156
+  colors 6
+    0.642531 0.642531 0.642531
+    0.642472 0.642472 0.642472
+    0 0 0
+    0.642472 0.642472 0.642472
+    0 0 0
+    0.642531 0.642531 0.642531
+endnode
+node danglymesh bush1086_01
+  parent sdg13_b01_06
+  position 1.69531 -0.549375 -7.34088
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.158438 -0.635801 -0.406884
+    -0.365303 0.661739 0.135897
+    0.800581 -0.0988332 1.0101
+    -0.365303 0.661739 0.135897
+    0.800581 -0.0988332 1.0101
+    0.158438 -0.635801 -0.406884
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    158
+    1
+    158
+    1
+    158
+  colors 6
+    0.643986 0.643986 0.643986
+    0.647038 0.647038 0.647038
+    0 0 0
+    0.647038 0.647038 0.647038
+    0 0 0
+    0.643986 0.643986 0.643986
+endnode
+node danglymesh bush1085_01
+  parent sdg13_b01_06
+  position 2.11614 -0.825039 -7.44107
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.758652 0.795433 0.105107
+    -0.758652 -0.63334 -0.492572
+    0 -0.617462 1.47606
+    -0.758652 -0.63334 -0.492572
+    0 -0.617462 1.47606
+    0.758652 0.795433 0.105107
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    126
+    126
+    1
+    126
+    1
+    126
+  colors 6
+    0.52371 0.52371 0.52371
+    0.52371 0.52371 0.52371
+    0 0 0
+    0.52371 0.52371 0.52371
+    0 0 0
+    0.52371 0.52371 0.52371
+endnode
+node danglymesh bush1084_01
+  parent sdg13_b01_06
+  position 2.11614 -0.768203 -7.57694
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.286772 0.987617 0.3481
+    0.286772 -0.941309 -0.458804
+    0 -0.675359 1.61444
+    0.286772 -0.941309 -0.458804
+    0 -0.675359 1.61444
+    -0.286772 0.987617 0.3481
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    160
+    160
+    1
+    160
+    1
+    160
+  colors 6
+    0.615085 0.615085 0.615085
+    0.615085 0.615085 0.615085
+    0 0 0
+    0.615085 0.615085 0.615085
+    0 0 0
+    0.615085 0.615085 0.615085
+endnode
+node danglymesh bush1083_01
+  parent sdg13_b01_06
+  position 2.11614 -0.768203 -7.57694
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    1.04542 -0.226935 -0.159965
+    -1.04542 0.273243 0.0492602
+    0 -0.675359 1.61444
+    -1.04542 0.273243 0.0492602
+    0 -0.675359 1.61444
+    1.04542 -0.226935 -0.159965
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    160
+    160
+    1
+    160
+    1
+    160
+  colors 6
+    0.617959 0.617959 0.617959
+    0.617959 0.617959 0.617959
+    0 0 0
+    0.617959 0.617959 0.617959
+    0 0 0
+    0.617959 0.617959 0.617959
+endnode
+node danglymesh bush1082_01
+  parent sdg13_b01_06
+  position 1.92786 -0.929609 -7.45491
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.480742 0.7733 0.160892
+    0.681157 -0.495801 -0.369999
+    -0.781953 -1.06119 0.813499
+    0.681157 -0.495801 -0.369999
+    -0.781953 -1.06119 0.813499
+    -0.480742 0.7733 0.160892
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    170
+    0
+    170
+    0
+    158
+  colors 6
+    0.643646 0.643646 0.643646
+    0.647105 0.647105 0.647105
+    0 0 0
+    0.647105 0.647105 0.647105
+    0 0 0
+    0.643646 0.643646 0.643646
+endnode
+node danglymesh bush1081_01
+  parent sdg13_b01_06
+  position 2.25119 -0.987031 -7.47893
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.276812 -0.743164 -0.473477
+    0.0176025 0.892364 0.210693
+    1.00994 -0.603476 1.00496
+    0.0176025 0.892364 0.210693
+    1.00994 -0.603476 1.00496
+    -0.276812 -0.743164 -0.473477
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    170
+    1
+    170
+    1
+    158
+  colors 6
+    0.643665 0.643665 0.643665
+    0.64872 0.64872 0.64872
+    0 0 0
+    0.64872 0.64872 0.64872
+    0 0 0
+    0.643665 0.643665 0.643665
+endnode
+node danglymesh bush1080_01
+  parent sdg13_b01_06
+  position 2.00288 -0.666348 -7.34478
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.896289 -0.0612108 -0.188202
+    -0.893789 -0.0714065 -0.192465
+    -0.00319061 0.49663 1.46515
+    -0.893789 -0.0714065 -0.192465
+    -0.00319061 0.49663 1.46515
+    0.896289 -0.0612108 -0.188202
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    170
+    170
+    1
+    170
+    1
+    170
+  colors 6
+    0.647976 0.647976 0.647976
+    0.648602 0.648602 0.648602
+    0 0 0
+    0.648602 0.648602 0.648602
+    0 0 0
+    0.647976 0.647976 0.647976
+endnode
+node danglymesh bush1079_01
+  parent sdg13_b01_06
+  position 0.687146 -3.77045 -9.34608
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.323792 1.24846 0.251258
+    -0.323789 -1.05549 -0.712526
+    0 -0.733256 1.75282
+    -0.323789 -1.05549 -0.712526
+    0 -0.733256 1.75282
+    0.323792 1.24846 0.251258
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    126
+    126
+    1
+    126
+    1
+    126
+  colors 6
+    0.521718 0.521718 0.521718
+    0.521718 0.521718 0.521718
+    1 1 1
+    0.521718 0.521718 0.521718
+    1 1 1
+    0.521718 0.521718 0.521718
+endnode
+node danglymesh bush1078_01
+  parent sdg13_b01_06
+  position 0.687146 -3.70279 -9.50783
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.923506 0.85787 0.282988
+    0.923503 -0.803847 -0.412143
+    0 -0.802686 1.91887
+    0.923503 -0.803847 -0.412143
+    0 -0.802686 1.91887
+    -0.923506 0.85787 0.282988
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    160
+    160
+    1
+    160
+    1
+    160
+  colors 6
+    0.614252 0.614252 0.614252
+    0.614252 0.614252 0.614252
+    0 0 0
+    0.614252 0.614252 0.614252
+    0 0 0
+    0.614252 0.614252 0.614252
+endnode
+node danglymesh bush1077_01
+  parent sdg13_b01_06
+  position 0.687146 -3.70279 -9.50783
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    1.24479 0.3392 0.0660138
+    -1.24479 -0.285155 -0.195168
+    0 -0.802686 1.91887
+    -1.24479 -0.285155 -0.195168
+    0 -0.802686 1.91887
+    1.24479 0.3392 0.0660138
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    160
+    160
+    1
+    160
+    1
+    160
+  colors 6
+    0.614252 0.614252 0.614252
+    0.614252 0.614252 0.614252
+    0 0 0
+    0.614252 0.614252 0.614252
+    0 0 0
+    0.614252 0.614252 0.614252
+endnode
+node danglymesh bush1076_01
+  parent sdg13_b01_06
+  position 0.461101 -3.67074 -9.26877
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    1.00279 0.439531 -0.0112494
+    -0.837881 -0.559258 -0.42906
+    -0.616607 0.434534 1.67766
+    -0.837881 -0.559258 -0.42906
+    -0.616607 0.434534 1.67766
+    1.00279 0.439531 -0.0112494
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    158
+    0
+    158
+    0
+    158
+  colors 6
+    0.645673 0.645673 0.645673
+    0.645673 0.645673 0.645673
+    0 0 0
+    0.645673 0.645673 0.645673
+    0 0 0
+    0.645673 0.645673 0.645673
+endnode
+node danglymesh bush1075_01
+  parent sdg13_b01_06
+  position 0.553635 -3.98338 -9.39954
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -0.953634 0.53583 0.0290398
+    1.06299 -0.118104 -0.24452
+    1.06299 -0.118104 -0.24452
+    -0.953634 0.53583 0.0290398
+    -0.556323 -1.01666 0.615902
+    0.162226 -1.01665 0.413554
+    0.162226 -1.01665 0.413554
+    -0.556323 -1.01666 0.615902
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    2 6 3 1 1 3 0 1
+    7 3 6 1 2 0 3 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.368792 0.709922 0
+    0.688053 0.593745 0
+  constraints 8
+    80
+    80
+    80
+    80
+    0
+    64
+    64
+    0
+  colors 8
+    0.304794 0.304794 0.304794
+    0.301136 0.301136 0.301136
+    0.301136 0.301136 0.301136
+    0.304794 0.304794 0.304794
+    0 0 0
+    0.285353 0.285353 0.285353
+    0.285353 0.285353 0.285353
+    0 0 0
+endnode
+node danglymesh bush1074_01
+  parent sdg13_b01_06
+  position 0.924023 -3.86502 -9.35003
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.221162 -0.90789 -0.574904
+    -0.51802 0.946289 0.200735
+    1.14369 -0.13904 1.43773
+    -0.51802 0.946289 0.200735
+    1.14369 -0.13904 1.43773
+    0.221162 -0.90789 -0.574904
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    158
+    0
+    158
+    0
+    158
+  colors 6
+    0.645387 0.645387 0.645387
+    0.645269 0.645269 0.645269
+    0 0 0
+    0.645269 0.645269 0.645269
+    0 0 0
+    0.645387 0.645387 0.645387
+endnode
+node danglymesh bush1073_01
+  parent sdg13_b01_06
+  position 1.52521 -4.25883 -9.49317
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    1.08169 1.1341 0.149224
+    1.08169 1.1341 0.149224
+    0.0744896 -0.741153 1.9688
+    -0.910281 -0.74117 -0.635242
+    -0.910281 -0.74117 -0.635242
+    0.0744896 -0.741153 1.9688
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.465709 0.904122 0
+    0.908503 0.000111094 0
+  constraints 6
+    104
+    104
+    0
+    144
+    144
+    0
+  colors 6
+    0.440654 0.440654 0.440654
+    0.440654 0.440654 0.440654
+    0 0 0
+    0.597954 0.597954 0.597954
+    0.597954 0.597954 0.597954
+    0 0 0
+endnode
+node danglymesh bush1072_01
+  parent sdg13_b01_06
+  position 1.52521 -4.17764 -9.68726
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    1.50038 -0.324179 -0.233167
+    -1.50038 0.393656 0.0671106
+    -1.50038 0.393656 0.0671106
+    1.50038 -0.324179 -0.233167
+    0.32648 -0.822355 1.74653
+    -0.153474 -0.82235 2.06901
+    -0.153474 -0.82235 2.06901
+    0.32648 -0.822355 1.74653
+  faces 4
+    0 4 1 1 0 2 1 1
+    5 1 4 1 3 1 2 1
+    3 2 7 1 0 1 2 1
+    6 7 2 1 3 2 1 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.393646 0.759724 0
+    0.548825 0.871677 0
+  constraints 8
+    122
+    122
+    122
+    122
+    60
+    1
+    1
+    60
+  colors 8
+    0.516008 0.516008 0.516008
+    0.516008 0.516008 0.516008
+    0.516008 0.516008 0.516008
+    0.516008 0.516008 0.516008
+    0.230375 0.230375 0.230375
+    1 1 1
+    1 1 1
+    0.230375 0.230375 0.230375
+endnode
+node danglymesh bush1071_01
+  parent sdg13_b01_06
+  position 1.3634 -4.03211 -9.35561
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    1.28635 -0.0798637 -0.271878
+    -1.28242 -0.103906 -0.281941
+    -0.0139253 0.706495 2.09494
+    -1.28242 -0.103906 -0.281941
+    -0.0139253 0.706495 2.09494
+    1.28635 -0.0798637 -0.271878
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    158
+    1
+    158
+    1
+    158
+  colors 6
+    0.645057 0.645057 0.645057
+    0.645077 0.645077 0.645077
+    1 1 1
+    0.645077 0.645077 0.645077
+    1 1 1
+    0.645057 0.645057 0.645057
+endnode
+node danglymesh bush1070_01
+  parent sdg13_b01_06
+  position 1.25624 -4.40822 -9.51294
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.68652 1.09736 0.220562
+    -0.68652 1.09736 0.220562
+    -0.962839 -0.591759 0.830276
+    0.875676 -0.591768 -0.486028
+    0.875676 -0.591768 -0.486028
+    -0.962839 -0.591759 0.830276
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.32752 0.627222 0
+    0.926139 0.000111094 0
+  constraints 6
+    22
+    22
+    0
+    80
+    80
+    0
+  colors 6
+    0.123323 0.123323 0.123323
+    0.123323 0.123323 0.123323
+    0 0 0
+    0.311893 0.311893 0.311893
+    0.311893 0.311893 0.311893
+    0 0 0
+endnode
+node danglymesh bush1069_01
+  parent sdg13_b01_06
+  position 1.71813 -4.49023 -9.54725
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.0258643 1.27955 0.296787
+    0.0258643 1.27955 0.296787
+    -0.303056 -0.509766 -0.451718
+    1.20498 -0.509765 1.24342
+    1.20498 -0.509766 1.24342
+    -0.303056 -0.509766 -0.451718
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.985428 0.000111094 0
+    0.24209 0.000111094 0
+    0.580871 0.807706 0
+  constraints 6
+    120
+    120
+    202
+    1
+    0
+    202
+  colors 6
+    0.47022 0.47022 0.47022
+    0.47022 0.47022 0.47022
+    0.829416 0.829416 0.829416
+    1 1 1
+    0 0 0
+    0.829416 0.829416 0.829416
+endnode
+node danglymesh bush1068_01
+  parent sdg13_b01_06
+  position -1.07305 -4.29395 -9.66471
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    0.225901 0.86932 0.179373
+    0 -0.513257 1.22697
+    0 -0.513257 1.22697
+    0.225901 0.86932 0.179373
+    -0.193713 -0.706055 -0.247966
+    -0.216897 -0.706052 -0.479634
+    -0.216897 -0.706052 -0.479634
+    -0.193713 -0.706055 -0.247967
+  faces 4
+    1 4 0 1 1 2 0 1
+    5 0 4 1 3 0 2 1
+    2 3 7 1 1 0 2 1
+    6 7 3 1 3 2 0 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.499078 0.970985 0
+    0.916132 0.138442 0
+    0.966079 0.000111094 0
+  constraints 8
+    128
+    1
+    1
+    128
+    170
+    136
+    136
+    170
+  colors 8
+    0.525751 0.525751 0.525751
+    0 0 0
+    0 0 0
+    0.525751 0.525751 0.525751
+    0.662199 0.662199 0.662199
+    0.561526 0.561526 0.561526
+    0.561526 0.561526 0.561526
+    0.662199 0.662199 0.662199
+endnode
+node danglymesh bush1067_01
+  parent sdg13_b01_06
+  position -1.07305 -4.24658 -9.77793
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.64208 0.601757 0.197529
+    0.64208 -0.563163 -0.289782
+    0 -0.563446 1.3469
+    0.64208 -0.563163 -0.289782
+    0 -0.563446 1.3469
+    -0.64208 0.601757 0.197529
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    160
+    160
+    0
+    160
+    0
+    160
+  colors 6
+    0.618409 0.618409 0.618409
+    0.61841 0.61841 0.61841
+    0 0 0
+    0.61841 0.61841 0.61841
+    0 0 0
+    0.618409 0.618409 0.618409
+endnode
+node danglymesh bush1066_01
+  parent sdg13_b01_06
+  position -1.07305 -4.24658 -9.77793
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.867981 0.240527 0.0464209
+    -0.867981 -0.201932 -0.138674
+    0 -0.563446 1.3469
+    -0.867981 -0.201932 -0.138674
+    0 -0.563446 1.3469
+    0.867981 0.240527 0.0464209
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    160
+    160
+    0
+    160
+    0
+    160
+  colors 6
+    0.618409 0.618409 0.618409
+    0.618409 0.618409 0.618409
+    0 0 0
+    0.618409 0.618409 0.618409
+    0 0 0
+    0.618409 0.618409 0.618409
+endnode
+node danglymesh bush1065_01
+  parent sdg13_b01_06
+  position -1.23128 -4.22414 -9.61058
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.703423 0.310761 -0.0109149
+    -0.588704 -0.390372 -0.304213
+    -0.430193 0.300374 1.17711
+    -0.588704 -0.390372 -0.304213
+    -0.430193 0.300374 1.17711
+    0.703423 0.310761 -0.0109149
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    158
+    0
+    158
+    0
+    158
+  colors 6
+    0.643868 0.643868 0.643868
+    0.643868 0.643868 0.643868
+    0 0 0
+    0.643868 0.643868 0.643868
+    0 0 0
+    0.643868 0.643868 0.643868
+endnode
+node danglymesh bush1064_01
+  parent sdg13_b01_06
+  position -1.16651 -4.44297 -9.70212
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    -0.67113 0.382274 0.0189906
+    0.74822 -0.0811853 -0.174869
+    0.74822 -0.0811853 -0.174869
+    -0.67113 0.382274 0.0189906
+    -0.432509 -0.557038 0.374153
+    0.269912 -0.557035 0.174975
+    0.269912 -0.557035 0.174975
+    -0.432509 -0.557038 0.374153
+  faces 4
+    1 0 5 1 1 0 3 1
+    4 5 0 1 2 3 0 1
+    2 6 3 1 1 3 0 1
+    7 3 6 1 2 0 3 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.318542 0.609232 0
+    0.761537 0.447052 0
+  constraints 8
+    20
+    20
+    20
+    20
+    1
+    90
+    90
+    1
+  colors 8
+    0.0634404 0.0634404 0.0634404
+    0.0632836 0.0632836 0.0632836
+    0.0632836 0.0632836 0.0632836
+    0.0634404 0.0634404 0.0634404
+    1 1 1
+    0.350812 0.350812 0.350812
+    0.350812 0.350812 0.350812
+    1 1 1
+endnode
+node danglymesh bush1063_01
+  parent sdg13_b01_06
+  position -0.907246 -4.36014 -9.66747
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.158435 -0.635801 -0.406884
+    -0.365303 0.661739 0.135897
+    0.800581 -0.0988347 1.0101
+    -0.365303 0.661739 0.135897
+    0.800581 -0.0988347 1.0101
+    0.158435 -0.635801 -0.406884
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    158
+    158
+    0
+    158
+    0
+    158
+  colors 6
+    0.643986 0.643986 0.643986
+    0.647038 0.647038 0.647038
+    0 0 0
+    0.647038 0.647038 0.647038
+    0 0 0
+    0.643986 0.643986 0.643986
+endnode
+node danglymesh bush1062_01
+  parent sdg13_b01_06
+  position -0.486411 -4.63578 -9.76765
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.758651 0.795438 0.105108
+    0.758651 0.795438 0.105108
+    0.135985 -0.364235 1.23032
+    -0.472847 -0.364218 -0.37999
+    -0.472847 -0.364218 -0.37999
+    0.135985 -0.364235 1.23032
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.41223 0.796962 0
+    0.80255 0.000111094 0
+  constraints 6
+    70
+    70
+    0
+    180
+    180
+    0
+  colors 6
+    0.267615 0.267615 0.267615
+    0.267615 0.267615 0.267615
+    0 0 0
+    0.699294 0.699294 0.699294
+    0.699294 0.699294 0.699294
+    0 0 0
+endnode
+node danglymesh bush1061_01
+  parent sdg13_b01_06
+  position -0.486411 -4.57895 -9.90353
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.286772 0.987617 0.3481
+    -0.286772 0.987617 0.3481
+    -0.0438563 -0.421067 1.42079
+    0.132079 -0.421051 -0.241171
+    0.132079 -0.421051 -0.241171
+    -0.0438563 -0.421067 1.42079
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.424985 0.822519 0
+    0.723569 0.000111094 0
+  constraints 6
+    120
+    120
+    1
+    230
+    230
+    1
+  colors 6
+    0.463657 0.463657 0.463657
+    0.463657 0.463657 0.463657
+    1 1 1
+    0.884937 0.884937 0.884937
+    0.884937 0.884937 0.884937
+    1 1 1
+endnode
+node danglymesh bush1060_01
+  parent sdg13_b01_06
+  position -0.486411 -4.57895 -9.90353
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 8
+    1.04543 -0.226941 -0.159965
+    -1.04543 0.273249 0.0492611
+    -1.04543 0.273249 0.0492611
+    1.04543 -0.226941 -0.159965
+    0.592858 -0.421058 0.608174
+    -0.280266 -0.421067 1.19484
+    -0.280266 -0.421067 1.19484
+    0.592858 -0.421058 0.608174
+  faces 4
+    0 4 1 1 0 2 1 1
+    5 1 4 1 3 1 2 1
+    3 2 7 1 0 1 2 1
+    6 7 2 1 3 2 1 1
+  tverts 4
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.224305 0.420403 0
+    0.62946 0.71071 0
+  constraints 8
+    80
+    80
+    80
+    80
+    120
+    0
+    0
+    120
+  colors 8
+    0.305006 0.305006 0.305006
+    0.305006 0.305006 0.305006
+    0.305006 0.305006 0.305006
+    0.305006 0.305006 0.305006
+    0.466197 0.466197 0.466197
+    0 0 0
+    0 0 0
+    0.466197 0.466197 0.466197
+endnode
+node danglymesh bush1059_01
+  parent sdg13_b01_06
+  position -0.674692 -4.74037 -9.7815
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.480744 0.773291 0.160893
+    -0.480744 0.773291 0.160893
+    -0.650342 -0.259623 0.528357
+    0.464939 -0.259628 -0.271205
+    0.464939 -0.259628 -0.271205
+    -0.650349 -0.259623 0.528357
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.287376 0.546784 0
+    0.804756 0.000111094 0
+  constraints 6
+    1
+    1
+    30
+    150
+    150
+    30
+  colors 6
+    1 1 1
+    1 1 1
+    0.099977 0.099977 0.099977
+    0.582305 0.582305 0.582305
+    0.582305 0.582305 0.582305
+    0.099977 0.099977 0.099977
+endnode
+node danglymesh bush1058_01
+  parent sdg13_b01_06
+  position -0.351367 -4.79779 -9.80551
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.017602 0.892371 0.210693
+    0.017602 0.892371 0.210693
+    -0.179432 -0.202212 -0.247185
+    0.743742 -0.202193 0.791896
+    0.743742 -0.202193 0.791896
+    -0.179432 -0.202212 -0.247186
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.985428 0.000111094 0
+    0.335673 0.000111094 0
+    0.629543 0.710545 0
+  constraints 6
+    80
+    80
+    230
+    1
+    1
+    230
+  colors 6
+    0.311297 0.311297 0.311297
+    0.311297 0.311297 0.311297
+    0.890113 0.890113 0.890113
+    1 1 1
+    1 1 1
+    0.890113 0.890113 0.890113
+endnode
+node danglymesh bush1057_01
+  parent sdg13_b01_06
+  position -0.599673 -4.47709 -9.67136
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    0.896289 -0.0612108 -0.188202
+    -0.893789 -0.0714065 -0.192465
+    -0.0031841 0.496629 1.46515
+    -0.893789 -0.0714065 -0.192465
+    -0.0031841 0.496629 1.46515
+    0.896289 -0.0612108 -0.188202
+  faces 2
+    2 1 0 1 2 1 0 1
+    3 4 5 1 1 2 0 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.985428 0.000111094 0
+    0.499078 0.970985 0
+  constraints 6
+    170
+    170
+    1
+    170
+    1
+    170
+  colors 6
+    0.647976 0.647976 0.647976
+    0.648603 0.648603 0.648603
+    1 1 1
+    0.648603 0.648603 0.648603
+    1 1 1
+    0.647976 0.647976 0.647976
+endnode
+node danglymesh bush1056_01
+  parent sdg13_b01_06
+  position 1.52521 -4.17764 -9.68726
+  orientation 0 0 0 0
+  wirecolor 0.605469 0.605469 0.605469
+  danglymesh 1
+  tightness 1
+  period 0.8
+  displacement 0.1
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 6
+    -0.409008 1.40965 0.492126
+    -0.409008 1.40965 0.492126
+    -0.0239043 -0.82235 2.19162
+    0.25497 -0.822366 -0.441569
+    0.25497 -0.822366 -0.441569
+    -0.0239043 -0.82235 2.19162
+  faces 2
+    0 2 3 1 0 1 2 1
+    1 4 5 1 0 2 1 1
+  tverts 3
+    0.014554 0.000111094 0
+    0.470759 0.91424 0
+    0.802604 0.000111094 0
+  constraints 6
+    136
+    136
+    0
+    202
+    202
+    0
+  colors 6
+    0.562668 0.562668 0.562668
+    0.562668 0.562668 0.562668
+    0 0 0
+    0.829146 0.829146 0.829146
+    0.829147 0.829147 0.829147
+    0 0 0
+endnode
+node trimesh mshstem46_01
+  parent sdg13_b01_06
+  position 0.523791 -1.64605 -8.55138
+  orientation 0 0 0 0
+  wirecolor 0.894531 0.894531 0.894531
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_mushie3a
+  shadow 0
+  verts 12
+    -0.199058 -0.324813 0
+    -0.338873 0.17405 0
+    0.338873 -0.17405 0
+    0.199058 0.324813 0
+    0.163461 -0.167965 0.986658
+    -0.108627 -0.168663 0.986658
+    0.162709 0.125431 0.986658
+    -0.109378 0.124733 0.986658
+    0.0872275 -0.186769 0.567939
+    -0.0452199 -0.0808933 0.567939
+    0.068947 0.0619265 0.567939
+    0.201394 -0.0439487 0.567939
+  faces 16
+    1 0 9 1 10 2 11 5
+    8 9 0 1 12 11 2 5
+    9 8 5 1 11 12 13 5
+    4 5 8 1 14 13 12 5
+    3 1 10 1 0 1 15 4
+    9 10 1 1 8 15 1 4
+    10 9 7 1 15 8 16 4
+    5 7 9 1 4 16 8 4
+    2 3 11 1 10 2 17 6
+    10 11 3 1 9 17 2 6
+    11 10 6 1 17 9 18 6
+    7 6 10 1 6 18 9 6
+    0 2 8 1 0 1 7 3
+    11 8 2 1 8 7 1 3
+    8 11 4 1 7 8 3 3
+    6 4 11 1 5 3 8 3
+  tverts 19
+    0.999501 0.000499487 0
+    0.400048 0.000499487 0
+    0.436685 0.000499487 0
+    0.538498 0.9995 0
+    0.236286 0.9995 0
+    0.236286 0.999501 0
+    0.28151 0.999501 0
+    0.620805 0.575544 0
+    0.379194 0.575544 0
+    0.520319 0.575544 0
+    0.9995 0.000499487 0
+    0.479681 0.575544 0
+    0.252837 0.575544 0
+    0.472623 0.9995 0
+    0.188882 0.9995 0
+    0.620806 0.575544 0
+    0.538498 0.999501 0
+    0.747163 0.575544 0
+    0.565251 0.999501 0
+endnode
+node trimesh mshcap56_01
+  parent sdg13_b01_06
+  position 0.550244 -1.64854 -7.43794
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_mushie9b
+  shadow 0
+  verts 19
+    -0.577996 0.467563 -0.297622
+    -0.152897 0.777568 -0.232807
+    0.379178 0.694968 -0.141987
+    0.728323 0.339628 -0.143896
+    0.754434 -0.246842 -0.121082
+    0.405589 -0.67817 -0.112704
+    -0.122864 -0.783907 -0.223258
+    -0.594386 -0.522935 -0.28893
+    -0.764505 -0.0210053 -0.309093
+    -0.461508 0.350877 0.0162608
+    -0.140274 0.546868 0.0516352
+    0.230415 0.489325 0.122339
+    0.479069 0.219534 0.157754
+    0.421285 -0.183181 0.175659
+    0.208564 -0.426001 0.163724
+    -0.113859 -0.486402 0.115469
+    -0.443101 -0.324224 0.0558979
+    -0.58298 -0.00694674 0.00827019
+    -0.0601188 0.00900404 0.309093
+  faces 27
+    10 0 9 1 10 0 9 3
+    1 0 10 1 1 0 10 3
+    11 1 10 1 11 1 10 3
+    2 1 11 1 2 1 11 3
+    12 2 11 1 12 2 11 3
+    3 2 12 1 3 2 12 3
+    13 3 12 1 13 3 12 3
+    4 3 13 1 4 3 13 3
+    14 4 13 1 14 4 13 3
+    5 4 14 1 5 4 14 3
+    15 5 14 1 15 5 14 3
+    6 5 15 1 6 5 15 3
+    16 6 15 1 16 6 15 3
+    7 6 16 1 7 6 16 3
+    17 7 16 1 17 7 16 3
+    8 7 17 1 8 7 17 3
+    9 8 17 1 9 8 17 3
+    0 8 9 1 0 8 9 3
+    9 18 10 1 9 18 10 1
+    10 18 11 1 10 18 11 1
+    11 18 12 1 11 18 12 1
+    12 18 13 1 12 18 13 1
+    13 18 14 1 13 18 14 1
+    14 18 15 1 14 18 15 1
+    15 18 16 1 15 18 16 1
+    16 18 17 1 16 18 17 1
+    17 18 9 1 17 18 9 1
+  tverts 19
+    0.999501 0.502765 0
+    0.906456 0.827976 0
+    0.592559 0.9995 0
+    0.260244 0.961344 0
+    0.000499487 0.678282 0
+    0.00262618 0.32286 0
+    0.235609 0.058529 0
+    0.592559 0.000499517 0
+    0.892414 0.183641 0
+    0.889411 0.49097 0
+    0.803045 0.71757 0
+    0.584359 0.837068 0
+    0.340675 0.801525 0
+    0.202051 0.576863 0
+    0.211821 0.37024 0
+    0.355695 0.211023 0
+    0.596526 0.16047 0
+    0.803045 0.263297 0
+    0.535328 0.480455 0
+endnode
+node trimesh moss08_01
+  parent sdg13_b01_06
+  position 3.52851 0.696992 -5.71399
+  orientation 0 0 0 0
+  wirecolor 0.601563 0.601563 0.601563
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush21
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 10
+    -2.5 0 15
+    0 0.18939 15
+    -2.5 0 12.5
+    0 0.18939 12.5
+    -2.5 0 10
+    0 0 10
+    -2.5 0 7.5
+    0 0.219394 7.5
+    -2.50001 0 5
+    0 -0.311944 5
+  faces 16
+    1 0 3 1 1 0 3 0
+    2 3 0 1 2 3 0 0
+    3 2 5 1 3 2 5 0
+    4 5 2 1 4 5 2 0
+    5 4 7 1 5 4 7 0
+    6 7 4 1 6 7 4 0
+    7 6 9 1 7 6 9 0
+    8 9 6 1 8 9 6 0
+    1 3 0 1 1 3 0 0
+    2 0 3 1 2 0 3 0
+    3 5 2 1 3 5 2 0
+    4 2 5 1 4 2 5 0
+    5 7 4 1 5 7 4 0
+    6 4 7 1 6 4 7 0
+    7 9 6 1 7 9 6 0
+    8 6 9 1 8 6 9 0
+  tverts 10
+    0.25 1 0
+    0.5 1 0
+    0.25 0.75 0
+    0.5 0.75 0
+    0.25 0.5 0
+    0.5 0.5 0
+    0.25 0.25 0
+    0.5 0.25 0
+    0.25 0 0
+    0.5 0 0
+endnode
+node trimesh moss07_01
+  parent sdg13_b01_06
+  position 3.52851 0.696992 -5.71399
+  wirecolor 0.601563 0.601563 0.601563
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush21
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  orientation 0 0 0 0
+  verts 10
+    -4.99997 -0.169323 15
+    -2.49997 0 15
+    -4.99998 -0.444993 12.5
+    -2.49998 0 12.5
+    -4.99998 0 10
+    -2.49998 0 10
+    -4.99999 0.755176 7.50001
+    -2.49999 0 7.50001
+    -5 0.755176 5.00001
+    -2.5 0 5.00001
+  faces 16
+    1 0 3 1 1 0 3 0
+    2 3 0 1 2 3 0 0
+    3 2 5 1 3 2 5 0
+    4 5 2 1 4 5 2 0
+    5 4 7 1 5 4 7 0
+    6 7 4 1 6 7 4 0
+    7 6 9 1 7 6 9 0
+    8 9 6 1 8 9 6 0
+    1 3 0 1 1 3 0 0
+    2 0 3 1 2 0 3 0
+    3 5 2 1 3 5 2 0
+    4 2 5 1 4 2 5 0
+    5 7 4 1 5 7 4 0
+    6 4 7 1 6 4 7 0
+    7 9 6 1 7 9 6 0
+    8 6 9 1 8 6 9 0
+  tverts 10
+    0 1 0
+    0.25 1 0
+    0 0.75 0
+    0.25 0.75 0
+    0 0.5 0
+    0.25 0.5 0
+    0 0.25 0
+    0.25 0.25 0
+    0 0 0
+    0.25 0 0
+endnode
+node trimesh moss06_01
+  parent sdg13_b01_06
+  position 1.02851 -1.80301 -5.71399
+  orientation 0 0 0 0
+  wirecolor 0.601563 0.601563 0.601563
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush21
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 10
+    0 2.5 15
+    0.345353 5 15
+    0 2.5 12.5
+    0.345351 5 12.5
+    0 2.5 10
+    0 5 10
+    0 2.5 7.5
+    0.139037 4.99999 7.5
+    0 2.49999 5
+    0.139036 4.99999 5
+  faces 16
+    1 0 3 1 1 0 3 0
+    2 3 0 1 2 3 0 0
+    3 2 5 1 3 2 5 0
+    4 5 2 1 4 5 2 0
+    5 4 7 1 5 4 7 0
+    6 7 4 1 6 7 4 0
+    7 6 9 1 7 6 9 0
+    8 9 6 1 8 9 6 0
+    1 3 0 1 1 3 0 0
+    2 0 3 1 2 0 3 0
+    3 5 2 1 3 5 2 0
+    4 2 5 1 4 2 5 0
+    5 7 4 1 5 7 4 0
+    6 4 7 1 6 4 7 0
+    7 9 6 1 7 9 6 0
+    8 6 9 1 8 6 9 0
+  tverts 10
+    0.75 1 0
+    1 1 0
+    0.75 0.75 0
+    1 0.75 0
+    0.75 0.5 0
+    1 0.5 0
+    0.75 0.25 0
+    1 0.25 0
+    0.75 0 0
+    1 0 0
+endnode
+node trimesh moss05_01
+  parent sdg13_b01_06
+  position 1.02851 -1.80301 -5.71399
+  orientation 0 0 0 0
+  wirecolor 0.601563 0.601563 0.601563
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_bush21
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 10
+    -0.282756 0 15
+    0 2.5 15
+    -0.575658 0 12.5
+    0 2.49999 12.5
+    0 0 10
+    0 2.49999 10
+    -0.388288 0 7.5
+    0 2.49999 7.5
+    -0.301592 0 5
+    0 2.49999 5
+  faces 16
+    1 0 3 1 1 0 3 0
+    2 3 0 1 2 3 0 0
+    3 2 5 1 3 2 5 0
+    4 5 2 1 4 5 2 0
+    5 4 7 1 5 4 7 0
+    6 7 4 1 6 7 4 0
+    7 6 9 1 7 6 9 0
+    8 9 6 1 8 9 6 0
+    1 3 0 1 1 3 0 0
+    2 0 3 1 2 0 3 0
+    3 5 2 1 3 5 2 0
+    4 2 5 1 4 2 5 0
+    5 7 4 1 5 7 4 0
+    6 4 7 1 6 4 7 0
+    7 9 6 1 7 9 6 0
+    8 6 9 1 8 6 9 0
+  tverts 10
+    0.5 1 0
+    0.75 1 0
+    0.5 0.75 0
+    0.75 0.75 0
+    0.5 0.5 0
+    0.75 0.5 0
+    0.5 0.25 0
+    0.75 0.25 0
+    0.5 0 0
+    0.75 0 0
+endnode
+node trimesh terrain01_01
+  parent sdg13_b01_06
+  position 0 0 -5
+  orientation 0 0 0 0
+  wirecolor 0.695313 0.695313 0.695313
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_dir02
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 0
+  verts 110
+    4 -5 -3
+    3 -5 -4
+    2 -5 -4.5
+    1 -5 -4.75
+    0 -5 -5
+    -1 -5 -5
+    -2 -5 -5
+    -3 -5 -5
+    -4 -5 -5
+    -5 -5 -5
+    4 -4 -2.53758
+    3.29429 -4 -3.56014
+    2 -4 -4.13532
+    1 -4 -4.40147
+    0 -4 -4.56632
+    -1 -4 -4.66405
+    -2 -4 -4.6879
+    -3 -4 -4.64692
+    -4 -4 -4.53895
+    -5 -4 -4.5
+    4 -3 -1.99192
+    2.85865 -3 -3.0129
+    2 -3 -3.60401
+    1 -3 -3.72386
+    -0.516205 -2.28722 -3.90657
+    -1 -3 -3.99129
+    -2 -2.5853 -4.00203
+    -3 -3 -3.93148
+    -4 -3 -3.94785
+    -5 -3 -4
+    4 -2 -1.42176
+    2.70292 -2 -2.5283
+    2 -2 -3.09623
+    1 -2 -3.26851
+    -0.188373 -1.88687 -3.43524
+    -1 -2 -3.55074
+    -2 -2 -3.55233
+    -3.03137 -2.1132 -3.56511
+    -4 -2 -3.48996
+    -5 -2 -3.5
+    3.39001 -0.58841 -1.03918
+    3 -1 -1.98304
+    2 -1 -2.49128
+    0.675052 -0.682069 -2.73435
+    0.174451 -1.30585 -2.97464
+    -1 -1 -2.98696
+    -2 -1 -2.90766
+    -3 -1 -3.05475
+    -4 -1 -3.00685
+    -5 -1 -3
+    3.54553 0 -0.53343
+    3 0 -1.43691
+    2 0 -2.04326
+    1 0 -2.33646
+    0 0 -2.5023
+    -1 0 -2.4706
+    -2 0 -2.53619
+    -3 0 -2.50661
+    -4 0 -2.48992
+    -5 0 -2.5
+    4 1 0.0346563
+    3 1 -1.05117
+    2 1 -1.49714
+    1 1 -1.68148
+    0 1 -2.03132
+    -1 1 -1.99433
+    -2 1 -2.0135
+    -3 1 -1.94012
+    -4 1 -2.0403
+    -5 1 -2
+    4 2 0.532976
+    3 2 -0.476747
+    2 2 -1.06604
+    1 2 -1.22086
+    -0.491024 2.30154 -1.52756
+    -1 2 -1.45094
+    -2 2 -1.43634
+    -3 2 -1.44992
+    -4 2 -1.3912
+    -5 2 -1.5
+    3.61598 3.53519 0.993104
+    3 3 0.00986408
+    2 3 -0.465876
+    1 3 -0.699607
+    0 3 -0.918727
+    -1 3 -0.878543
+    -2 3 -0.941561
+    -3 3 -1.07112
+    -4 3 -0.957943
+    -5 3 -1
+    4 4 1.63123
+    3 4 0.499932
+    2 4 0.0675756
+    1 4 -0.140488
+    0 4 -0.352332
+    -1 4 -0.321428
+    -2 4 -0.408638
+    -3 4 -0.332612
+    -4 4 -0.464822
+    -5 4 -0.500002
+    4 5 2
+    3 5 0.999998
+    2 5 0.499998
+    1 5 0.249998
+    0 5 0
+    -1 5 0
+    -2 5 0
+    -3 5 0
+    -4 5 0
+    -5 5 0
+  faces 180
+    1 0 11 1 22 0 23 0
+    10 11 0 1 116 23 0 0
+    2 1 12 1 25 22 24 0
+    11 12 1 1 23 24 22 0
+    3 2 13 1 27 25 26 0
+    12 13 2 1 24 26 25 0
+    4 3 14 1 29 27 28 0
+    13 14 3 1 26 28 27 0
+    5 4 15 1 31 29 30 0
+    14 15 4 1 28 30 29 0
+    6 5 16 1 33 31 32 0
+    15 16 5 1 30 32 31 0
+    7 6 17 1 35 33 34 0
+    16 17 6 1 32 34 33 0
+    8 7 18 1 37 35 36 0
+    17 18 7 1 34 36 35 0
+    9 8 19 1 1 37 2 0
+    18 19 8 1 36 2 37 0
+    11 10 21 1 117 39 40 0
+    20 21 10 1 38 40 39 0
+    12 11 22 1 24 23 41 0
+    21 22 11 1 40 41 23 0
+    13 12 23 1 26 24 42 0
+    22 23 12 1 41 42 24 0
+    14 13 24 1 28 26 3 0
+    23 24 13 1 42 3 26 0
+    15 14 25 1 30 28 43 0
+    24 25 14 1 3 43 28 0
+    16 15 26 1 32 30 44 0
+    25 26 15 1 43 44 30 0
+    17 16 27 1 34 32 45 0
+    26 27 16 1 44 45 32 0
+    18 17 28 1 36 34 46 0
+    27 28 17 1 45 46 34 0
+    19 18 29 1 2 36 4 0
+    28 29 18 1 46 4 36 0
+    21 20 31 1 40 38 47 0
+    30 31 20 1 5 47 38 0
+    22 21 32 1 41 40 48 0
+    31 32 21 1 47 48 40 0
+    23 22 33 1 42 41 49 0
+    32 33 22 1 48 49 41 0
+    24 23 34 1 3 42 50 0
+    33 34 23 1 49 50 42 0
+    25 24 35 1 43 3 51 0
+    34 35 24 1 118 51 3 0
+    26 25 36 1 44 43 52 0
+    35 36 25 1 51 52 43 0
+    27 26 37 1 45 44 53 0
+    36 37 26 1 52 53 44 0
+    28 27 38 1 46 45 54 0
+    37 38 27 1 53 54 45 0
+    29 28 39 1 4 46 6 0
+    38 39 28 1 54 6 46 0
+    31 30 41 1 47 5 55 0
+    40 41 30 1 119 55 5 0
+    32 31 42 1 48 47 56 0
+    41 42 31 1 55 56 47 0
+    33 32 43 1 49 48 57 0
+    42 43 32 1 56 57 48 0
+    34 33 44 1 50 49 58 0
+    43 44 33 1 57 58 49 0
+    35 34 45 1 51 50 59 0
+    44 45 34 1 58 59 50 0
+    36 35 46 1 52 51 60 0
+    45 46 35 1 59 60 51 0
+    37 36 47 1 53 52 61 0
+    46 47 36 1 60 61 52 0
+    38 37 48 1 54 53 62 0
+    47 48 37 1 61 62 53 0
+    39 38 49 1 6 54 7 0
+    48 49 38 1 62 7 54 0
+    41 40 51 1 66 64 65 0
+    50 51 40 1 63 65 64 0
+    42 41 52 1 56 55 68 0
+    51 52 41 1 67 68 55 0
+    43 42 53 1 57 56 69 0
+    52 53 42 1 68 69 56 0
+    44 43 54 1 58 57 70 0
+    53 54 43 1 69 70 57 0
+    45 44 55 1 59 58 71 0
+    54 55 44 1 70 71 58 0
+    46 45 56 1 60 59 72 0
+    55 56 45 1 71 72 59 0
+    47 46 57 1 61 60 73 0
+    56 57 46 1 72 73 60 0
+    48 47 58 1 62 61 74 0
+    57 58 47 1 73 74 61 0
+    49 48 59 1 7 62 8 0
+    58 59 48 1 74 8 62 0
+    51 50 61 1 65 63 76 0
+    60 61 50 1 75 76 63 0
+    52 51 62 1 68 67 78 0
+    61 62 51 1 77 78 67 0
+    53 52 63 1 69 68 79 0
+    62 63 52 1 78 79 68 0
+    54 53 64 1 70 69 80 0
+    63 64 53 1 79 80 69 0
+    55 54 65 1 71 70 81 0
+    64 65 54 1 80 81 70 0
+    56 55 66 1 72 71 82 0
+    65 66 55 1 81 82 71 0
+    57 56 67 1 73 72 83 0
+    66 67 56 1 82 83 72 0
+    58 57 68 1 74 73 84 0
+    67 68 57 1 83 84 73 0
+    59 58 69 1 8 74 9 0
+    68 69 58 1 84 9 74 0
+    61 60 71 1 76 75 86 0
+    70 71 60 1 85 86 75 0
+    62 61 72 1 78 77 88 0
+    71 72 61 1 87 88 77 0
+    63 62 73 1 79 78 89 0
+    72 73 62 1 88 89 78 0
+    64 63 74 1 80 79 90 0
+    73 74 63 1 89 90 79 0
+    65 64 75 1 81 80 91 0
+    74 75 64 1 90 91 80 0
+    66 65 76 1 82 81 92 0
+    75 76 65 1 91 92 81 0
+    67 66 77 1 83 82 93 0
+    76 77 66 1 92 93 82 0
+    68 67 78 1 84 83 94 0
+    77 78 67 1 93 94 83 0
+    69 68 79 1 9 84 10 0
+    78 79 68 1 94 10 84 0
+    71 70 81 1 86 85 96 0
+    80 81 70 1 95 96 85 0
+    72 71 82 1 88 87 98 0
+    81 82 71 1 97 98 87 0
+    73 72 83 1 89 88 99 0
+    82 83 72 1 98 99 88 0
+    74 73 84 1 90 89 100 0
+    83 84 73 1 99 100 89 0
+    75 74 85 1 91 90 101 0
+    84 85 74 1 100 101 90 0
+    76 75 86 1 92 91 102 0
+    85 86 75 1 101 102 91 0
+    77 76 87 1 93 92 103 0
+    86 87 76 1 102 103 92 0
+    78 77 88 1 94 93 104 0
+    87 88 77 1 103 104 93 0
+    79 78 89 1 10 94 11 0
+    88 89 78 1 104 11 94 0
+    81 80 91 1 96 95 105 0
+    90 91 80 1 12 105 95 0
+    82 81 92 1 98 97 107 0
+    91 92 81 1 106 107 97 0
+    83 82 93 1 99 98 108 0
+    92 93 82 1 107 108 98 0
+    84 83 94 1 100 99 109 0
+    93 94 83 1 108 109 99 0
+    85 84 95 1 101 100 110 0
+    94 95 84 1 109 110 100 0
+    86 85 96 1 102 101 111 0
+    95 96 85 1 110 111 101 0
+    87 86 97 1 103 102 112 0
+    96 97 86 1 111 112 102 0
+    88 87 98 1 104 103 113 0
+    97 98 87 1 112 113 103 0
+    89 88 99 1 11 104 13 0
+    98 99 88 1 113 13 104 0
+    91 90 101 1 105 12 114 0
+    100 101 90 1 120 114 12 0
+    92 91 102 1 107 106 15 0
+    101 102 91 1 14 15 106 0
+    93 92 103 1 108 107 16 0
+    102 103 92 1 15 16 107 0
+    94 93 104 1 109 108 17 0
+    103 104 93 1 16 17 108 0
+    95 94 105 1 110 109 18 0
+    104 105 94 1 17 18 109 0
+    96 95 106 1 111 110 19 0
+    105 106 95 1 18 19 110 0
+    97 96 107 1 112 111 20 0
+    106 107 96 1 19 20 111 0
+    98 97 108 1 113 112 21 0
+    107 108 97 1 20 21 112 0
+    99 98 109 1 13 113 115 0
+    108 109 98 1 21 115 113 0
+  tverts 121
+    0.6 0.5 1.2
+    2.4 0.5 0.8
+    2.4 0.7 0.9
+    1.50324 1.04256 1.01869
+    2.4 0.9 1
+    0.6 1.1 1.51565
+    2.4 1.1 1.1
+    2.4 1.3 1.2
+    2.4 1.5 1.3
+    2.4 1.7 1.4
+    2.4 1.9 1.5
+    2.4 2.1 1.6
+    1.3 1.12625 0.6
+    2.4 2.3 1.7
+    0.8 2.5 2
+    1 2.5 1.9
+    1.2 2.5 1.85
+    1.4 2.5 1.8
+    1.6 2.5 1.8
+    1.8 2.5 1.8
+    2 2.5 1.8
+    2.2 2.5 1.8
+    0.8 0.5 1
+    0.741143 0.7 1.08797
+    1 0.7 0.972936
+    1 0.5 0.9
+    1.2 0.7 0.919706
+    1.2 0.5 0.85
+    1.4 0.7 0.886736
+    1.4 0.5 0.8
+    1.6 0.7 0.867189
+    1.6 0.5 0.8
+    1.8 0.7 0.862419
+    1.8 0.5 0.8
+    2 0.7 0.870616
+    2 0.5 0.8
+    2.2 0.7 0.892209
+    2.2 0.5 0.8
+    0.6 0.9 1.40162
+    0.6 0.7 1.29249
+    0.82827 0.9 1.19742
+    1 0.9 1.0792
+    1.2 0.9 1.05523
+    1.6 0.9 1.00174
+    1.8 0.98294 0.999593
+    2 0.9 1.0137
+    2.2 0.9 1.01043
+    0.859415 1.1 1.29434
+    1 1.1 1.18075
+    1.2 1.1 1.1463
+    1.43768 1.12263 1.11295
+    1.6 1.1 1.08985
+    1.8 1.1 1.08953
+    2.00627 1.07736 1.08698
+    2.2 1.1 1.10201
+    0.8 1.3 1.40339
+    1 1.3 1.30174
+    1.26499 1.36359 1.25313
+    1.36511 1.23883 1.20507
+    1.6 1.3 1.20261
+    1.8 1.3 1.21847
+    2 1.3 1.18905
+    2.2 1.3 1.19863
+    0.5 0.693314 0.690894
+    0.382318 0.592164 0.721997
+    0.5 0.512618 0.8
+    0.3 0.403391 0.8
+    0.8 1.5 1.51262
+    1 1.5 1.39135
+    1.2 1.5 1.33271
+    1.4 1.5 1.29954
+    1.6 1.5 1.30588
+    1.8 1.5 1.29276
+    2 1.5 1.29868
+    2.2 1.5 1.30202
+    0.7 0.806931 0.6
+    0.7 0.589767 0.8
+    0.8 1.7 1.58977
+    1 1.7 1.50057
+    1.2 1.7 1.4637
+    1.4 1.7 1.39374
+    1.6 1.7 1.40113
+    1.8 1.7 1.3973
+    2 1.7 1.41198
+    2.2 1.7 1.39194
+    0.9 0.906595 0.6
+    0.9 0.704651 0.8
+    0.8 1.9 1.70465
+    1 1.9 1.58679
+    1.2 1.9 1.55583
+    1.49821 1.96031 1.49449
+    1.6 1.9 1.50981
+    1.8 1.9 1.51273
+    2 1.9 1.51002
+    2.2 1.9 1.52176
+    1.20704 0.998621 0.676805
+    1.1 0.801973 0.8
+    0.8 2.1 1.80197
+    1 2.1 1.70683
+    1.2 2.1 1.66008
+    1.4 2.1 1.61626
+    1.6 2.1 1.62429
+    1.8 2.1 1.61169
+    2 2.1 1.58578
+    2.2 2.1 1.60841
+    1.3 0.899987 0.8
+    0.8 2.3 1.89999
+    1 2.3 1.81352
+    1.2 2.3 1.7719
+    1.4 2.3 1.72953
+    1.6 2.3 1.73571
+    1.8 2.3 1.71827
+    2 2.3 1.73348
+    2.2 2.3 1.70704
+    1.5 1 0.8
+    2.4 2.5 1.8
+    0.568647 0.704564 1.26113
+    0.77451 0.679646 1.12527
+    1.46776 1.15059 1.04947
+    0.675784 1.39813 1.53799
+    1.49481 1.21038 0.611743
+endnode
+node trimesh stale_black08_01
+  parent sdg13_b01_06
+  position -2.16888 -0.0671484 3.32999
+  orientation 0 0 0 0
+  wirecolor 0.0351563 0.0351563 0.0351563
+  specular 0 0 0
+  shininess 10
+  bitmap tno01_black01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 0
+  ambient 0 0 0
+  diffuse 0 0 0
+  verts 9
+    -2.75591 -0.485547 12.11
+    -1.78234 -1.09329 12.075
+    1.45185 -2.42688 12.075
+    2.66526 -0.54294 12.075
+    -0.365234 -2.06993 12.075
+    -2.2342 1.33879 12.11
+    1.44346 1.95234 12.075
+    -1.00365 1.6212 12.075
+    2.68233 0.943568 12.075
+  faces 7
+    7 1 6 1 1 0 2 3
+    8 4 3 1 4 3 5 3
+    1 4 8 1 0 3 4 3
+    1 7 0 1 0 1 6 3
+    5 0 7 1 7 6 1 3
+    6 1 8 1 2 0 4 3
+    4 2 3 1 3 8 5 3
+  tverts 9
+    0.9875 0.7325 0.08
+    1.3675 0.1375 0.08
+    1.9775 0.2325 0.08
+    1.2575 1.0675 0.08
+    2.2025 0.5625 0.08
+    2.0925 0.9175 0.08
+    0.7975 0.5175 0.085
+    1.0525 0.1175 0.085
+    1.6675 1.2825 0.08
+endnode
+node trimesh stale10_01
+  parent sdg13_b01_06
+  position -2.16888 -0.0671484 3.32999
+  orientation 0 0 0 0
+  wirecolor 0.0351563 0.0351563 0.0351563
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_sto11
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 0
+  verts 67
+    1.80726 -1.23621 -5.915
+    1.16888 -2.79416 -11.9919
+    1.04303 -1.9642 -5.46
+    3.02157 0.0671414 -10.0631
+    -0.831124 -1.93286 -11.234
+    -0.402549 -1.66372 -4.62
+    -1.14608 -0.987576 -5.46
+    -1.33112 -1.43286 -10.08
+    -1.61715 -1.09329 -10.08
+    -0.600536 1.17769 -6.23
+    -1.64612 1.8901 -9.57807
+    2.16888 1.06714 -8.78201
+    2.02952 -0.439846 -5.46
+    1.1927 1.25182 -5.46
+    1.16888 2.06714 -9.555
+    0.591704 -0.0953227 1.785
+    0.79481 -0.0766653 -2.38
+    0.0766995 -0.749211 1.855
+    0.340945 -0.795837 -2.275
+    -0.556461 -0.3741 -1.61
+    -0.217107 0.519678 -2.38
+    0.449722 0.592748 -2.065
+    -0.50672 -0.401042 1.4
+    -0.206221 0.272531 1.4
+    0.251803 0.346115 1.4
+    -1.71284 3.95323 -8.41373
+    -0.831124 3.93689 -8.47414
+    -0.231159 3.37404 -7.56
+    2.16888 4.06714 -8.9407
+    2.16888 3.06714 -8.64816
+    1.05226 2.56631 -6.825
+    -0.0275227 2.8295 -6.055
+    0.716519 2.36216 -5.635
+    -0.25288 1.55231 -5.285
+    -1.90049 -0.0642901 7.455
+    -2.75591 -0.485547 12.11
+    -2.24296 -0.66688 7.56
+    -1.78234 -1.09329 12.075
+    -0.691682 -0.831611 6.16
+    -1.58493 -1.05546 6.86
+    -1.29272 -0.634735 5.495
+    -1.71707 -0.260138 5.635
+    -1.6067 -0.561168 3.43
+    -1.53728 -0.373604 3.745
+    1.45185 -2.42688 12.075
+    2.66526 -0.54294 12.075
+    -0.365234 -2.06993 12.075
+    -2.2342 1.33879 12.11
+    1.44346 1.95234 12.075
+    -1.00365 1.6212 12.075
+    2.68233 0.943568 12.075
+    1.50102 -0.346595 6.16
+    0.741475 -1.51136 6.16
+    -0.782382 0.455935 6.16
+    0.948159 0.740943 6.16
+    3.16888 0.0671418 -13.33
+    1.16888 -2.93286 -13.33
+    -0.831124 -1.93286 -13.33
+    -1.33112 -1.43286 -13.33
+    -1.83112 -0.932859 -13.33
+    -1.83112 2.06714 -13.33
+    2.16888 1.06714 -13.33
+    1.16888 2.06714 -13.33
+    -1.83112 4.06714 -13.33
+    -0.831124 4.06714 -13.33
+    2.16888 4.06714 -13.33
+    2.16888 3.06714 -13.33
+  faces 114
+    1 0 2 1 1 55 2 0
+    1 3 0 1 1 56 55 0
+    4 1 5 1 57 1 4 0
+    4 5 6 1 3 58 5 0
+    8 7 6 1 6 59 5 0
+    7 4 6 1 59 3 5 0
+    9 8 6 1 60 6 5 0
+    10 8 9 1 8 6 60 0
+    3 11 12 1 62 61 9 0
+    11 13 12 1 61 63 9 0
+    11 14 13 1 61 64 63 0
+    16 15 17 1 66 65 13 0
+    17 18 16 1 13 14 66 0
+    6 5 19 1 5 58 15 0
+    18 19 5 1 14 67 4 0
+    9 6 19 1 60 5 15 0
+    19 20 9 1 68 16 69 0
+    13 9 21 1 70 69 71 0
+    20 21 9 1 16 71 69 0
+    12 13 16 1 9 63 12 0
+    21 16 13 1 17 12 63 0
+    12 16 18 1 72 66 14 0
+    18 2 0 1 14 2 55 0
+    22 19 17 1 18 15 73 0
+    18 17 19 1 14 13 67 0
+    23 20 22 1 75 74 18 0
+    19 22 20 1 15 18 74 0
+    24 21 20 1 76 71 16 0
+    20 23 24 1 16 19 76 0
+    15 16 21 1 11 12 17 0
+    21 24 15 1 17 20 11 0
+    18 0 12 1 78 77 79 0
+    0 3 12 1 0 62 9 0
+    5 2 18 1 4 2 14 0
+    5 1 2 1 4 1 2 0
+    25 10 9 1 80 8 60 1
+    26 25 27 1 82 81 83 1
+    28 26 27 1 84 82 83 1
+    29 28 30 1 85 84 86 1
+    13 14 30 1 63 64 26 1
+    28 27 30 1 84 83 86 1
+    32 31 33 1 28 87 88 1
+    9 27 25 1 89 83 81 1
+    14 29 30 1 90 25 91 1
+    30 27 32 1 93 92 94 1
+    31 32 27 1 95 94 92 1
+    27 9 31 1 23 60 27 1
+    33 31 9 1 96 27 60 1
+    13 30 32 1 63 26 97 1
+    32 33 13 1 28 88 98 1
+    33 9 13 1 29 7 10 1
+    35 34 36 1 99 30 32 2
+    38 37 39 1 101 100 102 2
+    34 40 41 1 103 36 37 2
+    36 34 41 1 105 104 106 2
+    40 36 42 1 108 107 109 2
+    38 39 40 1 101 102 108 2
+    34 38 40 1 30 110 111 2
+    36 43 42 1 32 112 113 2
+    43 40 42 1 39 36 38 2
+    39 36 40 1 35 105 114 2
+    39 35 36 1 35 31 105 2
+    37 35 39 1 33 31 35 2
+    36 41 43 1 32 115 112 2
+    41 40 43 1 37 36 39 2
+    17 51 52 1 13 116 48 3
+    17 15 51 1 13 65 116 3
+    22 17 38 1 117 13 101 3
+    38 17 52 1 101 13 48 3
+    23 22 53 1 75 18 118 3
+    53 22 38 1 118 18 34 3
+    24 23 54 1 76 19 119 3
+    54 23 53 1 119 19 49 3
+    15 24 51 1 11 20 47 3
+    51 24 54 1 47 20 50 3
+    52 51 44 1 48 116 40 3
+    44 51 45 1 40 116 120 3
+    38 46 37 1 34 121 33 3
+    38 52 46 1 101 48 42 3
+    47 34 35 1 122 104 31 3
+    54 53 48 1 119 49 123 3
+    48 53 49 1 123 49 45 3
+    51 50 45 1 47 46 41 3
+    51 54 50 1 47 50 46 3
+    53 38 34 1 125 124 126 3
+    35 38 37 1 31 34 33 3
+    49 53 47 1 45 49 43 3
+    34 47 53 1 30 43 49 3
+    50 54 48 1 46 50 44 3
+    46 52 44 1 42 48 40 3
+    3 1 55 1 56 1 127 0
+    56 55 1 1 128 127 1 0
+    1 4 56 1 1 57 128 0
+    57 56 4 1 129 128 57 0
+    7 8 58 1 59 6 52 0
+    59 58 8 1 130 52 6 0
+    4 7 57 1 3 59 131 0
+    58 57 7 1 52 131 59 0
+    8 10 59 1 6 8 130 0
+    60 59 10 1 132 130 8 0
+    11 3 61 1 61 62 53 0
+    55 61 3 1 51 53 62 0
+    14 11 62 1 64 61 133 0
+    61 62 11 1 53 133 61 0
+    10 25 60 1 8 80 132 1
+    63 60 25 1 134 132 80 1
+    25 26 63 1 21 22 135 1
+    64 63 26 1 136 135 22 1
+    26 28 64 1 22 138 136 1
+    65 64 28 1 137 136 138 1
+    28 29 65 1 24 141 139 1
+    66 65 29 1 140 139 141 1
+    29 14 66 1 25 90 142 1
+    62 66 14 1 54 142 90 1
+  tverts 143
+    1.0845 1.74214 0.787746
+    1.47623 0.87401 1.41235
+    1.44725 1.80714 1.2045
+    0.936543 0.98228 1.10587
+    1.77225 1.92714 1.0295
+    1.1855 1.80714 1.09775
+    1.19373 1.14714 0.977329
+    0.617254 0.697142 0.334497
+    1.91072 1.21885 1.18295
+    0.909497 1.80714 0.897746
+    0.182254 0.807142 0.444497
+    0.724497 2.84214 0.577746
+    0.734497 2.24714 0.627746
+    1.59225 2.85214 0.844497
+    1.53225 2.26214 0.874497
+    1.2905 2.35714 1.28275
+    1.42775 1.24714 0.519497
+    0.549497 2.29214 0.592746
+    1.2805 2.78714 1.29275
+    1.41275 1.78714 0.579497
+    0.594497 2.78714 0.527746
+    0.313952 1.38518 0.590139
+    0.524076 1.37655 0.656874
+    2.1655 1.50714 1.62775
+    0.839405 1.3099 0.25225
+    0.818994 1.35169 0.0790379
+    0.119497 1.61214 0.877746
+    2.0205 1.72214 1.63775
+    0.782746 1.1445 0.782142
+    0.507254 0.832142 0.269497
+    0.982746 2.65214 0.539497
+    1.4205 4.31714 0.747746
+    0.857746 2.66714 0.659497
+    1.2055 4.31214 0.937746
+    1.1905 3.46714 1.21775
+    1.2005 3.56714 0.987746
+    0.719497 0.37214 1.08775
+    0.599497 0.39214 1.01275
+    0.679497 0.07714 1.01775
+    0.639497 0.12214 1.04775
+    1.38225 4.31214 1.3445
+    0.979497 4.31214 1.04275
+    1.79225 4.31214 1.1295
+    1.00275 3.31714 0.179497
+    0.294497 4.31214 0.927746
+    1.31775 3.31214 0.199497
+    0.624497 4.31214 1.15275
+    0.849497 3.46714 0.777746
+    1.48725 3.46714 1.0745
+    1.28775 2.46714 0.494497
+    0.549497 3.46714 0.722746
+    0.869183 0.68286 1.2069
+    1.09198 0.68286 1.02168
+    0.558303 0.68286 1.03851
+    1.12987 0.68286 0.247423
+    1.21225 1.74214 1.0845
+    0.828404 1.14956 0.858688
+    1.89413 0.98228 1.06346
+    0.970503 1.92714 1.22775
+    1.09198 1.14714 1.02168
+    1.6655 1.69714 1.38275
+    0.558303 1.33257 1.03851
+    0.858688 1.14956 1.1716
+    0.444497 1.80714 0.817746
+    0.247423 1.22214 0.870126
+    1.42225 2.84214 0.724497
+    1.37225 2.24714 0.734497
+    1.71725 2.35714 0.709497
+    1.28275 1.35714 0.709497
+    1.38275 0.697142 0.334497
+    1.81775 0.807142 0.444497
+    1.59275 1.29214 0.549497
+    1.10225 1.80714 0.909497
+    1.1555 2.85214 1.40775
+    1.4805 2.24714 1.42775
+    1.4205 2.78714 1.41275
+    1.52775 1.78714 0.594497
+    0.787746 1.0845 0.742142
+    0.467746 0.874497 1.26214
+    0.897746 0.909497 0.807142
+    2.40986 1.38518 1.31395
+    0.313952 0.590139 0.38518
+    0.524076 0.656874 0.376551
+    0.627746 0.834497 0.507142
+    1.25225 0.839405 0.309898
+    1.18101 1.07904 0.351691
+    0.877746 1.1195 0.612142
+    0.637746 0.979497 0.722142
+    0.492746 1.2695 0.832142
+    0.382746 1.3345 0.697142
+    1.12987 1.22214 0.247423
+    1.12225 1.61214 0.119497
+    0.627746 0.507142 0.834497
+    0.877746 0.612142 1.1195
+    0.782746 0.782142 1.1445
+    0.637746 0.722142 0.979497
+    1.7305 1.83214 1.49275
+    0.144497 1.78214 0.782746
+    0.817746 1.4445 0.807142
+    0.747746 3.31714 0.579497
+    2.06225 4.31214 0.794497
+    1.78225 3.46714 0.809497
+    2.01225 3.56714 0.799497
+    0.539497 0.65214 0.982746
+    1.4605 3.65214 0.982746
+    1.3405 3.66714 0.857746
+    1.4005 3.39214 1.01275
+    2.14225 3.66714 0.659497
+    1.91225 3.37214 0.719497
+    1.98225 3.07714 0.679497
+    1.21775 2.46714 0.809497
+    1.08775 2.37214 0.719497
+    1.04775 2.12214 0.639497
+    1.01775 2.07714 0.679497
+    1.2805 3.37214 1.08775
+    1.01275 2.39214 0.599497
+    1.22225 3.46714 0.849497
+    1.70725 2.78714 0.719497
+    1.5055 3.46714 1.28775
+    1.72275 2.46714 0.549497
+    0.957254 4.31214 0.979497
+    0.870503 4.31214 1.20775
+    1.8205 4.31714 1.00275
+    1.92775 3.31214 0.294497
+    0.782254 0.809497 0.46714
+    0.712254 0.494497 0.46714
+    1.01725 0.539497 0.65214
+    0.793105 0.68286 0.869183
+    1.48611 0.68286 1.44559
+    1.89413 0.68286 1.06346
+    1.24742 0.68286 0.937485
+    0.936543 0.68286 1.10587
+    1.96632 0.68286 1.15123
+    0.247423 0.68286 0.870126
+    2.44559 0.68286 1.29372
+    0.293724 0.68286 0.554414
+    0.533356 0.68286 0.625662
+    1.25225 0.68286 0.839405
+    1.25225 1.3099 0.839405
+    0.839405 0.68286 0.25225
+    1.07904 0.68286 0.18101
+    1.07904 1.35169 0.18101
+    0.818994 0.68286 0.0790379
+endnode
+node trimesh cave_wall_black35_01
+  parent sdg13_b01_06
+  position -5 5 -5
+  orientation 0 0 0 0
+  wirecolor 0.839844 0.839844 0.839844
+  specular 0 0 0
+  shininess 10
+  bitmap tno01_black01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 0
+  ambient 0 0 0
+  diffuse 0 0 0
+  verts 20
+    7.17758 -0.999995 11
+    7.51002 0 11
+    7.09063 -2 11
+    7.32726 -3 11
+    7.21152 -4 11
+    7.55975 -5 11
+    6.63944 -7 11
+    6.81167 -6 11
+    7.1051 -8 11
+    7.06153 -9 11
+    7.51002 -10 11
+    8.77164 -9.99999 11
+    9.34425 -9.99999 11
+    9.55 -9.99999 11
+    8.77164 0 11
+    9.34425 0 11
+    9.55 0 11
+    10 0 11
+    10 -9.99999 11
+    8.11487 -4.99999 11
+  faces 19
+    11 12 19 2 9 14 9 0
+    12 13 19 2 14 15 14 0
+    15 14 19 2 11 10 11 0
+    16 15 19 2 12 11 12 0
+    13 18 19 2 15 16 15 0
+    14 1 19 2 10 17 10 0
+    17 16 19 2 16 12 16 0
+    10 11 19 2 18 9 18 0
+    1 0 19 1 1 19 1 0
+    0 2 19 1 0 20 0 0
+    2 3 19 1 2 3 2 0
+    3 4 19 1 3 4 3 0
+    4 5 19 1 4 5 4 0
+    7 6 19 1 21 22 21 0
+    6 8 19 1 6 23 6 0
+    8 9 19 1 7 8 7 0
+    9 10 19 1 8 24 8 0
+    5 7 19 1 5 21 5 0
+    18 17 19 1 25 13 25 0
+  tverts 26
+    0.935515 0.3 0.590001
+    0.5 0.590001 0.997997
+    1.1 0.590001 1.08188
+    0.9 0.590001 1.03455
+    0.7 0.590001 1.0577
+    0.5 0.590001 0.98805
+    0.827888 1.1 0.590001
+    0.9 0.590001 1.07898
+    0.7 0.590001 1.0877
+    0.745672 0.590001 0.5
+    0.25433 0.590001 0.5
+    0.36885 0.590001 0.5
+    0.41 0.590001 0.5
+    0.5 0.590001 0.500001
+    0.63115 0.590001 0.5
+    0.59 0.590001 0.5
+    0.5 0.590001 0.5
+    0.002 0.590001 0.5
+    0.997996 0.590001 0.5
+    0.3 0.590001 1.06448
+    0.918125 0.1 0.590001
+    0.3 0.590001 1.13767
+    0.0999999 0.590001 1.17211
+    0.92102 0.9 0.590001
+    0.5 0.590001 0.997996
+    2.5 0.590001 0.5
+endnode
+node trimesh cave_wall12349_01
+  parent sdg13_b01_06
+  position -5 5 -5
+  orientation 0 0 0 0
+  wirecolor 0.839844 0.839844 0.839844
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_sto21
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 0
+  verts 41
+    8.11593 -5 7.65366
+    7.97832 -6 3.90181
+    7.64595 -7 3.90181
+    8.10598 -8 3.90181
+    8.17405 -9 3.90181
+    8.82707 -10 3.90181
+    8.31492 0 7.65366
+    8.82707 0 3.9018
+    9 0 0
+    8.37844 -0.999996 7.65366
+    8.82726 -0.999998 3.9018
+    8.83264 -0.999999 0
+    7.50046 -2 7.65366
+    7.74168 -2 3.9018
+    8.1729 -2 0
+    7.89416 -3 7.65366
+    8.0261 -3 3.9018
+    8.00869 -3 0
+    7.96562 -4 7.65366
+    8.2367 -4 3.9018
+    8.10681 -4 0
+    7.93566 -5 3.9018
+    8.44386 -5 0
+    7.97497 -6 0
+    8.02792 -7 0
+    8.05167 -8 0
+    8.13207 -9 0
+    9.00001 -10 0
+    10 0 0
+    10 -10 0
+    9 -0.999999 -0.5
+    8.18988 -2 -1
+    8.18988 -3 -1.5
+    8.18988 -4 -2
+    8.54941 -5 -2.5
+    7.97227 -7 -3.5
+    8.54941 -6 -3
+    7.97227 -8 -4
+    8.42287 -9 -4.5
+    9 -10 -5
+    10 -10 -5
+  faces 53
+    7 10 6 1 20 19 17 1
+    9 6 10 1 18 17 19 1
+    8 11 7 1 3 21 20 1
+    10 7 11 1 19 20 21 1
+    10 13 9 1 19 23 18 1
+    12 9 13 1 22 18 23 1
+    11 14 10 1 48 26 24 1
+    13 10 14 1 25 24 26 1
+    13 16 12 1 23 28 22 1
+    15 12 16 1 27 22 28 1
+    14 17 13 1 30 29 23 1
+    16 13 17 1 28 23 29 1
+    16 19 15 1 28 32 27 1
+    18 15 19 1 31 27 32 1
+    17 20 16 1 29 33 28 1
+    19 16 20 1 32 28 33 1
+    19 21 18 1 32 34 31 1
+    0 18 21 1 0 31 34 1
+    20 22 19 1 33 35 32 1
+    21 19 22 1 34 32 35 1
+    23 24 1 1 4 37 1 1
+    2 1 24 1 36 1 37 1
+    24 25 2 1 37 39 36 1
+    3 2 25 1 38 36 39 1
+    25 26 3 1 39 41 38 1
+    4 3 26 1 40 38 41 1
+    26 27 4 1 41 42 40 1
+    5 4 27 1 2 40 42 1
+    21 1 0 1 34 1 0 1
+    22 23 21 1 35 4 34 1
+    1 21 23 1 1 34 4 1
+    11 8 30 1 21 3 7 1
+    30 31 11 1 7 8 21 1
+    14 11 31 1 30 21 8 1
+    31 32 14 1 8 9 30 1
+    17 14 32 1 29 30 9 1
+    32 33 17 1 9 10 29 1
+    20 17 33 1 33 29 10 1
+    33 34 20 1 10 11 33 1
+    22 20 34 1 35 33 11 1
+    36 35 23 1 43 12 4 1
+    24 23 35 1 37 4 12 1
+    35 37 24 1 12 13 37 1
+    25 24 37 1 39 37 13 1
+    37 38 25 1 13 14 39 1
+    26 25 38 1 41 39 14 1
+    38 39 26 1 14 44 41 1
+    27 26 39 1 42 41 44 1
+    34 36 22 1 11 43 35 1
+    23 22 36 1 4 35 43 1
+    39 40 27 2 15 47 45 1
+    29 27 40 2 46 45 47 1
+    40 28 29 1 16 5 6 1
+  tverts 49
+    1.62844 1.05474 0.62686
+    1.35743 0.770888 0.654383
+    0.578047 0.951342 0.484633
+    2.44729 0.158096 0.450046
+    1.27822 0.428776 0.655052
+    0.552708 0.158096 0.250046
+    2.50116 0.609229 0.250046
+    2.2423 0.159369 0.450046
+    2.0373 0.160642 0.612071
+    1.8323 0.161915 0.612071
+    1.62731 0.163188 0.612071
+    1.42231 0.164461 0.540166
+    1.01232 0.167007 0.655593
+    0.807323 0.16828 0.655593
+    0.602327 0.169553 0.565473
+    0.450046 0.170826 0.397331
+    2.60267 0.170826 0.250046
+    2.60267 0.829174 0.587064
+    2.40782 0.874287 0.57436
+    2.33166 0.545322 0.484596
+    2.5265 0.500209 0.484634
+    2.25245 0.20321 0.48352
+    2.21298 0.9194 0.749954
+    2.13681 0.590435 0.701712
+    0.515404 0.545322 0.33166
+    0.298288 0.590435 0.13681
+    0.384533 0.248323 0.0576
+    2.01813 0.964514 0.671216
+    1.94197 0.635549 0.644828
+    1.86276 0.293436 0.648308
+    2.0576 0.248323 0.615467
+    1.82329 1.00963 0.656924
+    1.74712 0.680662 0.602707
+    1.66791 0.338549 0.628686
+    1.55227 0.725775 0.662915
+    1.47306 0.383663 0.561275
+    1.16258 0.816002 0.720857
+    1.08337 0.473889 0.644463
+    0.967738 0.861115 0.628851
+    0.888527 0.519002 0.639712
+    0.772892 0.906228 0.615237
+    0.693682 0.564116 0.623632
+    0.498836 0.609229 0.450046
+    1.21732 0.165734 0.540166
+    0.397331 0.170826 0.450046
+    0.450046 0.609229 0.498836
+    0.250046 0.609229 0.498836
+    0.250046 0.170826 0.397331
+    0.554522 0.221627 0.21432
+endnode
+node trimesh cave_wall12348_01
+  parent sdg13_b01_06
+  position -5 5 -5
+  orientation 0 0 0 0
+  wirecolor 0.839844 0.839844 0.839844
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  bitmap sdg_sto11
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 0
+  verts 124
+    8.11593 -5 7.65366
+    8.09686 -6 7.65366
+    7.97832 -6 3.90181
+    7.96879 -7 7.65366
+    7.64595 -7 3.90181
+    7.42709 -8 7.65366
+    8.10598 -8 3.90181
+    7.64201 -9 7.65367
+    8.17405 -9 3.90181
+    8.31492 -10 7.65367
+    8.82707 -10 3.90181
+    8.01324 -5 9.25631
+    7.48398 -6 8.93578
+    7.78629 -7 8.61526
+    7.25365 -8 8.29473
+    7.61976 -9 7.9742
+    7.17758 -0.999995 11
+    7.51002 0 11
+    7.09063 -2 11
+    7.32726 -3 11
+    7.21152 -4 11
+    7.55975 -5 11
+    6.63944 -7 11
+    6.81167 -6 11
+    7.1051 -8 11
+    7.06153 -9 11
+    7.51002 -10 11
+    8.77164 -9.99999 11
+    9.34425 -9.99999 11
+    9.55 -9.99999 11
+    8.77164 0 11
+    9.34425 0 11
+    9.55 0 11
+    10 0 11
+    10 -9.99999 11
+    0 0 20
+    1.75581 0 19.6157
+    3.44415 0 18.4776
+    5.00013 0 16.6294
+    6.36396 0 14.1421
+    7.48323 0 11.1114
+    1.83813 -0.999992 19.6157
+    0 -0.999991 20
+    3.51534 -0.999993 18.4776
+    4.88511 -0.999994 16.6294
+    6.38651 -0.999995 14.1421
+    7.13487 -0.999996 11.1114
+    1.84775 -1.99999 19.6157
+    0 -1.99999 20
+    3.28964 -1.99999 18.4776
+    5.04409 -1.99999 16.6294
+    6.03654 -1.99999 14.1421
+    7.08101 -2 11.1114
+    1.62249 -2.99999 19.6157
+    0 -2.99999 20
+    3.18521 -2.99999 18.4776
+    4.84144 -2.99999 16.6294
+    5.99994 -2.99999 14.1421
+    7.28566 -3 11.1114
+    1.7658 -3.99999 19.6157
+    0 -3.99999 20
+    3.14797 -3.99999 18.4776
+    4.53715 -3.99999 16.6294
+    6.01954 -3.99999 14.1421
+    7.16035 -4 11.1114
+    1.93504 -4.99999 19.6157
+    0 -4.99999 20
+    3.81371 -4.99999 18.4776
+    5.27669 -4.99999 16.6294
+    5.9953 -4.99999 14.1421
+    7.50977 -5 11.1114
+    0 -5.99999 20
+    1.89206 -5.99999 19.6157
+    3.69598 -5.99999 18.4776
+    5.19315 -5.99999 16.6294
+    5.82874 -5.99999 14.1421
+    6.76023 -6 11.1114
+    1.75521 -6.99999 19.6157
+    0 -6.99999 20
+    3.21545 -6.99999 18.4776
+    4.71188 -6.99999 16.6294
+    5.76316 -6.99999 14.1421
+    6.60797 -7 11.1114
+    1.80333 -7.99999 19.6157
+    0 -7.99999 20
+    3.70769 -7.99999 18.4776
+    5.0813 -7.99999 16.6294
+    5.66862 -7.99999 14.1421
+    7.0749 -8 11.1114
+    1.76129 -8.99999 19.6157
+    0 -8.99999 20
+    3.73505 -8.99999 18.4776
+    5.11284 -8.99999 16.6294
+    6.10861 -8.99999 14.1421
+    7.00799 -9 11.1114
+    1.75581 -9.99999 19.6157
+    0 -9.99999 20
+    3.44415 -9.99999 18.4776
+    5.00013 -9.99999 16.6294
+    6.36396 -9.99999 14.1421
+    7.48323 -10 11.1114
+    9.1005 -10 7.65455
+    9.38274 -10 7.65487
+    8.75258 0 10.8603
+    9.33412 0 10.861
+    9.54306 0 10.8612
+    10 -10 7.65556
+    7.54395 0 10.859
+    7.42792 -0.999996 10.5384
+    7.27884 -2 10.2179
+    7.67204 -3 9.89737
+    7.74977 -4 9.57684
+    10 0 10.8617
+    8.31492 0 7.65366
+    8.82707 0 3.9018
+    9 0 0
+    8.37844 -0.999996 7.65366
+    7.50046 -2 7.65366
+    7.89416 -3 7.65366
+    7.96562 -4 7.65366
+    9.00001 -10 0
+    10 0 0
+    10 -10 0
+    10 -9.94965 0
+  faces 200
+    2 4 1 1 2 3 48 0
+    3 1 4 1 49 48 3 0
+    4 6 3 1 3 4 49 0
+    5 3 6 1 50 49 4 0
+    6 8 5 1 4 6 50 0
+    7 5 8 1 5 50 6 0
+    8 10 7 1 6 52 5 0
+    9 7 10 1 51 5 52 0
+    1 0 2 1 48 0 2 0
+    3 13 1 1 166 54 1 0
+    12 1 13 1 53 1 54 0
+    5 14 3 1 50 56 49 0
+    13 3 14 1 55 49 56 0
+    7 15 5 1 5 57 50 0
+    14 5 15 1 56 50 57 0
+    15 7 9 1 57 5 51 0
+    1 12 0 1 1 53 58 0
+    11 0 12 1 167 58 53 0
+    9 101 27 2 7 35 16 0
+    28 27 101 2 59 16 35 0
+    101 102 28 2 35 61 59 0
+    29 28 102 2 60 59 61 0
+    31 104 30 2 62 37 17 0
+    103 30 104 2 36 17 37 0
+    32 105 31 2 64 63 62 0
+    104 31 105 2 37 62 63 0
+    102 106 29 2 61 38 60 0
+    34 29 106 2 65 60 38 0
+    107 17 103 2 39 66 36 0
+    30 103 17 2 17 36 66 0
+    33 112 32 2 65 44 64 0
+    105 32 112 2 63 64 44 0
+    36 41 35 1 70 69 67 0
+    42 35 41 1 68 67 69 0
+    37 43 36 1 72 71 70 0
+    41 36 43 1 69 70 71 0
+    38 44 37 1 73 19 72 0
+    43 37 44 1 71 72 19 0
+    39 45 38 1 75 74 73 0
+    44 38 45 1 19 73 74 0
+    40 46 39 1 79 78 76 0
+    45 39 46 1 77 76 78 0
+    17 16 40 1 81 80 79 0
+    46 40 16 1 78 79 80 0
+    41 47 42 1 69 83 68 0
+    48 42 47 1 82 68 83 0
+    43 49 41 1 71 84 69 0
+    47 41 49 1 83 69 84 0
+    44 50 43 1 19 85 71 0
+    49 43 50 1 84 71 85 0
+    45 51 44 1 74 86 19 0
+    50 44 51 1 168 19 86 0
+    46 52 45 1 78 88 77 0
+    51 45 52 1 87 77 88 0
+    16 18 46 1 80 9 78 0
+    52 46 18 1 88 78 9 0
+    47 53 48 1 83 90 82 0
+    54 48 53 1 89 82 90 0
+    49 55 47 1 84 91 83 0
+    53 47 55 1 90 83 91 0
+    50 56 49 1 85 92 84 0
+    55 49 56 1 91 84 92 0
+    51 57 50 1 169 93 85 0
+    56 50 57 1 92 85 93 0
+    52 58 51 1 88 95 87 0
+    57 51 58 1 94 87 95 0
+    18 19 52 1 9 10 88 0
+    58 52 19 1 95 88 10 0
+    53 59 54 1 90 97 89 0
+    60 54 59 1 96 89 97 0
+    55 61 53 1 91 98 90 0
+    59 53 61 1 97 90 98 0
+    56 62 55 1 92 20 91 0
+    61 55 62 1 98 91 20 0
+    57 63 56 1 93 99 92 0
+    62 56 63 1 20 92 99 0
+    58 64 57 1 95 101 94 0
+    63 57 64 1 100 94 101 0
+    19 20 58 1 170 103 102 0
+    64 58 20 1 21 102 103 0
+    59 65 60 1 97 105 96 0
+    66 60 65 1 104 96 105 0
+    61 67 59 1 98 106 97 0
+    65 59 67 1 105 97 106 0
+    62 68 61 1 20 107 98 0
+    67 61 68 1 106 98 107 0
+    63 69 62 1 99 22 20 0
+    68 62 69 1 171 20 22 0
+    64 70 63 1 172 108 99 0
+    69 63 70 1 22 99 108 0
+    20 21 64 1 103 109 21 0
+    70 64 21 1 173 21 109 0
+    72 77 71 1 24 111 23 0
+    78 71 77 1 110 23 111 0
+    73 79 72 1 25 112 24 0
+    77 72 79 1 111 24 112 0
+    74 80 73 1 114 113 25 0
+    79 73 80 1 112 25 113 0
+    75 81 74 1 117 116 26 0
+    80 74 81 1 115 26 116 0
+    76 82 75 1 119 118 117 0
+    81 75 82 1 116 117 118 0
+    23 22 76 1 120 13 27 0
+    82 76 22 1 174 27 13 0
+    77 83 78 1 111 122 110 0
+    84 78 83 1 121 110 122 0
+    79 85 77 1 112 123 111 0
+    83 77 85 1 122 111 123 0
+    80 86 79 1 113 124 112 0
+    85 79 86 1 123 112 124 0
+    81 87 80 1 116 126 115 0
+    86 80 87 1 125 115 126 0
+    82 88 81 1 175 128 127 0
+    87 81 88 1 28 127 128 0
+    22 24 82 1 130 14 118 0
+    88 82 24 1 129 118 14 0
+    83 89 84 1 122 132 121 0
+    90 84 89 1 131 121 132 0
+    85 91 83 1 123 133 122 0
+    89 83 91 1 132 122 133 0
+    86 92 85 1 124 134 123 0
+    91 85 92 1 133 123 134 0
+    87 93 86 1 126 136 125 0
+    92 86 93 1 135 125 136 0
+    88 94 87 1 128 29 28 0
+    93 87 94 1 176 28 29 0
+    24 25 88 1 177 137 128 0
+    94 88 25 1 29 128 137 0
+    89 95 90 1 132 30 131 0
+    96 90 95 1 31 131 30 0
+    91 97 89 1 133 32 132 0
+    95 89 97 1 30 132 32 0
+    92 98 91 1 134 33 133 0
+    97 91 98 1 32 133 33 0
+    93 99 92 1 178 138 134 0
+    98 92 99 1 33 134 138 0
+    94 100 93 1 140 139 136 0
+    99 93 100 1 34 136 139 0
+    25 26 94 1 137 141 29 0
+    100 94 26 1 179 29 141 0
+    65 72 66 1 105 24 104 0
+    71 66 72 1 23 104 24 0
+    67 73 65 1 106 25 105 0
+    72 65 73 1 24 105 25 0
+    68 74 67 1 107 114 106 0
+    73 67 74 1 25 106 114 0
+    69 75 68 1 143 117 142 0
+    74 68 75 1 26 142 117 0
+    70 76 69 1 108 27 22 0
+    75 69 76 1 180 22 27 0
+    21 23 70 1 181 120 108 0
+    76 70 23 1 27 108 120 0
+    26 9 27 2 144 7 16 0
+    108 16 107 1 146 145 147 0
+    17 107 16 1 182 147 145 0
+    109 18 108 1 41 9 40 0
+    16 108 18 1 183 40 9 0
+    110 19 109 1 42 10 41 0
+    18 109 19 1 9 41 10 0
+    111 20 110 1 43 11 42 0
+    19 110 20 1 10 42 11 0
+    11 21 111 1 148 12 43 0
+    20 111 21 1 11 43 12 0
+    13 22 12 1 54 13 53 0
+    23 12 22 1 184 53 13 0
+    14 24 13 1 185 149 54 0
+    22 13 24 1 13 54 149 0
+    15 25 14 1 57 15 56 0
+    24 14 25 1 14 56 15 0
+    9 26 15 1 51 150 57 0
+    25 15 26 1 15 57 150 0
+    12 23 11 1 8 151 148 0
+    21 11 23 1 12 148 151 0
+    106 112 34 1 154 153 152 0
+    33 34 112 1 18 152 153 0
+    116 108 113 1 157 40 155 1
+    107 113 108 1 156 155 40 1
+    117 109 116 1 158 41 157 1
+    108 116 109 1 40 157 41 1
+    118 110 117 1 159 42 158 1
+    109 117 110 1 41 158 42 1
+    119 111 118 1 160 43 159 1
+    110 118 111 1 42 159 43 1
+    0 11 119 1 0 148 160 1
+    111 119 11 1 43 160 148 1
+    10 101 9 2 163 35 7 1
+    101 10 102 2 35 163 61 1
+    120 102 10 2 47 61 163 1
+    103 104 113 2 36 37 45 1
+    114 113 104 2 164 45 37 1
+    104 105 114 2 37 63 164 1
+    115 114 105 2 46 164 63 1
+    106 102 122 2 38 61 165 1
+    120 122 102 2 47 165 61 1
+    113 107 103 2 45 39 36 1
+    112 121 105 2 44 161 63 1
+    115 105 121 2 46 63 161 1
+    122 123 106 1 162 186 154 1
+    106 123 112 1 154 186 153 1
+    123 121 112 1 186 161 153 1
+  tverts 187
+    1.5 1.28883 0.876814
+    2.11937 1.3 0.28883
+    1.3 0.951163 0.904337
+    1.1 0.951163 0.97081
+    0.9 0.951163 0.878805
+    0.7 1.28883 0.971598
+    0.7 0.951163 0.865191
+    0.837017 1.28883 0.5
+    1.3 1.40422 1.0032
+    2.1 1.59 1.08188
+    1.9 1.59 1.03455
+    1.7 1.59 1.0577
+    1.5 1.59 0.98805
+    1.82789 1.1 0.590001
+    0.9 1.59 1.07898
+    0.7 1.59 1.0877
+    0.745672 1.59 0.5
+    0.25433 1.59 0.5
+    0.5 1.59 0.500001
+    1.47702 2.3 1.09665
+    1.40743 1.7 1.09665
+    0.93207 0.7 0.600026
+    1.69906 1.5 0.872792
+    0.499999 1.3 1.4
+    0.878412 1.3 1.36541
+    1.2392 1.3 1.26298
+    1.3 2.09665 1.46137
+    1.85205 1.3 0.600026
+    0.633724 0.9 0.872792
+    0.901598 0.7 0.600026
+    0.851162 0.5 1.36541
+    0.5 0.5 1.4
+    1.18883 0.5 1.26298
+    1.50003 0.5 1.09665
+    0.5 1.87279 1.22721
+    0.6799 1.28891 0.5
+    0.25051 1.57743 0.5
+    0.36682 1.57749 0.5
+    0.5 1.289 0.5
+    0.00879 1.57731 0.5
+    2.3 1.54846 1.01442
+    2.1 1.51961 1.04423
+    1.9 1.49076 0.965592
+    1.7 1.46192 0.950046
+    0.5 1.57755 0.5
+    0.16298 1.28883 0.5
+    0.3 0.6 0.5
+    0.699999 0.6 0.5
+    1.3 1.28883 0.880629
+    1.1 1.28883 0.906242
+    0.9 1.28883 1.01458
+    0.5 1.28883 0.837017
+    0.5 0.951163 0.734586
+    1.9968 1.3 0.404221
+    2.05726 1.1 0.375373
+    1.1 1.37537 0.942742
+    0.9 1.34653 1.04927
+    0.7 1.31768 0.976047
+    2.12319 1.5 0.28883
+    0.63115 1.59 0.5
+    0.59 1.59 0.5
+    0.623451 1.28894 0.5
+    0.36885 1.59 0.5
+    0.40861 1.57751 0.5
+    0.41 1.59 0.5
+    0.5 1.59 0.5
+    0.002 1.59 0.5
+    0.499999 2.5 1.4
+    0.499999 2.3 1.4
+    0.867624 2.3 1.36541
+    0.851162 2.5 1.36541
+    1.20307 2.3 1.26298
+    1.18883 2.5 1.26298
+    1.50003 2.5 1.09665
+    1.7773 2.3 0.872792
+    1.77279 2.5 0.872792
+    2.5 1.87279 1.22721
+    2.3 1.87279 1.2227
+    2.3 1.60003 1.07303
+    2.5 1.60003 1.00336
+    2.3 1.59 1.06448
+    2.5 1.59 0.997997
+    0.499999 2.1 1.4
+    0.869548 2.1 1.36541
+    1.15793 2.1 1.26298
+    1.50882 2.1 1.09665
+    1.70731 2.1 0.872792
+    2.1 1.87279 1.29269
+    2.1 1.60003 1.0838
+    0.499999 1.9 1.4
+    0.824497 1.9 1.36541
+    1.13704 1.9 1.26298
+    1.46829 1.9 1.09665
+    1.69999 1.9 0.872792
+    1.9 1.87279 1.30001
+    1.9 1.60003 1.04287
+    0.499999 1.7 1.4
+    0.85316 1.7 1.36541
+    1.12959 1.7 1.26298
+    1.70391 1.7 0.872792
+    1.7 1.87279 1.29609
+    1.7 1.60003 1.06793
+    0.957131 0.9 0.600026
+    0.942304 0.7 0.590001
+    0.499999 1.5 1.4
+    0.887008 1.5 1.36541
+    1.26274 1.5 1.26298
+    1.55534 1.5 1.09665
+    2.00195 1.5 0.600026
+    1.01195 0.5 0.590001
+    0.499999 1.1 1.4
+    0.851041 1.1 1.36541
+    1.14309 1.1 1.26298
+    1.44238 1.1 1.09665
+    1.53863 1.3 1.09665
+    1.1 2.09665 1.55762
+    1.1 1.87279 1.34737
+    1.3 1.87279 1.33425
+    1.1 1.60003 1.17841
+    1.3 1.60003 1.14795
+    1.86233 1.3 0.590001
+    0.499999 0.9 1.4
+    0.860665 0.9 1.36541
+    1.24154 0.9 1.26298
+    1.51626 0.9 1.09665
+    0.9 2.09665 1.48374
+    0.9 1.87279 1.36628
+    0.652632 1.1 0.872792
+    0.914979 0.9 0.600026
+    0.9 1.60003 1.08502
+    1.1 1.59 1.17211
+    0.499999 0.7 1.4
+    0.852258 0.7 1.36541
+    1.24701 0.7 1.26298
+    1.52257 0.7 1.09665
+    0.7 2.09665 1.47743
+    0.7 1.87279 1.27828
+    0.912305 0.7 0.590001
+    1.77279 0.5 0.872792
+    0.5 1.60003 1.00336
+    0.7 1.60003 1.0984
+    1.002 0.5 0.590001
+    1.5 2.09665 1.44466
+    1.5 1.87279 1.30094
+    0.997996 1.59 0.5
+    0.935515 0.3 0.590001
+    0.985583 0.3 0.548459
+    1.00879 0.5 0.577307
+    1.5 1.43307 0.897353
+    1.92102 0.9 0.590001
+    0.5 1.59 0.997996
+    1.3 1.59 1.13767
+    2.5 1.59 0.5
+    0.5 1.57755 0.500001
+    2.5 1.289 0.5
+    2.5 1.28883 0.837017
+    2.5 1.57731 0.991211
+    2.3 1.28883 0.824314
+    2.1 1.28883 1
+    1.9 1.28883 0.921169
+    1.7 1.28883 0.906877
+    0.5 0.6 0.5
+    2.5 0.6 0.499999
+    0.734586 0.951163 0.5
+    0.26541 0.951163 0.5
+    0.499999 0.6 0.5
+    2.11953 1.10384 0.31621
+    2.04032 1.50119 0.366861
+    1.47398 2.11219 1.04991
+    1.72303 2.09681 0.889066
+    0.966381 0.899883 0.59095
+    1.49988 1.50134 1.0232
+    1.96553 1.69919 0.637179
+    1.00184 0.499962 0.599914
+    1.81968 1.10033 0.598059
+    0.875786 1.09488 0.655904
+    0.672692 0.70328 0.822237
+    0.923195 0.899854 0.592324
+    1.7512 0.696678 0.908707
+    0.994361 0.498976 0.597588
+    1.62403 1.33127 0.826467
+    2.01206 1.49992 0.590115
+    0.998647 0.50097 0.585955
+    2.29529 1.60114 1.04366
+    1.83272 1.29561 0.558357
+    2.04844 0.945499 0.450947
+    2.48993 0.6 0.499999
+endnode
+node aabb wmesh176_01
+  parent sdg13_b01_06
+  orientation 0 0 0 0
+  wirecolor 0.695313 0.695313 0.695313
+  ambient 0.588235 0.588235 0.588235
+  diffuse 0.588235 0.588235 0.588235
+  specular 0 0 0
+  shininess 10
+  bitmap NULL
+  position 0 0 0
+  verts 149
+    5 -5 -10
+    4 -5 -8
+    3 -5 -9
+    2 -5 -9.5
+    1 -5 -9.75
+    0 -5 -10
+    -1 -5 -10
+    -2 -5 -10
+    -3 -5 -10
+    -4 -5 -10
+    -5 -5 -10
+    5 -4 -10
+    4 -4 -7.53758
+    3.29429 -4 -8.56014
+    2 -4 -9.13532
+    1 -4 -9.40147
+    0 -4 -9.56632
+    -1 -4 -9.66405
+    -2 -4 -9.6879
+    -3 -4 -9.64692
+    -4 -4 -9.53895
+    -5 -4 -9.5
+    5 -3 -10
+    4 -3 -6.99192
+    2.85865 -3 -8.0129
+    2 -3 -8.60401
+    1 -3 -8.72386
+    -0.516205 -2.28722 -8.90657
+    -1 -3 -8.99129
+    -2 -2.5853 -9.00203
+    -3 -3 -8.93148
+    -4 -3 -8.94785
+    -5 -3 -9
+    5 -2 -10
+    4 -2 -6.42176
+    2.70292 -2 -7.5283
+    2 -2 -8.09623
+    1 -2 -8.26851
+    -0.188373 -1.88687 -8.43524
+    -2.01555 0.352431 1
+    -3.03137 -2.1132 -8.56511
+    -4 -2 -8.48996
+    -5 -2 -8.5
+    5 -1 -10
+    3.39001 -0.58841 -6.03918
+    3 -1 -6.98304
+    2 -1 -7.49128
+    0.675052 -0.682069 -7.73435
+    0.174451 -1.30585 -7.97464
+    -4 -1 -8.00685
+    -5 -1 -8
+    5 0 -10
+    3.54553 0 -5.53343
+    3 0 -6.43691
+    2 0 -7.04326
+    1 0 -7.33646
+    -4 0 -7.48992
+    -5 0 -7.5
+    5 0.999999 -10
+    4 1 -4.96534
+    3 1 -6.05117
+    2 1 -6.49714
+    1 1 -6.68148
+    0 1 -7.03132
+    -4 1 -7.0403
+    -5 1 -7
+    5 2 -10
+    4 2 -4.46702
+    3 2 -5.47675
+    2 2 -6.06604
+    1 2 -6.22086
+    -0.484442 2.29543 -6.52756
+    -0.867137 1.80934 -6.45094
+    -4 2 -6.3912
+    -5 2 -6.5
+    5 3 -10
+    3.61598 3.53519 -4.0069
+    3 3 -4.99014
+    2 3 -5.46588
+    1 3 -5.69961
+    0 3 -5.91873
+    -4 3 -5.95794
+    -5 3 -6
+    5 4 -10
+    4 4 -3.36877
+    3 4 -4.50007
+    2 4 -4.93242
+    1 4 -5.14049
+    0 4 -5.35233
+    -1 4 -5.32143
+    -2 4 -5.40864
+    -3 4 -5.33261
+    -4 4 -5.46482
+    -5 4 -5.5
+    5 5 -10
+    4 5 -3
+    3 5 -4.0
+    2 5 -4.5
+    1 5 -4.75
+    0 5 -5
+    -1 5 -5
+    -2 5 -5
+    -3 5 -5
+    -4 5 -5
+    -5 5 -5
+    5 -5 -1
+    4 -5 -1
+    5 -4 -0.5
+    4 -4 -0.5
+    5 -3 0
+    4 -3 0
+    5 -2 0.5
+    4 -2 0.5
+    5 -0.999997 1
+    4 -0.999997 1
+    5 0 1.5
+    4 0 1.5
+    5 1 2
+    4 1 2
+    5 2 2.5
+    4 2 2.5
+    5 3 3
+    4 3 3
+    5 4 3.5
+    4 4 3.5
+    5 5 4
+    4 5 4
+    5 -4.99999 6
+    4 -4.99999 6
+    5 -3.99999 6
+    4 -3.99999 6
+    5 -2.99999 6
+    4 -2.99999 6
+    5 -1.99999 6
+    4 -1.99999 6
+    5 -0.999995 6
+    4 -0.999995 6
+    5 0 6
+    4 0 6
+    5 1.00001 6
+    4 1.00001 6
+    5 2.00001 6
+    4 2.00001 6
+    5 3.00001 6
+    4 3.00001 6
+    5 4.00001 6
+    4 4.00001 6
+    5 5 6
+    4 5 6
+  faces 256
+    128 127 130 1 0 0 0 2
+    129 130 127 1 0 0 0 2
+    2 1 13 1 0 0 0 1
+    12 13 1 2 0 0 0 1
+    3 2 14 4 0 0 0 1
+    13 14 2 4 0 0 0 1
+    4 3 15 1 0 0 0 1
+    14 15 3 1 0 0 0 1
+    5 4 16 1 0 0 0 1
+    15 16 4 1 0 0 0 1
+    6 5 17 1 0 0 0 1
+    16 17 5 1 0 0 0 1
+    7 6 18 1 0 0 0 1
+    17 18 6 1 0 0 0 1
+    8 7 19 1 0 0 0 1
+    18 19 7 1 0 0 0 1
+    9 8 20 1 0 0 0 1
+    19 20 8 1 0 0 0 1
+    10 9 21 1 0 0 0 1
+    20 21 9 1 0 0 0 1
+    130 129 132 1 0 0 0 2
+    131 132 129 1 0 0 0 2
+    13 12 24 8 0 0 0 2
+    23 24 12 1 0 0 0 2
+    14 13 25 16 0 0 0 1
+    24 25 13 32 0 0 0 1
+    15 14 26 2 0 0 0 1
+    25 26 14 2 0 0 0 1
+    16 15 27 1 0 0 0 1
+    26 27 15 2 0 0 0 1
+    17 16 28 2 0 0 0 1
+    27 28 16 4 0 0 0 1
+    18 17 29 1 0 0 0 1
+    28 29 17 2 0 0 0 1
+    19 18 30 1 0 0 0 1
+    29 30 18 4 0 0 0 1
+    20 19 31 1 0 0 0 1
+    30 31 19 1 0 0 0 1
+    21 20 32 1 0 0 0 1
+    31 32 20 1 0 0 0 1
+    132 131 134 1 0 0 0 2
+    133 134 131 1 0 0 0 2
+    24 23 35 1 0 0 0 2
+    34 35 23 1 0 0 0 2
+    25 24 36 1 0 0 0 1
+    35 36 24 1 0 0 0 1
+    26 25 37 2 0 0 0 1
+    36 37 25 2 0 0 0 1
+    27 26 38 2 0 0 0 1
+    37 38 26 2 0 0 0 1
+    40 30 29 4 0 0 0 1
+    31 30 41 1 0 0 0 1
+    40 41 30 1 0 0 0 1
+    32 31 42 1 0 0 0 1
+    41 42 31 1 0 0 0 1
+    134 133 136 1 0 0 0 2
+    135 136 133 1 0 0 0 2
+    35 34 45 4 0 0 0 2
+    44 45 34 8 0 0 0 2
+    36 35 46 1 0 0 0 1
+    45 46 35 2 0 0 0 1
+    37 36 47 2 0 0 0 1
+    46 47 36 2 0 0 0 1
+    38 37 48 2 0 0 0 7
+    47 48 37 1 0 0 0 7
+    49 41 40 1 0 0 0 1
+    42 41 50 1 0 0 0 1
+    49 50 41 1 0 0 0 1
+    136 135 138 1 0 0 0 2
+    137 138 135 1 0 0 0 2
+    45 44 53 1 0 0 0 1
+    52 53 44 1 0 0 0 1
+    46 45 54 2 0 0 0 1
+    53 54 45 2 0 0 0 1
+    47 46 55 2 0 0 0 1
+    54 55 46 2 0 0 0 1
+    50 49 57 1 0 0 0 1
+    56 57 49 1 0 0 0 1
+    138 137 140 1 0 0 0 2
+    139 140 137 1 0 0 0 2
+    53 52 60 1 0 0 0 2
+    59 60 52 4 0 0 0 2
+    54 53 61 2 0 0 0 1
+    60 61 53 2 0 0 0 1
+    55 54 62 2 0 0 0 1
+    61 62 54 2 0 0 0 1
+    55 62 63 2 0 0 0 1
+    57 56 65 1 0 0 0 1
+    64 65 56 1 0 0 0 1
+    140 139 142 1 0 0 0 2
+    141 142 139 1 0 0 0 2
+    60 59 68 8 0 0 0 2
+    67 68 59 8 0 0 0 2
+    61 60 69 2 0 0 0 1
+    68 69 60 2 0 0 0 1
+    62 61 70 2 0 0 0 1
+    69 70 61 2 0 0 0 1
+    63 62 71 2 0 0 0 1
+    70 71 62 2 0 0 0 1
+    63 71 72 1 0 0 0 1
+    65 64 74 1 0 0 0 1
+    73 74 64 1 0 0 0 1
+    142 141 144 1 0 0 0 2
+    143 144 141 1 0 0 0 2
+    68 67 77 8 0 0 0 2
+    76 77 67 8 0 0 0 2
+    69 68 78 2 0 0 0 1
+    77 78 68 2 0 0 0 1
+    70 69 79 2 0 0 0 1
+    78 79 69 2 0 0 0 1
+    71 70 80 2 0 0 0 1
+    79 80 70 2 0 0 0 1
+    74 73 82 1 0 0 0 1
+    81 82 73 1 0 0 0 1
+    144 143 146 1 0 0 0 2
+    145 146 143 1 0 0 0 2
+    77 76 85 8 0 0 0 1
+    84 85 76 8 0 0 0 1
+    78 77 86 2 0 0 0 1
+    85 86 77 2 0 0 0 1
+    79 78 87 2 0 0 0 1
+    86 87 78 2 0 0 0 1
+    80 79 88 2 0 0 0 1
+    87 88 79 2 0 0 0 1
+    82 81 93 1 0 0 0 1
+    92 93 81 1 0 0 0 1
+    146 145 148 1 0 0 0 2
+    147 148 145 1 0 0 0 2
+    85 84 96 8 0 0 0 1
+    95 96 84 8 0 0 0 1
+    86 85 97 2 0 0 0 1
+    96 97 85 2 0 0 0 1
+    87 86 98 2 0 0 0 1
+    97 98 86 2 0 0 0 1
+    88 87 99 2 0 0 0 1
+    98 99 87 2 0 0 0 1
+    89 88 100 1 0 0 0 1
+    99 100 88 1 0 0 0 1
+    90 89 101 1 0 0 0 1
+    100 101 89 1 0 0 0 1
+    91 90 102 1 0 0 0 1
+    101 102 90 1 0 0 0 1
+    92 91 103 1 0 0 0 1
+    102 103 91 1 0 0 0 1
+    93 92 104 1 0 0 0 1
+    103 104 92 1 0 0 0 1
+    107 105 11 2 0 0 0 2
+    0 11 105 2 0 0 0 2
+    106 108 1 16 0 0 0 2
+    12 1 108 16 0 0 0 2
+    105 106 0 4 0 0 0 2
+    1 0 106 4 0 0 0 2
+    109 107 22 2 0 0 0 2
+    11 22 107 2 0 0 0 2
+    108 110 12 16 0 0 0 2
+    23 12 110 16 0 0 0 2
+    111 109 33 2 0 0 0 2
+    22 33 109 2 0 0 0 2
+    110 112 23 16 0 0 0 2
+    34 23 112 16 0 0 0 2
+    113 111 43 2 0 0 0 2
+    33 43 111 2 0 0 0 2
+    112 114 34 16 0 0 0 2
+    44 34 114 2 0 0 0 2
+    115 113 51 2 0 0 0 2
+    43 51 113 2 0 0 0 2
+    114 116 44 16 0 0 0 2
+    52 44 116 32 0 0 0 2
+    117 115 58 2 0 0 0 2
+    51 58 115 2 0 0 0 2
+    116 118 52 16 0 0 0 2
+    59 52 118 2 0 0 0 2
+    119 117 66 2 0 0 0 2
+    58 66 117 2 0 0 0 2
+    118 120 59 16 0 0 0 2
+    67 59 120 16 0 0 0 2
+    121 119 75 2 0 0 0 2
+    66 75 119 2 0 0 0 2
+    120 122 67 16 0 0 0 2
+    76 67 122 1 0 0 0 2
+    123 121 83 2 0 0 0 2
+    75 83 121 2 0 0 0 2
+    122 124 76 16 0 0 0 2
+    84 76 124 2 0 0 0 2
+    125 123 94 2 0 0 0 2
+    83 94 123 2 0 0 0 2
+    126 125 95 4 0 0 0 2
+    94 95 125 4 0 0 0 2
+    124 126 84 16 0 0 0 2
+    95 84 126 16 0 0 0 2
+    129 127 107 2 0 0 0 2
+    105 107 127 2 0 0 0 2
+    128 130 106 16 0 0 0 2
+    108 106 130 16 0 0 0 2
+    127 128 105 4 0 0 0 2
+    106 105 128 4 0 0 0 2
+    131 129 109 2 0 0 0 2
+    107 109 129 2 0 0 0 2
+    130 132 108 16 0 0 0 2
+    110 108 132 16 0 0 0 2
+    133 131 111 2 0 0 0 2
+    109 111 131 2 0 0 0 2
+    132 134 110 16 0 0 0 2
+    112 110 134 16 0 0 0 2
+    135 133 113 2 0 0 0 2
+    111 113 133 2 0 0 0 2
+    134 136 112 16 0 0 0 2
+    114 112 136 16 0 0 0 2
+    137 135 115 2 0 0 0 2
+    113 115 135 2 0 0 0 2
+    136 138 114 16 0 0 0 2
+    116 114 138 16 0 0 0 2
+    139 137 117 2 0 0 0 2
+    115 117 137 2 0 0 0 2
+    138 140 116 16 0 0 0 2
+    118 116 140 16 0 0 0 2
+    141 139 119 2 0 0 0 2
+    117 119 139 2 0 0 0 2
+    140 142 118 16 0 0 0 2
+    120 118 142 16 0 0 0 2
+    143 141 121 2 0 0 0 2
+    119 121 141 2 0 0 0 2
+    142 144 120 16 0 0 0 2
+    122 120 144 16 0 0 0 2
+    145 143 123 2 0 0 0 2
+    121 123 143 2 0 0 0 2
+    144 146 122 16 0 0 0 2
+    124 122 146 16 0 0 0 2
+    147 145 125 2 0 0 0 2
+    123 125 145 2 0 0 0 2
+    148 147 126 4 0 0 0 2
+    125 126 147 4 0 0 0 2
+    146 148 124 16 0 0 0 2
+    126 124 148 16 0 0 0 2
+    28 27 39 8 0 0 0 2
+    29 28 39 16 0 0 0 2
+    27 38 39 32 0 0 0 2
+    40 29 39 16 0 0 0 2
+    48 47 39 4 0 0 0 2
+    38 48 39 4 0 0 0 2
+    49 40 39 2 0 0 0 2
+    47 55 39 4 0 0 0 2
+    56 49 39 64 0 0 0 2
+    55 63 39 128 0 0 0 2
+    64 56 39 64 0 0 0 2
+    63 72 39 128 0 0 0 2
+    72 71 39 256 0 0 0 2
+    73 64 39 64 0 0 0 2
+    71 80 39 512 0 0 0 2
+    81 73 39 64 0 0 0 2
+    80 88 39 1024 0 0 0 2
+    88 89 39 2048 0 0 0 2
+    89 90 39 2048 0 0 0 2
+    90 91 39 2048 0 0 0 2
+    91 92 39 2048 0 0 0 2
+    92 81 39 64 0 0 0 2
+  aabb     -5 -5 -10 5 5 6 -1
+    -5 -5 -10 5 5 3.5 -1
+    -5 -5 -10 5 2.29543 -0.5 -1
+    -5 -5 -10 0 2 -6.5 -1
+    -5 -5 -10 0 -2.28722 -8.90657 -1
+    -5 -5 -10 -2 -3 -8.93148 -1
+    -5 -5 -10 -4 -3 -8.94785 -1
+    -5 -5 -10 -4 -4 -9.5 -1
+    -5 -5 -10 -4 -4 -9.5 18
+    -5 -5 -10 -4 -4 -9.5 19
+    -5 -4 -9.53895 -4 -3 -8.94785 -1
+    -5 -4 -9.53895 -4 -3 -9 38
+    -5 -4 -9.53895 -4 -3 -8.94785 39
+    -4 -5 -10 -2 -3 -8.93148 -1
+    -4 -5 -10 -3 -3 -8.93148 -1
+    -4 -5 -10 -3 -4 -9.53895 -1
+    -4 -5 -10 -3 -4 -9.53895 16
+    -4 -5 -10 -3 -4 -9.53895 17
+    -4 -4 -9.64692 -3 -3 -8.93148 -1
+    -4 -4 -9.64692 -3 -3 -8.94785 36
+    -4 -4 -9.64692 -3 -3 -8.93148 37
+    -3 -5 -10 -2 -3 -8.93148 -1
+    -3 -5 -10 -2 -4 -9.64692 14
+    -3 -4 -9.6879 -2 -3 -8.93148 34
+    -3 -5 -10 0 -2.28722 -8.90657 -1
+    -3 -5 -10 -1 -2.5853 -8.93148 -1
+    -3 -5 -10 -1 -4 -9.64692 -1
+    -3 -5 -10 -2 -4 -9.64692 15
+    -2 -5 -10 -1 -4 -9.66405 -1
+    -2 -5 -10 -1 -4 -9.6879 12
+    -2 -5 -10 -1 -4 -9.66405 13
+    -3 -4 -9.6879 -1 -2.5853 -8.93148 -1
+    -3 -4 -9.6879 -2 -2.5853 -8.93148 35
+    -2 -4 -9.6879 -1 -2.5853 -8.99129 -1
+    -2 -4 -9.6879 -1 -2.5853 -9.00203 32
+    -2 -4 -9.66405 -1 -2.5853 -8.99129 33
+    -1 -5 -10 0 -2.28722 -8.90657 -1
+    -1 -5 -10 0 -4 -9.56632 -1
+    -1 -5 -10 0 -4 -9.66405 10
+    -1 -5 -10 0 -4 -9.56632 11
+    -1 -4 -9.66405 0 -2.28722 -8.90657 -1
+    -1 -4 -9.66405 0 -3 -8.99129 30
+    -1 -4 -9.56632 0 -2.28722 -8.90657 31
+    -5 -3 -9.00203 -2 2 -6.5 -1
+    -5 -3 -9.00203 -2 -1 -8 -1
+    -5 -3 -9 -4 -1 -8 -1
+    -5 -3 -9 -4 -2 -8.48996 -1
+    -5 -3 -9 -4 -2 -8.5 53
+    -5 -3 -8.94785 -4 -2 -8.48996 54
+    -5 -2 -8.5 -4 -1 -8 -1
+    -5 -2 -8.5 -4 -1 -8 66
+    -5 -2 -8.48996 -4 -1 -8 67
+    -4 -3 -9.00203 -2 -1 -8.00685 -1
+    -4 -3 -8.94785 -3 -1 -8.00685 -1
+    -4 -3 -8.94785 -3 -2 -8.48996 -1
+    -4 -3 -8.94785 -3 -2 -8.48996 51
+    -4 -3 -8.93148 -3 -2 -8.48996 52
+    -4 -2.1132 -8.56511 -3.03137 -1 -8.00685 65
+    -3.03137 -3 -9.00203 -2 -2.1132 -8.56511 50
+    -5 -1 -8.00685 -4 2 -6.5 -1
+    -5 -1 -8.00685 -4 0 -7.48992 -1
+    -5 -1 -8.00685 -4 0 -7.5 76
+    -5 -1 -8.00685 -4 0 -7.48992 77
+    -5 0 -7.5 -4 2 -6.5 -1
+    -5 0 -7.5 -4 1 -7 -1
+    -5 0 -7.5 -4 1 -7 87
+    -5 0 -7.48992 -4 1 -7 88
+    -5 1 -7.0403 -4 2 -6.5 100
+    -0.516205 -5 -10 5 2.29543 -0.5 -1
+    -0.516205 -5 -10 4 -1.30585 -7.97464 -1
+    -0.516205 -5 -10 2 -1.30585 -7.97464 -1
+    -0.516205 -5 -10 2 -2.28722 -8.72386 -1
+    0 -5 -10 2 -4 -9.40147 -1
+    0 -5 -10 1 -4 -9.40147 -1
+    0 -5 -10 1 -4 -9.56632 8
+    0 -5 -9.75 1 -4 -9.40147 9
+    1 -5 -9.75 2 -4 -9.40147 6
+    -0.516205 -4 -9.56632 2 -2.28722 -8.72386 -1
+    -0.516205 -4 -9.56632 1 -2.28722 -8.90657 28
+    1 -4 -9.40147 2 -3 -8.72386 26
+    -0.516205 -4 -9.40147 2 -1.30585 -7.97464 -1
+    -0.516205 -4 -9.40147 2 -2 -8.26851 -1
+    -0.516205 -4 -9.40147 1 -2.28722 -8.72386 29
+    1 -3 -8.72386 2 -2 -8.26851 46
+    -0.516205 -3 -8.90657 1 -1.30585 -7.97464 -1
+    -0.516205 -3 -8.90657 1 -1.88687 -8.26851 -1
+    -0.516205 -3 -8.90657 1 -1.88687 -8.43524 48
+    -0.188373 -3 -8.72386 1 -1.88687 -8.26851 49
+    -0.188373 -2 -8.43524 1 -1.30585 -7.97464 63
+    1 -5 -9.5 4 -2 -8 -1
+    1 -5 -9.5 2.85865 -2 -8.0129 -1
+    1 -5 -9.5 2 -3 -8.60401 -1
+    1 -5 -9.5 2 -4 -9.13532 7
+    1 -4 -9.13532 2 -3 -8.60401 27
+    1 -3 -8.60401 2.85865 -2 -8.0129 -1
+    1 -3 -8.60401 2 -2 -8.09623 47
+    2 -3 -8.60401 2.85865 -2 -8.0129 44
+    2 -5 -9.5 4 -3 -8 -1
+    2 -5 -9.5 3.29429 -3 -8.0129 -1
+    2 -5 -9.5 3 -4 -9 4
+    2 -4 -9.13532 3.29429 -3 -8.0129 -1
+    2 -4 -9.13532 3.29429 -3 -8.56014 24
+    2 -4 -8.60401 3.29429 -3 -8.0129 25
+    2 -5 -9.13532 4 -4 -8 -1
+    2 -5 -9.13532 3.29429 -4 -8.56014 5
+    3 -5 -9 4 -4 -8 2
+    -0.484442 -5 -10 5 2.29543 -0.5 -1
+    0.174451 -5 -8.56014 4 0 -6.99192 -1
+    2 -5 -8.56014 4 -2 -6.99192 -1
+    2.85865 -5 -8.56014 4 -3 -6.99192 -1
+    3.29429 -5 -8.56014 4 -4 -7.53758 3
+    2.85865 -4 -8.56014 4 -3 -6.99192 -1
+    2.85865 -4 -8.56014 4 -3 -7.53758 22
+    2.85865 -4 -8.0129 4 -3 -6.99192 23
+    2 -3 -8.09623 4 -2 -6.99192 -1
+    2 -3 -8.09623 2.85865 -2 -7.5283 45
+    2.70292 -3 -8.0129 4 -2 -6.99192 42
+    0.174451 -2 -8.26851 2.70292 0 -7.33646 -1
+    0.174451 -2 -8.26851 2 0 -7.33646 -1
+    0.174451 -2 -8.26851 2 -0.682069 -7.73435 -1
+    0.174451 -2 -8.26851 1 -0.682069 -7.73435 64
+    0.675052 -2 -8.26851 2 -0.682069 -7.73435 61
+    0.675052 -1 -7.73435 2 0 -7.33646 74
+    0.675052 -2 -8.09623 2.70292 -0.682069 -7.49128 -1
+    0.675052 -2 -8.09623 2 -0.682069 -7.49128 62
+    2 -2 -8.09623 2.70292 -1 -7.49128 59
+    -0.484442 -5 -10 5 2.29543 -0.5 -1
+    0 -5 -10 5 1 -1 -1
+    1 -2 -7.5283 3 0 -6.98304 -1
+    1 -1 -7.49128 2 0 -7.04326 75
+    2 -2 -7.5283 3 0 -6.98304 -1
+    2 -2 -7.5283 3 -1 -6.98304 60
+    2 -1 -7.49128 3 0 -6.98304 72
+    0 -5 -10 5 1 -1 -1
+    0 0 -7.33646 2 1 -6.68148 -1
+    0 0 -7.33646 1 1 -6.68148 86
+    1 0 -7.33646 2 1 -6.68148 84
+    5 -5 -10 5 -4 -1 147
+    -0.484442 -4 -10 5 2.29543 -0.5 -1
+    2.70292 -3 -7.5283 4 -1 -6.42176 -1
+    2.70292 -3 -7.5283 4 -2 -6.42176 43
+    2.70292 -2 -7.5283 4 -1 -6.42176 57
+    -0.484442 -4 -10 5 2.29543 -0.5 -1
+    2 -4 -10 5 0 -0.5 -1
+    5 -4 -10 5 -3 -0.5 153
+    2 -1 -7.04326 3 0 -6.43691 73
+    -0.484442 0 -7.04326 2 2.29543 -6.49714 -1
+    -0.484442 1 -7.03132 1 2.29543 -6.52756 97
+    1 0 -7.04326 2 1 -6.49714 85
+    -5 -5 -10 5 5 3.5 -1
+    -5 -5 -10 5 5 3.5 -1
+    -5 -5 -10 5 3 2 -1
+    -5 -5 -10 5 2.29543 1 -1
+    -5 -3 -10 5 2.29543 0 -1
+    -5 1 -7.0403 0 2.29543 -6.3912 -1
+    -5 1 -7.0403 -4 2 -6.3912 101
+    -0.867137 1 -7.03132 0 2.29543 -6.45094 99
+    2 -3 -10 5 1 0 -1
+    5 -3 -10 5 -2 0 157
+    2 0 -7.04326 3 1 -6.43691 82
+    -0.484442 -5 -10 5 2.29543 1 -1
+    -0.484442 -2 -10 5 2.29543 0.5 -1
+    3 -2 -10 5 0 0.5 -1
+    5 -2 -10 5 -1 0.5 161
+    3 -1 -6.98304 3.39001 0 -6.03918 70
+    -0.484442 -2 -6.98304 4 2.29543 -6.03918 -1
+    -0.484442 1 -6.68148 2 2.29543 -6.22086 -1
+    -0.484442 1 -6.68148 1 2.29543 -6.22086 98
+    1 1 -6.68148 2 2 -6.22086 95
+    3 -2 -6.98304 4 -0.58841 -6.03918 58
+    2 -5 -10 5 1 1 -1
+    4 -5 -10 5 0 1 -1
+    4 -5 -10 5 -5 -1 151
+    5 -1 -10 5 0 1 165
+    2 0 -6.49714 3 1 -6.05117 83
+    -5 -0.58841 -10 5 3 2 -1
+    -5 0 -10 5 3 1.5 -1
+    -5 1 -6.52756 2 3 -5.91873 -1
+    -5 2 -6.5 -4 3 -6 112
+    -0.484442 1 -6.52756 2 3 -5.91873 -1
+    -0.484442 2 -6.52756 1 3 -5.91873 110
+    1 1 -6.49714 2 2 -6.06604 96
+    -5 0 -10 5 3 1.5 -1
+    2 0 -10 5 2 1.5 -1
+    2 1 -6.49714 3 2 -6.05117 93
+    5 0 -10 5 0.999999 1.5 169
+    -5 2 -6.3912 -4 3 -5.95794 113
+    0 -0.58841 -10 5 3 2 -1
+    1 -0.58841 -10 5 3 2 -1
+    3 -0.58841 -6.43691 3.54553 1 -5.53343 -1
+    3 -0.58841 -6.43691 3.54553 0 -5.53343 71
+    3 0 -6.43691 3.54553 1 -5.53343 80
+    1 0.999999 -10 5 3 2 -1
+    5 0.999999 -10 5 2 2 173
+    1 2 -6.22086 2 3 -5.69961 108
+    0 2 -6.22086 1 3 -5.69961 111
+    -5 -5 -10 5 5 3.5 -1
+    -5 -3 -10 5 4 3 -1
+    -5 1 -10 5 4 2.5 -1
+    -5 1 -10 5 4 2.5 -1
+    2 1 -6.06604 3 2 -5.47675 94
+    -5 2 -10 5 4 2.5 -1
+    5 2 -10 5 3 2.5 177
+    -5 3 -6 -4 4 -5.5 124
+    1 2 -6.06604 2 3 -5.46588 109
+    -5 -3 -10 5 4 3 -1
+    -2.01555 -3 -10 5 4 3 -1
+    -2.01555 -3 -10 5 4 3 -1
+    2 2 -6.06604 3 3 -5.46588 106
+    -2.01555 -3 -10 5 4 3 -1
+    5 3 -10 5 4 3 181
+    -2.01555 -3 -9.00203 -1 0.352431 1 235
+    0 3 -5.91873 1 4 -5.35233 122
+    -5 -3 -8.99129 -0.516205 4 1 -1
+    -5 3 -5.95794 -4 4 -5.46482 125
+    -2.01555 -3 -8.99129 -0.516205 0.352431 1 234
+    -5 -5 -10 5 5 3.5 -1
+    -3.03137 -2.5853 -10 5 5 3.5 -1
+    -3.03137 -2.5853 -10 5 5 3.5 -1
+    -3.03137 -2.5853 -9.00203 4 1 1 -1
+    -3.03137 -2.5853 -9.00203 -2 0.352431 1 237
+    3 0 -6.05117 4 1 -4.96534 81
+    3 1 -10 5 5 3.5 -1
+    5 4 -10 5 5 3.5 185
+    3 1 -6.05117 4 2 -4.96534 91
+    -2.01555 -2.28722 -8.90657 2 4 1 -1
+    -2.01555 -2.28722 -8.90657 2 4 1 -1
+    -2.01555 -2.28722 -8.90657 -0.188373 0.352431 1 236
+    1 3 -5.69961 2 4 -5.14049 120
+    0 3 -5.69961 1 4 -5.14049 123
+    -5 -5 -8 4 5 -0.5 -1
+    4 -5 -8 4 -4 -0.5 149
+    -5 2 -5.5 3 5 -4.99014 -1
+    -5 4 -5.5 -2 5 -5 -1
+    -5 4 -5.5 -4 5 -5 144
+    -4 4 -5.46482 -2 5 -5 -1
+    -4 4 -5.46482 -3 5 -5 142
+    -3 4 -5.40864 -2 5 -5 140
+    -2 2 -5.47675 3 5 -4.99014 -1
+    -2 4 -5.40864 -1 5 -5 138
+    2 2 -5.47675 3 3 -4.99014 107
+    -5 -5 -10 5 5 1.5 -1
+    -5 -4 -8.56511 4 5 1 -1
+    -5 -2.1132 -8.56511 4 5 1 -1
+    -5 -2.1132 -8.56511 3 5 1 -1
+    -4 -2.1132 -8.56511 2 5 1 -1
+    -4 -2.1132 -8.56511 0 5 1 -1
+    -1 4 -5.35233 0 5 -5 136
+    -4 -2.1132 -8.56511 -2.01555 0.352431 1 240
+    0 3 -5.46588 2 5 -4.93242 -1
+    0 4 -5.35233 1 5 -5 134
+    1 3 -5.46588 2 4 -4.93242 121
+    -5 -1.88687 -8.43524 3 5 1 -1
+    -5 -1.88687 -8.43524 0.174451 5 1 -1
+    -5 4 -5.46482 -4 5 -5 145
+    -3 -1.88687 -8.43524 0.174451 5 1 -1
+    -2.01555 -1.88687 -8.43524 0.174451 0.352431 1 239
+    -3 4 -5.40864 -2 5 -5 141
+    -1 3 -5.46588 3 5 -4.93242 -1
+    -1 4 -5.35233 0 5 -5 137
+    2 3 -5.46588 3 4 -4.93242 118
+    -4 1 -5.47675 4 5 -4.46702 -1
+    -4 4 -5.33261 -1 5 -5 -1
+    -4 4 -5.33261 -3 5 -5 143
+    -2 4 -5.32143 -1 5 -5 139
+    0 1 -5.47675 4 5 -4.46702 -1
+    0 4 -5.14049 1 5 -4.75 135
+    3 1 -5.47675 4 3 -4.46702 -1
+    3 1 -5.47675 4 2 -4.46702 92
+    3 2 -5.47675 4 3 -4.46702 104
+    -4 -4 -8.00685 4 5 1 -1
+    -4 -4 -8.00685 4 5 1 -1
+    -2.01555 -1.30585 -7.97464 2 5 1 -1
+    1 4 -5.14049 2 5 -4.75 132
+    -2.01555 -1.30585 -7.97464 0.675052 0.352431 1 238
+    -4 -4 -8.00685 4 4 1 -1
+    -4 -4 -8.00685 4 0.352431 1 -1
+    4 -4 -7.53758 4 -3 0 155
+    -4 -1 -8.00685 -2.01555 0.352431 1 242
+    2 3 -4.99014 3 4 -4.50007 119
+    -4 -0.682069 -7.73435 3.61598 5 1 -1
+    -2.01555 -0.682069 -7.73435 3 5 1 -1
+    -2.01555 -0.682069 -7.73435 2 5 1 -1
+    1 4 -4.93242 2 5 -4.5 133
+    -2.01555 -0.682069 -7.73435 1 0.352431 1 241
+    2 4 -4.93242 3 5 -4.5 130
+    -4 0 -7.48992 3.61598 4 1 -1
+    -4 0 -7.48992 -2.01555 1 1 244
+    3 3 -4.99014 3.61598 4 -4.0069 116
+    -4 -5 -10 5 5 1.5 -1
+    -4 -5 -10 5 5 1 -1
+    -2.01555 -3 -7.33646 4 5 1 -1
+    -2.01555 0 -7.33646 4 3.53519 1 -1
+    3 2 -4.99014 4 3.53519 -4.0069 105
+    -2.01555 0 -7.33646 1 1 1 243
+    2 -3 -6.99192 4 5 0.5 -1
+    4 -3 -6.99192 4 -2 0.5 159
+    2 4 -4.50007 3 5 -4.0 131
+    -4 -5 -10 5 5 1 -1
+    -4 0.352431 -7.0403 0 2 1 -1
+    -2.01555 0.352431 -7.03132 0 1.80934 1 245
+    -4 0.352431 -7.0403 -2.01555 2 1 247
+    -2.01555 -5 -10 5 5 1 -1
+    -2.01555 -5 -10 5 2.29543 1 -1
+    4 -5 -10 5 -5 -1 150
+    -2.01555 0.352431 -6.52756 -0.484442 2.29543 1 246
+    3 3.53519 -4.50007 4 5 -3.36877 -1
+    3 3.53519 -4.50007 4 4 -3.36877 117
+    3 4 -4.50007 4 5 -3.36877 128
+    -4 -5 -10 5 5 1.5 -1
+    -4 -5 -10 5 3 1 -1
+    -2.01555 -5 -10 5 3 1 -1
+    5 -5 -10 5 -4 -0.5 146
+    -2.01555 -2 -6.52756 4 3 1 -1
+    3.39001 -2 -6.42176 4 -0.58841 1 163
+    -2.01555 0.352431 -6.52756 0 3 1 248
+    -4 0.352431 -6.3912 -2.01555 3 1 249
+    -4 -4 -10 5 5 1.5 -1
+    -4 -4 -10 5 5 1 -1
+    5 -4 -10 5 -3 0 152
+    -4 0.352431 -5.95794 4 5 1 -1
+    -4 0.352431 -5.95794 -2.01555 4 1 255
+    3 4 -4.0 4 5 -3 129
+    -2.01555 -0.58841 -6.03918 4 4 1.5 -1
+    -2.01555 0.352431 -5.91873 0 4 1 250
+    3.39001 -0.58841 -6.03918 4 0 1.5 167
+    -4 -5 -10 5 5 6 -1
+    -4 -5 -10 5 5 6 -1
+    -4 -5 -10 5 5 4 -1
+    -4 -5 -10 5 5 4 -1
+    -4 -5 -10 5 4 1 -1
+    -4 0.352431 -5.46482 0 4 1 -1
+    -4 0.352431 -5.46482 -2 4 1 -1
+    -4 0.352431 -5.46482 -2.01555 4 1 254
+    -3 0.352431 -5.40864 -2 4 1 253
+    -2.01555 0.352431 -5.40864 0 4 1 -1
+    -2.01555 0.352431 -5.40864 -1 4 1 252
+    -2.01555 0.352431 -5.35233 0 4 1 251
+    4 -5 -10 5 -2 0.5 -1
+    4 -5 -8 4 -4 -0.5 148
+    5 -3 -10 5 -2 0.5 156
+    3.54553 -4 -10 5 5 4 -1
+    3.54553 -2 -10 5 5 4 -1
+    4 5 -10 5 5 4 187
+    3.54553 -2 -10 5 1 2 -1
+    5 -2 -10 5 -0.999997 1 160
+    3.54553 0 -5.53343 4 1 2 171
+    4 -4 -10 5 0 1.5 -1
+    4 -4 -7.53758 4 -3 0 154
+    5 -0.999997 -10 5 0 1.5 164
+    3.39001 -3 -10 5 5 4 -1
+    3.61598 -3 -10 5 3.53519 3 -1
+    4 -3 -10 5 2 2.5 -1
+    4 1 -4.96534 4 2 2.5 175
+    4 -3 -10 5 1 2 -1
+    5 0 -10 5 1 2 168
+    4 -3 -6.99192 4 -2 0.5 158
+    3.61598 -2 -10 5 3.53519 3 -1
+    3.61598 1 -10 5 3.53519 3 -1
+    5 1 -10 5 2 2.5 172
+    3.61598 2 -4.46702 4 3.53519 3 179
+    4 -2 -6.42176 4 -0.999997 1 162
+    3.39001 -0.999997 -10 5 5 4 -1
+    3.61598 2 -10 5 4 3.5 -1
+    5 2 -10 5 3 3 176
+    3.61598 3.53519 -4.0069 4 4 3.5 183
+    3.39001 -0.999997 -10 5 5 4 -1
+    3.39001 -0.999997 -10 5 4 3.5 -1
+    3.39001 -0.999997 -6.03918 4 0 1.5 166
+    5 3 -10 5 4 3.5 180
+    5 4 -10 5 5 4 184
+    3.54553 -5 -5.53343 5 5 6 -1
+    3.54553 0 -5.53343 4 5 4 -1
+    3.54553 0 -5.53343 4 5 4 -1
+    3.54553 0 -5.53343 4 5 4 -1
+    4 4 -3.36877 4 5 4 189
+    3.54553 0 -5.53343 4 1 2 170
+    4 1 -4.96534 4 2 2.5 174
+    3.61598 2 -4.46702 4 4 3.5 -1
+    4 2 -4.46702 4 3 3 178
+    3.61598 3 -4.0069 4 4 3.5 182
+    4 -5 -3.36877 5 5 6 -1
+    4 -5 -1 5 -1.99999 6 -1
+    4 -5 -1 5 -3.99999 6 -1
+    4 -5 -1 5 -4.99999 6 195
+    4 -5 -1 5 -3.99999 6 -1
+    5 -5 -1 5 -4 6 191
+    4 -5 -1 4 -3.99999 6 193
+    4 -4 -0.5 5 -1.99999 6 -1
+    4 -4 -0.5 5 -2.99999 6 -1
+    5 -4 -0.5 5 -3 6 197
+    4 -4 -0.5 4 -2.99999 6 199
+    4 -3 0 5 -1.99999 6 -1
+    5 -3 0 5 -2 6 201
+    4 -3 0 4 -1.99999 6 203
+    4 -2 -3.36877 5 5 6 -1
+    4 4 -3.36877 5 5 4 -1
+    4 4 -3.36877 4 5 4 188
+    4 5 -3 5 5 4 186
+    4 -2 0.5 5 -0.999995 6 -1
+    5 -2 0.5 5 -0.999997 6 205
+    4 -2 0.5 4 -0.999995 6 207
+    4 -5 -1 5 5 6 -1
+    4 -5 -1 5 1.00001 6 -1
+    4 -5 -1 5 1.00001 6 -1
+    4 -5 -1 5 1 6 -1
+    4 -0.999997 1 5 1 6 -1
+    4 -0.999997 1 5 0 6 -1
+    4 -0.999997 1 4 0 6 211
+    5 -0.999997 1 5 0 6 209
+    5 0 1.5 5 1 6 213
+    4 -5 -1 5 -2.99999 6 -1
+    4 -5 -1 5 -3.99999 6 -1
+    4 -5 -1 5 -4.99999 6 194
+    4 -5 -1 4 -3.99999 6 192
+    4 -4.99999 -0.5 5 -2.99999 6 -1
+    5 -4.99999 -0.5 5 -3.99999 6 190
+    4 -4 -0.5 4 -2.99999 6 198
+    4 -3.99999 0 5 1.00001 6 -1
+    4 -3.99999 0 5 -0.999995 6 -1
+    4 -3.99999 0 5 -1.99999 6 -1
+    5 -3.99999 0 5 -2.99999 6 196
+    4 -3 0 4 -1.99999 6 202
+    4 -2.99999 0.5 5 -0.999995 6 -1
+    5 -2.99999 0.5 5 -1.99999 6 200
+    4 -2 0.5 4 -0.999995 6 206
+    4 -1.99999 1 5 1.00001 6 -1
+    4 -1.99999 1 5 0 6 -1
+    5 -1.99999 1 5 -0.999995 6 204
+    4 -0.999997 1 4 0 6 210
+    4 -0.999995 1.5 5 1.00001 6 -1
+    5 -0.999995 1.5 5 0 6 208
+    4 0 1.5 4 1.00001 6 214
+    4 -4.99999 6 5 1.00001 6 -1
+    4 -4.99999 6 5 -1.99999 6 -1
+    4 -4.99999 6 5 -2.99999 6 -1
+    4 -4.99999 6 5 -3.99999 6 -1
+    4 -4.99999 6 5 -3.99999 6 0
+    4 -4.99999 6 5 -3.99999 6 1
+    4 -3.99999 6 5 -2.99999 6 20
+    4 -3.99999 6 5 -1.99999 6 -1
+    4 -3.99999 6 5 -2.99999 6 21
+    4 -2.99999 6 5 -1.99999 6 -1
+    4 -2.99999 6 5 -1.99999 6 40
+    4 -2.99999 6 5 -1.99999 6 41
+    4 -1.99999 6 5 1.00001 6 -1
+    4 -1.99999 6 5 -0.999995 6 -1
+    4 -1.99999 6 5 -0.999995 6 55
+    4 -1.99999 6 5 -0.999995 6 56
+    4 -0.999995 6 5 1.00001 6 -1
+    4 -0.999995 6 5 0 6 -1
+    4 -0.999995 6 5 0 6 68
+    4 -0.999995 6 5 0 6 69
+    4 0 6 5 1.00001 6 78
+    4 0 1.5 5 5 6 -1
+    4 0 1.5 5 3.00001 6 -1
+    4 0 1.5 5 3.00001 6 -1
+    4 0 1.5 5 3.00001 6 -1
+    4 0 1.5 5 2.00001 6 -1
+    4 0 1.5 4 1.00001 6 215
+    4 1 2 5 2.00001 6 -1
+    5 1 2 5 2 6 217
+    4 1 2 4 2.00001 6 219
+    4 2 2.5 5 3.00001 6 -1
+    5 2 2.5 5 3 6 221
+    4 2 2.5 4 3.00001 6 223
+    4 0 2 5 2.00001 6 -1
+    5 0 2 5 1.00001 6 212
+    4 1 2 4 2.00001 6 218
+    4 0 2.5 5 3.00001 6 -1
+    4 1.00001 2.5 5 3.00001 6 -1
+    4 1.00001 2.5 5 3.00001 6 -1
+    5 1.00001 2.5 5 2.00001 6 216
+    4 2 2.5 4 3.00001 6 222
+    5 2.00001 3 5 3.00001 6 220
+    4 0 6 5 3.00001 6 -1
+    4 0 6 5 2.00001 6 -1
+    4 0 6 5 1.00001 6 79
+    4 1.00001 6 5 2.00001 6 -1
+    4 1.00001 6 5 2.00001 6 89
+    4 1.00001 6 5 2.00001 6 90
+    4 2.00001 6 5 3.00001 6 -1
+    4 2.00001 6 5 3.00001 6 102
+    4 2.00001 6 5 3.00001 6 103
+    4 3 3 5 5 6 -1
+    4 3 3 5 5 6 -1
+    4 3 3 5 5 6 -1
+    4 3 3 5 4.00001 6 -1
+    5 3 3 5 4 6 225
+    4 3 3 4 4.00001 6 227
+    4 4 3.5 5 5 6 -1
+    4 4 3.5 4 5 6 233
+    5 4 3.5 5 5 6 229
+    4 3 3 5 5 6 -1
+    4 5 4 5 5 6 231
+    4 3 3 4 4.00001 6 226
+    4 3.00001 3.5 5 5 6 -1
+    4 3.00001 3.5 5 5 6 -1
+    4 3.00001 3.5 5 5 6 -1
+    5 3.00001 3.5 5 4.00001 6 224
+    4 4 3.5 4 5 6 232
+    4 4.00001 4 5 5 6 -1
+    4 5 4 5 5 6 230
+    5 4.00001 4 5 5 6 228
+    4 3.00001 6 5 5 6 -1
+    4 3.00001 6 5 4.00001 6 -1
+    4 3.00001 6 5 4.00001 6 114
+    4 3.00001 6 5 4.00001 6 115
+    4 4.00001 6 5 5 6 -1
+    4 4.00001 6 5 5 6 126
+    4 4.00001 6 5 5 6 127
+endnode
+endmodelgeom sdg13_b01_06
+donemodel sdg13_b01_06

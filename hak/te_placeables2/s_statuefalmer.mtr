@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_statuefalmer 
+texture1 s_statuefalmer_n 
+texture2 s_statuefalmer_s 
+texture3 null 
+texture4 null 

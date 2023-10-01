@@ -1,0 +1,39 @@
+# Exported from blender at Thursday, 2018-10-18
+node trimesh empty_wg
+  parent empty_pwk
+  position  0.00000  0.00000  0.00000
+  orientation  1.00000  0.00000  0.00000  0.00000
+  wirecolor  1.00  1.00  1.00
+  ambient 1.00 1.00 1.00
+  diffuse 1.00 1.00 1.00
+  specular 0.00 0.00 0.00
+  bitmap null
+  verts 8
+    -0.43850 -0.50699  0.00000
+    -0.43850 -0.50699  1.27664
+    -0.43850  0.50224  0.00000
+    -0.43850  0.50224  1.27664
+     0.44130 -0.50699  0.00000
+     0.44130 -0.50699  1.27664
+     0.44130  0.50224  0.00000
+     0.44130  0.50224  1.27664
+  faces 8
+    4 1 0  1  0 0 0  0
+    3 0 1  1  0 0 0  0
+    5 6 7  1  0 0 0  0
+    7 2 3  1  0 0 0  0
+    4 5 1  1  0 0 0  0
+    3 2 0  1  0 0 0  0
+    5 4 6  1  0 0 0  0
+    7 6 2  1  0 0 0  0
+endnode
+node dummy pty_pwk_use01
+  parent empty_pwk
+  position  0.00000 -1.00000  0.00000
+  orientation  1.00000  0.00000  0.00000  0.00000
+endnode
+node dummy pty_pwk_use02
+  parent empty_pwk
+  position  0.00000  1.00000  0.00000
+  orientation  1.00000  0.00000  0.00000  0.00000
+endnode

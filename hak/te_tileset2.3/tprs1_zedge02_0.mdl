@@ -1,0 +1,81 @@
+#Exported from 3ds max by MDL Plug-in Suite 1.0b
+#http://www.bricksbuilder.com/nwn/utils/
+#MAXMODEL ASCII
+# model: tprs1_Zedge02_01
+filedependancy rockyrivers.max
+newmodel tprs1_Zedge02_01
+setsupermodel tprs1_Zedge02_01 NULL
+classification Tile
+setanimationscale 1.0
+#MAXGEOM  ASCII
+beginmodelgeom tprs1_Zedge02_01
+node dummy tprs1_Zedge02_01
+  parent NULL
+endnode
+node trimesh Plane688
+  parent tprs1_Zedge02_01
+  position 0 0 -3.4
+  orientation 0 0 0 0
+  wirecolor 0.105469 0.105469 0.105469
+  ambient 0.788235 0.72549 0.72549
+  diffuse 0.788235 0.72549 0.72549
+  specular 0.05 0.05 0.05
+  shininess 26
+  bitmap TTR01_watcliff
+  verts 9
+    -5.00001 0 0
+    -5.00001 -5 0
+    0 0 0
+    0 -5 0
+    4.99999 0 0
+    4.99999 -5 0
+    -5.00001 5 0
+    0 5 0
+    4.99999 5 0
+  faces 8
+    0 1 2  1  0 1 0  0
+    3 2 1  1  1 0 1  0
+    2 3 4  1  0 1 0  0
+    5 4 3  1  1 0 1  0
+    6 0 7  1  2 0 2  0
+    2 7 0  1  0 2 0  0
+    7 2 8  1  2 0 2  0
+    4 8 2  1  0 2 0  0
+  tverts 3
+    0.5 0.05 0
+    0.000499517 0.05 0
+    0.999501 0.05 0
+endnode
+node trimesh Plane687
+  parent tprs1_Zedge02_01
+  position 0 0 -1
+  orientation 0 0 0 0
+  wirecolor 0.0351563 0.0351563 0.0351563
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  bitmap TTR01_water01
+  render 1
+  Shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 1
+  verts 4
+    -5.00001 5 0
+    -5.00001 -5 0
+    4.99999 5 0
+    4.99999 -5 0
+  faces 2
+    0 1 2  1  0 1 2  0
+    3 2 1  1  3 2 1  0
+  tverts 4
+    6.00004 -56.0006 0
+    6.00004 -59.0006 0
+    9.00007 -56.0006 0
+    9.00007 -59.0006 0
+endnode
+endmodelgeom tprs1_Zedge02_01
+donemodel tprs1_Zedge02_01
+

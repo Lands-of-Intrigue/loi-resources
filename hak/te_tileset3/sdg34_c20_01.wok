@@ -1,0 +1,24 @@
+# Exported from NWmax 0.8 b60 at 24/04/2009 16.12.22
+# wok file
+#
+#NWmax WALKMESH  ASCII
+beginwalkmeshgeom sdg34_c20_01
+node aabb Line2767
+  parent sdg34_c20_01
+  position 1.75 -1.52 -10.0
+  orientation 1.0 0.0 0.0 0.0
+  wirecolor 0.341176 0.341176 0.341176 
+  bitmap NULL
+  verts 4
+    -6.75 6.52 -3.4
+    -6.75 -3.48 -3.4
+    3.25 -3.48 -3.4
+    3.25 6.52 -3.4
+  faces 2
+    0 1 2  1  0 0 0  17
+    0 2 3  1  0 0 0  17
+    aabb         -6.75 -3.48 -3.4 3.25 6.52 -3.4 -1
+        -6.75 -3.48 -3.4 3.25 6.52 -3.4 0
+        -6.75 -3.48 -3.4 3.25 6.52 -3.4 1
+endnode
+endwalkmeshgeom sdg34_c20_01

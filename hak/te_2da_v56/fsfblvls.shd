@@ -1,0 +1,31 @@
+/*
+"Levels" contrast Frame Buffer Shader
+Edited to use logarithmic color and square-root expansion
+By Symphony
+c. 18/03/21
+e. 18/03/23
+*/
+varying mediump vec2 vTcOut;
+
+uniform sampler2D texUnit0;
+uniform sampler2D texUnit1;
+
+uniform float blackPoint = 16.0;  //retained for console editing and future adaptive implementation
+uniform float whitePoint = 235.0; //
+
+void main()
+{
+	// converted to log space
+	float black_point_float = log2(blackPoint / 255.0);
+	
+	// Avoid division by zero if the white and black point are the same
+	// converted to log space
+	float white_point_float = (whitePoint == blackPoint) ? (255.0 / 0.00025) : log2(255.0 / (whitePoint - blackPoint)); 
+
+	// FB texture sample
+	vec3 color = texture2D(texUnit0, vTcOut).rgb;
+	// FB logged, square root expansion on output (value increase)
+	color = sqrt(smoothstep(0,1,exp2(log2(color) * (white_point_float - (black_point_float *  white_point_float)))));
+
+	gl_FragColor = vec4(color.x, color.y, color.z, 1.0);
+}

@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_mushroom04 
+texture1 s_mushroom04_n 
+texture2 s_mushroom04_s 
+texture3 null 
+texture4 null 

@@ -1,0 +1,95 @@
+2DA V2.0
+            
+            CompTag                  ResRef              Name                                      Article      Value     Plural
+0           ****                     ****                ****                                      ****         ****        0
+1           HolySymbol               ****                "Holy Symbol"                             "Your"       ****        0
+2           TinyArcheryTarget        it_comp_archtarg    "Tiny Archery Target"                     "A"          ****        0
+3           TinyBagandCandle         it_comp_bagcndle    "Tiny Bag and Candle"                     "A"          ****        0
+4           BlackOnyx_5              it_comp_blackon     "Black Onyx"                              "A"          500         0
+5           BlackOnyx_10             it_comp_blkonx10    "Black Onyx"                              "A"          300         0
+6           BlackOnyx_15             it_comp_blkonx15    "Black Onyx"                              "A"          600         0
+7           BlackPearlPowder         it_comp_blkpearl    "Black Pearl Powder"                      ****         500         0
+8           CompBlood                it_comp_blood       "Blood"                                   ****         ****        0
+9           BullHair                 it_comp_bullhai     "Bull's Hair"                             ****         ****        0
+10          CatFur                   it_comp_catfur      "Cat Fur"                                 ****         ****        0
+11          ChaoticReliquary         it_comp_chaotic     "Chaotic Reliquary"                       "A"          500         0
+12          EmptyCocoon              it_comp_cocoon      "Empty Cocoon"                            ****         ****        0
+13          MulticoloredSand         it_comp_colsand     "Multicolored Sand"                       ****         ****        0
+14          CrystalBead              it_comp_crbead      "Crystal Bead"                            ****         ****        0
+15          CrystalCone              it_comp_crcone      "Crystal Cone"                            ****         ****        0
+16          PatchofCuredLeather      it_comp_curedlt     "Patch of Cured Leather"                  ****         ****        0
+17          NW_WTHDT001              nw_wthdt001         "Dart"                                    "A"          ****        0
+18          DiamondDust_5            it_comp_diadust1    "Diamond Dust"                            ****         500         0
+19          DiamondDust_2            it_comp_diadust2    "Diamond Dust"                            ****         200         0
+20          DiamondDust              it_comp_diadust     "Diamond Dust"                            ****         100         0
+21          Dust                     it_comp_dust        "Dust"                                    ****         ****        0
+22          EagleFeathers            it_comp_eaglefea    "Eagle Feathers"                          ****         ****        1
+23          CompEarth                it_comp_earth       "Earth"                                   ****         ****        0
+24          EggShell                 it_comp_eggshel     "Egg Shell"                               "An"         ****        0
+25          EyelashinGum             it_comp_eyelash     "Eyelash in Gum"                          ****         ****        0
+26          EyeOintment              it_comp_eyeoint     "Eye Ointment"                            ****         ****        0
+27          FoxHairs                 it_comp_foxhair     "Fox Hair"                                ****         ****        0
+28          FurandCrystalRod         it_comp_furrod      "Fur and Crystal Rod"                     ****         ****        0
+29          cutDiamond5k             it_comp_gemcut      "Cut Diamond"                             ****         5000        0
+30          cutDiamond10k            it_comp_gemench     "Cut Diamond"                             ****         10000       0
+31          CompFireAgate            it_comp_gemfine     "Fine Fire Agate"                         "A'          ****        0
+32          CompGranite              it_comp_granite     "Granite Dust"                            ****         ****        0
+33          cnrGraveyardDirt         it_comp_gravedir    "Graveyard Dirt"                          ****         ****        0
+34          BallofGuano              it_comp_guano       "Ball of Guano"                           "A"          ****        0
+35          BitofHolyParchment       it_comp_holyparc    "Bit of Holy Parchment"                   "A"          ****        0
+36          HolyReliquary            it_comp_holyrel     "Holy Reliquary"                          ****         500         0
+37          CompIncense              it_comp_incense     "Incense"                                 ****         ****        0
+38          PieceofIron              it_comp_iron        "Piece of Iron"                           ****         ****        0
+39          IvoryStrips              it_comp_ivory       "Ivory Strips "                           ****         450         1
+40          JadeCirclet              it_comp_jadecir     "Jade Circlet"                            "A"          ****        0
+41          LawfulReliquary          it_comp_lawfulr     "Lawful Reliquary"                        "A"          500         0
+42          LicoriceRoot             it_comp_licoric     "Licorice Root"                           ****         ****        0
+43          CompLimeWater            it_comp_limewtr     "Lime in Water"                           ****         ****        0
+44          LeatherGlove             it_comp_ltglove     "Leather Glove"                           "A"          ****        0
+45          LeatherThong             it_comp_ltthong     "Leather Thong"                           "A"          ****        0
+46          cnrLumpOfCoal            it_comp_lumpcoal    "Coal"                                    ****         ****        0
+47          MetalBar                 it_comp_metalbar    "Metal Bar"                               "A"          ****        0
+48          MiniatureCloak           it_comp_mincloak    "Miniature Cloak"                         "A"          ****        0
+49          MineralSpheres           it_comp_minsphe     "Mineral Spheres"                         ****         ****        1
+50          DropofMolasses           it_comp_molasses    "Drop of Molasses"                        "A"          ****        0
+51          NutShells                it_comp_nutshel     "Nut Shells"                              ****         ****        1
+52          OilyFlint                it_comp_oilyfli     "Oily Flint"                              ****         ****        0
+53          OwlFeathers              it_comp_owlfeath    "Owl Feathers"                            ****         ****        1
+54          PearlDust                it_comp_pearl       "Pearl Dust"                              ****         200         0
+55          PeasAndHoof              it_comp_peashoof    "Powdered Peas and  Animal Hoof"          ****         ****        1
+56          PhosphorescentMoss       it_comp_phosmos     "Phosphorescent Moss"                     ****         ****        0
+57          PieceofPhosphorus        it_comp_phospho     "Piece of Phosphorus"                     "A"          ****        0
+58          TinyPlatinumSword        it_comp_platswrd    "Tiny Platinum Sword"                     "A"          250         0
+59          PorkRind                 it_comp_porkrind    "Pork Rind"                               ****         ****        0
+60          PowderedCrystal          it_comp_pwdcrys     "Powdered Crystal"                        ****         ****        0
+61          PwdRhubandAdder          it_comp_pwdrhub     "Powdered Rhubarb Root and Adder Stomach" ****         ****        1
+62          PowderedSilver           it_comp_pwdsilv     "Powdered Silver"                         ****         ****        0
+63          RosePetals               it_comp_rosepet     "Rose Petals"                             ****         ****        1
+64          RottenEgg                it_comp_rotegg      "Rotten Egg"                              "A"          ****        0
+65          RubyDust                 it_comp_rubydust    "Ruby Dust"                               ****         50          0
+66          SilverHolySymbol         it_comp_slvrholy    "Silver Holy Symbol"                      "A"          500         0
+67          SilverPins               it_comp_slvrpin     "Silver Pins"                             ****         ****        1
+68          SmallHorn                it_comp_smlhorn     "Small Horn"                              "A"          ****        0
+69          SpiderWeb                it_comp_spdrweb     "Spider Web"                              ****         ****        0
+70          BitofSponge              it_comp_sponge      "Bit of Sponge"                           "A"          ****        0
+71          CompSulfur               it_comp_sulfur      "Sulfur"                                  ****         ****        0
+72          Sunstone                 it_comp_sunstone    "Sunstone"                                "A"          ****        0
+73          CompTalc                 it_comp_talc        "Talc Powder"                             ****         ****        0
+74          TartsandaFeather         it_comp_tartsan     "Tarts and a Feather"                     ****         ****        1
+75          Tentacle                 it_comp_tentacle    "Tentacle"                                "A"          ****        0
+76          UnholyReliquary          it_comp_unholyr     "Unholy Reliquary"                        ****         500         0
+77          WhiteFeather             it_comp_whtfeath    "White Feather"                           "A"          ****        0
+78          Wool                     it_comp_wool        "Wool"                                    ****         ****        0
+79          BitOfBone                NW_IT_MSMLMISC13    "Bit of Bone"                             "A"          ****        0
+80          PotionBullStr            NW_IT_MPOTXXX       "Potion of Bull's Strength"               "A"          ****        0
+81          HorseHair                te_comp_hrshair     "Horse Hair"                              ****         ****        0
+82          CeramicCone              te_comp_cercone     "Ceramic Cone"                            ****         ****        0
+83          PieceOfShell             te_comp_shell       "Piece of Tortoise Shell"                 "A"          ****        0
+84          Obsidian                 te_comp_obsidian    "Piece of Obsidian"                       "A"          500         0
+85          TethirShadeAle           te_item_8107        "Tethir Shade Ale"                        "A"          ****        0
+86          Black_Ribbons            te_splcomp01        "Black Ribbons"                           ****         ****        1
+87          Lodestone                te_splcomp02        "Lodestone"                               "A"          ****        0
+88          VialofTears              te_splcomp03        "Vial of Tears"                           "A"          ****        0
+89          Small_drum               te_splcomp04        "Small Drum"                              "A"          ****        0
+90          RedDragonScale           te_splcomp05        "Red Dragon Scale"                        "A"          ****        0
+91          PrayerBook               te_splcomp06        "Prayerbook"                              "A"          ****        0

@@ -1,0 +1,27 @@
+#Exported from 3ds max by MDL Plug-in Suite 1.0b
+#http://www.bricksbuilder.com/nwn/utils/
+#MAXMODEL ASCII
+beginwalkmeshgeom sdg32_c20_01
+node aabb Line2765
+  parent sdg32_c20_01
+  position 1.75 -1.52 -10
+  orientation 0 0 0 0
+  wirecolor 0.34375 0.34375 0.34375
+  ambient 0.2 0.2 0.2
+  diffuse 0.8 0.8 0.8
+  specular 0 0 0
+  shininess 1
+  bitmap NULL
+  verts 4
+    -6.75 6.52 -3.4
+    -6.75 -3.48 -3.4
+    3.25 -3.48 -3.4
+    3.25 6.52 -3.4
+  faces 2
+    0 1 2  1  0 1 1  17
+    0 2 3  1  2 3 4  17
+  aabb     -6.75 -3.48 -3.40   3.25 6.52 -3.40   -1
+     -6.75 -3.48 -3.40   3.25 6.52 -3.40   0
+     -6.75 -3.48 -3.40   3.25 6.52 -3.40   1
+endnode
+endwalkmeshgeom sdg32_c20_01

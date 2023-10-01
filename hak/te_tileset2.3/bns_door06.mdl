@@ -1,0 +1,1863 @@
+#Exported from 3ds max by MDL Plug-in Suite 1.0b
+#http://www.bricksbuilder.com/nwn/utils/
+#MAXMODEL ASCII
+# model: bns_door06
+filedependancy bns_door06.max
+newmodel bns_door06
+setsupermodel bns_door06 NULL
+classification Door
+setanimationscale 1.0
+#MAXGEOM  ASCII
+beginmodelgeom bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+  position 0.0122168 0.0732715 0.497146
+  orientation 0 0 0 0
+  wirecolor 0.339844 0.339844 0.339844
+    colorStart 1 1 1
+    colorEnd 1 1 1
+    alphaStart 1
+    alphaEnd 1
+    sizeStart 0.1
+    sizeEnd 0.1
+    sizeStart_y 0
+    sizeEnd_y 0
+    frameStart 0
+    frameEnd 24
+    birthrate 3
+    spawnType 0
+    lifeExp 0.75
+    mass 3
+    spread 1.22173
+    particleRot 5
+    velocity 8
+    randvel 0.3
+    fps 0
+    random 0
+    inherit 1
+    inherit_local 0
+    inherit_part 0
+    inheritvel 0
+    xsize 153
+    ysize 40
+    bounce 1
+    bounce_co 0.5
+    loop 0
+    update Explosion
+    render Normal
+    Blend Normal
+    update_sel 2
+    render_sel 1
+    blend_sel 1
+    deadspace 0
+    opacity 0.5
+    blurlength 10
+    lightningDelay 0
+    lightningRadius 0
+    lightningScale 0
+    blastRadius 0
+    blastLength 0
+    twosidedtex 0
+    p2p 0
+    p2p_sel 1
+    p2p_type Bezier
+    p2p_bezier2 0
+    p2p_bezier3 0
+    combinetime 0
+    drag 0
+    grav 0
+    threshold 0
+    texture fxpa_cloud02
+    xgrid 5
+    ygrid 5
+    affectedByWind 0
+    m_isTinted 0
+    renderorder 0
+    Splat 0
+    chunkName PLC_Chunk_W02
+endnode
+node emitter fire!09
+  parent bns_door06
+  position 0.0122168 0.0732715 0.899954
+  orientation -1 0 0 -1.5708
+  wirecolor 0.0273438 0.0273438 0.0273438
+    colorStart 0.47451 0.439216 0.364706
+    colorEnd 0.819608 0.796079 0.709804
+    alphaStart 1
+    alphaEnd 0
+    sizeStart 4
+    sizeEnd 1
+    sizeStart_y 0
+    sizeEnd_y 0
+    frameStart 0
+    frameEnd 24
+    birthrate 35
+    spawnType 0
+    lifeExp 2.5
+    mass 0.09
+    spread 2.96706
+    particleRot 0.5
+    velocity 2
+    randvel 0.5
+    fps 10
+    random 0
+    inherit 1
+    inherit_local 0
+    inherit_part 0
+    inheritvel 0
+    xsize 168
+    ysize 107
+    bounce 0
+    bounce_co 0
+    loop 0
+    update Explosion
+    render Normal
+    Blend Normal
+    update_sel 2
+    render_sel 1
+    blend_sel 1
+    deadspace 0
+    opacity 0.5
+    blurlength 10
+    lightningDelay 0
+    lightningRadius 0
+    lightningScale 0
+    blastRadius 0.2
+    blastLength 1
+    twosidedtex 1
+    p2p 0
+    p2p_sel 1
+    p2p_type Bezier
+    p2p_bezier2 0
+    p2p_bezier3 0
+    combinetime 0
+    drag 0
+    grav 0
+    threshold 0
+    texture fxpa_smoke01
+    xgrid 4
+    ygrid 4
+    affectedByWind 0
+    m_isTinted 1
+    renderorder 0
+    Splat 0
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+  position 0.0122168 0.0732715 1.45997
+  orientation 0 0 0 0
+  wirecolor 0.339844 0.339844 0.339844
+    colorStart 0.482353 0.435294 0.317647
+    colorEnd 0.584314 0.533333 0.407843
+    alphaStart 1
+    alphaEnd 1
+    sizeStart 0.1
+    sizeEnd 0.1
+    sizeStart_y 0
+    sizeEnd_y 0
+    frameStart 0
+    frameEnd 24
+    birthrate 3
+    spawnType 0
+    lifeExp 0.75
+    mass 3
+    spread 1.22173
+    particleRot 2.9
+    velocity 8
+    randvel 0.3
+    fps 0
+    random 0
+    inherit 1
+    inherit_local 0
+    inherit_part 0
+    inheritvel 0
+    xsize 135
+    ysize 40
+    bounce 1
+    bounce_co 0.5
+    loop 0
+    update Explosion
+    render Normal
+    Blend Normal
+    update_sel 2
+    render_sel 1
+    blend_sel 1
+    deadspace 0
+    opacity 0.5
+    blurlength 10
+    lightningDelay 0
+    lightningRadius 0
+    lightningScale 0
+    blastRadius 0
+    blastLength 0
+    twosidedtex 1
+    p2p 0
+    p2p_sel 1
+    p2p_type Bezier
+    p2p_bezier2 0
+    p2p_bezier3 0
+    combinetime 0
+    drag 0
+    grav 0
+    threshold 0
+    texture fxpa_cloud02
+    xgrid 5
+    ygrid 5
+    affectedByWind 0
+    m_isTinted 0
+    renderorder 0
+    Splat 0
+    chunkName PLC_Chunk_S02
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+  position 0 0 0.02
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+  position 0 0 1.97221
+  orientation 0 0 0 0
+  wirecolor 0.339844 0.339844 0.339844
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+  position 0 0 0.930355
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+  position 0 0 2.40077
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode
+node trimesh door01
+  parent bns_door06
+  position -1.1 0.1 1.4
+  orientation 0 0 -1 -3.14159
+  wirecolor 0.339844 0.339844 0.339844
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0 0 0
+  shininess 10
+  bitmap bns_door06
+  verts 27
+    0 0.1 -1.4
+    -1.1 0.1 -1.4
+    0 0 -1.4
+    -1.1 0 -1.4
+    0 0.1 1.4
+    -1.1 0.1 1.4
+    0 0 1.4
+    -1.1 0 1.4
+    -1.1 0.1 1.4
+    -1.1 0.1 1.4
+    0 0.1 1.4
+    -1.1 0.1 -1.4
+    -1.1 0 1.4
+    -1.1 0 1.4
+    -1.1 0.1 1.4
+    -1.1 0.1 -1.4
+    -1.1 0 -1.4
+    0 0 1.4
+    0 0 1.4
+    -1.1 0 1.4
+    -1.1 0 -1.4
+    0 0 -1.4
+    0 0.1 -1.4
+    0 0.1 1.4
+    0 0.1 1.4
+    0 0 1.4
+    0 0 -1.4
+  faces 10
+    4 5 7  4  4 5 7  0
+    7 6 4  4  7 6 4  0
+    0 1 8  8  0 1 8  0
+    9 10 0  8  9 10 0  0
+    11 3 12  16  11 3 12  0
+    13 14 15  16  13 14 15  0
+    16 2 17  32  16 2 17  0
+    18 19 20  32  18 19 20  0
+    21 22 23  64  21 22 23  0
+    24 25 26  64  24 25 26  0
+  tverts 27
+    0.0483164 0 0
+    0.5 0 0
+    0.0483165 0 0
+    0.0446921 0 0
+    0.047685 0.95578 0
+    0.5 0.955786 0
+    0.047685 0.999994 0
+    0.5 1 0
+    0.5 0.952618 0
+    0.5 0.952618 0
+    0.0483164 0.952618 0
+    0 0 0
+    0.0446921 0.952648 0
+    0.0446921 0.952648 0
+    0 0.952649 0
+    0 0 0
+    0.5 0 0
+    0.0483165 0.952618 0
+    0.0483165 0.952618 0
+    0.5 0.952618 0
+    0.5 0 0
+    0 0 0
+    0.0446921 0 0
+    0.0446922 0.952648 0
+    0.0446922 0.952648 0
+    0 0.952648 0
+    0 0 0
+endnode
+node trimesh ruch01
+  parent door01
+  position -1.025 0.15 -0.225
+  orientation 0 0 0 0
+  wirecolor 0.339844 0.339844 0.339844
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0 0 0
+  shininess 10
+  bitmap bns_door06
+  verts 45
+    0.025 0 -0.0250001
+    -0.0250001 0.05 -0.0250001
+    0.025 -0.05 -0.0250001
+    -0.025 -0.05 -0.0250001
+    0.025 0 0.0249999
+    -0.0250001 0.05 0.0249999
+    0.025 -0.05 0.0249999
+    -0.025 -0.05 0.0249999
+    0.225 0 -0.0250001
+    0.2 0.025 -0.0250001
+    0.2 0.025 0.0249999
+    0.225 0 0.0249999
+    -0.0250001 0.05 -0.0250001
+    -0.025 -0.05 -0.0250001
+    -0.025 -0.05 0.0249999
+    -0.025 -0.05 0.0249999
+    -0.0250001 0.05 0.0249999
+    -0.0250001 0.05 -0.0250001
+    0.025 -0.05 -0.0250001
+    0.025 0 -0.0250001
+    0.025 0 0.0249999
+    0.025 0 0.0249999
+    0.025 -0.05 0.0249999
+    0.025 -0.05 -0.0250001
+    0.025 0 -0.0250001
+    0.2 0.025 -0.0250001
+    0.2 0.025 -0.0250001
+    0.225 0 -0.0250001
+    0.025 0 -0.0250001
+    -0.0250001 0.05 -0.0250001
+    -0.0250001 0.05 0.0249999
+    0.2 0.025 0.0249999
+    0.2 0.025 0.0249999
+    0.2 0.025 -0.0250001
+    -0.0250001 0.05 -0.0250001
+    0.025 0 0.0249999
+    0.225 0 0.0249999
+    0.225 0 0.0249999
+    0.2 0.025 0.0249999
+    0.025 0 0.0249999
+    0.025 0 -0.0250001
+    0.225 0 -0.0250001
+    0.225 0 -0.0250001
+    0.225 0 0.0249999
+    0.025 0 0.0249999
+  faces 18
+    0 2 3  2  0 2 3  0
+    3 1 0  2  3 1 0  0
+    4 5 7  4  4 5 7  0
+    7 6 4  4  7 6 4  0
+    8 9 10  8  8 9 10  0
+    10 11 8  8  10 11 8  0
+    12 13 14  16  12 13 14  0
+    15 16 17  16  15 16 17  0
+    18 19 20  64  18 19 20  0
+    21 22 23  64  21 22 23  0
+    24 1 25  0  24 1 25  0
+    26 27 28  0  26 27 28  0
+    29 30 31  0  29 30 31  0
+    32 33 34  0  32 33 34  0
+    5 35 36  0  5 35 36  0
+    37 38 5  0  37 38 5  0
+    39 40 41  0  39 40 41  0
+    42 43 44  0  42 43 44  0
+  tverts 45
+    0.340784 0.957618 0
+    0.3 0.998404 0
+    0.381569 0.957618 0
+    0.38157 0.998403 0
+    0.340784 0.957618 0
+    0.3 0.998404 0
+    0.381569 0.957618 0
+    0.38157 0.998403 0
+    0.0437082 0.647008 0
+    0.0437081 0.668877 0
+    0 0.668877 0
+    0 0.647008 0
+    0.0437083 0.603316 0
+    0.043708 0.690731 0
+    0 0.690731 0
+    0 0.690731 0
+    0 0.603316 0
+    0.0437083 0.603316 0
+    0.0437083 0.603316 0
+    0.0437082 0.647024 0
+    0 0.647023 0
+    0 0.647023 0
+    0 0.603316 0
+    0.0437083 0.603316 0
+    0.259215 0.957619 0
+    0.116468 0.978011 0
+    0.116468 0.978011 0
+    0.0960756 0.957604 0
+    0.259215 0.957619 0
+    0.0437076 0.8 0
+    0 0.8 0
+    0 0.603316 0
+    0 0.603316 0
+    0.0437083 0.603316 0
+    0.0437076 0.8 0
+    0.259215 0.957619 0
+    0.0960756 0.957604 0
+    0.0960756 0.957604 0
+    0.116468 0.978011 0
+    0 0.603316 0
+    0.0437083 0.603316 0
+    0.0437077 0.778146 0
+    0.0437077 0.778146 0
+    0 0.778146 0
+    0 0.603316 0
+endnode
+node trimesh door02
+  parent bns_door06
+  position 1.1 0.1 1.4
+  orientation 0 0 0 0
+  wirecolor 0.339844 0.339844 0.339844
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0 0 0
+  shininess 10
+  bitmap bns_door06
+  verts 27
+    0 0 -1.4
+    -1.1 0 -1.4
+    0 -0.1 -1.4
+    -1.1 -0.0999999 -1.4
+    0 0 1.4
+    -1.1 0 1.4
+    0 -0.1 1.4
+    -1.1 -0.0999999 1.4
+    -1.1 0 1.4
+    -1.1 0 1.4
+    0 0 1.4
+    -1.1 0 -1.4
+    -1.1 -0.0999999 1.4
+    -1.1 -0.0999999 1.4
+    -1.1 0 1.4
+    -1.1 0 -1.4
+    -1.1 -0.0999999 -1.4
+    0 -0.1 1.4
+    0 -0.1 1.4
+    -1.1 -0.0999999 1.4
+    -1.1 -0.0999999 -1.4
+    0 -0.1 -1.4
+    0 0 -1.4
+    0 0 1.4
+    0 0 1.4
+    0 -0.1 1.4
+    0 -0.1 -1.4
+  faces 10
+    4 5 7  4  4 5 7  0
+    7 6 4  4  7 6 4  0
+    0 1 8  8  0 1 8  0
+    9 10 0  8  9 10 0  0
+    11 3 12  16  11 3 12  0
+    13 14 15  16  13 14 15  0
+    16 2 17  32  16 2 17  0
+    18 19 20  32  18 19 20  0
+    21 22 23  64  21 22 23  0
+    24 25 26  64  24 25 26  0
+  tverts 27
+    0.951684 0 0
+    0.5 0 0
+    0.951684 0 0
+    0.955308 0 0
+    0.5 1 0
+    0.952315 0.999994 0
+    0.5 0.955786 0
+    0.952315 0.95578 0
+    0.5 0.952618 0
+    0.5 0.952618 0
+    0.951684 0.952618 0
+    1 0 0
+    0.955308 0.952648 0
+    0.955308 0.952648 0
+    1 0.952649 0
+    1 0 0
+    0.5 0 0
+    0.951684 0.952618 0
+    0.951684 0.952618 0
+    0.5 0.952618 0
+    0.5 0 0
+    1 0 0
+    0.955308 0 0
+    0.955308 0.952648 0
+    0.955308 0.952648 0
+    1 0.952648 0
+    1 0 0
+endnode
+node trimesh ruch02
+  parent door02
+  position -1.025 -0.15 -0.225
+  orientation 1 0 0 -3.14159
+  wirecolor 0.339844 0.339844 0.339844
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0 0 0
+  shininess 10
+  bitmap bns_door06  
+  verts 45
+    0.025 0 -0.0250001
+    -0.025 0.05 -0.0250001
+    0.025 -0.05 -0.0250001
+    -0.025 -0.05 -0.0250001
+    0.025 0 0.0249999
+    -0.025 0.05 0.0249999
+    0.025 -0.05 0.0249999
+    -0.025 -0.05 0.0249999
+    0.225 0 -0.0250001
+    0.2 0.025 -0.0250001
+    0.2 0.025 0.0249999
+    0.225 0 0.0249999
+    -0.025 0.05 -0.0250001
+    -0.025 -0.05 -0.0250001
+    -0.025 -0.05 0.0249999
+    -0.025 -0.05 0.0249999
+    -0.025 0.05 0.0249999
+    -0.025 0.05 -0.0250001
+    0.025 -0.05 -0.0250001
+    0.025 0 -0.0250001
+    0.025 0 0.0249999
+    0.025 0 0.0249999
+    0.025 -0.05 0.0249999
+    0.025 -0.05 -0.0250001
+    0.025 0 -0.0250001
+    0.2 0.025 -0.0250001
+    0.2 0.025 -0.0250001
+    0.225 0 -0.0250001
+    0.025 0 -0.0250001
+    -0.025 0.05 -0.0250001
+    -0.025 0.05 0.0249999
+    0.2 0.025 0.0249999
+    0.2 0.025 0.0249999
+    0.2 0.025 -0.0250001
+    -0.025 0.05 -0.0250001
+    0.025 0 0.0249999
+    0.225 0 0.0249999
+    0.225 0 0.0249999
+    0.2 0.025 0.0249999
+    0.025 0 0.0249999
+    0.025 0 -0.0250001
+    0.225 0 -0.0250001
+    0.225 0 -0.0250001
+    0.225 0 0.0249999
+    0.025 0 0.0249999
+  faces 18
+    0 2 3  2  0 2 3  0
+    3 1 0  2  3 1 0  0
+    4 5 7  4  4 5 7  0
+    7 6 4  4  7 6 4  0
+    8 9 10  8  8 9 10  0
+    10 11 8  8  10 11 8  0
+    12 13 14  16  12 13 14  0
+    15 16 17  16  15 16 17  0
+    18 19 20  64  18 19 20  0
+    21 22 23  64  21 22 23  0
+    24 1 25  0  24 1 25  0
+    26 27 28  0  26 27 28  0
+    29 30 31  0  29 30 31  0
+    32 33 34  0  32 33 34  0
+    5 35 36  0  5 35 36  0
+    37 38 5  0  37 38 5  0
+    39 40 41  0  39 40 41  0
+    42 43 44  0  42 43 44  0
+  tverts 45
+    0.340784 0.957618 0
+    0.3 0.998404 0
+    0.381569 0.957618 0
+    0.38157 0.998403 0
+    0.340784 0.957618 0
+    0.3 0.998404 0
+    0.381569 0.957618 0
+    0.38157 0.998403 0
+    0.0437082 0.647008 0
+    0.0437081 0.668877 0
+    0 0.668877 0
+    0 0.647008 0
+    0.0437083 0.603316 0
+    0.043708 0.690731 0
+    0 0.690731 0
+    0 0.690731 0
+    0 0.603316 0
+    0.0437083 0.603316 0
+    0.0437083 0.603316 0
+    0.0437082 0.647024 0
+    0 0.647023 0
+    0 0.647023 0
+    0 0.603316 0
+    0.0437083 0.603316 0
+    0.259215 0.957619 0
+    0.116468 0.978011 0
+    0.116468 0.978011 0
+    0.0960756 0.957604 0
+    0.259215 0.957619 0
+    0.0437076 0.8 0
+    0 0.8 0
+    0 0.603316 0
+    0 0.603316 0
+    0.0437083 0.603316 0
+    0.0437076 0.8 0
+    0.259215 0.957619 0
+    0.0960756 0.957604 0
+    0.0960756 0.957604 0
+    0.116468 0.978011 0
+    0 0.603316 0
+    0.0437083 0.603316 0
+    0.0437077 0.778146 0
+    0.0437077 0.778146 0
+    0 0.778146 0
+    0 0.603316 0
+endnode
+node trimesh sam
+  parent bns_door06
+  position 0 0.3 1.4
+  orientation 0 0.707107 -0.707107 -3.14159
+  wirecolor 0.339844 0.339844 0.339844
+  ambient 0.2 0.2 0.2
+  diffuse 0.8 0.8 0.8
+  specular 0 0 0
+  shininess 1
+  alpha 0
+  selfillumcolor 0 0 1
+  bitmap NULL
+  render 1
+  Shadow 0
+  beaming 0
+  transparencyhint 1
+  tilefade 0
+  rotatetexture 0
+  verts 4
+    1.1 1.4 0
+    -1.1 1.4 0
+    1.1 -1.4 0
+    -1.1 -1.4 0
+  faces 2
+    2 0 3  1  2 0 3  0
+    1 3 0  1  1 3 0  0
+  tverts 4
+    0 0 0
+    1 0 0
+    0 1 0
+    1 1 0
+endnode
+node aabb 03_DWK_wg_closed
+  parent bns_door06
+  position 0 0.0500002 0
+  orientation 0 0 -1 -3.14159
+  wirecolor 0.339844 0.339844 0.339844
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0 0 0
+  shininess 10
+  bitmap ttf01_black
+  verts 26
+    1.1 0.125 0
+    -1.1 0.125 0
+    1.1 -0.125 0
+    -1.1 -0.125 0
+    1.1 0.125 2.8
+    -1.1 0.125 2.8
+    1.1 -0.125 2.8
+    -1.1 -0.125 2.8
+    1.1 0.125 0
+    -1.1 0.125 0
+    -1.1 0.125 2.8
+    -1.1 0.125 2.8
+    1.1 0.125 2.8
+    1.1 0.125 0
+    -1.1 -0.125 0
+    -1.1 0.125 2.8
+    -1.1 -0.125 0
+    1.1 -0.125 0
+    1.1 -0.125 2.8
+    1.1 -0.125 2.8
+    -1.1 -0.125 2.8
+    -1.1 -0.125 0
+    1.1 -0.125 0
+    1.1 0.125 2.8
+    1.1 0.125 2.8
+    1.1 -0.125 0
+  faces 12
+    0 2 3  1  0 2 3  7
+    3 1 0  1  3 1 0  7
+    4 5 7  1  4 5 7  7
+    7 6 4  1  7 6 4  7
+    8 9 10  1  8 9 10  7
+    11 12 13  1  11 12 13  7
+    1 14 7  2  1 14 7  7
+    7 15 1  2  7 15 1  7
+    16 17 18  1  16 17 18  7
+    19 20 21  1  19 20 21  7
+    22 0 23  2  22 0 23  7
+    24 6 25  2  24 6 25  7
+  aabb     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     -1.10 -0.13 0.00   1.10 0.12 0.00   0
+     -1.10 -0.12 0.00   1.10 0.13 2.80   -1
+     -1.10 -0.12 0.00   1.10 0.13 0.00   1
+     -1.10 0.12 0.00   1.10 0.13 2.80   4
+     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     1.10 -0.13 0.00   1.10 0.12 2.80   10
+     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     -1.10 -0.13 0.00   1.10 -0.12 2.80   8
+     -1.10 -0.12 0.00   -1.10 0.13 2.80   6
+     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     -1.10 -0.12 0.00   -1.10 0.13 2.80   7
+     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     1.10 -0.13 0.00   1.10 0.12 2.80   11
+     -1.10 0.12 0.00   1.10 0.13 2.80   5
+     -1.10 -0.13 0.00   1.10 0.13 2.80   -1
+     -1.10 -0.13 0.00   1.10 -0.12 2.80   9
+     -1.10 -0.13 2.80   1.10 0.13 2.80   -1
+     -1.10 -0.12 2.80   1.10 0.13 2.80   2
+     -1.10 -0.13 2.80   1.10 0.12 2.80   3
+endnode
+endmodelgeom bns_door06
+
+#MAXANIM ASCII
+newanim opening1 bns_door06
+  length 0.966667
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    positionkey
+      0  -1.1 0.1 1.4
+    endlist
+    orientationkey
+      0  0 0 1 3.14159
+      0.0333333  0 0 1 3.14707
+      0.0666667  0 0 1 3.16298
+      0.1  0 0 1 3.18854
+      0.133333  0 0 1 3.223
+      0.166667  0 0 1 3.26557
+      0.2  0 0 1 3.31549
+      0.233333  0 0 1 3.37197
+      0.266667  0 0 1 3.43425
+      0.3  0 0 1 3.50156
+      0.333333  0 0 1 3.57311
+      0.366667  0 0 1 3.64815
+      0.4  0 0 1 3.72588
+      0.433333  0 0 1 3.80555
+      0.466667  0 0 1 3.88638
+      0.5  0 0 1 3.9676
+      0.533333  0 0 1 4.04843
+      0.566667  0 0 1 4.1281
+      0.6  0 0 -1 2.07735
+      0.633333  0 0 -1 2.00232
+      0.666667  0 0 -1 1.93076
+      0.7  0 0 -1 1.86346
+      0.733333  0 0 -1 1.80118
+      0.766667  0 0 -1 1.74469
+      0.8  0 0 -1 1.69478
+      0.833333  0 0 -1 1.65221
+      0.866667  0 0 -1 1.61775
+      0.9  0 0 -1 1.59218
+      0.933333  0 0 -1 1.57627
+      0.966667  0 0 -1 1.5708
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0 1 0 0.00629784
+      0.0666667  0 1 0 0.0242753
+      0.1  0 1 0 0.0525584
+      0.133333  0 1 0 0.0897729
+      0.166667  0 1 0 0.134545
+      0.2  0 1 0 0.1855
+      0.233333  0 1 0 0.241265
+      0.266667  0 1 0 0.300464
+      0.3  0 1 0 0.361725
+      0.333333  0 1 0 0.423673
+      0.366667  0 1 0 0.484934
+      0.4  0 1 0 0.544134
+      0.433333  0 1 0 0.599898
+      0.466667  0 1 0 0.650853
+      0.5  0 1 0 0.695625
+      0.533333  0 1 0 0.73284
+      0.566667  0 1 0 0.761123
+      0.6  0 1 0 0.7791
+      0.633333  0 1 0 0.785398
+      0.666667  0 1 0 0.763407
+      0.7  0 1 0 0.703717
+      0.733333  0 1 0 0.615752
+      0.766667  0 1 0 0.508938
+      0.8  0 1 0 0.392699
+      0.833333  0 1 0 0.27646
+      0.866667  0 1 0 0.169646
+      0.9  0 1 0 0.0816813
+      0.933333  0 1 0 0.0219911
+      0.966667  0 0 0 0
+    endlist
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0 0 -1 0.00547457
+      0.0666667  0 0 -1 0.0213828
+      0.1  0 0 -1 0.046952
+      0.133333  0 0 -1 0.0814092
+      0.166667  0 0 -1 0.123981
+      0.2  0 0 -1 0.173896
+      0.233333  0 0 -1 0.23038
+      0.266667  0 0 -1 0.292661
+      0.3  0 0 -1 0.359965
+      0.333333  0 0 -1 0.43152
+      0.366667  0 0 -1 0.506553
+      0.4  0 0 -1 0.584291
+      0.433333  0 0 -1 0.663961
+      0.466667  0 0 -1 0.74479
+      0.5  0 0 -1 0.826006
+      0.533333  0 0 -1 0.906835
+      0.566667  0 0 -1 0.986506
+      0.6  0 0 -1 1.06424
+      0.633333  0 0 -1 1.13928
+      0.666667  0 0 -1 1.21083
+      0.7  0 0 -1 1.27814
+      0.733333  0 0 -1 1.34042
+      0.766667  0 0 -1 1.3969
+      0.8  0 0 -1 1.44681
+      0.833333  0 0 -1 1.48939
+      0.866667  0 0 -1 1.52384
+      0.9  0 0 -1 1.54941
+      0.933333  0 0 -1 1.56532
+      0.966667  0 0 -1 1.5708
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+    positionkey
+      0  -1.025 -0.15 -0.225
+    endlist
+    orientationkey
+      0  -1 -0.000201476 0 3.14159
+      0.633333  -0.92388 -0.000186 0.382682 3.14144
+      0.966667  -1 -0.000201434 0 3.14159
+    endlist
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.966667  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim opening1 bns_door06
+
+#MAXANIM ASCII
+newanim opening2 bns_door06
+  length 0.966667
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    positionkey
+      0  -1.1 0.1 1.4
+      0.2  -1.1 0.1 1.4
+      0.733333  -1.1 0.1 1.4
+    endlist
+    orientationkey
+      0  0 0 1 3.14159
+      0.0333333  0 0 1 3.14707
+      0.0666667  0 0 1 3.16298
+      0.1  0 0 1 3.18854
+      0.133333  0 0 1 3.223
+      0.166667  0 0 1 3.26557
+      0.2  0 0 1 3.31549
+      0.233333  0 0 1 3.37197
+      0.266667  0 0 1 3.43425
+      0.3  0 0 1 3.50156
+      0.333333  0 0 1 3.57311
+      0.366667  0 0 1 3.64815
+      0.4  0 0 1 3.72588
+      0.433333  0 0 1 3.80555
+      0.466667  0 0 1 3.88638
+      0.5  0 0 1 3.9676
+      0.533333  0 0 1 4.04843
+      0.566667  0 0 1 4.1281
+      0.6  0 0 -1 2.07735
+      0.633333  0 0 -1 2.00232
+      0.666667  0 0 -1 1.93076
+      0.7  0 0 -1 1.86346
+      0.733333  0 0 -1 1.80118
+      0.766667  0 0 -1 1.74469
+      0.8  0 0 -1 1.69478
+      0.833333  0 0 -1 1.65221
+      0.866667  0 0 -1 1.61775
+      0.9  0 0 -1 1.59218
+      0.933333  0 0 -1 1.57627
+      0.966667  0 0 -1 1.5708
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0 1 0 0.00629775
+      0.0666667  0 1 0 0.0242752
+      0.1  0 1 0 0.0525583
+      0.133333  0 1 0 0.0897728
+      0.166667  0 1 0 0.134545
+      0.2  0 1 0 0.1855
+      0.233333  0 1 0 0.241265
+      0.266667  0 1 0 0.300464
+      0.3  0 1 0 0.361725
+      0.333333  0 1 0 0.423673
+      0.366667  0 1 0 0.484934
+      0.4  0 1 0 0.544134
+      0.433333  0 1 0 0.599898
+      0.466667  0 1 0 0.650853
+      0.5  0 1 0 0.695625
+      0.533333  0 1 0 0.73284
+      0.566667  0 1 0 0.761123
+      0.6  0 1 0 0.7791
+      0.633333  0 1 0 0.785398
+      0.666667  0 1 0 0.763407
+      0.7  0 1 0 0.703716
+      0.733333  0 1 0 0.615752
+      0.766667  0 1 0 0.508938
+      0.8  0 1 0 0.392699
+      0.833333  0 1 0 0.27646
+      0.866667  0 1 0 0.169646
+      0.9  0 1 0 0.0816812
+      0.933333  0 1 0 0.0219909
+      0.966667  0 0 0 0
+    endlist
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0 0 -1 0.00547419
+      0.0666667  0 0 -1 0.0213824
+      0.1  0 0 -1 0.0469516
+      0.133333  0 0 -1 0.0814086
+      0.166667  0 0 -1 0.123981
+      0.2  0 0 -1 0.173896
+      0.233333  0 0 -1 0.23038
+      0.266667  0 0 -1 0.29266
+      0.3  0 0 -1 0.359964
+      0.333333  0 0 -1 0.431519
+      0.366667  0 0 -1 0.506552
+      0.4  0 0 -1 0.58429
+      0.433333  0 0 -1 0.66396
+      0.466667  0 0 -1 0.74479
+      0.5  0 0 -1 0.826006
+      0.533333  0 0 -1 0.906835
+      0.566667  0 0 -1 0.986505
+      0.6  0 0 -1 1.06424
+      0.633333  0 0 -1 1.13928
+      0.666667  0 0 -1 1.21083
+      0.7  0 0 -1 1.27814
+      0.733333  0 0 -1 1.34042
+      0.766667  0 0 -1 1.3969
+      0.8  0 0 -1 1.44681
+      0.833333  0 0 -1 1.48939
+      0.866667  0 0 -1 1.52384
+      0.9  0 0 -1 1.54941
+      0.933333  0 0 -1 1.56532
+      0.966667  0 0 -1 1.5708
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+    positionkey
+      0  -1.025 -0.15 -0.225
+      0.633333  -1.025 -0.15 -0.225
+      0.966667  -1.025 -0.15 -0.225
+    endlist
+    orientationkey
+      0  -1 -0.000201434 0 3.14159
+      0.633333  -0.92388 -0.000186053 0.382682 3.14144
+      0.966667  -1 -0.000201587 0 3.14159
+    endlist
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.966667  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim opening2 bns_door06
+
+#MAXANIM ASCII
+newanim opened2 bns_door06
+  length 0.0333333
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    positionkey
+      0  -1.1 0.1 1.4
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.0333333  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim opened2 bns_door06
+
+#MAXANIM ASCII
+newanim opened1 bns_door06
+  length 0.0333333
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    orientationkey
+      0  0 0 -1 1.56992
+      0.0333333  0 0 -1 1.5708
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 -1 1.57167
+      0.0333333  0 0 -1 1.5708
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.0333333  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim opened1 bns_door06
+
+#MAXANIM ASCII
+newanim closed bns_door06
+  length 0.0333333
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    orientationkey
+      0  0 0 1 3.14159
+      0.0333333  0 0 1 3.14159
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0 0 0 0
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.0333333  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim closed bns_door06
+
+#MAXANIM ASCII
+newanim closing1 bns_door06
+  length 0.966667
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    positionkey
+      0  -1.1 0.1 1.4
+      0.0666667  -1.1 0.1 1.4
+      0.466667  -1.1 0.1 1.4
+      0.933333  -1.1 0.1 1.4
+    endlist
+    orientationkey
+      0  0 0 -1 1.5708
+      0.0333333  0 0 -1 1.57627
+      0.0666667  0 0 -1 1.59218
+      0.1  0 0 -1 1.61775
+      0.133333  0 0 -1 1.65221
+      0.166667  0 0 -1 1.69478
+      0.2  0 0 -1 1.74469
+      0.233333  0 0 -1 1.80118
+      0.266667  0 0 -1 1.86346
+      0.3  0 0 -1 1.93076
+      0.333333  0 0 -1 2.00232
+      0.366667  0 0 -1 2.07735
+      0.4  0 0 1 4.1281
+      0.433333  0 0 1 4.04843
+      0.466667  0 0 1 3.9676
+      0.5  0 0 1 3.88638
+      0.533333  0 0 1 3.80555
+      0.566667  0 0 1 3.72588
+      0.6  0 0 1 3.64814
+      0.633333  0 0 1 3.57311
+      0.666667  0 0 1 3.50156
+      0.7  0 0 1 3.43425
+      0.733333  0 0 1 3.37197
+      0.766667  0 0 1 3.31549
+      0.8  0 0 1 3.26557
+      0.833333  0 0 1 3.223
+      0.866667  0 0 1 3.18854
+      0.9  0 0 1 3.16298
+      0.933333  0 0 1 3.14707
+      0.966667  0 0 1 3.14159
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 -1 1.5708
+      0.0333333  0 0 -1 1.56532
+      0.0666667  0 0 -1 1.54941
+      0.1  0 0 -1 1.52384
+      0.133333  0 0 -1 1.48939
+      0.166667  0 0 -1 1.44681
+      0.2  0 0 -1 1.3969
+      0.233333  0 0 -1 1.34042
+      0.266667  0 0 -1 1.27813
+      0.3  0 0 -1 1.21083
+      0.333333  0 0 -1 1.13928
+      0.366667  0 0 -1 1.06424
+      0.4  0 0 -1 0.986505
+      0.433333  0 0 -1 0.906834
+      0.466667  0 0 -1 0.826005
+      0.5  0 0 -1 0.744789
+      0.533333  0 0 -1 0.66396
+      0.566667  0 0 -1 0.58429
+      0.6  0 0 -1 0.506552
+      0.633333  0 0 -1 0.431519
+      0.666667  0 0 -1 0.359964
+      0.7  0 0 -1 0.29266
+      0.733333  0 0 -1 0.230379
+      0.766667  0 0 -1 0.173895
+      0.8  0 0 -1 0.123981
+      0.833333  0 0 -1 0.0814081
+      0.866667  0 0 -1 0.0469511
+      0.9  0 0 -1 0.0213819
+      0.933333  0 0 -1 0.0054737
+      0.966667  0 0 0 0
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.966667  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim closing1 bns_door06
+
+#MAXANIM ASCII
+newanim closing2 bns_door06
+  length 0.966667
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    positionkey
+      0  -1.1 0.1 1.4
+      0.133333  -1.1 0.1 1.4
+      0.566667  -1.1 0.1 1.4
+      0.966667  -1.1 0.1 1.4
+    endlist
+    orientationkey
+      0  0 0 -1 1.5708
+      0.0333333  0 0 -1 1.57627
+      0.0666667  0 0 -1 1.59218
+      0.1  0 0 -1 1.61775
+      0.133333  0 0 -1 1.65221
+      0.166667  0 0 -1 1.69478
+      0.2  0 0 -1 1.74469
+      0.233333  0 0 -1 1.80118
+      0.266667  0 0 -1 1.86346
+      0.3  0 0 -1 1.93076
+      0.333333  0 0 -1 2.00232
+      0.366667  0 0 -1 2.07735
+      0.4  0 0 1 4.1281
+      0.433333  0 0 1 4.04843
+      0.466667  0 0 1 3.9676
+      0.5  0 0 1 3.88638
+      0.533333  0 0 1 3.80555
+      0.566667  0 0 1 3.72588
+      0.6  0 0 1 3.64814
+      0.633333  0 0 1 3.57311
+      0.666667  0 0 1 3.50156
+      0.7  0 0 1 3.43425
+      0.733333  0 0 1 3.37197
+      0.766667  0 0 1 3.31549
+      0.8  0 0 1 3.26557
+      0.833333  0 0 1 3.223
+      0.866667  0 0 1 3.18854
+      0.9  0 0 1 3.16298
+      0.933333  0 0 1 3.14707
+      0.966667  0 0 1 3.14159
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 -1 1.5708
+      0.0333333  0 0 -1 1.56532
+      0.0666667  0 0 -1 1.54941
+      0.1  0 0 -1 1.52384
+      0.133333  0 0 -1 1.48939
+      0.166667  0 0 -1 1.44681
+      0.2  0 0 -1 1.3969
+      0.233333  0 0 -1 1.34042
+      0.266667  0 0 -1 1.27813
+      0.3  0 0 -1 1.21083
+      0.333333  0 0 -1 1.13928
+      0.366667  0 0 -1 1.06424
+      0.4  0 0 -1 0.986505
+      0.433333  0 0 -1 0.906835
+      0.466667  0 0 -1 0.826005
+      0.5  0 0 -1 0.744789
+      0.533333  0 0 -1 0.66396
+      0.566667  0 0 -1 0.58429
+      0.6  0 0 -1 0.506552
+      0.633333  0 0 -1 0.431519
+      0.666667  0 0 -1 0.359964
+      0.7  0 0 -1 0.29266
+      0.733333  0 0 -1 0.230379
+      0.766667  0 0 -1 0.173895
+      0.8  0 0 -1 0.123981
+      0.833333  0 0 -1 0.0814082
+      0.866667  0 0 -1 0.0469512
+      0.9  0 0 -1 0.021382
+      0.933333  0 0 -1 0.00547374
+      0.966667  0 0 0 0
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.966667  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim closing2 bns_door06
+
+#MAXANIM ASCII
+newanim trans bns_door06
+  length 0.0333333
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0.25
+      0.0333333  0.25
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim trans bns_door06
+
+#MAXANIM ASCII
+newanim die bns_door06
+  length 0.166667
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    positionkey
+      0  -1.1 0.1 1.4
+      0.0333333  -1.1 0.1 1.1088
+      0.0666667  -1.1 0.1 0.414403
+      0.1  -1.1 0.1 -0.414398
+      0.133333  -1.1 0.1 -1.1088
+      0.166667  -1.1 0.1 -1.4
+    endlist
+    orientationkey
+      0  0 0 1 3.14159
+      0.0333333  0.00932419 0.00277198 0.999953 3.14164
+      0.0666667  0.0327492 0.00973309 0.999416 3.14223
+      0.1  0.0634316 0.018835 0.997808 3.14399
+      0.133333  0.094521 0.0280242 0.995128 3.14692
+      0.166667  0.119228 0.035292 0.992239 3.15007
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+    positionkey
+      0  1.1 0.1 1.4
+      0.0333333  1.1 0.1 1.1072
+      0.0666667  1.1 0.1 0.408979
+      0.1  1.1 0.1 -0.424382
+      0.133333  1.1 0.1 -1.12261
+      0.166667  1.1 0.1 -1.41541
+    endlist
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0.399588 -0.916685 0.00427907 0.0231671
+      0.0666667  0.399432 -0.91665 0.0143722 0.0784089
+      0.1  0.399051 -0.916547 0.0264463 0.144332
+      0.133333  0.39856 -0.916413 0.0365678 0.199549
+      0.166667  0.398308 -0.916344 0.0408136 0.222699
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+event 0  detonate
+event 0  detonate
+event 0  detonate
+doneanim die bns_door06
+
+#MAXANIM ASCII
+newanim dead bns_door06
+  length 0.0333333
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim dead bns_door06
+
+#MAXANIM ASCII
+newanim closed1 bns_door06
+  length 0.0333333
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    orientationkey
+      0  0 0 1 3.14159
+      0.0333333  0 0 1 3.14159
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0 0 0 0
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.0333333  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim closed1 bns_door06
+
+#MAXANIM ASCII
+newanim closed2 bns_door06
+  length 0.0333333
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    orientationkey
+      0  0 0 1 3.14159
+      0.0333333  0 0 1 3.14159
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0 0 0 0
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.0333333  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim closed2 bns_door06
+
+#MAXANIM ASCII
+newanim default bns_door06
+  length 0.0333333
+  transtime 0.25
+  animroot bns_door06
+node dummy bns_door06
+  parent NULL
+endnode
+node emitter ChunkyWood05
+  parent bns_door06
+endnode
+node emitter fire!09
+  parent bns_door06
+endnode
+node emitter ChunkyWood06
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02grnd
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02hhit
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02impc
+  parent bns_door06
+endnode
+node dummy TCN_UDoor_02head
+  parent bns_door06
+endnode
+node trimesh door01
+  parent bns_door06
+    orientationkey
+      0  0 0 1 3.14159
+      0.0333333  0 0 1 3.14159
+    endlist
+endnode
+node trimesh ruch01
+  parent door01
+endnode
+node trimesh door02
+  parent bns_door06
+    orientationkey
+      0  0 0 0 0
+      0.0333333  0 0 0 0
+    endlist
+endnode
+node trimesh ruch02
+  parent door02
+endnode
+node trimesh sam
+  parent bns_door06
+    alphakey
+      0  0
+      0.0333333  0
+    endlist
+endnode
+node trimesh 03_DWK_wg_closed
+  parent bns_door06
+endnode
+doneanim default bns_door06
+donemodel bns_door06

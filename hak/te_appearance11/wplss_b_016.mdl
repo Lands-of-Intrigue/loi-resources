@@ -1,0 +1,18 @@
+# Exported from NWmax 0.8 b61 at 18/09/2018 0:22:53
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: WPlSs_b_016
+#local file: C:\Users\Pablo\Documents\3DS\2x.max
+filedependancy 2x.max
+newmodel WPlSs_b_016
+setsupermodel WPlSs_b_016 NULL
+classification Character
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom WPlSs_b_016
+node dummy WPlSs_b_016
+  parent NULL
+endnode
+endmodelgeom WPlSs_b_016
+donemodel WPlSs_b_016

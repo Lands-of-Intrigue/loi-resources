@@ -1,0 +1,489 @@
+# Rewritten by CleanModels 3 Version 3.1.1c Fri May 01 17:38:06 2009
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel scv02_a08_01
+setsupermodel scv02_a08_01 null
+setanimationscale 1
+classification TILE
+#MAXGEOM ASCII
+beginmodelgeom scv02_a08_01
+node dummy scv02_a08_01
+  parent NULL
+endnode
+node dummy scv02_a08_01a
+  parent scv02_a08_01
+  position 0 0 0
+  orientation 0 0 0 0
+  wirecolor 1 0 0
+endnode
+node dummy cm3_repair_1
+  parent scv02_a08_01a
+  position 0 0 -5
+  orientation 0 0 0 0
+  wirecolor 0.113281 0.113281 0.113281
+endnode
+node emitter fx_lavasdg_emit01
+  position 0 0 4.01
+  orientation 0 0 0 0
+  wirecolor 0.582031 0.582031 0.582031
+  colorStart 1 1 1
+  colorEnd 1 1 1
+  alphaStart 1
+  alphaEnd 1
+  sizeStart 0
+  sizeEnd 0
+  sizeStart_y 0
+  sizeEnd_y 0
+  frameStart 0
+  frameEnd 0
+  birthrate 1
+  spawntype 0
+  lifeExp 3.5
+  mass 0
+  spread 0
+  particleRot 0
+  velocity 0
+  randvel 0
+  fps 0
+  random 0
+  inherit 0
+  inherit_local 0
+  inherit_part 0
+  inheritvel 0
+  xsize 1400
+  ysize 1400
+  bounce 0
+  bounce_co 0
+  loop 0
+  update Explosion
+  render Normal
+  update_sel 2
+  render_sel 1
+  blend_sel 82
+  deadspace 0
+  opacity 0.5
+  blurlength 10
+  lightningDelay 0
+  lightningRadius 0
+  lightningScale 0
+  blastRadius 0
+  blastLength 0
+  twosidedtex 0
+  p2p 0
+  p2p_sel 1
+  p2p_type Bezier
+  p2p_bezier2 0
+  p2p_bezier3 0
+  combinetime 0
+  drag 0
+  grav 0
+  threshold 0
+  texture fxpa_ash01
+  xgrid 0
+  ygrid 0
+  affectedByWind 0
+  m_isTinted 0
+  renderorder 0
+  splat 0
+  chunkName fx_lavasdg
+  parent cm3_repair_1
+endnode
+node light scv02_a08_01ml2
+  parent scv02_a08_01
+  position 0 0 0.635754
+  orientation 0 0 0 0
+  wirecolor 0.34375 0.34375 0.34375
+  radius 14
+  multiplier 1
+  color 0 0 0
+  ambientonly 0
+  ndynamictype 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  lensflares 0
+  fadinglight 1
+endnode
+node trimesh line2756
+  parent scv02_a08_01
+  position 0 0 -6
+  orientation 0 0 0 0
+  wirecolor 0.34375 0.34375 0.34375
+  specular 0 0 0
+  shininess 10
+  bitmap tno01_black01
+  ambient 0 0 0
+  diffuse 0 0 0
+  shadow 0
+  verts 8
+    5 0 0
+    5 5 0
+    0 5 0
+    -5 5 0
+    5 -5 0
+    -5 0 0
+    0 -5 0
+    -5 -5 0
+  faces 6
+    0 1 2 1 0 1 1 0
+    2 3 0 1 1 2 0 0
+    4 0 3 1 3 0 2 0
+    5 6 4 1 4 5 6 0
+    6 5 7 1 6 7 4 0
+    5 4 3 1 5 8 9 0
+  tverts 10
+    2.5 0.0454624 0
+    4.19272 0.0454624 0
+    2.74198 0.0454624 0
+    0.80728 0.0454624 0
+    0.071429 0.0454624 0
+    1.24762 0.0454624 0
+    0.9694 0.0454623 0
+    0.071429 0.0454623 0
+    2.92857 0.0454624 0
+    2.01118 0.0454623 0
+endnode
+node aabb wmesh
+  parent scv02_a08_01
+  orientation 0 0 0 0
+  wirecolor 0.34375 0.34375 0.34375
+  ambient 0.2 0.2 0.2
+  diffuse 0.8 0.8 0.8
+  specular 0 0 0
+  shininess 1
+  bitmap NULL
+  position 0 0 0
+  verts 4
+    5 -5 -6
+    5 5 -6
+    -5 5 -6
+    -5 -5 -6
+  faces 2
+    0 1 2 1 0 0 0 15
+    0 2 3 1 0 0 0 15
+  aabb     -5 -5 -6 5 5 -6 -1
+    -5 -5 -6 5 5 -6 1
+    -5 -5 -6 5 5 -6 0
+endnode
+node light scv02_a08_01ml1
+  parent scv02_a08_01
+  position 0 0 5.73026
+  orientation 0 0 0 0
+  wirecolor 0.34375 0.34375 0.34375
+  radius 14
+  multiplier 1
+  color 0 0 0
+  ambientonly 0
+  ndynamictype 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  lensflares 0
+  fadinglight 1
+endnode
+node trimesh rockya158
+  parent scv02_a08_01
+  position 0 0 9.15
+  orientation 0 0 0 0
+  wirecolor 0.777344 0.777344 0.777344
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  bitmap sdg_sto11
+  shadow 0
+  verts 25
+    2.5 2.5 -0.65
+    2.5 5 -0.65
+    5 5 -1.15
+    5 2.5 -0.65
+    0 2.5 -0.15
+    0 5 -0.15
+    -2.5 2.5 -0.65
+    -2.5 5 -0.65
+    -5 2.5 -0.65
+    -5 5 -1.15
+    2.5 0 -0.15
+    5 0 -0.15
+    0 0 -0.0300008
+    -2.5 0 -0.15
+    -5 0 -0.15
+    2.5 -2.5 -0.65
+    5 -2.5 -0.65
+    0 -2.5 -0.15
+    -2.5 -2.5 -0.65
+    -5 -2.5 -0.65
+    2.5 -5 -0.65
+    5 -5 -1.15
+    0 -5 -0.15
+    -2.5 -5 -0.65
+    -5 -5 -1.15
+  faces 32
+    0 1 2 1 0 1 2 0
+    2 3 0 1 2 3 0 0
+    4 5 1 1 4 5 1 0
+    1 0 4 1 1 0 4 0
+    6 7 5 1 6 7 5 0
+    5 4 6 1 5 4 6 0
+    8 9 7 1 8 9 7 0
+    7 6 8 1 7 6 8 0
+    10 0 3 1 10 0 3 0
+    3 11 10 1 3 11 10 0
+    12 4 0 1 12 4 0 0
+    0 10 12 1 0 10 12 0
+    13 6 4 1 13 6 4 0
+    4 12 13 1 4 12 13 0
+    14 8 6 1 14 8 6 0
+    6 13 14 1 6 13 14 0
+    15 10 11 1 15 10 11 0
+    11 16 15 1 11 16 15 0
+    17 12 10 1 17 12 10 0
+    10 15 17 1 10 15 17 0
+    18 13 12 1 18 13 12 0
+    12 17 18 1 12 17 18 0
+    19 14 13 1 19 14 13 0
+    13 18 19 1 13 18 19 0
+    20 15 16 1 20 15 16 0
+    16 21 20 1 16 21 20 0
+    22 17 15 1 22 17 15 0
+    15 20 22 1 15 20 22 0
+    23 18 17 1 23 18 17 0
+    17 22 23 1 17 22 23 0
+    24 19 18 1 24 19 18 0
+    18 23 24 1 18 23 24 0
+  tverts 25
+    0.92401 2 0
+    0.92401 2.5 0
+    0.42401 2.5 0
+    0.42401 2 0
+    1.424 2 0
+    1.424 2.5 0
+    1.924 2 0
+    1.924 2.5 0
+    2.424 2 0
+    2.424 2.5 0
+    0.92401 1.5 0
+    0.42401 1.5 0
+    1.424 1.5 0
+    1.924 1.5 0
+    2.424 1.5 0
+    0.92401 1 0
+    0.42401 1 0
+    1.424 1 0
+    1.924 1 0
+    2.424 1 0
+    0.92401 0.5 0
+    0.42401 0.5 0
+    1.424 0.5 0
+    1.924 0.5 0
+    2.424 0.5 0
+endnode
+node trimesh water01a38
+  parent scv02_a08_01
+  position 0 0 -1
+  orientation 0 0 0 0
+  wirecolor 0.105469 0.105469 0.105469
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  selfillumcolor 0.65098 0.388235 0.439216
+  bitmap sdg_lava01
+  render 1
+  shadow 0
+  beaming 0
+  transparencyhint 0
+  tilefade 0
+  rotatetexture 1
+  verts 4
+    -5 5 0
+    -5 -5 0
+    5 5 0
+    5 -5 0
+  faces 2
+    0 1 2 1 0 1 2 1
+    3 2 1 1 3 2 1 1
+  tverts 4
+    0.99999 1 0
+    0.99999 0 0
+    1.99999 1 0
+    1.99999 0 0
+endnode
+endmodelgeom scv02_a08_01
+
+#MAXANIM ASCII
+newanim animloop01 scv02_a08_01
+  length 2.13333
+  transtime 0
+  event 0 detonate
+  animroot scv02_a08_01
+  node dummy scv02_a08_01
+    parent NULL
+  endnode
+  node dummy scv02_a08_01a
+    parent scv02_a08_01
+  endnode
+  node dummy cm3_repair_1
+    parent scv02_a08_01a
+  endnode
+  node emitter fx_lavasdg_emit01
+    parent cm3_repair_1
+    birthratekey
+      0 1
+      2.13333 1
+    endlist
+  endnode
+  node light scv02_a08_01ml2
+    parent scv02_a08_01
+  endnode
+  node dummy line2756
+    parent scv02_a08_01
+  endnode
+  node dummy wmesh
+    parent scv02_a08_01
+  endnode
+  node light scv02_a08_01ml1
+    parent scv02_a08_01
+  endnode
+  node dummy rockya158
+    parent scv02_a08_01
+  endnode
+  node dummy water01a38
+    parent scv02_a08_01
+  endnode
+doneanim animloop01 scv02_a08_01
+
+#MAXANIM ASCII
+newanim animloop02 scv02_a08_01
+  length 7.96667
+  transtime 0
+  event 2.96667 detonate
+  animroot scv02_a08_01
+  node dummy scv02_a08_01
+    parent NULL
+  endnode
+  node dummy scv02_a08_01a
+    parent scv02_a08_01
+  endnode
+  node dummy cm3_repair_1
+    parent scv02_a08_01a
+  endnode
+  node emitter fx_lavasdg_emit01
+    parent cm3_repair_1
+    birthratekey
+      0 1
+      3.96667 1
+      4 1
+      4.36667 1
+      4.4 0
+      4.43333 1
+      7.96667 1
+    endlist
+  endnode
+  node light scv02_a08_01ml2
+    parent scv02_a08_01
+  endnode
+  node dummy line2756
+    parent scv02_a08_01
+  endnode
+  node dummy wmesh
+    parent scv02_a08_01
+  endnode
+  node light scv02_a08_01ml1
+    parent scv02_a08_01
+  endnode
+  node dummy rockya158
+    parent scv02_a08_01
+  endnode
+  node dummy water01a38
+    parent scv02_a08_01
+  endnode
+doneanim animloop02 scv02_a08_01
+
+#MAXANIM ASCII
+newanim animloop03 scv02_a08_01
+  length 16.3
+  transtime 0
+  event 7.96667 detonate
+  animroot scv02_a08_01
+  node dummy scv02_a08_01
+    parent NULL
+  endnode
+  node dummy scv02_a08_01a
+    parent scv02_a08_01
+  endnode
+  node dummy cm3_repair_1
+    parent scv02_a08_01a
+  endnode
+  node emitter fx_lavasdg_emit01
+    parent cm3_repair_1
+    birthratekey
+      0 1
+      3.96667 1
+      4 1
+      4.36667 1
+      4.4 0
+      4.43333 1
+      16.3 1
+    endlist
+  endnode
+  node light scv02_a08_01ml2
+    parent scv02_a08_01
+  endnode
+  node dummy line2756
+    parent scv02_a08_01
+  endnode
+  node dummy wmesh
+    parent scv02_a08_01
+  endnode
+  node light scv02_a08_01ml1
+    parent scv02_a08_01
+  endnode
+  node dummy rockya158
+    parent scv02_a08_01
+  endnode
+  node dummy water01a38
+    parent scv02_a08_01
+  endnode
+doneanim animloop03 scv02_a08_01
+
+#MAXANIM ASCII
+newanim tiledefault scv02_a08_01
+  length 0
+  transtime 0
+  animroot scv02_a08_01
+  node dummy scv02_a08_01
+    parent NULL
+  endnode
+  node dummy scv02_a08_01a
+    parent scv02_a08_01
+  endnode
+  node dummy cm3_repair_1
+    parent scv02_a08_01a
+  endnode
+  node emitter fx_lavasdg_emit01
+    parent cm3_repair_1
+    birthratekey
+      0 0
+    endlist
+  endnode
+  node light scv02_a08_01ml2
+    parent scv02_a08_01
+  endnode
+  node dummy line2756
+    parent scv02_a08_01
+  endnode
+  node dummy wmesh
+    parent scv02_a08_01
+  endnode
+  node light scv02_a08_01ml1
+    parent scv02_a08_01
+  endnode
+  node dummy rockya158
+    parent scv02_a08_01
+  endnode
+  node dummy water01a38
+    parent scv02_a08_01
+  endnode
+doneanim tiledefault scv02_a08_01
+donemodel scv02_a08_01

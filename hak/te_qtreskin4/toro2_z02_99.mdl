@@ -1,0 +1,274 @@
+# Rewritten by CleanModels 3 Version 3.5.1 Sat Oct 12 15:47:52 2013
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel toro2_z02_99
+  classification TILE
+  setsupermodel toro2_z02_99 NULL
+  setanimationscale 1
+#MAXGEOM ASCII
+beginmodelgeom toro2_z02_99
+node dummy toro2_z02_99
+  parent NULL
+endnode
+node trimesh line1279
+  parent toro2_z02_99
+  position 3.72 3.6 5.01
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center -22 3.5 34.5
+  bitmap ttr01_leaf01
+  verts 9
+    0.05 -0.01 0
+    -0.02 0.03 0
+    -0.01 0.05 0.22
+    0.02 0.03 0.22
+    -0.02 0 0.23
+    0.03 0.26 0.56
+    0.09 0.25 0.57
+    -0.02 0.25 0.58
+    0.04 0.45 0.69
+  faces 14
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 2 1 1 4 2 3
+    1 0 3 1 1 0 3 3
+    1 3 4 1 1 3 4 3
+    3 2 5 1 3 2 5 3
+    3 5 6 1 3 5 6 3
+    2 4 7 1 2 4 7 3
+    2 7 5 1 2 7 5 3
+    4 3 6 1 4 8 9 3
+    4 6 7 1 4 9 7 3
+    6 5 8 1 6 5 10 3
+    5 7 8 1 5 7 10 3
+    7 6 8 1 7 9 10 3
+  tverts 11
+    0.00195313 -0.998047 0
+    0.117188 -0.998047 0
+    0.119141 -0.222656 0
+    -0.00390625 -0.222656 0
+    0.1875 -0.222656 0
+    0.103516 1.22266 0
+    -0.00195313 1.22266 0
+    0.164063 1.22266 0
+    0.296875 -0.222656 0
+    0.296875 1.22266 0
+    0.162109 1.99805 0
+endnode
+node trimesh line1278
+  parent toro2_z02_99
+  position 3.79 3.51 5.01
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center -8 14.5 60.5
+  bitmap ttr01_leaf01
+  verts 9
+    0.02 -0.05 0
+    0.01 0.03 0
+    0.03 0.03 0.33
+    0.03 -0.01 0.33
+    -0.02 0 0.34
+    0.18 0.11 0.92
+    0.21 0.06 0.92
+    0.14 0.14 0.93
+    0.31 0.21 1.21
+  faces 14
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 2 1 1 4 2 3
+    1 0 3 1 1 0 3 3
+    1 3 4 1 1 3 4 3
+    3 2 5 1 3 2 5 3
+    3 5 6 1 3 5 6 3
+    2 4 7 1 2 4 7 3
+    2 7 5 1 2 7 5 3
+    4 3 6 1 4 8 9 3
+    4 6 7 1 4 9 7 3
+    6 5 8 1 6 5 10 3
+    5 7 8 1 5 7 10 3
+    7 6 8 1 7 9 10 3
+  tverts 11
+    0.00195313 -0.998047 0
+    0.117188 -0.998047 0
+    0.119141 -0.222656 0
+    -0.00390625 -0.222656 0
+    0.1875 -0.222656 0
+    0.103516 1.22266 0
+    -0.00195313 1.22266 0
+    0.164063 1.22266 0
+    0.296875 -0.222656 0
+    0.296875 1.22266 0
+    0.162109 1.99805 0
+endnode
+node trimesh line848
+  parent toro2_z02_99
+  position 0 0.47 5.01
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 1
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center 1 0 -3.05176e-005
+  bitmap ttr01_road01
+  verts 21
+    5 -0.47 0
+    5 1.53 0
+    3.37 -0.4 0
+    3.57 1.59 0
+    5 -2.47 0
+    3.18 -2.39 0
+    2.26 1.88 0
+    1.93 -0.09 0
+    1.6 -2.07 0
+    0.4 2.45 0
+    0.12 0.47 0
+    -0.16 -1.51 0
+    -1.97 2.43 0
+    -1.85 0.44 0
+    -1.72 -1.56 0
+    -3.81 1.71 0
+    -3.49 -0.27 0
+    -3.18 -2.25 0
+    -5 1.53 0
+    -5 -0.47 0
+    -5 -2.47 0
+  faces 24
+    0 1 2 1 0 1 2 3
+    2 1 3 1 2 1 3 3
+    4 0 5 1 4 0 5 3
+    5 0 2 1 5 0 2 3
+    6 7 2 1 6 7 2 3
+    2 3 6 1 2 3 6 3
+    7 8 5 1 7 8 5 3
+    5 2 7 1 5 2 7 3
+    9 10 7 1 9 10 7 3
+    7 6 9 1 7 6 9 3
+    10 11 8 1 10 11 8 3
+    8 7 10 1 8 7 10 3
+    12 13 10 1 12 13 10 3
+    10 9 12 1 10 9 12 3
+    13 14 11 1 13 14 11 3
+    11 10 13 1 11 10 13 3
+    15 16 13 1 15 16 13 3
+    13 12 15 1 13 12 15 3
+    16 17 14 1 16 17 14 3
+    14 13 16 1 14 13 16 3
+    18 19 16 1 18 19 16 3
+    16 15 18 1 16 15 18 3
+    19 20 17 1 19 20 17 3
+    17 16 19 1 17 16 19 3
+  tverts 21
+    0.5 1.99805 0
+    0 1.99805 0
+    0.5 1.5 0
+    0 1.5 0
+    1 1.99805 0
+    1 1.5 0
+    0 1 0
+    0.5 1 0
+    1 1 0
+    0 0.5 0
+    0.5 0.5 0
+    1 0.5 0
+    0 0 0
+    0.5 0 0
+    1 0 0
+    0 -0.5 0
+    0.5 -0.5 0
+    1 -0.5 0
+    0 -0.998047 0
+    0.5 -0.998047 0
+    1 -0.998047 0
+endnode
+node trimesh ground
+  parent toro2_z02_99
+  position 0 0 5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 1
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center 0 0 0
+  bitmap toro_grass05
+  verts 9
+    -5 5 0
+    -5 0 0
+    -5 -5 0
+    0 5 0
+    0 0 0
+    0 -5 0
+    5 5 0
+    5 0 0
+    5 -5 0
+  faces 8
+    3 0 4 1 3 0 4 1
+    1 4 0 1 1 4 0 1
+    4 1 5 1 4 1 5 1
+    2 5 1 1 2 5 1 1
+    6 3 7 1 6 3 7 1
+    4 7 3 1 4 7 3 1
+    7 4 8 1 7 4 8 1
+    5 8 4 1 5 8 4 1
+  tverts 9
+    -0.5 -0.5 0
+    0.5 -0.5 0
+    1.5 -0.5 0
+    -0.5 0.5 0
+    0.5 0.5 0
+    1.5 0.5 0
+    -0.5 1.5 0
+    0.5 1.5 0
+    1.5 1.5 0
+endnode
+endmodelgeom toro2_z02_99
+donemodel toro2_z02_99

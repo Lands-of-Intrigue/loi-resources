@@ -1,0 +1,193 @@
+#Exported from 3ds max by MDL Plug-in Suite 1.0b
+#http://www.bricksbuilder.com/nwn/utils/
+#MAXMODEL ASCII
+# model: sdg_spell01
+filedependancy sen_dungeonA05.max
+newmodel sdg_spell01
+setsupermodel sdg_spell01 NULL
+classification Tile
+setanimationscale 1.0
+#MAXGEOM  ASCII
+beginmodelgeom sdg_spell01
+node dummy sdg_spell01
+  parent NULL
+endnode
+node emitter OmenEmitter01
+  parent sdg_spell01
+  position 0 0 -0.171067
+  orientation -1 0 0 -1.5708
+  wirecolor 0.570313 0.570313 0.570313
+    colorStart 1 1 1
+    colorEnd 1 1 1
+    alphaStart 1
+    alphaEnd 1
+    sizeStart 0.01
+    sizeEnd 0.02
+    sizeStart_y 0
+    sizeEnd_y 0
+    frameStart 0
+    frameEnd 0
+    birthrate 125
+    spawnType 0
+    lifeExp 1.5
+    mass 0
+    spread 0
+    particleRot 0
+    velocity 0
+    randvel 0
+    fps 0
+    random 0
+    inherit 0
+    inherit_local 0
+    inherit_part 0
+    inheritvel 0
+    xsize 250
+    ysize 250
+    bounce 0
+    bounce_co 0
+    loop 0
+    update Fountain
+    render Motion_Blur
+    Blend Lighten
+    update_sel 1
+    render_sel 7
+    blend_sel 3
+    deadspace 0.174533
+    opacity 1
+    blurlength 10
+    lightningDelay 0
+    lightningRadius 0
+    lightningScale 0
+    blastRadius 0
+    blastLength 0
+    twosidedtex 1
+    p2p 1
+    p2p_sel 2
+    p2p_type Gravity
+    p2p_bezier2 0
+    p2p_bezier3 0
+    combinetime 0
+    drag 0.4
+    grav 5
+    threshold 0
+    texture fxpa_sdg_dot01
+    xgrid 1
+    ygrid 1
+    affectedByWind 0
+    m_isTinted 0
+    renderorder 0
+    Splat 0
+endnode
+node reference OmenRef01
+  parent OmenEmitter01
+  position 0 0 0
+  orientation 0 0 0 0
+  wirecolor 0.695313 0.695313 0.695313
+    refModel fx_ref
+    reattachable 0
+endnode
+node emitter shell
+  parent sdg_spell01
+  position -0.00281805 -0.00087907 -0.172857
+  orientation 0 0 0 0
+  wirecolor 0.570313 0.570313 0.570313
+    colorStart 1 1 1
+    colorEnd 1 1 1
+    alphaStart 0.9
+    alphaEnd 0
+    sizeStart 0.05
+    sizeEnd 1
+    sizeStart_y 0
+    sizeEnd_y 0
+    frameStart 0
+    frameEnd 0
+    birthrate 0
+    spawnType 0
+    lifeExp 1.1
+    mass 0
+    spread 6.28319
+    particleRot 0
+    velocity 0.1
+    randvel 0.1
+    fps 0
+    random 0
+    inherit 0
+    inherit_local 0
+    inherit_part 0
+    inheritvel 0
+    xsize 0
+    ysize 0
+    bounce 0
+    bounce_co 0
+    loop 0
+    update Fountain
+    render Normal
+    Blend Lighten
+    update_sel 1
+    render_sel 1
+    blend_sel 3
+    deadspace 0
+    opacity 0.5
+    blurlength 10
+    lightningDelay 0
+    lightningRadius 0
+    lightningScale 0
+    blastRadius 0
+    blastLength 0
+    twosidedtex 0
+    p2p 0
+    p2p_sel 1
+    p2p_type Bezier
+    p2p_bezier2 0
+    p2p_bezier3 0
+    combinetime 0
+    drag 0
+    grav 0
+    threshold 0
+    texture fxpa_sdg_flare01
+    xgrid 1
+    ygrid 1
+    affectedByWind 0
+    m_isTinted 0
+    renderorder 0
+    Splat 0
+endnode
+endmodelgeom sdg_spell01
+
+#MAXANIM ASCII
+newanim animloop01 sdg_spell01
+  length 0.933333
+  transtime 0.25
+  animroot sdg_spell01
+node dummy sdg_spell01
+  parent NULL
+endnode
+node emitter OmenEmitter01
+  parent sdg_spell01
+    orientationkey
+      0  1 0 0 1.5708
+      0.3  -0.57735 0.57735 0.57735 4.18879
+      0.633333  0 -0.707107 -0.707107 3.14159
+      0.933333  0.57735 0.57735 0.57735 2.09439
+    endlist
+    birthratekey
+      0  125
+      0.933333  125
+    endlist
+endnode
+node reference OmenRef01
+  parent OmenEmitter01
+endnode
+node emitter shell
+  parent sdg_spell01
+    birthratekey
+      0  0
+      0.266667  0
+      0.3  20
+    endlist
+    velocitykey
+      0.3  0.1
+    endlist
+endnode
+doneanim animloop01 sdg_spell01
+donemodel sdg_spell01

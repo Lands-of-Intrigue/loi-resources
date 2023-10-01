@@ -1,0 +1,1027 @@
+# Rewritten by CleanModels 3 Version 3.5.1 Sun Jul 28 19:46:01 2013
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel ttr_udoor_03
+  classification DOOR
+  setsupermodel ttr_udoor_03 NULL
+  setanimationscale 1
+#MAXGEOM ASCII
+beginmodelgeom ttr_udoor_03
+node dummy ttr_udoor_03
+  parent NULL
+endnode
+node trimesh box36
+  parent ttr_udoor_03
+  position 0 0.15 -0.5
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 0.768628 0.768628 0.768628
+  diffuse 0.768628 0.768628 0.768628
+  specular 0 0 0
+  shininess 1
+  center 0 -15 500
+  bitmap torogate03
+  orientation 0 0 0 0
+  verts 32
+    -3.8 -0.55 5
+    3.8 -0.55 5
+    3.8 0.25 5
+    -3.8 0.25 5
+    -3.7 -0.45 -1
+    2.9 -0.45 -1
+    2.9 -0.45 1.55
+    -3.7 -0.45 1.4
+    2.9 -0.15 -1
+    3.7 -0.15 -1
+    3.7 -0.15 1.5
+    2.86 -0.15 1.55
+    2.9 -0.45 4.5
+    -3.7 -0.45 4.45
+    3.7 -0.15 4.5
+    2.9 -0.15 4.5
+    -3.8 -0.55 4.45
+    3.8 -0.55 4.5
+    3.7 0.15 -1
+    3.7 0.15 1.5
+    3.7 0.15 4.5
+    3.8 0.25 4.5
+    -2.9 0.15 -1
+    -2.9 0.15 1.4
+    -2.9 0.15 4.5
+    -3.8 0.25 4.45
+    -3.7 -0.15 1.4
+    -3.7 -0.15 -1
+    -3.7 -0.15 4.45
+    -2.9 -0.15 1.4
+    -2.9 -0.15 -1
+    -2.9 -0.15 4.5
+  faces 36
+    0 1 2 1 46 47 48 1
+    2 3 0 1 48 49 46 1
+    4 5 6 1 28 29 30 5
+    6 7 4 1 30 31 28 5
+    8 9 10 1 34 35 36 5
+    10 11 8 1 36 37 34 5
+    7 6 12 1 31 30 32 5
+    12 13 7 1 32 33 31 5
+    11 10 14 1 37 36 38 5
+    14 15 11 1 38 39 37 5
+    16 17 1 2 0 1 2 5
+    1 0 16 2 2 3 0 5
+    9 18 19 2 40 41 42 4
+    19 10 9 2 42 43 40 4
+    10 19 20 2 43 42 44 4
+    20 14 10 2 44 45 43 4
+    17 21 2 4 4 5 6 4
+    2 1 17 4 6 7 4 4
+    18 22 23 1 9 10 11 6
+    23 19 18 1 11 12 9 6
+    19 23 24 1 12 11 13 6
+    24 20 19 1 13 14 12 6
+    21 25 3 2 1 0 3 6
+    3 2 21 2 3 2 1 6
+    26 27 4 2 22 23 24 5
+    4 7 26 2 24 25 22 5
+    28 26 7 4 26 22 25 5
+    7 13 28 4 25 27 26 5
+    29 30 27 1 19 20 21 5
+    27 26 29 1 21 17 19 5
+    31 29 26 1 15 16 17 5
+    26 28 31 1 17 18 15 5
+    16 0 3 4 4 7 6 5
+    3 25 16 4 6 5 4 5
+    17 16 25 1 8 8 8 1
+    17 25 21 1 8 8 8 1
+  tverts 50
+    0 0.904297 0
+    1 0.904297 0
+    1 1 0
+    0 1 0
+    0.00390625 0.902344 0
+    0.113281 0.902344 0
+    0.113281 1 0
+    0.00390625 1 0
+    0 0 0
+    1.33008 -0.0839844 0
+    1.33008 1.99023 0
+    0.796875 1.99023 0
+    0.775391 -0.0839844 0
+    0.107422 1.99023 0
+    0.107422 -0.0839844 0
+    0.882813 0.919922 0
+    0.46875 0.927734 0
+    0.470703 0.998047 0
+    0.878906 1 0
+    0.466797 0.927734 0
+    0.787109 0.916016 0
+    0.791016 0.996094 0
+    0.648438 0.929688 0
+    1.4043 0.929688 0
+    1.4043 0.984375 0
+    0.648438 0.984375 0
+    -0.310547 0.929688 0
+    -0.310547 0.984375 0
+    1.32813 1.98633 0
+    1.32813 -0.0898438 0
+    0.761719 -0.0898438 0
+    0.794922 1.98633 0
+    0.107422 -0.0898438 0
+    0.117188 1.98633 0
+    0.134766 0.984375 0
+    0.134766 0.904297 0
+    0.46875 0.90625 0
+    0.474609 0.990234 0
+    0.867188 0.90625 0
+    0.867188 0.986328 0
+    -0.226563 0.998047 0
+    -0.226563 0.912109 0
+    0.328125 0.912109 0
+    0.328125 0.998047 0
+    0.994141 0.912109 0
+    0.994141 0.998047 0
+    -0.00585938 0.90625 0
+    1.00586 0.90625 0
+    1.00586 0.998047 0
+    -0.00585938 0.998047 0
+endnode
+node trimesh object430
+  parent box36
+  position 0 -0.15 4.5
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 0.1 0.1 0.1
+  diffuse 0.5 0.5 0.5
+  specular 0.045 0.045 0.045
+  shininess 26
+  center 0 -15 175
+  bitmap ttr01_tooth01
+  orientation 0 0 0 0
+  verts 12
+    -2.9 0.3 -5.5
+    -2.9 0 -5.5
+    -2.9 0 -3.1
+    -2.9 0.3 -3.1
+    -2.9 0 0
+    -2.9 0.3 0
+    2.9 0 -5.5
+    2.86 0 -2.95
+    2.86 -0.3 -2.95
+    2.9 -0.3 -5.5
+    2.9 0 0
+    2.9 -0.3 0
+  faces 8
+    0 1 2 1 0 1 2 3
+    2 3 0 1 2 3 0 3
+    3 2 4 1 3 2 4 3
+    4 5 3 1 4 5 3 3
+    6 7 8 1 1 2 6 5
+    8 9 6 1 6 7 1 5
+    7 10 11 2 2 4 8 5
+    11 8 7 2 8 6 2 5
+  tverts 9
+    7.99219 0 0
+    7.99219 1.00586 0
+    1.45313 1.00586 0
+    1.45313 0 0
+    -6.99219 1.00586 0
+    -6.99219 0 0
+    1.45313 -0.0136719 0
+    7.99219 -0.0136719 0
+    -6.99219 -0.0136719 0
+endnode
+node trimesh ngon36
+  parent ttr_udoor_03
+  position 3.46 -0.18 -0.59
+  orientation -1 0 0 -1.5708
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 0.1 0.1 0.1
+  diffuse 0.5 0.5 0.5
+  specular 0.045 0.045 0.045
+  shininess 26
+  center 0 0 0
+  bitmap ttr01_tooth01
+  verts 16
+    -0.6 0 -0.15
+    -0.43 -0.42 -0.15
+    -0.43 -0.42 0.15
+    -0.6 0 0.15
+    0 -0.6 -0.15
+    0 -0.6 0.15
+    0.42 -0.42 -0.15
+    0.42 -0.42 0.15
+    0.6 0 -0.15
+    0.6 0 0.15
+    0.42 0.42 -0.15
+    0.42 0.42 0.15
+    0 0.6 -0.15
+    0 0.6 0.15
+    -0.43 0.42 -0.15
+    -0.43 0.42 0.15
+  faces 16
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 5 1 1 4 5 3
+    1 5 2 1 1 5 2 3
+    4 6 7 1 6 7 8 3
+    4 7 5 1 6 8 9 3
+    6 8 9 1 7 10 11 3
+    6 9 7 1 7 11 8 3
+    8 10 11 1 10 12 13 3
+    8 11 9 1 10 13 11 3
+    10 12 13 1 12 14 15 3
+    10 13 11 1 12 15 13 3
+    12 14 15 1 14 16 17 3
+    12 15 13 1 14 17 15 3
+    14 0 3 1 16 0 3 3
+    14 3 15 1 16 3 17 3
+  tverts 18
+    2.5 0 0
+    3.75 0 0
+    3.75 1 0
+    2.5 1 0
+    5 0 0
+    5 1 0
+    -5 0 0
+    -3.75 0 0
+    -3.75 1 0
+    -5 1 0
+    -2.5 0 0
+    -2.5 1 0
+    -1.25 0 0
+    -1.25 1 0
+    0 0 0
+    0 1 0
+    1.25 0 0
+    1.25 1 0
+endnode
+node trimesh mesh275
+  parent ngon36
+  position -3.46 0.59 0
+  orientation -1 0 0 -1.5708
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center 0.00194931 15 -1
+  bitmap ttr01_metaltop
+  verts 16
+    3.46 -0.15 -0.01
+    2.86 -0.15 0.59
+    3.03 -0.15 0.17
+    3.88 -0.15 0.17
+    4.06 -0.15 0.59
+    3.88 -0.15 1.01
+    3.46 -0.15 1.19
+    3.03 -0.15 1.01
+    3.46 0.15 -0.01
+    3.03 0.15 0.17
+    2.86 0.15 0.59
+    3.88 0.15 0.17
+    4.06 0.15 0.59
+    3.88 0.15 1.01
+    3.46 0.15 1.19
+    3.03 0.15 1.01
+  faces 12
+    0 1 2 1 0 1 2 2
+    3 1 0 1 3 1 0 2
+    4 1 3 1 4 1 3 2
+    5 1 4 1 5 1 4 2
+    6 1 5 1 6 1 5 2
+    7 1 6 1 7 1 6 2
+    8 9 10 1 0 2 1 1
+    11 8 10 1 3 0 1 1
+    12 11 10 1 4 3 1 1
+    13 12 10 1 5 4 1 1
+    14 13 10 1 6 5 1 1
+    15 14 10 1 7 6 1 1
+  tverts 8
+    0.150391 0 0
+    0.300781 0.150391 0
+    0.255859 0.0449219 0
+    0.0449219 0.0449219 0
+    0 0.150391 0
+    0.0449219 0.255859 0
+    0.150391 0.300781 0
+    0.255859 0.255859 0
+endnode
+node trimesh ngon37
+  parent ttr_udoor_03
+  position -3.5 0.21 -0.6
+  orientation -1 0 0 -1.5708
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 0.1 0.1 0.1
+  diffuse 0.5 0.5 0.5
+  specular 0.045 0.045 0.045
+  shininess 26
+  center -0.000497818 0 0.000599861
+  bitmap ttr01_tooth01
+  verts 16
+    0.6 0 0.15
+    0.42 -0.43 0.15
+    0.42 -0.43 -0.15
+    0.6 0 -0.15
+    0 -0.6 0.15
+    0 -0.6 -0.15
+    -0.42 -0.43 0.15
+    -0.42 -0.43 -0.15
+    -0.6 0 0.15
+    -0.6 0 -0.15
+    -0.42 0.42 0.15
+    -0.42 0.42 -0.15
+    0 0.6 0.15
+    0 0.6 -0.15
+    0.42 0.42 0.15
+    0.42 0.42 -0.15
+  faces 16
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 5 1 1 4 5 3
+    1 5 2 1 1 5 2 3
+    4 6 7 1 6 7 8 3
+    4 7 5 1 6 8 9 3
+    6 8 9 1 7 10 11 3
+    6 9 7 1 7 11 8 3
+    8 10 11 1 10 12 13 3
+    8 11 9 1 10 13 11 3
+    10 12 13 1 12 14 15 3
+    10 13 11 1 12 15 13 3
+    12 14 15 1 14 16 17 3
+    12 15 13 1 14 17 15 3
+    14 0 3 1 16 0 3 3
+    14 3 15 1 16 3 17 3
+  tverts 18
+    2.5 0 0
+    3.75 0 0
+    3.75 1 0
+    2.5 1 0
+    5 0 0
+    5 1 0
+    -5 0 0
+    -3.75 0 0
+    -3.75 1 0
+    -5 1 0
+    -2.5 0 0
+    -2.5 1 0
+    -1.25 0 0
+    -1.25 1 0
+    0 0 0
+    0 1 0
+    1.25 0 0
+    1.25 1 0
+endnode
+node trimesh mesh1803
+  parent ngon37
+  position 0 0.6 0
+  orientation 1 0 0 -1.5708
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center 0.998049 -15 -1
+  bitmap ttr01_metaltop
+  verts 16
+    0 0.15 -1.2
+    0.6 0.15 -0.6
+    0.42 0.15 -1.03
+    -0.42 0.15 -1.03
+    -0.6 0.15 -0.6
+    -0.42 0.15 -0.18
+    0 0.15 0
+    0.42 0.15 -0.18
+    0 -0.15 -1.2
+    0.42 -0.15 -1.03
+    0.6 -0.15 -0.6
+    -0.42 -0.15 -1.03
+    -0.6 -0.15 -0.6
+    -0.42 -0.15 -0.18
+    0 -0.15 0
+    0.42 -0.15 -0.18
+  faces 12
+    0 1 2 1 0 1 2 2
+    3 1 0 1 3 1 0 2
+    4 1 3 1 4 1 3 2
+    5 1 4 1 5 1 4 2
+    6 1 5 1 6 1 5 2
+    7 1 6 1 7 1 6 2
+    8 9 10 1 0 2 1 1
+    11 8 10 1 3 0 1 1
+    12 11 10 1 4 3 1 1
+    13 12 10 1 5 4 1 1
+    14 13 10 1 6 5 1 1
+    15 14 10 1 7 6 1 1
+  tverts 8
+    0.150391 0 0
+    0.300781 0.150391 0
+    0.255859 0.0449219 0
+    0.0449219 0.0449219 0
+    0 0.150391 0
+    0.0449219 0.255859 0
+    0.150391 0.300781 0
+    0.255859 0.255859 0
+endnode
+node dummy ttr_udoor_03grnd
+  parent ttr_udoor_03
+  position 0 0.02 0.97
+  wirecolor 0.223529 0.0313726 0.533333
+  orientation 0 0 0 0
+endnode
+node dummy ttr_udoor_03impc
+  parent ttr_udoor_03
+  position 0 0.02 2.2
+  wirecolor 0.223529 0.0313726 0.533333
+  orientation 0 0 0 0
+endnode
+node dummy ttr_udoor_03hhit
+  parent ttr_udoor_03
+  position 0 0.02 3.73
+  wirecolor 0.223529 0.0313726 0.533333
+  orientation 0 0 0 0
+endnode
+node dummy ttr_udoor_03head
+  parent ttr_udoor_03
+  position 0 0.02 4.54
+  wirecolor 0.223529 0.0313726 0.533333
+  orientation 0 0 0 0
+endnode
+node trimesh sam
+  parent ttr_udoor_03
+  position 0 0 -0.02
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 0
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 0
+  transparencyhint 0
+  selfillumcolor 0 0 1
+  ambient 0.2 0.2 0.2
+  diffuse 0.8 0.8 0.8
+  specular 0 0 0
+  shininess 1
+  center 0 0.34453 227.16
+  bitmap NULL
+  orientation 0 0 0 0
+  verts 8
+    3.7 0.07 0.01
+    -3.7 0.07 0.01
+    -3.7 0.07 4.53
+    3.7 0.07 4.53
+    -3.7 -0.06 0.01
+    3.7 -0.06 0.01
+    -3.7 -0.06 4.53
+    3.7 -0.06 4.53
+  faces 4
+    0 1 2 1 0 0 0 18
+    2 3 0 1 0 0 0 18
+    4 5 6 1 0 0 0 18
+    7 6 5 1 0 0 0 18
+endnode
+endmodelgeom ttr_udoor_03
+
+#MAXANIM ASCII
+newanim closed ttr_udoor_03
+  length 0.333333
+  transtime 0.25
+  animroot ttr_udoor_03
+  node dummy ttr_udoor_03
+    parent NULL
+  endnode
+  node trimesh box36
+    parent ttr_udoor_03
+    positionkey
+      0 0 0.15 -0.5
+      0.333333 0 0.15 -0.5
+    endlist
+  endnode
+  node dummy object430
+    parent box36
+  endnode
+  node trimesh ngon36
+    parent ttr_udoor_03
+    orientationkey
+      0 -1 0 0 -1.5708
+      0.333333 -1 0 0 -1.5708
+    endlist
+  endnode
+  node dummy mesh275
+    parent ngon36
+  endnode
+  node trimesh ngon37
+    parent ttr_udoor_03
+    orientationkey
+      0 -1 0 0 -1.5708
+      0.333333 -1 0 0 -1.5708
+    endlist
+  endnode
+  node dummy mesh1803
+    parent ngon37
+  endnode
+  node dummy ttr_udoor_03grnd
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03impc
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03hhit
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03head
+    parent ttr_udoor_03
+  endnode
+  node dummy sam
+    parent ttr_udoor_03
+  endnode
+doneanim closed ttr_udoor_03
+
+#MAXANIM ASCII
+newanim closing1 ttr_udoor_03
+  length 0.633333
+  transtime 0.25
+  animroot ttr_udoor_03
+  node dummy ttr_udoor_03
+    parent NULL
+  endnode
+  node trimesh box36
+    parent ttr_udoor_03
+    positionkey
+      0 0 0.15 -4.60152
+      0.566667 0 0.15 -0.312007
+      0.633333 0 0.15 -0.5
+    endlist
+  endnode
+  node dummy object430
+    parent box36
+  endnode
+  node trimesh ngon36
+    parent ttr_udoor_03
+    orientationkey
+      0 -0.57735 0.57735 -0.57735 -2.0944
+      0.2 0 0.707107 -0.707107 -3.1416
+      0.433333 0.57735 0.57735 -0.57735 -4.1888
+      0.633333 1 0 0 -4.71239
+    endlist
+  endnode
+  node dummy mesh275
+    parent ngon36
+  endnode
+  node trimesh ngon37
+    parent ttr_udoor_03
+    orientationkey
+      0 -0.57735 0.57735 -0.57735 -2.0944
+      0.2 0 0.707107 -0.707107 -3.1416
+      0.433333 0.57735 0.57735 -0.57735 -4.1888
+      0.633333 1 0 0 -4.71239
+    endlist
+  endnode
+  node dummy mesh1803
+    parent ngon37
+  endnode
+  node dummy ttr_udoor_03grnd
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03impc
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03hhit
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03head
+    parent ttr_udoor_03
+  endnode
+  node trimesh sam
+    parent ttr_udoor_03
+    alphakey
+      0 0
+      0.633333 0
+    endlist
+  endnode
+doneanim closing1 ttr_udoor_03
+
+#MAXANIM ASCII
+newanim closing2 ttr_udoor_03
+  length 0.633333
+  transtime 0.25
+  animroot ttr_udoor_03
+  node dummy ttr_udoor_03
+    parent NULL
+  endnode
+  node trimesh box36
+    parent ttr_udoor_03
+    positionkey
+      0 0 0.15 -4.60152
+      0.566667 0 0.15 -0.312007
+      0.633333 0 0.15 -0.5
+    endlist
+  endnode
+  node dummy object430
+    parent box36
+  endnode
+  node trimesh ngon36
+    parent ttr_udoor_03
+    orientationkey
+      0 0.57735 -0.57735 0.57735 -4.18879
+      0.2 0 -0.707107 0.707107 -3.14159
+      0.433333 -0.57735 -0.57735 0.57735 -2.09439
+      0.633333 -1 0 0 -1.5708
+    endlist
+  endnode
+  node dummy mesh275
+    parent ngon36
+  endnode
+  node trimesh ngon37
+    parent ttr_udoor_03
+    orientationkey
+      0 0.57735 -0.57735 0.57735 -4.18879
+      0.2 0 -0.707107 0.707107 -3.14159
+      0.433333 -0.57735 -0.57735 0.57735 -2.09439
+      0.633333 -1 0 0 -1.5708
+    endlist
+  endnode
+  node dummy mesh1803
+    parent ngon37
+  endnode
+  node dummy ttr_udoor_03grnd
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03impc
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03hhit
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03head
+    parent ttr_udoor_03
+  endnode
+  node trimesh sam
+    parent ttr_udoor_03
+    alphakey
+      0 0
+      0.633333 0
+    endlist
+  endnode
+doneanim closing2 ttr_udoor_03
+
+#MAXANIM ASCII
+newanim opened1 ttr_udoor_03
+  length 0.3
+  transtime 0.25
+  animroot ttr_udoor_03
+  node dummy ttr_udoor_03
+    parent NULL
+  endnode
+  node trimesh box36
+    parent ttr_udoor_03
+    positionkey
+      0 0 0.15 -4.60152
+      0.3 0 0.15 -4.60152
+    endlist
+  endnode
+  node dummy object430
+    parent box36
+  endnode
+  node trimesh ngon36
+    parent ttr_udoor_03
+    orientationkey
+      0 -0.57735 0.57735 -0.57735 -2.0944
+      0.3 -0.57735 0.57735 -0.57735 -2.0944
+    endlist
+  endnode
+  node dummy mesh275
+    parent ngon36
+  endnode
+  node trimesh ngon37
+    parent ttr_udoor_03
+    orientationkey
+      0 -0.57735 0.57735 -0.57735 -2.0944
+      0.3 -0.57735 0.57735 -0.57735 -2.0944
+    endlist
+  endnode
+  node dummy mesh1803
+    parent ngon37
+  endnode
+  node dummy ttr_udoor_03grnd
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03impc
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03hhit
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03head
+    parent ttr_udoor_03
+  endnode
+  node dummy sam
+    parent ttr_udoor_03
+  endnode
+doneanim opened1 ttr_udoor_03
+
+#MAXANIM ASCII
+newanim opened2 ttr_udoor_03
+  length 0.3
+  transtime 0.25
+  animroot ttr_udoor_03
+  node dummy ttr_udoor_03
+    parent NULL
+  endnode
+  node trimesh box36
+    parent ttr_udoor_03
+    positionkey
+      0 0 0.15 -4.60152
+      0.3 0 0.15 -4.60152
+    endlist
+  endnode
+  node dummy object430
+    parent box36
+  endnode
+  node trimesh ngon36
+    parent ttr_udoor_03
+    orientationkey
+      0 -0.57735 0.57735 -0.57735 -2.0944
+      0.3 -0.57735 0.57735 -0.57735 -2.0944
+    endlist
+  endnode
+  node dummy mesh275
+    parent ngon36
+  endnode
+  node trimesh ngon37
+    parent ttr_udoor_03
+    orientationkey
+      0 -0.57735 0.57735 -0.57735 -2.0944
+      0.3 -0.57735 0.57735 -0.57735 -2.0944
+    endlist
+  endnode
+  node dummy mesh1803
+    parent ngon37
+  endnode
+  node dummy ttr_udoor_03grnd
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03impc
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03hhit
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03head
+    parent ttr_udoor_03
+  endnode
+  node dummy sam
+    parent ttr_udoor_03
+  endnode
+doneanim opened2 ttr_udoor_03
+
+#MAXANIM ASCII
+newanim opening1 ttr_udoor_03
+  length 0.633333
+  transtime 0.25
+  animroot ttr_udoor_03
+  node dummy ttr_udoor_03
+    parent NULL
+  endnode
+  node trimesh box36
+    parent ttr_udoor_03
+    positionkey
+      0 0 0.15 -0.5
+      0.0666667 0 0.15 -1.5336
+      0.5 0 0.15 -4.36265
+      0.566667 0 0.15 -4.42106
+      0.633333 0 0.15 -4.60152
+    endlist
+  endnode
+  node dummy object430
+    parent box36
+  endnode
+  node trimesh ngon36
+    parent ttr_udoor_03
+    orientationkey
+      0 -1 0 0 -1.5708
+      0.0666667 -0.746143 -0.470781 0.470781 -1.85954
+      0.2 -0.57735 -0.57735 0.57735 -2.09439
+      0.433333 0 -0.707107 0.707107 -3.14159
+      0.5 0.186157 -0.694747 0.694747 -3.50969
+      0.566667 0.217607 -0.690162 0.690162 -3.57013
+      0.633333 0.57735 -0.57735 0.57735 -4.18879
+    endlist
+  endnode
+  node dummy mesh275
+    parent ngon36
+  endnode
+  node trimesh ngon37
+    parent ttr_udoor_03
+    orientationkey
+      0 -1 0 0 -1.5708
+      0.0666667 -0.802284 -0.422102 0.422102 -1.78933
+      0.2 -0.57735 -0.57735 0.57735 -2.09439
+      0.433333 0 -0.707107 0.707107 -3.14159
+      0.5 0.186157 -0.694747 0.694747 -3.50969
+      0.566667 0.214454 -0.690655 0.690655 -3.5641
+      0.633333 0.57735 -0.57735 0.57735 -4.18879
+    endlist
+  endnode
+  node dummy mesh1803
+    parent ngon37
+  endnode
+  node dummy ttr_udoor_03grnd
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03impc
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03hhit
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03head
+    parent ttr_udoor_03
+  endnode
+  node trimesh sam
+    parent ttr_udoor_03
+    alphakey
+      0 0
+      0.633333 0
+    endlist
+  endnode
+doneanim opening1 ttr_udoor_03
+
+#MAXANIM ASCII
+newanim opening2 ttr_udoor_03
+  length 0.633333
+  transtime 0.25
+  animroot ttr_udoor_03
+  node dummy ttr_udoor_03
+    parent NULL
+  endnode
+  node trimesh box36
+    parent ttr_udoor_03
+    positionkey
+      0 0 0.15 -0.5
+      0.0666667 0 0.15 -1.5336
+      0.5 0 0.15 -4.36265
+      0.566667 0 0.15 -4.42106
+      0.633333 0 0.15 -4.60152
+    endlist
+  endnode
+  node dummy object430
+    parent box36
+  endnode
+  node trimesh ngon36
+    parent ttr_udoor_03
+    orientationkey
+      0 1 0 1.21877e-007 -4.71238
+      0.0666667 0.746143 0.470781 -0.470781 -4.42365
+      0.2 0.57735 0.57735 -0.57735 -4.1888
+      0.433333 0 0.707107 -0.707107 -3.1416
+      0.5 -0.186157 0.694747 -0.694747 -2.77349
+      0.566667 -0.217607 0.690162 -0.690162 -2.71306
+      0.633333 -0.57735 0.57735 -0.57735 -2.0944
+    endlist
+  endnode
+  node dummy mesh275
+    parent ngon36
+  endnode
+  node trimesh ngon37
+    parent ttr_udoor_03
+    orientationkey
+      0 1 0 -1.37992e-007 -4.71238
+      0.0666667 0.802284 0.422102 -0.422102 -4.49386
+      0.2 0.57735 0.57735 -0.57735 -4.1888
+      0.433333 0 0.707107 -0.707107 -3.1416
+      0.5 -0.186157 0.694747 -0.694747 -2.7735
+      0.566667 -0.214454 0.690655 -0.690655 -2.71909
+      0.633333 -0.57735 0.57735 -0.57735 -2.0944
+    endlist
+  endnode
+  node dummy mesh1803
+    parent ngon37
+  endnode
+  node dummy ttr_udoor_03grnd
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03impc
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03hhit
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03head
+    parent ttr_udoor_03
+  endnode
+  node trimesh sam
+    parent ttr_udoor_03
+    alphakey
+      0 0
+      0.633333 0
+    endlist
+  endnode
+doneanim opening2 ttr_udoor_03
+
+#MAXANIM ASCII
+newanim trans ttr_udoor_03
+  length 0.0333333
+  transtime 0.25
+  animroot ttr_udoor_03
+  node dummy ttr_udoor_03
+    parent NULL
+  endnode
+  node dummy box36
+    parent ttr_udoor_03
+  endnode
+  node dummy object430
+    parent box36
+  endnode
+  node dummy ngon36
+    parent ttr_udoor_03
+  endnode
+  node dummy mesh275
+    parent ngon36
+  endnode
+  node dummy ngon37
+    parent ttr_udoor_03
+  endnode
+  node dummy mesh1803
+    parent ngon37
+  endnode
+  node dummy ttr_udoor_03grnd
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03impc
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03hhit
+    parent ttr_udoor_03
+  endnode
+  node dummy ttr_udoor_03head
+    parent ttr_udoor_03
+  endnode
+  node trimesh sam
+    parent ttr_udoor_03
+    alphakey
+      0 0.25
+      0.0333333 0.25
+    endlist
+  endnode
+doneanim trans ttr_udoor_03
+donemodel ttr_udoor_03

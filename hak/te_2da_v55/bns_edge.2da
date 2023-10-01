@@ -1,0 +1,39 @@
+2DA V2.0                                                        
+                                                                
+           Corner1   Edge     Corner2   Height   Model          
+0          Snow      ****     Water     0        bns_z07_01   
+1          Water     ****     Water     0        bns_z08_01   
+2          Snow      ****     Snow      0        bns_z20_01   
+3          Snow      Road     Snow      0        bns_z05_01   
+4          Snow      Wall     Snow      0        bns_z15_01   
+5          Water     Dock     Water     0        bns_z10_01   
+6          Water     ****     ****      0        bns_z08_01   
+7          Snow      ****     ****      0        bns_z20_01   
+8          Fort      ****     Fort      0        bns_z03_01
+9          Fort      ****     ****      0        bns_z03_01
+10         Fort      ****     Snow      0        bns_z16_01
+11         Snow      ****     Mountain+ 0        bns_z80_01
+12         Mountain  ****     Mountain  0        bns_z80_02
+13         Snow      ****     Snow+     0        bns_z80_03
+14         Mountain  ****     Mountain+ 0        bns_z80_04
+15         Mountain  ****     ****      0        bns_z80_02
+16         Snow      ****     Forest    0        bns_z80_06
+17         Forest    ****     Forest    0        bns_z80_07
+18         Water     ****     Ice       0        bns_z80_08
+19         Ice       ****     Ice       0        bns_z80_09
+20         Forest    ****     Mountain+ 0        bns_z80_10
+21         Forest    ****     Snow+     0        bns_z80_11
+22         Forest    ****     ****      0        bns_z80_12
+23         Ice       ****     ****      0        bns_z80_13
+24         Longhouse ****     Snow      0        bns_z80_14
+25         Longhouse ****     Longhouse 0        bns_z80_15
+26         Longhouse Longhouse_Roof Longhouse 0        bns_z80_16
+27         Longhouse ****     ****      0        bns_z80_17
+28         Mountain+ ****     Mountain+ 0        bns_z80_05
+29         Mountain+ ****     ****      0        bns_z80_05
+30         Snow+     ****     Snow+     0        bns_z80_06 
+31         Snow+     ****     ****      0        bns_z80_06 
+32         Ice       ****     Snow      0        bns_z80_14   
+33         Water     ****     Forest    0        bns_z80_15   
+34         Snow      Palisade Snow      0        bns_z80_18
+

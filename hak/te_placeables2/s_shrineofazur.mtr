@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_shrineofazur 
+texture1 s_shrineofazur_n 
+texture2 s_shrineofazur_s 
+texture3 null 
+texture4 null 

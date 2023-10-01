@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 ds_bsstone 
+texture1 ds_bsstone_n 
+texture2 ds_bsstone_s 
+texture3 null 
+texture4 null 

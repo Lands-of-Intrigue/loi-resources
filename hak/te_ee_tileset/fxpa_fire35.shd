@@ -1,0 +1,2073 @@
+//=============================================================================
+//
+// md_fslit_nm.shd: Merricksdad's Fire Sprite Shader
+//
+// Version: 2020_02_28_10
+// Based on fslit_nm.shd Version: 2.3.0e
+//
+//=============================================================================
+
+
+// Use these constants to produce the desired VFX
+
+// set animation properties
+
+// Sprite frames per second
+const int SPRITE_FPS = 48;
+
+// Sprite sheet number of columns
+const int SPRITE_GRID_X = 8;
+
+// Sprite sheet number of rows
+const int SPRITE_GRID_Y = 8;
+
+// Sprite sheet first frame (1-based)
+// Ex. if you want to skip the first frame, then set this value to 2
+const int SPRITE_FIRST_FRAME = 1;
+
+// Sprite sheet last frame (1-based)
+// Ex. if you have a sheet of 16 sprites, but only want to use the first 12, then set this value to 12, and set first frame to 1
+const int SPRITE_LAST_FRAME = 64;
+
+// Sprite frames will be picked for play at random
+const int SPRITE_RANDOM_PLAYBACK = 0;
+
+// Sprite will be sent for tinting using associated normal and specular maps
+// Use "_MIXING" factors below to modify
+// !!! setting flame textures to tintable will make them darker !!!
+// !!! use double saturation property to enforce brightness !!!
+const int SPRITE_IS_TINTABLE = 0;
+const int SPRITE_APPLY_FOG = 1;
+
+// Doubles the saturation of the sprite color
+// For use with tintable sprites, but where you still want sprites to be visible at night over long distances
+// Good for use with lights, flares, and fires
+const int SPRITE_DOUBLE_SATURATION = 0;
+
+// Treats the sprite as a light that will attenuate with distance from camera
+const int SPRITE_ATTENUATE_BY_DISTANCE = 1;
+
+// If the sprite is attenuated by distance, should it also be redshifted?
+const int SPRITE_APPLY_REDSHIFT_BY_DISTANCE = 1;
+
+// Sprite blend mode
+// !!! Not the same as TXI or emitter blend modes !!!
+const int SPRITE_BLEND_MODE = 5;
+// 0 = use texture alpha channel
+// 1 = draw any non-zero value
+// 2 = alpha equals luminance
+// 3 = alpha equals sqrt luminance	
+// 4 = alpha equals pi-luminance, brightness is multiplied
+// 5 = alpha equals pythagorean luminance 
+
+// add some color to the sprite without changing the texture
+// suggested values from -1 to +1 (negative pulls out color)
+// example: sewer green might be vec4(-0.05, 0.05, -0.05, 0.00);
+const vec4 SPRITE_ADD_COLOR_RGBA = vec4(-0.00, -0.00, -0.00, +0.00);
+
+// change how much ambient color goes into the tinting (use values from 0.00 to 1.00)
+// increasing this value allows lights to add more tint
+const float SPRITE_AMBIENT_MIXING = 1.0;
+
+// change how much diffuse color goes into the tinting (use values from 0.00 to 1.00)
+// increasing this value allows lights to add more tint
+const float SPRITE_DIFFUSE_MIXING = 1.0;
+
+// change how much specular color goes into the water (use values from 0.00 to 1.00)
+// increasing this value allows lights to add more tint
+const float SPRITE_SPECULAR_MIXING = 1.0;
+
+// change how specular the sprites can be 
+// increasing this value makes sprites more glossy
+const float SPRITE_BASE_SPECULAR = 1.0;
+
+
+// ENJOY!
+
+
+
+// most of what follows I believe comes from work by Soren (Zarathustra217)
+
+
+
+#define SHADER_TYPE 2
+
+
+#define UNLIT 0
+
+#define NO_TEXTURE 0
+#define DIFFUSE_MAP 1
+#define NORMAL_MAP 1
+#define SPECULAR_MAP 1
+#define ROUGHNESS_MAP 0
+#define HEIGHT_MAP 0
+#define SELF_ILLUMINATION_MAP 0
+#define ENVIRONMENT_MAP 0
+
+///////////////////////////////////
+//
+// BEGIN INC_COMMON
+//
+///////////////////////////////////
+
+// Enable to do lighting calculations in linear color space which is more physicallly correct.
+const int GammaCorrection = 1;
+
+#define ENABLE_KEYHOLING 1
+
+varying highp vec4 vWorldPos;
+
+uniform vec3 playerPosition;
+uniform float playerCameraDist;
+uniform vec3 cameraPosition;
+uniform float cameraPitch;
+uniform float cameraYaw;
+
+uniform int screenWidth;
+uniform int screenHeight;
+
+#define PI 3.14159265359
+
+#define MAX_BONES 128
+
+// Determines how to handle over-exposure.
+#define COLOR_CORRECTION_TYPE 1
+// 0 - None
+// 1 - Neutral brightness and hue preserve.
+// 2 - ACES Film.
+
+uniform highp mat4 m_mvp;
+uniform highp mat4 m_mv;
+uniform highp mat4 m_m;
+uniform highp mat3 m_normal;
+uniform highp mat4 m_texture;
+
+// get the fog
+uniform int fogEnabled;
+uniform mediump float fogEnd;
+uniform mediump float fogStart;
+
+varying vec4 vColorOut;
+varying float fFogFragCoord;
+varying highp vec3 vWorldCoord;
+varying highp vec3 vPosView;
+
+varying vec4 VertexColor;
+varying vec3 vVertexNormal;
+
+// Default texture map units:
+// 
+// 0  - Diffuse / albedo map. 
+// 1  - Normal map.           
+// 2  - Specular map.         
+// 3  - Roughness map.        
+// 4  - Height map.           
+// 5  - Self-illumination map 
+// 15 - Environment map. 
+
+#ifndef NO_TEXTURE
+#define NO_TEXTURE 0
+#endif     
+
+#if NO_TEXTURE == 1
+    #undef DIFFUSE_MAP
+    #undef NORMAL_MAP
+    #undef SPECULAR_MAP
+    #undef ROUGHNESS_MAP
+    #undef HEIGHT_MAP
+    #undef SELF_ILLUMINATION_MAP
+    #undef ENVIRONMENT_MAP
+#endif
+
+#ifndef DIFFUSE_MAP
+#define DIFFUSE_MAP 0
+#endif     
+#ifndef NORMAL_MAP
+#define NORMAL_MAP 0
+#endif     
+#ifndef SPECULAR_MAP
+#define SPECULAR_MAP 0
+#endif     
+#ifndef ROUGHNESS_MAP
+#define ROUGHNESS_MAP 0
+#endif     
+#ifndef HEIGHT_MAP
+#define HEIGHT_MAP 0
+#endif     
+#ifndef SELF_ILLUMINATION_MAP
+#define SELF_ILLUMINATION_MAP 0
+#endif     
+#ifndef ENVIRONMENT_MAP
+#define ENVIRONMENT_MAP 0
+#endif     
+
+#if NO_TEXTURE != 1             
+
+    varying vec2 vVertexTexCoords;
+
+    #if DIFFUSE_MAP == 1
+        uniform int texture0Bound;  
+    #endif
+
+    #if NORMAL_MAP == 1
+        uniform int texture1Bound;  
+    #endif
+    #if SPECULAR_MAP == 1
+        uniform int texture2Bound;  
+    #endif
+    #if ROUGHNESS_MAP == 1
+        uniform int texture3Bound;  
+    #endif
+    #if HEIGHT_MAP == 1
+        uniform int texture4Bound;  
+    #endif
+    #if SELF_ILLUMINATION_MAP == 1
+        uniform int texture5Bound;  
+    #endif
+    #if ENVIRONMENT_MAP == 1  
+        uniform int texture15Bound;
+    #endif
+
+    #if NORMAL_MAP == 1 || HEIGHT_MAP == 1
+
+        varying float fTextureHandedness;
+        varying vec3 vVertexTangent;
+
+        #if SHADER_TYPE == 1
+            attribute float fHandedness;
+            attribute vec3 vTangent;
+        #endif
+
+    #endif
+
+#endif                          
+
+// Set to one to read roughness from specular map green channel.
+#define READ_ROUGHNESS_FROM_SPECULAR_MAP 0
+
+// Set to one to read self illumination from specular map blue channel.
+#define READ_SELF_ILLUMINATION_FROM_SPECULAR_MAP 0
+
+/*
+#ifndef SKINMESH
+#define SKINMESH 0
+#endif     
+
+#ifndef SHADER_TYPE
+#define SHADER_TYPE 2
+#endif     
+*/
+
+#if SHADER_TYPE == 1
+
+    attribute vec4 vPos;
+    #if NO_TEXTURE != 1
+        attribute vec2 vTcIn;
+    #endif
+    attribute vec4 vColor;
+    attribute vec3 vNormal;
+
+    #if SKINMESH == 1
+        uniform int idxmap[MAX_BONES];
+        uniform highp mat4 m_bones[MAX_BONES];
+        attribute vec4 vIndex;
+        attribute vec4 vWeight;
+    #endif
+
+#elif SHADER_TYPE == 2
+
+    uniform lowp vec4 fogColor;
+
+    #if NO_TEXTURE != 1
+
+        #if DIFFUSE_MAP == 1
+            uniform sampler2D texUnit0;    
+        #endif
+        #if NORMAL_MAP == 1
+            uniform sampler2D texUnit1;   
+        #endif
+        #if SPECULAR_MAP == 1
+            uniform sampler2D texUnit2;  
+        #endif
+        #if ROUGHNESS_MAP == 1
+            uniform sampler2D texUnit3;  
+        #endif
+        #if HEIGHT_MAP == 1
+
+            const float fDisplacementOffset = 0.0;
+            const float fDisplacementModifier =1.0; // Scales displacement. Also adjusts the amount of iterations. Can be increased beyond 1.0 but this is generally not recommended.
+            const float fDisplacementBase = 0.03;
+
+            const float fDisplacementAngleIterationsModifier = 0.5;
+            const float fDisplacementDistanceIterationsModifier = 0.25; 
+
+            const int nDisplacementMaximumIterations = 16;  
+            const float fDisplacementMaximumMipMapOffset = 2.5;
+
+            const float fDisplacementTextureOffsetLimit = 20.0; // Limits the texture coord offset vector to prevent artifacts at gracing angles.
+
+            uniform sampler2D texUnit4;  
+
+        #endif
+        #if SELF_ILLUMINATION_MAP == 1
+            uniform sampler2D texUnit5;  
+        #endif
+        #if ENVIRONMENT_MAP == 1
+            uniform sampler2D texUnitEnv;   // This will contain the environment map
+        #endif
+        vec2 vTexCoords;
+
+    #endif
+
+#endif
+
+
+vec3 vViewToSurface_n;
+
+void SetupViewToSurfaceNormal()
+{
+    vViewToSurface_n = normalize(vPosView.xyz);
+}
+
+
+//=============================================================================
+//
+// Functions for converting to linear color space and back.
+//
+//=============================================================================
+
+vec3 ApplyColorSpace(vec3 vColor)
+{
+    if(GammaCorrection == 1)
+    {
+        return sign(vColor) * pow(abs(vColor), vec3(2.2));
+    }
+    else
+    {
+        return vColor;
+    }
+}
+
+vec3 RevertColorSpace(vec3 vColor)
+{
+    if(GammaCorrection == 1)
+    {
+        return sign(vColor) * pow(abs(vColor), vec3(0.45454545)); // 1.0/2.2
+    }
+    else
+    {
+        return vColor;
+    }
+}
+
+vec4 ApplyColorSpace(vec4 vColor)
+{
+    return vec4(ApplyColorSpace(vColor.rgb), vColor.a);
+	//return vColor;
+}
+
+vec4 RevertColorSpace(vec4 vColor)
+{
+    return vec4(RevertColorSpace(vColor.rgb), vColor.a);
+	//return vColor;
+}
+
+//=============================================================================
+//
+// Distributes color channel overflows to preserve brightness and hue.
+//
+//=============================================================================
+vec3 ColorClamp(vec3 vColor)
+{
+    float fMax=max(vColor.r, max(vColor.g, vColor.b));
+    if(fMax>1.0)
+    {
+        float fBrightness3 = dot(vColor.rgb, vec3(1.0)); //Brightness x 3. No reason to divide by 3.
+        if(fBrightness3>=3.0)
+        {
+            return vec3(1.0);
+        }
+        fBrightness3 = 3.0 - fBrightness3; //Invert
+        vColor.rgb=-vColor.rgb + fMax; // Invert.
+        vColor.rgb *= fBrightness3 / dot(vColor.rgb, vec3(1.0)); 
+        vColor.rgb = -vColor.rgb + 1.0; //Invert back.
+    }
+    return vColor;
+}
+
+vec4 ColorClamp(vec4 vColor)
+{
+    return vec4(ColorClamp(vColor.rgb), vColor.a);
+	//return vColor;
+}
+
+//=============================================================================
+//
+// ACES filmic tonemapping.
+//
+//=============================================================================
+
+vec3 ACESFilm(vec3 vColor)
+{
+    float a = 2.51;
+    float b = 0.03;
+    float c = 2.43;
+    float d = 0.59;
+    float e = 0.14;
+    return clamp((vColor*(a*vColor+b))/(vColor*(c*vColor+d)+e),0.0,1.0);
+}
+
+vec4 ACESFilm(vec4 vColor)
+{
+    return vec4(ACESFilm(vColor.rgb), vColor.a);
+}
+
+
+#if SHADER_TYPE == 1
+
+///////////////////////////////////
+//
+// VERTEX SHADER ONLY FUNCTIONS
+//
+///////////////////////////////////
+
+void TransformMainCoordinates()
+{
+    #if SKINMESH == 1
+
+        vec4 vSkinnedPosition;
+
+        int index = idxmap[int(vIndex.x)];
+        vSkinnedPosition = (m_bones[index] * vPos) * vWeight.x;
+        #if NORMAL_MAP == 1
+            vVertexTangent = (mat3(m_bones[index]) * vTangent) * vWeight.x;
+        #endif
+        vVertexNormal = (mat3(m_bones[index]) * vNormal) * vWeight.x;
+
+        index = idxmap[int(vIndex.y)];
+        vSkinnedPosition += (m_bones[index] * vPos) * vWeight.y;
+        #if NORMAL_MAP == 1
+            vVertexTangent = (mat3(m_bones[index]) * vTangent) * vWeight.y + vVertexTangent;
+        #endif
+        vVertexNormal = (mat3(m_bones[index]) * vNormal) * vWeight.y + vVertexNormal;
+
+        index = idxmap[int(vIndex.z)];
+        vSkinnedPosition += (m_bones[index] * vPos) * vWeight.z;
+        #if NORMAL_MAP == 1
+            vVertexTangent = (mat3(m_bones[index]) * vTangent) * vWeight.z + vVertexTangent;
+        #endif
+        vVertexNormal = (mat3(m_bones[index]) * vNormal) * vWeight.z + vVertexNormal;
+
+        index = idxmap[int(vIndex.w)];
+        vSkinnedPosition += (m_bones[index] * vPos) * vWeight.w;
+        #if NORMAL_MAP == 1
+            vVertexTangent = (mat3(m_bones[index]) * vTangent) * vWeight.w + vVertexTangent;
+        #endif
+        vVertexNormal = (mat3(m_bones[index]) * vNormal) * vWeight.w + vVertexNormal;
+
+        gl_Position = m_mvp * vSkinnedPosition;
+        vWorldCoord = (m_m * vSkinnedPosition).xyz;
+        vPosView = (m_mv * vSkinnedPosition).xyz;
+        #if NORMAL_MAP == 1
+            vVertexTangent = m_normal * vVertexTangent;
+        #endif
+        vVertexNormal = m_normal * vVertexNormal;
+
+    #else
+
+        gl_Position = m_mvp * vPos;
+        vWorldCoord = (m_m * vPos).xyz;
+        vPosView = (m_mv * vPos).xyz;
+
+        #if NORMAL_MAP == 1
+            // Rotate the tangent around the normal.
+            // vRotatedTangent = vTangent * m_texture[0][0] + (1.0 - m_texture[0][0]) * dot(vNormal, vTangent) * vNormal + m_texture[1][0] * cross(vNormal, vTangent);
+            // Gram-Schmidt orthogonalization.
+            // vRotatedTangent = vRotatedTangent - vNormal * dot(vRotatedTangent, vNormal);
+            // The two fits nicely as:
+            vVertexTangent = vTangent * m_texture[0][0] - m_texture[0][0] * dot(vNormal, vTangent) * vNormal + m_texture[1][0] * cross(vNormal, vTangent);
+            vVertexTangent = m_normal * vVertexTangent;
+        #endif
+
+        vVertexNormal = m_normal * vNormal;
+
+
+    #endif
+
+    #if NORMAL_MAP == 1
+        fTextureHandedness = fHandedness;
+    #endif
+
+    
+
+    #if NO_TEXTURE != 1
+        vVertexTexCoords = (m_texture * vec4(vTcIn.x, vTcIn.y, 0.0, 1.0)).xy;
+    #endif
+
+
+}
+
+void SetupFog()
+{
+    //Make sure to not to clamp this in the vertex stage as we need to be able to get within boundaries through interpolation.
+    //Taking absolute value of distance is important for some GUI elements.
+    fFogFragCoord = (fogEnabled == 0) ? 0.0 : (abs(vPosView.z) - fogStart) / (fogEnd - fogStart);
+}
+
+#elif SHADER_TYPE == 2
+
+///////////////////////////////////
+//
+// FRAGMENT SHADER ONLY FUNCTIONS
+//
+///////////////////////////////////
+
+vec3 vSurfaceNormal;
+
+
+void ApplyFog(inout vec4 ColorIO)
+{
+    if(fogEnabled != 0 && fFogFragCoord > 0.0) 
+    {
+        if(GammaCorrection == 1)
+        {
+            // Squaring here is not realistic but necessary to be consistent with how fog is used in NWN to fade objects in distance. 
+            ColorIO.rgb = mix(ColorIO.rgb, ApplyColorSpace(fogColor.rgb), clamp(fFogFragCoord*fFogFragCoord, 0.0, 1.0));
+        }
+        else
+        {
+            ColorIO.rgb = mix(ColorIO.rgb, ApplyColorSpace(fogColor.rgb), clamp(fFogFragCoord, 0.0, 1.0));
+        }
+    }
+}
+
+
+#if NORMAL_MAP == 1 || HEIGHT_MAP == 1
+
+mat3 SetupTSB()
+{
+    // Construct our tangent-space basis matrix from the input data.
+    vSurfaceNormal = normalize(vVertexNormal);
+    vec3 vTangent = vVertexTangent;
+    // Gram-Schmidt orthogonalization.
+    vTangent = normalize(vTangent - vSurfaceNormal * dot(vTangent, vSurfaceNormal));
+
+    vec3 vBitangent = cross(vSurfaceNormal, vTangent) * fTextureHandedness;
+    mat3 mTSB;
+    mTSB[0] = vTangent;
+    mTSB[1] = vBitangent;
+    mTSB[2] = vSurfaceNormal;
+    
+    return mTSB;
+}
+
+#endif
+     
+#if HEIGHT_MAP == 1
+
+float fHeight;
+
+void DisplaceTextureCoords(inout vec2 vTexCoords, mat3 mTSB)
+{
+    if(fDisplacementModifier!=0.0)
+    {
+
+        float fMipMapOffset = 0.0;
+        float fDisplacementSurfaceModifier = 1.0 + fDisplacementAngleIterationsModifier * dot(vViewToSurface_n, vSurfaceNormal);
+        fDisplacementSurfaceModifier *=  fDisplacementSurfaceModifier  / (-vPosView.z * fDisplacementDistanceIterationsModifier);
+        float fIterations = float(nDisplacementMaximumIterations)*fDisplacementModifier*clamp(fDisplacementSurfaceModifier, 0.0, 1.0);
+
+        int nIterations = int(fIterations+0.5);
+        if(nIterations>0)
+        {
+            vec3 vViewDisplacement = vec3(transpose(mTSB) * -vViewToSurface_n);
+            float fSegmentSize = 2.0 / float(nIterations+1);
+
+            // Vector for maximum displacement
+            vec2 vTexDisplacement = vViewDisplacement.xy * fDisplacementBase / mix(1.0 / fDisplacementTextureOffsetLimit, 1.0, vViewDisplacement.z);
+
+            vec2 vTexCoordsDisplaced=vTexCoords.xy + (fDisplacementOffset) * vTexDisplacement;
+            vTexDisplacement*= fDisplacementModifier;
+            fMipMapOffset = fDisplacementMaximumMipMapOffset * (1.0 + dot(vViewToSurface_n, vSurfaceNormal));
+            float fDisplacementThis = 1.0-texture2D(texUnit4, vTexCoordsDisplaced.xy,fMipMapOffset).r;
+            float fDisplacementDelta = fDisplacementThis;
+
+            float fCurrentDistance = fSegmentSize * fDisplacementThis;
+            for(int i = 1; i <= nDisplacementMaximumIterations; i++)
+            {
+                if(i > nIterations) break;
+                fDisplacementThis = (1.0-texture2D(texUnit4, vTexCoordsDisplaced.xy - vTexDisplacement * fCurrentDistance,fMipMapOffset).r);
+                fDisplacementDelta = fDisplacementThis - fCurrentDistance;
+
+                fCurrentDistance += fDisplacementDelta * fSegmentSize;
+                if(fDisplacementDelta<=0.0)
+                {
+                    fSegmentSize*=0.5;
+                }
+            }
+            vTexCoords=vTexCoordsDisplaced.xy - vTexDisplacement*fCurrentDistance;
+        }
+        fHeight = texture2D(texUnit4, vTexCoords.xy, fMipMapOffset).r;
+    }
+
+}
+
+#endif
+
+
+#endif
+
+///////////////////////////////////
+//     
+// END INC_COMMON
+//
+///////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+//=============================================================================
+//                                                                             
+// BEGIN INC_LIGHTING                                                          
+//                                                                             
+//=============================================================================
+///////////////////////////////////////////////////////////////////////////////
+
+//#if NORMAL_MAP == 1
+const int FragmentLighting = 1;
+//#else
+//uniform int FragmentLighting = 0;
+//#endif
+
+#define MAX_LIGHTS 8
+
+// Toggle specular distribution model. Generally Schlick's approximations are used for all equations.
+#define SPECULAR_DISTRIBUTION_MODEL 0
+// 0 - Blinn-Phong
+// 1 - GGX
+// 2 - Beckmann
+
+// Surface self-shadowing due to roughness.
+#define SPECULAR_GEOMETRIC_SHADOWING 1
+
+// Physical effect that increase specularity at steep angles.
+#define SPECULAR_FRESNEL 1
+
+#ifndef UNLIT
+#define UNLIT 0
+#endif
+
+#if UNLIT != 1
+
+    #ifndef STATIC_LIGHT
+    #define STATIC_LIGHT 0
+    #endif
+
+    #if SHADER_TYPE == 1
+        #define SPECULAR_LIGHT 0
+    #else
+        #define SPECULAR_LIGHT 1
+    #endif
+
+#else    
+
+    #undef SPECULAR_LIGHT
+    #define SPECULAR_LIGHT 0
+
+    #undef STATIC_LIGHT
+    #define STATIC_LIGHT 0
+
+#endif
+
+
+
+
+// General modifier to light source brightness when doing calculations in linear color space due to different light falloff. 
+const float fLinearLightness = 0.15;
+
+uniform lowp vec4 lightAmbient           [MAX_LIGHTS];
+uniform lowp vec4 lightDiffuse           [MAX_LIGHTS];
+uniform mediump vec4 lightPosition          [MAX_LIGHTS];
+uniform mediump float lightQuadraticAtten   [MAX_LIGHTS];
+
+uniform mediump vec4  materialFrontAmbient;
+uniform mediump vec4  materialFrontDiffuse;
+
+uniform mediump vec4 materialFrontEmissive;
+uniform lowp vec4 frontLightModelProductSceneColor;
+
+uniform int numLights;
+
+varying vec3 vStaticLightDirOut;
+
+// Global variables
+
+vec3 AmbientLight;
+vec3 DiffuseLight;
+vec3 StaticLight;
+
+float fNdotV;
+
+// Polish / tuning.
+
+const float fAngleMin = 0.01; // Prevents extreme values near limits. Cosine of angle.
+
+#if SHADER_TYPE == 2
+
+    #if HEIGHT_MAP == 1
+
+        const float fOcclusionBase = 1.0;
+        const float fOcclusionModifier = 0.0; // Default occlusion at 0. -1 is no occlusion.
+
+        const float fOcclusionVicinityRange = 4.0; // Mipmap offset for local comparison for determining occlusion.
+
+        float fOcclusion;
+        float fOcclusionInv;
+        // To get us MAD.
+        float fOcclusionDiffuseMod1;
+        float fOcclusionDiffuseMod2; 
+
+    #endif
+
+    #if NORMAL_MAP == 1 || HEIGHT_MAP == 1
+        const float fSurfaceFadePoint = 0.1; // Will fade light when cosine of light incidence angle to parent surface normal is below this to prevent light moving around corners.
+    #endif
+
+#endif
+
+//=============================================================================
+//
+// Specular light specific functions
+//
+//=============================================================================
+
+#if SPECULAR_LIGHT == 1
+
+    uniform float Specularity;
+    uniform float Roughness;
+    uniform float Metallicness;
+
+    vec3 SpecularLight;
+
+    float fSpecularity;
+    float fRoughness;
+    float fRoughness_sq;
+    float fMetallicness;
+
+    #if SHADER_TYPE == 2
+        vec3 SpecularColor;
+    #endif
+
+    const float fSpecularFadePoint = 0.2;  // Will fade specularity when cosine of light incidence angle is below this to prevent sharp specular edges.
+
+    // Values for automatic generation of roughness values.
+    const float fRoughnessMax = 0.65;
+    const float fRoughnessMin = 0.15;
+
+    #if ENVIRONMENT_MAP == 1
+        // Roughness above this will disable environment maps.
+        const float fEnvironmentMapTreshold = 0.45;
+
+        // Adjusts how much the pressence of an environment map affects roughness level for content without roughness maps.
+        const float fRoughnessEnvironmentMapModifier = 1.5;
+
+        // Adjusts how much the pressence of an environment map affects specularity level for content without specular maps. Note that end values will be clamped to 1.
+        const float fSpecularityEnvironmentMapModifier = 1.8;
+    #endif
+
+    // For generating metallicness when no metallicness uniform is supplied.
+    const float fMetallicnessOffset = 0.1; // Specularity values below this will not have any level of metallicness.
+    const float fMetallicnessModifier = 5.0; // Scaling factor of metallicness.
+
+
+    // Sets the minimum specularity value for content without specularity maps.
+    const float fSpecularityMin = 0.025;
+
+
+    // Blinn-Phong BRDF functions.
+
+    #if SPECULAR_DISTRIBUTION_MODEL == 0
+
+        float fShininess;
+
+        float SpecularDistributionBlinnPhong(float fNdotH) 
+        {
+            //Latter is for energy-conservation.
+            return pow(fNdotH, fShininess) * (fShininess * 0.125 + 0.5);
+        }
+
+        #if SPECULAR_GEOMETRIC_SHADOWING == 1
+
+        float GeometryBasic (float fNdotL, float fNdotV)
+        {
+            //float fShadowL = fNdotL / mix(fNdotL, 1.0, fRoughness_sq);
+            //float fShadowV = fNdotV / mix(fNdotV, 1.0, fRoughness_sq);
+            //return (fShadowL * fShadowV);
+            
+            return 1.0 / (mix(fNdotL, 1.0, fRoughness_sq) * mix(fNdotV, 1.0, fRoughness_sq));
+
+
+        }
+
+        #endif
+
+    // GGX BRDF functions.
+
+    #elif SPECULAR_DISTRIBUTION_MODEL == 1
+
+        float SpecularDistributionGGX(float fNdotH) 
+        { 
+            float fNdotH_sq = fNdotH*fNdotH; 
+            float fFactor = fNdotH_sq * (fRoughness_sq - 1.0) + 1.0;
+
+            return fRoughness_sq / (PI * fFactor * fFactor); 
+        }
+
+        #if SPECULAR_GEOMETRIC_SHADOWING == 1
+
+        float GeometryGGX (float fNdotL, float fNdotV)
+        {
+            float fFactor = fRoughness * 0.5;
+            //float SmithL = fNdotL / mix(fNdotL, 1.0, fFactor);
+            //float SmithV = fNdotV / mix(fNdotV, 1.0, fFactor);
+            //return SmithL * SmithV;
+
+            return 1.0 / (mix(fNdotL, 1.0, fFactor) * mix(fNdotV, 1.0, fFactor));
+        }
+
+        #endif
+
+    // Cook-Torrance / Beckmann BRDF functions.
+
+    #else
+
+        float SpecularDistributionBeckmann(float fNdotH)
+        {
+            float fNdotH_sq = fNdotH*fNdotH; 
+            return (1.0 / (PI * fRoughness_sq * fNdotH_sq*fNdotH_sq)) * exp((fNdotH_sq - 1.0)/(fRoughness_sq * fNdotH_sq));
+        }
+
+        #if SPECULAR_GEOMETRIC_SHADOWING == 1
+
+        float GeometryBeckmann (float fNdotL, float fNdotV)
+        {
+            float fFactor = fRoughness_sq * 0.797884560802865;
+
+            //float SmithL = fNdotL / mix(fNdotL, 1.0, fFactor);
+            //float SmithV = fNdotV / mix(fNdotV, 1.0, fFactor);
+            //return SmithL * SmithV;
+
+            return 1.0 / (mix(fNdotL, 1.0, fFactor) * mix(fNdotV, 1.0, fFactor));
+        }
+
+        #endif
+
+    #endif
+
+    // Shared function for calculating specular BRDF.
+
+    float GetSpecularIntensity(vec3 vNormalThis, vec3 vHalfVector, float fNdotL)
+    {
+        float fNdotH = max(dot(vNormalThis, vHalfVector), fAngleMin);
+
+        float fDistribution =  0.25;
+
+        #if SPECULAR_DISTRIBUTION_MODEL == 0
+
+            fDistribution *= SpecularDistributionBlinnPhong(fNdotH);
+
+            #if SPECULAR_GEOMETRIC_SHADOWING == 1
+
+                fDistribution *=GeometryBasic (fNdotL, fNdotV); // / (fNdotL * fNdotV);
+
+            #endif 
+
+        #elif SPECULAR_DISTRIBUTION_MODEL == 1 
+
+            fDistribution *= SpecularDistributionGGX(fNdotH);
+
+            #if SPECULAR_GEOMETRIC_SHADOWING == 1
+
+                fDistribution *= GeometryGGX (fNdotL, fNdotV); // / (fNdotL * fNdotV);
+
+            #endif 
+
+        #else
+
+            fDistribution *= SpecularDistributionBeckmann(fNdotH);
+
+            #if SPECULAR_GEOMETRIC_SHADOWING == 1
+
+                fDistribution *= GeometryBeckmann (fNdotL, fNdotV); // / (fNdotL * fNdotV);
+
+            #endif 
+
+        #endif
+
+
+        #if SPECULAR_FRESNEL == 1
+
+            float fFresnel = 1.0 - max(dot(-vViewToSurface_n, vHalfVector), fAngleMin);
+            float fFresnelSq=fFresnel * fFresnel;
+            fFresnel*=fFresnelSq * fFresnelSq;
+            fDistribution *= mix(fSpecularity, 1.0, fFresnel);
+
+        #endif
+
+        return fDistribution;
+    }
+
+#endif
+
+#if ENVIRONMENT_MAP == 1
+
+    /*
+    vec2 CalculateEnvironmentTexCoords(vec3 vNormalThis)
+    {
+        vec3 vEnvReflect = reflect(vViewToSurface_n, vNormalThis);
+        vEnvReflect.z+= 1.0;
+        float fOffset= inversesqrt(dot(vEnvReflect, vEnvReflect));
+        return 0.5 * vEnvReflect.xy * fOffset + 0.5;
+    } 
+    */
+
+
+
+    vec2 CalculateEnvironmentTexCoords(vec3 vNormalThis)
+    {
+        vec2 vEnvReflect = vNormalThis.xy / (1+abs(vNormalThis.z));
+
+        vEnvReflect+=0.5*(vPosView.xy /(-vPosView.z + 0.2));
+
+        vEnvReflect = 0.5*vEnvReflect+vec2(0.5, 0.25);
+       
+        return vEnvReflect;
+
+    }
+
+    vec3 CalculateEnvironmentTexCoordsCube(vec3 vNormalThis)
+    {
+        return transpose(m_normal) * reflect(vViewToSurface_n, vNormalThis); // --- need to apply m_v to this?
+    } 
+
+    #if NORMAL_MAP != 1
+        varying vec2 vVertexTexCoordsEnvironment;
+    #endif
+
+#endif
+
+vec3 colorWhite = vec3(1.0);
+
+void ComputeLightSource(vec3 LightColor, inout vec3 LightAccumulator, float fLightFalloff, vec3 vLightOffset, vec3 vNormalThis, bool bAmbientLight)
+{
+	
+    float fAttenuation = 1.0;
+    if(fLightFalloff>0.000000001) // Below this threshold is area or static lighting.
+    {
+        // Compute our squared distance between surface and light position
+        float fDistance_sq = dot(vLightOffset, vLightOffset);
+        if(GammaCorrection == 1)
+        {
+            fAttenuation /= fLightFalloff; // Do this line seperately as it should be the same calculation for all fragments in the warp.
+            fAttenuation *= fLinearLightness / (1.0 + fDistance_sq); // Set min value to reduce overbright. Especially needed because light positions in NWN aren't always precise.
+        }
+        else
+        {
+            fAttenuation = 1.0 / (1.0 + fLightFalloff * fDistance_sq); // Legacy.
+        }
+    }
+
+    if(bAmbientLight)
+    {
+        #if HEIGHT_MAP == 1 && SHADER_TYPE == 2
+            fAttenuation*=fOcclusionInv;
+        #endif
+        LightAccumulator += PI*((SPRITE_AMBIENT_MIXING * LightColor) + (1.0-SPRITE_AMBIENT_MIXING) * colorWhite) * fAttenuation;
+    }
+    else
+    {
+        vLightOffset = normalize(vLightOffset);
+
+        float fNdotL = dot(vNormalThis, vLightOffset);
+
+        #if SHADER_TYPE == 2 && HEIGHT_MAP == 1
+            fNdotL = fNdotL * fOcclusionDiffuseMod1 + fOcclusionDiffuseMod2;
+        #endif
+
+        if(fNdotL > 0.0)
+        {
+            #if SHADER_TYPE == 2 && (NORMAL_MAP == 1 || HEIGHT_MAP == 1)
+                // Does occlusion as well as preventing this light source from affecting the fragment if the surface the point resides on faces away from the light.
+                float fSNdotL = dot(vSurfaceNormal, vLightOffset);
+                #if HEIGHT_MAP == 1
+                    // This is actually (fSNdotL - fOcclusion) / (1 - fOcclusion), turned into a MAD for performance.
+                    fSNdotL = fSNdotL * fOcclusionDiffuseMod1 + fOcclusionDiffuseMod2;
+                #endif
+                fAttenuation *= clamp((fSNdotL+fSurfaceFadePoint) / (2.0 * fSurfaceFadePoint), 0.0, 1.0);
+            #endif
+
+            fNdotL = max(fNdotL, fAngleMin);
+            LightAccumulator +=  ((SPRITE_DIFFUSE_MIXING * LightColor) + (1.0-SPRITE_DIFFUSE_MIXING) * colorWhite) * fAttenuation * fNdotL;
+
+            #if SPECULAR_LIGHT == 1
+				vec3 pinchSpecular = 0.25 * SPRITE_BASE_SPECULAR * ((SPRITE_SPECULAR_MIXING * sqrt(LightColor)) + (1-SPRITE_SPECULAR_MIXING) * colorWhite);
+
+                vec3 vHalfVector = normalize(vLightOffset - vViewToSurface_n);
+                float fSpecularFade = min(fNdotL/fSpecularFadePoint, 1);
+				
+                float fSpecularIntensity = fSpecularFade * GetSpecularIntensity(vNormalThis, vHalfVector, fNdotL);
+                SpecularLight += pinchSpecular * fAttenuation * pow(fSpecularIntensity,2);
+				
+				//a bit more light in the opposite direction from sun/moon
+                vHalfVector = normalize(vLightOffset + vViewToSurface_n);
+                fSpecularFade = fNdotL/fSpecularFadePoint;
+                fSpecularIntensity = clamp((fSpecularFade * GetSpecularIntensity(-PI*vNormalThis, -PI*vHalfVector, fNdotL)), 0.0125, 1.0);
+                SpecularLight += pinchSpecular *  pow(fSpecularIntensity,0.1);
+                
+				//add a little bit more light, but only over a certain limit
+				fSpecularIntensity = clamp((fSpecularFade * GetSpecularIntensity(vNormalThis, vHalfVector, fNdotL)), 0.0125, 1.0);
+                SpecularLight += pinchSpecular * fAttenuation * pow(fSpecularIntensity,2);
+
+            #endif
+        }
+
+    }
+    
+}
+
+void ComputeLighting(inout vec4 ColorIO, vec3 vNormalThis)
+{
+    fNdotV = max(dot(vNormalThis, -vViewToSurface_n), fAngleMin);
+    AmbientLight = vec3(0.0);
+    DiffuseLight = vec3(0.0);
+    StaticLight = vec3(0.0);
+    vec3 TotalLight=vec3(0.0);
+
+    #if SPECULAR_LIGHT == 1
+
+        SpecularLight = vec3(0.0);
+        #if SHADER_TYPE == 1
+            fSpecularity = 0.1;
+            fRoughness = 0.5;
+            fRoughness_sq = fRoughness*fRoughness;
+            fShininess = 6.0;
+        #endif
+
+    #endif
+
+
+    #if SHADER_TYPE == 1
+
+        #if STATIC_LIGHT
+            StaticLight = ApplyColorSpace(vColor.rgb);
+        #endif
+
+    #elif SHADER_TYPE == 2
+
+        #if NORMAL_MAP == 1
+
+            if (dot(abs(vStaticLightDirOut), vec3(1.0)) != 0.0)
+            {
+                ComputeLightSource(ApplyColorSpace(VertexColor.rgb), StaticLight, 0.0, vStaticLightDirOut, vNormalThis, false);
+            }
+
+        #else
+            StaticLight = ApplyColorSpace(VertexColor.rgb);
+        #endif
+
+    #endif
+
+    for (int i = 0; i < MAX_LIGHTS; i++) 
+    {
+        if(i>=numLights) break;
+        
+        if(dot(abs(lightAmbient[i].rgb), vec3(1.0)) == 0.0)
+        {
+            float fFalloff = lightQuadraticAtten[i];
+            vec3 Light=lightDiffuse[i].rgb;
+            if(GammaCorrection == 1)
+            {
+                // Guards against legacy lights that are using extreme values.
+                float fLightMax = max(Light.r, max(Light.g, Light.b));
+                if(fLightMax>1.0)
+                {
+                    fFalloff/=(fLightMax*fLightMax);
+                    Light /=fLightMax;
+                }
+            }
+            Light=ApplyColorSpace(Light);
+
+			//vec3 currentLightDist = ((lightPosition[i].xyz)-(vWorldCoord.xyz));
+			vec3 currentLightDist = lightPosition[i].xyz - vPosView;
+			if (i <= 1){
+				if (fFalloff<=0.000000001) {
+					//currentLightDist = vec3(length(currentLightDist.xy),0.0,currentLightDist.z);
+				}
+			}
+            ComputeLightSource(Light, DiffuseLight, fFalloff, currentLightDist.xyz , vNormalThis, false);
+
+            //ComputeLightSource(Light, DiffuseLight, fFalloff, lightPosition[i].xyz - vPosView, vNormalThis, false);
+        }
+        else
+        {
+            float fFalloff = lightQuadraticAtten[i];
+            vec3 Light=lightAmbient[i].rgb;
+			if(GammaCorrection == 1)
+            {
+                // Guards against legacy lights that are using extreme values.
+                float fLightMax = max(Light.r, max(Light.g, Light.b));
+                if(fLightMax>1.0)
+                {
+                    fFalloff/=(fLightMax*fLightMax);
+                    Light /=fLightMax;
+                }
+            }
+            Light=ApplyColorSpace(Light);
+
+			//vec3 currentLightDist = ((lightPosition[i].xyz)-(vWorldCoord.xyz));
+			vec3 currentLightDist = lightPosition[i].xyz - vPosView;
+			if (i <= 1){
+				if (fFalloff<=0.000000001) {
+					//currentLightDist = vec3(length(currentLightDist.xy),0.0,currentLightDist.z);
+				}
+			}
+            ComputeLightSource(Light, AmbientLight, fFalloff, currentLightDist.xyz , vNormalThis, true);
+
+            //ComputeLightSource(Light, AmbientLight, fFalloff, lightPosition[i].xyz - vPosView, vNormalThis, true);
+        }
+    }
+
+    TotalLight = 
+                ApplyColorSpace(clamp(materialFrontEmissive.rgb, 0.0, 1.0)) + 
+                AmbientLight * ApplyColorSpace(materialFrontAmbient.rgb) +
+                #if SPECULAR_LIGHT == 1
+                (1.0 - fSpecularity) *
+                #endif
+                (StaticLight + DiffuseLight) * ApplyColorSpace(materialFrontDiffuse.rgb);
+
+
+    // Backward compatibility, mainly needed for some GUI elements.
+    vec3 ConstantLight = ApplyColorSpace(frontLightModelProductSceneColor.rgb)*ApplyColorSpace(materialFrontDiffuse.rgb);
+    if(GammaCorrection == 1)
+    {
+        ConstantLight = clamp(ConstantLight, 0.0, 1.0);
+    }
+    TotalLight = max(TotalLight, ConstantLight);
+
+
+    #if SHADER_TYPE == 2 && SELF_ILLUMINATION_MAP == 1 
+
+        // This approach takes the input color (usually the diffuse map) and apply it as lighting, 
+        // while subtracting this from the input color base for other light calculations.
+
+        #if READ_SELF_ILLUMINATION_FROM_SPECULAR_MAP == 1
+            TotalLight = mix(TotalLight, vec3(1.0), texture2D(texUnit2, vTexCoords).b);
+        #else
+            TotalLight = mix(TotalLight, vec3(1.0), texture2D(texUnit5, vTexCoords).r);
+        #endif
+
+    #endif
+
+    #if COLOR_CORRECTION_TYPE == 0
+        TotalLight = clamp(TotalLight, 0.0, 1.0);
+    #endif
+
+    ColorIO.rgb*=TotalLight;
+
+    #if SPECULAR_LIGHT == 1
+
+        
+        #if ENVIRONMENT_MAP == 1 && SHADER_TYPE == 2
+
+            float fEnvironmentMapFactor=fRoughness / fEnvironmentMapTreshold;
+            if(fEnvironmentMapFactor<1.0)
+            {
+
+                fEnvironmentMapFactor*=fEnvironmentMapFactor;
+                fEnvironmentMapFactor*=fEnvironmentMapFactor;
+
+                // If not normal mapped, we can use the coordinates from the vertex shader instead.
+                #if NORMAL_MAP != 1
+                    vec4 vTexEnvironment = ApplyColorSpace(texture2D(texUnitEnv, vVertexTexCoordsEnvironment.xy));
+                #else
+                    vec4 vTexEnvironment = ApplyColorSpace(texture2D(texUnitEnv, CalculateEnvironmentTexCoords(vNormalThis)));
+                #endif
+
+                #if SPECULAR_FRESNEL == 1
+
+                SpecularLight+=mix(fSpecularity, 1.0, pow(1.0 - dot(vNormalThis, -vViewToSurface_n), 5.0)) * (1.0 - fEnvironmentMapFactor) * vTexEnvironment.rgb * (StaticLight + AmbientLight + DiffuseLight);
+
+                #else
+
+                SpecularLight+=(1.0 - fEnvironmentMapFactor) * vTexEnvironment.rgb * (StaticLight + AmbientLight + DiffuseLight);        
+
+                #endif
+            }
+        #endif
+
+        ColorIO.rgb += 
+        #if SHADER_TYPE == 2
+            SpecularColor *
+        #endif
+        #if SPECULAR_FRESNEL == 0 
+            fSpecularity * 
+        #endif
+            SpecularLight * ApplyColorSpace(materialFrontDiffuse.rgb);
+    #endif
+
+}
+
+#if SHADER_TYPE == 1
+
+///////////////////////////////////
+//
+// VERTEX SHADER ONLY FUNCTIONS
+//
+///////////////////////////////////
+
+attribute vec3 vStaticLightDir;
+
+void SetupLights()
+{
+    if(FragmentLighting==1)
+    {
+        #if STATIC_LIGHT == 1
+            vStaticLightDirOut = m_normal * vStaticLightDir;
+        #else
+            vStaticLightDirOut = vec3(0.0);
+        #endif
+    }
+    #if ENVIRONMENT_MAP == 1 && NORMAL_MAP != 1
+        vVertexTexCoordsEnvironment = CalculateEnvironmentTexCoords(vVertexNormal);
+    #endif
+}
+
+#elif SHADER_TYPE == 2
+
+///////////////////////////////////
+//
+// FRAGMENT SHADER ONLY FUNCTIONS
+//
+///////////////////////////////////
+
+#if SPECULAR_LIGHT == 1
+void SetupSpecularity(vec4 TexDiffuse)
+{
+     // Determine specularity.
+    if(Specularity>0.0)
+    {
+        fSpecularity = Specularity;
+    }
+    else
+    {
+        #if SPECULAR_MAP == 1
+
+            fSpecularity = 1.0;//texture2D(texUnit2, vTexCoords.xy).r;
+
+        // This is mainly for the sake of enabling specularity on legacy content.
+        #elif ENVIRONMENT_MAP == 1
+
+            fSpecularity = clamp(mix(fSpecularityEnvironmentMapModifier, 0.025, TexDiffuse.a), fSpecularityMin, 1.0);
+        
+        #else
+
+            fSpecularity = fSpecularityMin;
+
+        #endif
+    }
+    
+    // Determine metallicness. This affects the color of specular light and diffuse light level.
+    if(Metallicness>0.0)
+    {
+        fMetallicness = Metallicness;
+    }
+    else
+    {
+        //For simplicity and ease of use, metallicness is derived from specularity.
+        fMetallicness = clamp(fMetallicnessModifier * (fSpecularity - fMetallicnessOffset), 0.0, 1.0);
+    }
+    SpecularColor = mix(vec3(1.0), TexDiffuse.rgb, fMetallicness);
+
+    // This is mainly for the sake of supporting legacy content. 
+    // It is not based on physics but aspires to reasonably match prior aestethics while still allowing us to enable specularity on top.
+    #if NORMAL_MAP != 1 && SPECULAR_MAP != 1
+
+        // If auto-generating specularity, adjust with brightness. 
+        SpecularColor*=vec3(clamp(dot(TexDiffuse.rgb, vec3(1.0)), 0.0, 1.0));
+
+        #if ENVIRONMENT_MAP == 1
+
+            // Adjust color if having environment map. This will ensure that legacy content has roughly the same texture output brightness.
+            SpecularColor = mix((GammaCorrection == 1 ? vec3(1.0) : vec3(0.5)), SpecularColor, TexDiffuse.a);
+
+        #endif
+    #endif
+
+    // Determine roughness. Mainly softens specular highlights.
+
+    if(Roughness>0.0)
+    {
+        fRoughness = Roughness;
+    }
+    else
+    {
+
+        #if ROUGHNESS_MAP == 1
+
+            #if READ_ROUGHNESS_FROM_SPECULAR_MAP == 1
+
+                fRoughness = texture2D(texUnit2, vTexCoords.xy).g;
+
+            #else
+
+                fRoughness = texture2D(texUnit3, vTexCoords.xy).r;
+
+            #endif
+
+        #else
+
+            fRoughness = mix(fRoughnessMax, fRoughnessMin,
+                        #if ENVIRONMENT_MAP == 1
+                            clamp(mix(fRoughnessEnvironmentMapModifier/max(0.01, TexDiffuse.a)-fRoughnessEnvironmentMapModifier, 1.0, fSpecularity), 0.0, 1.0)
+                        #else
+                            fSpecularity
+                        #endif
+                            );
+
+        #endif
+
+        fRoughness = max(0.1, fRoughness);
+    }
+
+    fRoughness_sq = fRoughness * fRoughness;
+
+    #if SPECULAR_DISTRIBUTION_MODEL == 0
+
+        // Determine shininess for Blinn-Phong.
+        fShininess = 2.0 / (fRoughness_sq) - 2.0;
+
+    #endif
+
+}
+#endif
+
+#if HEIGHT_MAP == 1
+void SetupOcclusion()
+{
+    // Compare with difference to local average height.
+    fOcclusion = texture2D(texUnit4, vTexCoords.xy, fOcclusionVicinityRange).r;
+    fOcclusion=clamp(fOcclusion-fHeight, 0.0, 1.0);
+    fOcclusion = clamp(fOcclusion*fOcclusion * (1.0+fOcclusionModifier) * fOcclusionBase, 0.0, 0.99);
+    fOcclusionInv=clamp(1.0 - fOcclusion, 0.0, 1.0);
+    fOcclusionDiffuseMod1 = 1.0 / clamp(1.0 - fOcclusion, 0.01, 1.0);
+    fOcclusionDiffuseMod2 = - fOcclusion * fOcclusionDiffuseMod1;
+}
+#endif
+
+#endif 
+
+///////////////////////////////////
+//
+// END INC_LIGHTING
+//
+///////////////////////////////////
+
+///////////////////////////////////
+//
+// BEGIN INC_KEYHOLE
+//
+///////////////////////////////////
+
+const float GRAD_VECS_NUM = 12.0;
+const float WORLD_COORDS_MOD_LIMIT = 35.0;
+
+uniform int keyholeCanDissolve;
+
+varying highp vec3 vKeyholeNoiseBase;
+varying float fFragCamOffset;
+
+
+#if SHADER_TYPE == 1
+
+///////////////////////////////////
+//
+// VERTEX SHADER ONLY FUNCTIONS
+//
+///////////////////////////////////
+
+void SetupKeyholeFactors()
+{
+    if(keyholeCanDissolve == 1)
+    {    
+        fFragCamOffset = -vPosView.z - playerCameraDist + (90.0-cameraPitch)/45.0;
+
+        highp mat4 tempM = m_m;
+        tempM[3] = mod(tempM[3], WORLD_COORDS_MOD_LIMIT);
+        vKeyholeNoiseBase = (tempM * vPos).xyz;
+    }
+}
+
+#elif SHADER_TYPE == 2
+
+///////////////////////////////////
+//
+// FRAGMENT SHADER ONLY FUNCTIONS
+//
+///////////////////////////////////
+
+#ifdef MOBILE
+uniform float alphaTestValue;
+uniform int useAlphaFunc;
+#endif
+
+
+// Keyhole unifroms
+uniform sampler2D keyholePermutationTable;
+uniform vec3 keyholeGradients[int(GRAD_VECS_NUM)];
+
+
+
+// ========= Start implementation of Symplex noise
+const int PERM_TABLE_SIZE = 512;
+const float MAX_PERM_VALUE = 255.0;
+//const float NOISE_BORDER_WIDTH = 0.075;
+// Offset from position of character below which nothing will be dissolved
+const float FLOOR_OFFSET = 1.0;
+
+//const float fKeyholeBlackness = 0.1;
+const float fKeyholeBlackness = 0.8;
+const float fKeyholeNoiseModifier = 0.35;
+const float fKeyholePunchthroughPoint = 0.3;
+const float fKeyholeSizeMax = 0.9; // Relative to least of resolution width and height.
+const float fKeyholeSizeMin = 0.5; // Relative to least of resolution width and height.
+const float fKeyholeSizeBase = 5.0;
+
+const float skewFactorMultipl = 1.0 / 3.0;
+const float unskewFactorMultipl = 1.0 / 6.0;
+
+// Get value from permutation table (implemented as texture)
+int PermVal(int index)
+{
+    return int(texture2D(keyholePermutationTable, vec2(float(index) / float(PERM_TABLE_SIZE), 0.0)).a * MAX_PERM_VALUE);
+}
+
+
+float CornerContrib(const int gradInd, vec3 vDelta)
+{
+    // I don't know what exactly this constant means, it is just a part of
+    // formula to calculate contribution of each angle into the noise.
+    // However, what I do know is that value of this variable influence
+    // on how discontinuity we have in our noise. This value was taken from
+    // original implementation of this algorithm
+    const float sqrR = 0.6;
+
+    float t = sqrR - dot(vDelta, vDelta);
+
+    if (t < 0.0)
+        return 0.0;
+
+    t*=t;
+    t*=t;
+    return t * dot(keyholeGradients[gradInd], vDelta);
+}
+
+
+// This calculates symplex 3D noise
+float MakeSomeNoise(vec3 vBasis)
+{
+    float skewFactor = dot(vBasis, vec3(1.0)) * skewFactorMultipl;
+    // Skew the input and determine cell origin in skewed space
+
+
+    vec3 vCellOrigSkewed = floor(vBasis + skewFactor);
+
+    float unskewFactor = dot(vCellOrigSkewed, vec3(1.0)) * unskewFactorMultipl;
+
+    // Find unskewed cell origins
+    vec3 vCellOrig0 = vCellOrigSkewed - unskewFactor;
+
+    vec3 vDelta0 = vBasis - vCellOrig0;
+
+    vec3 vCellOrig1 = vec3(1.0, 0.0, 0.0);
+    vec3 vCellOrig2 = vec3(1.0, 1.0, 0.0);
+
+    if (vDelta0.x >= vDelta0.y)
+    {
+        if (vDelta0.y >= vDelta0.z)
+        {
+        }
+        else if (vDelta0.x >= vDelta0.z)
+        {
+            vCellOrig2 = vCellOrig2.xzy;
+        }
+        else
+        {
+            vCellOrig1 = vCellOrig1.zyx;
+            vCellOrig2 = vCellOrig2.xzy;
+        }
+    }
+    else
+    {
+         if (vDelta0.y < vDelta0.z)
+         {
+            vCellOrig1 = vCellOrig1.zyx;
+            vCellOrig2 = vCellOrig2.zxy;
+         }
+         else if (vDelta0.x < vDelta0.z)
+         {
+            vCellOrig1 = vCellOrig1.zxy;
+            vCellOrig2 = vCellOrig2.zxy;
+         }
+         else
+         {
+            vCellOrig1 = vCellOrig1.zxy;
+         }
+    }
+
+    // Offsets for second corner and input point in unskewed coords
+
+    vec3 vDelta1 = vDelta0 - vCellOrig1 + unskewFactorMultipl;
+    vec3 vDelta2 = vDelta0 - vCellOrig2 + 2.0 * unskewFactorMultipl;
+    vec3 vDelta3 = vDelta0 - 1.0 + 3.0 * unskewFactorMultipl;
+
+    // Work out the hashed gradient indices of the four simplex corners.
+    // Original algorithm contains bitwise AND here, but our version of GLSL is too
+    // old to have this fancy feature, so alternative is to use mod (works only for 0xFF),
+    const float divisionArg = float(0xFF);
+
+    ivec3 ivMod = ivec3(mod(vCellOrigSkewed, divisionArg));
+
+    int grInd0 = PermVal(ivMod.z);
+    grInd0 = PermVal(ivMod.y + grInd0);
+    grInd0 = PermVal(ivMod.x+ grInd0);
+    grInd0 = int(mod(float(grInd0), GRAD_VECS_NUM));
+
+    int grInd1 = PermVal(ivMod.z + int(vCellOrig1.z));
+    grInd1 = PermVal(ivMod.y + int(vCellOrig1.y) + grInd1);
+    grInd1 = PermVal(ivMod.x + int(vCellOrig1.x) + grInd1);
+    grInd1 = int(mod(float(grInd1), GRAD_VECS_NUM));
+
+    int grInd2 = PermVal(ivMod.z + int(vCellOrig2.z));
+    grInd2 = PermVal(ivMod.y + int(vCellOrig2.y) + grInd2);
+    grInd2 = PermVal(ivMod.x + int(vCellOrig2.x) + grInd2);
+    grInd2 = int(mod(float(grInd2), GRAD_VECS_NUM));
+
+    int grInd3 = PermVal(ivMod.z + 1);
+    grInd3 = PermVal(ivMod.y + 1 + grInd3);
+    grInd3 = PermVal(ivMod.x + 1 + grInd3);
+    grInd3 = int(mod(float(grInd3), GRAD_VECS_NUM));
+
+    // Add contributions from each corner to get the final noise value.
+    // The result is scaled to stay just inside [-1,1]
+    return 32.0 *
+    (
+        CornerContrib(grInd0, vDelta0) +
+        CornerContrib(grInd1, vDelta1) +
+        CornerContrib(grInd2, vDelta2) +
+        CornerContrib(grInd3, vDelta3)
+    );
+}
+
+
+void ApplyKeyhole(inout vec4 ColorIO)
+{
+
+
+    #if ENABLE_KEYHOLING == 1
+    //float fFragCamOffset = -vPosView.z - playerCameraDist + (90.0-cameraPitch)/45.0;
+    if (keyholeCanDissolve == 1 && fFragCamOffset < 0.0)
+    {
+        float fKeyholeRadius = clamp(-fKeyholeSizeBase/vPosView.z, fKeyholeSizeMin, fKeyholeSizeMax) * 0.5 * min(float(screenWidth), float(screenHeight));
+        // Coordinates of fragment relative to the screen center
+        highp vec2 coordsVec = vec2(gl_FragCoord.x - float(screenWidth) * 0.5, gl_FragCoord.y - float(screenHeight) * 0.5);
+        float fragToCenterDist_sq = dot(coordsVec, coordsVec); 
+        float radDiff_sq = fragToCenterDist_sq / (fKeyholeRadius * fKeyholeRadius); //float(keyholeRadiusThis) - fragToCenterDist;
+        
+        if (radDiff_sq < 1.0)
+        {
+            // This function returns value from -1.0 to 1.0,  so we multiply return value by 0.5
+            // and add 0.5 to make it from 0.0 to 1.0
+            float noise = MakeSomeNoise(vKeyholeNoiseBase) * 0.5 + 0.5;
+            float fKeyholeLevel =    1.0
+                               - 1.0 * radDiff_sq
+                               - noise * fKeyholeNoiseModifier
+                               + 0.5 / fFragCamOffset // 
+                               - max(0.0, playerPosition.z - vWorldCoord.z + FLOOR_OFFSET); // Noise decrease for objects that are below the player.
+            
+            
+            if (fKeyholeLevel >= fKeyholePunchthroughPoint)
+                discard;        
+            
+            // Draw border
+            if (fKeyholeLevel > 0.0)
+                ColorIO.rgb *= (1.0 - fKeyholeBlackness*(fKeyholeLevel*fKeyholeLevel / (fKeyholePunchthroughPoint*fKeyholePunchthroughPoint))); 
+                    //max(vec3(0.0), mix(ColorIO.rgb, ColorIO.rgb -1.0,  fKeyholeBlackness*(fKeyholeLevel*fKeyholeLevel / (fKeyholePunchthroughPoint*fKeyholePunchthroughPoint)))); 
+            
+        }
+
+    }
+    #endif
+}
+#endif
+
+///////////////////////////////////
+//
+// END INC_KEYHOLE
+//
+///////////////////////////////////
+
+///////////////////////////////////
+//
+// BEGIN INC_STANDARD
+//
+///////////////////////////////////
+
+//vec4 ApplyStandardShader(vec4 Color)
+vec4 ApplyStandardShader(vec4 Color, vec3 vCustomNormal, vec2 uv)
+{
+    Color = ApplyColorSpace(Color);
+
+    // Vertex shader
+    #if SHADER_TYPE == 1
+
+        TransformMainCoordinates();
+
+        SetupKeyholeFactors();
+
+        // Used for both specular light and environment map.
+        #if (ENVIRONMENT_MAP == 1 && NORMAL_MAP != 1)
+            SetupViewToSurfaceNormal();
+        #endif
+
+        #if UNLIT != 1
+
+            SetupLights();
+
+            // Sets initial vertex color. For vertex lighting, this is done as part of the ComputeLighting call instead.
+            if(FragmentLighting==1)
+            {
+                #if STATIC_LIGHT == 1
+                    Color *= ApplyColorSpace(vColor);
+                #else
+                    Color *= vec4(0.0, 0.0, 0.0, 1.0);
+                #endif
+            }
+            else
+            {
+                //ComputeLighting(Color, vVertexNormal);
+                ComputeLighting(Color, vCustomNormal);
+            }
+
+            Color.a*=materialFrontDiffuse.a;
+
+        #endif
+
+        #if ENVIRONMENT_MAP == 1 && NORMAL_MAP != 1
+            //vVertexTexCoordsEnvironment = CalculateEnvironmentTexCoords(vVertexNormal);
+            vVertexTexCoordsEnvironment = CalculateEnvironmentTexCoords(vCustomNormal);
+        #endif
+
+        SetupFog();
+
+    // Fragment shader
+    #elif SHADER_TYPE == 2
+
+
+        //vec3 vNormal = vVertexNormal;
+        vec3 vNormal = vCustomNormal;
+
+        // Used for both specular light, height and environment map.
+        #if HEIGHT_MAP == 1 || ((ENVIRONMENT_MAP == 1 && NORMAL_MAP == 1) || SPECULAR_LIGHT == 1)
+            SetupViewToSurfaceNormal();
+        #endif
+
+        #if NO_TEXTURE != 1
+        
+            vTexCoords = vVertexTexCoords.xy;
+            // Setup tangent space basis.
+            #if NORMAL_MAP == 1 || HEIGHT_MAP == 1
+
+                mat3 mTSB = SetupTSB();
+                
+                #if HEIGHT_MAP == 1
+                    DisplaceTextureCoords(vTexCoords, mTSB);
+                #endif
+
+                #if NORMAL_MAP == 1 && UNLIT != 1
+                    //vNormal = texture2D(texUnit1, vTexCoords).rgb * 2.0 - 1.0;
+                    vNormal = vNormal + texture2D(texUnit1, uv).rgb * 2.0 - 1.0;
+                    vNormal = mTSB * vNormal;
+                #endif
+
+            #endif
+
+            #if DIFFUSE_MAP == 1
+
+                //vec4 TexDiffuse = texture2D(texUnit0,vTexCoords.xy);
+                vec4 TexDiffuse = texture2D(texUnit0,uv.xy);
+
+                // Check for compatibility alone as texture0Bound is not set for certain elements.
+                #if UNLIT != 1
+                    if(texture0Bound == 0)
+                    { 
+                        TexDiffuse = vec4(1.0);
+                    }
+                #endif 
+
+            #else
+                vec4 TexDiffuse = vec4(1.0);
+            #endif
+
+            // Only do this for vertex lighting - otherwise we apply environment maps as specular light instead.
+            #if ENVIRONMENT_MAP == 1
+
+                if(FragmentLighting!=1)
+                {
+                    // If not normal mapped, we can use the coordinates from the vertex shader instead.
+                    #if NORMAL_MAP != 1
+                        vec4 vTexEnvironment = (texture2D(texUnitEnv, vVertexTexCoordsEnvironment.xy));
+                    #else
+                        vec4 vTexEnvironment = (texture2D(texUnitEnv, CalculateEnvironmentTexCoords(vNormal)));
+                    #endif 
+                    TexDiffuse.rgb = mix(vTexEnvironment.rgb, TexDiffuse.rgb, TexDiffuse.a);
+                }
+
+            #endif
+
+            TexDiffuse = ApplyColorSpace(TexDiffuse);
+
+
+        #endif
+
+        #if (UNLIT != 1)
+            // We need to normalize due to interpolation etc.
+            vNormal = normalize(vNormal);
+        #endif
+
+
+        #if UNLIT != 1 && NO_TEXTURE != 1
+
+            // Sets up specular and roughness values.
+            if(FragmentLighting==1)
+            {
+                #if ENVIRONMENT_MAP == 1
+                    if(GammaCorrection==0)
+                    {
+                        TexDiffuse.rgb = mix(vec3(0.5), TexDiffuse.rgb, TexDiffuse.a);
+                    }
+                #endif
+                SetupSpecularity(TexDiffuse);
+            }
+
+            #if HEIGHT_MAP == 1
+                SetupOcclusion();
+            #endif
+
+        #endif
+
+        #if NO_TEXTURE != 1
+            Color.rgb *= TexDiffuse.rgb;
+        #endif
+
+        #if UNLIT != 1
+
+            if(FragmentLighting==1)
+            {
+                ComputeLighting(Color, vNormal);
+            }
+            else
+            {
+                Color.rgb *= ApplyColorSpace(VertexColor.rgb);
+
+                #if SELF_ILLUMINATION_MAP == 1 
+
+                    #if READ_SELF_ILLUMINATION_FROM_SPECULAR_MAP == 1
+                        Color.rgb += TexDiffuse.rgb * texture2D(texUnit2, vTexCoords).b;
+                    #else
+                        Color.rgb += TexDiffuse.rgb * texture2D(texUnit5, vTexCoords).r;
+                    #endif
+
+                #endif
+            }
+
+        #else
+            Color.rgb *= ApplyColorSpace(VertexColor.rgb);
+        #endif
+
+        // Determine output alpha value.
+        Color.a *= VertexColor.a;
+
+        #if ENVIRONMENT_MAP != 1 && NO_TEXTURE != 1
+            Color.a*=TexDiffuse.a;
+        #endif
+
+        ApplyKeyhole(Color);
+
+        ApplyFog(Color);
+
+    #endif
+     
+
+    Color.rgb = RevertColorSpace(Color.rgb);
+
+    #if COLOR_CORRECTION_TYPE == 1
+    Color.rgb = ColorClamp(Color.rgb);
+    #elif COLOR_CORRECTION_TYPE == 2
+    Color.rgb = ACESFilm(Color.rgb);
+    #endif
+
+    return Color;
+}
+
+///////////////////////////////////
+//
+// END INC_STANDARD
+//
+///////////////////////////////////
+
+//=============================================================================
+//
+// Manages waves from global wind as well as point sources (ie. PLC, Footsteps, etc.).
+//
+//=============================================================================
+
+uniform vec3 areaGlobalWind;
+
+uniform float areaWeatherDensity;
+
+#define NWAREA_FLAG_INTERIOR            0x0001
+#define NWAREA_FLAG_UNDERGROUND         0x0002
+#define NWAREA_FLAG_NATURAL             0x0004
+uniform int areaFlags;
+
+#define NWAREA_WEATHER_CLEAR            0
+#define NWAREA_WEATHER_RAIN             1
+#define NWAREA_WEATHER_SNOW             2
+uniform int areaWeatherType;
+
+// Wind Properties
+const int MAX_WINDS=32;
+uniform int windPointSourcesCount;
+uniform vec3 windPointSourcesPosition[MAX_WINDS];
+uniform float windPointSourcesRadius[MAX_WINDS];
+uniform float windPointSourcesIntensity[MAX_WINDS];
+uniform float windPointSourcesTimeRemaining[MAX_WINDS];
+
+// Time
+uniform int worldtimerTimeOfDay;
+
+//get world clock tick for use in judging wave position
+float tick = (worldtimerTimeOfDay/1000.0);
+
+float fastNoise(vec2 p)
+{
+    vec2 K1 = vec2(
+        23.14069263277926, // e^pi (Gelfond's constant)
+         2.665144142690225 // 2^sqrt(2) (Gelfondâ€“Schneider constant)
+    );
+    return fract( cos( dot(p, K1) ) * 12345.6789 );
+}
+
+float modulus(float v1, float v2)
+{
+	return v1 - (floor(v1/v2) * v2);
+}
+
+float random(in vec2 xy) 
+{
+	float x = xy.x;
+	float y = xy.y;
+	float f = fract(sin(dot(vec2(x,y), vec2(23.14069263277926,2.665144142690225))) * 123456.654321);
+	float t =tick;
+	y = f * sin(x+t/f);
+	y += f * sin(x+t*f);
+	y += 2.0*f * sin(x+t*f);
+	float ovr = abs(1.0-y);
+	float und = abs(-1.0-y);
+	y += und - ovr;
+	y *= -t+sin(x*f + t);
+	y=clamp(y, -1.0, 1.0);
+	return 0.5+(0.5*y);
+}
+
+float randomNumber (float nLow, float nHigh, vec2 seed) 
+{
+	float v = nHigh-nLow;
+	//return floor(random(seed) * v) + nLow;
+	return floor(fastNoise(seed) * v) + nLow;
+}
+
+float noiseSwatch (in vec2 _st) {
+    vec2 i = floor(_st);
+    vec2 f = fract(_st);
+
+    float a = random(i);
+    float b = random(i + vec2(1.0, 0.0));
+    float c = random(i + vec2(0.0, 1.0));
+    float d = random(i + vec2(1.0, 1.0));
+
+    vec2 u = f * f * (3.0 - 2.0 * f);
+
+    return mix(a, b, u.x) +
+            (c - a)* u.y * (1.0 - u.x) +
+            (d - b) * u.x * u.y;
+}
+
+#define NUM_OCTAVES 5
+float fbm ( in vec2 _st) 
+{
+    float v = 0.0;
+    float a = 0.5;
+    vec2 shift = vec2(100.0);
+    // Rotate to reduce axial bias
+    mat2 rot = mat2(cos(0.5), sin(0.5),
+                    -sin(0.5), cos(0.50));
+    for (int i = 0; i < NUM_OCTAVES; ++i) {
+        v += a * noiseSwatch(_st);
+        _st = rot * _st * 2.0 + shift;
+        a *= 0.5;
+    }
+    return v;
+}
+
+vec4 fastSmoke () 
+{
+    vec2 st = vVertexTexCoords.xy;
+    vec3 color = vec3(0.0);
+
+    vec2 q = vec2(0.);
+    q.x = fbm( st + 0.00*tick);
+    q.y = fbm( st + vec2(1.0));
+
+    vec2 r = vec2(0.);
+    r.x = fbm( st + 1.0*q + vec2(1.7,9.2)+ 0.150*tick);
+    r.y = fbm( st + 1.0*q + vec2(8.3,2.8)+ 0.126*tick);
+
+    float f = fbm(st+r);
+
+    color = mix(vec3(0.101961,0.619608,0.666667),
+                vec3(0.666667,0.666667,0.498039),
+                clamp((f*f)*4.0,0.0,1.0));
+
+    color = mix(color,
+                vec3(0,0,0.164706),
+                clamp(length(q),0.0,1.0));
+
+    color = mix(color,
+                vec3(0.666667,1,1),
+                clamp(length(r.x),0.0,1.0));
+
+    return vec4((f*f*f+.6*f*f+.5*f)*color,1.);
+}
+
+void main ()
+{
+    // pixel world space position
+    //vec2 xy = vWorldCoord.xy;
+
+		
+	// get initial texture coordinates
+	vec2 uv = vVertexTexCoords.xy;
+	
+	
+	// calculate what frame we are on
+	int numValidFrames = 1 + (SPRITE_LAST_FRAME - SPRITE_FIRST_FRAME);
+	// do modulus
+	float myFrame = SPRITE_FIRST_FRAME; 
+	
+	// get noise for this pixel
+	if (SPRITE_RANDOM_PLAYBACK == 1) 
+	{
+		//must remain random per WHOLE print, so pass something that can't change per frame
+		myFrame = randomNumber(SPRITE_FIRST_FRAME, SPRITE_LAST_FRAME, tick*playerPosition.xy);		
+	}
+	else 
+	{
+		myFrame = modulus(floor(tick*SPRITE_FPS), numValidFrames) + SPRITE_FIRST_FRAME;
+	}
+	
+	// calculate the uv offset for the current frame
+	// divide the initial texture coordinates by the grid size
+	uv.x /= SPRITE_GRID_X;
+	uv.y /= SPRITE_GRID_Y;
+	
+	// remember xy = (0,0) is top-left, not bottom left, so move the first frame selector to the top corner
+	uv.y += (SPRITE_GRID_Y-1)*(1.0/SPRITE_GRID_Y);
+	// calculate which row our current frame is from 
+	float row = floor((myFrame-1) / SPRITE_GRID_X);
+	// calculate which column our current frame is from 
+	float col = modulus((myFrame-1),SPRITE_GRID_X);
+	// offset the uv by our row and col positions 
+	uv.x += (col) * (1.0/SPRITE_GRID_X);
+	uv.y -= (row) * (1.0/SPRITE_GRID_Y);
+	
+	// get the color of the specified pixel
+    vec4 texColor = texture2D(texUnit0, uv);
+	vec4 texNormal = texture2D(texUnit1, uv);
+	
+	// do alpha blending
+	// 0 = use texture alpha channel
+	float texAlpha = texColor.a;
+	// 1 = draw any non-zero value
+	if (SPRITE_BLEND_MODE == 1)
+	{
+		texAlpha = 1;
+		if (texColor.xyz == vec3(0.0)) texAlpha = 0;
+	} 
+	// 2 = alpha equals luminance
+	if (SPRITE_BLEND_MODE == 2)
+	{
+		texAlpha = (texColor.r + texColor.g + texColor.b)/3.0;
+	}
+	// 3 = alpha equals sqrt luminance	
+	if (SPRITE_BLEND_MODE == 3)
+	{
+		texAlpha = (sqrt(texColor.r) + sqrt(texColor.g) + sqrt(texColor.b));
+	}
+	// 4 = alpha equals pi-luminance, brightness is multiplied
+	if (SPRITE_BLEND_MODE == 4)
+	{
+		texAlpha = (texColor.r + texColor.g + texColor.b)/3.0;
+		texColor.rgb = 2.0*(texColor.rgb);
+	}
+	// 5 = alpha equals pythagorean luminance 
+	if (SPRITE_BLEND_MODE == 5)
+	{
+		texAlpha = sqrt(pow(texColor.r,2) + pow(texColor.g,2) + pow(texColor.b,2));
+	}
+	
+	// send the pixel for light processing
+	if (SPRITE_IS_TINTABLE == 1) 
+	{
+		texColor = ApplyStandardShader(texColor, texNormal.xyz, uv);
+	}
+	
+	// Apply fog, but not if fog was already done in tinting process
+	if ((SPRITE_APPLY_FOG == 1) && (SPRITE_IS_TINTABLE == 0))
+	{
+		ApplyFog(texColor);
+		
+	}
+	
+	//become fire, flare, or light if needed
+	if (SPRITE_DOUBLE_SATURATION == 1)
+	{
+		texColor.rgb *= PI/2.0;
+	}
+	
+	//check for attenuation of light by distance
+	if (SPRITE_ATTENUATE_BY_DISTANCE == 1)
+	{
+		//simple attentuation = 1/d
+		float distCameraToParticle = abs(length(cameraPosition.xyz-vWorldCoord.xyz));
+		//attenuation factor isn't quite 1:1
+		float fAttenuation = clamp(88/distCameraToParticle, 0, 1.1);
+		texColor.rgb *= fAttenuation;
+		if (SPRITE_APPLY_REDSHIFT_BY_DISTANCE == 1)
+		{
+			//force redshift by distance
+			texColor.rgb += (1/fAttenuation) * vec3(1,0,0);
+		}
+	}
+
+    // Finalize pixel color
+    gl_FragColor.rgba = vec4(texColor.rgb, texAlpha) + SPRITE_ADD_COLOR_RGBA;
+}

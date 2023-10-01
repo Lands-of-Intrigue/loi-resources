@@ -1,0 +1,26 @@
+# Rewritten by CleanModels 3 Version 3.1.1c Sun May 03 01:26:39 2009
+#MAXWALKMESH  ASCII
+beginwalkmeshgeom sdg24_c03_01
+node aabb scvesh15
+  parent sdg24_c03_01
+  orientation 0 0 0 0
+  wirecolor 0.898438 0.898438 0.898438
+  ambient 0.588 0.588 0.588
+  diffuse 0.5 0.5 0.5
+  specular 0 0 0
+  shininess 10
+  bitmap NULL
+  position 0 0 0
+  verts 4
+    -5 5 -5
+    5 -5 -5
+    5 5 -5
+    -5 -5 -5
+  faces 2
+    0 1 2 1 0 0 0 1
+    1 0 3 1 0 0 0 1
+  aabb     -5 -5 -5 5 5 -5 -1
+    -5 -5 -5 5 5 -5 1
+    -5 -5 -5 5 5 -5 0
+endnode
+endwalkmeshgeom sdg24_c03_01

@@ -1,0 +1,70 @@
+# Exported from NWmax 0.8 b54 at 9/18/2018 1:14:18 PM
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: it_midmisc_015
+#local file: Unknown
+filedependancy Unknown
+newmodel it_midmisc_015
+setsupermodel it_midmisc_015 NULL
+classification Character
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom it_midmisc_015
+node dummy it_midmisc_015
+  parent NULL
+endnode
+node trimesh SinglePaper
+  parent it_midmisc_015
+  position -0.112098 -0.0771899 0.0
+  orientation 0.0 0.0 -1.0 -0.428465
+  wirecolor 1.0 1.0 1.0 
+  tilefade 0
+  scale 1.0
+  render 1
+  Shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0 
+  ambient 1.0 1.0 1.0 
+  ambient 1.0 1.0 1.0 
+  diffuse 1.0 1.0 1.0 
+  specular 0.0 0.0 0.0 
+  shininess 10
+  center 13.6646 2.86812 2.52276 
+  bitmap plc_fabric
+  verts 9
+    0.050837 -0.198671 0.00616146
+    0.202046 -0.254508 0.00616146
+    0.124312 0.0272665 0.030155
+    0.270399 -0.0408552 0.00616146
+    0.230401 0.237995 0.00616146
+    0.373664 0.164121 0.0442938
+    -0.100371 -0.142834 0.00616146
+    -0.0118655 0.0907669 0.00616146
+    0.0871374 0.31187 0.021177
+  faces 8
+    0 1 2  1  0 1 2  1
+    3 2 1  1  3 2 1  1
+    2 3 4  1  2 3 4  1
+    5 4 3  1  5 4 3  1
+    6 0 7  1  6 0 7  1
+    2 7 0  1  2 7 0  1
+    7 2 8  1  7 2 8  1
+    4 8 2  1  4 8 2  1
+  tverts 9
+    0.438871 0.395583 0
+    0.438776 0.396007 0
+    0.43718 0.395507 0
+    0.43718 0.395932 0
+    0.435489 0.395526 0
+    0.435535 0.39595 0
+    0.438966 0.39516 0
+    0.43718 0.395111 0
+    0.435443 0.395101 0
+endnode
+endmodelgeom it_midmisc_015
+donemodel it_midmisc_015

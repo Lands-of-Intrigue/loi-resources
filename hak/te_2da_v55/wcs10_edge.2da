@@ -1,0 +1,19 @@
+2DA V2.0
+
+      Corner1   Edge       Corner2   Height   Model          
+0     Ground     ****       Ground     0        wcs01_Z01_02  
+1     Ground     Fence      Ground     0        wcs01_Z01_01   
+2     Swamp     Patch     Swamp     0        wcs01_Z01_04  
+3     Wall      Corridor   Wall      0        wcs01_Z01_01 
+4     Ground     Road       Ground     0        wcs01_Z01_02     
+5     Ground     ****       Swamp     0        wcs01_Z01_03
+6     Wall      ****       Swamp     0        wcs01_Z01_01
+7     Wall      ****       Ground     0        wcs01_Z01_01
+8     Wall      ****       ****      0        wcs01_Z01_01
+9     Swamp     ****       ****      0        wcs01_Z01_01
+10    Ground     ****       ****      0        wcs01_Z01_02
+11    Swamp     ****       Swamp     0        wcs01_Z01_01
+12    Wall      ****       Wall      0        wcs01_Z01_01
+13    Wall      Doorway    Wall      0        wcs01_Z01_01
+
+

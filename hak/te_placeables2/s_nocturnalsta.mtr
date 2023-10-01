@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_nocturnalsta 
+texture1 s_nocturnalsta_n 
+texture2 s_nocturnalsta_s 
+texture3 null 
+texture4 null 

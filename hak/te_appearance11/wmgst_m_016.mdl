@@ -1,0 +1,18 @@
+# Exported from NWmax 0.8 b61 at 18/09/2018 20:39:40
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: WMgSt_m_016
+#local file: C:\Users\Pablo\Documents\3DS\2x.max
+filedependancy 2x.max
+newmodel WMgSt_m_016
+setsupermodel WMgSt_m_016 NULL
+classification Character
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom WMgSt_m_016
+node dummy WMgSt_m_016
+  parent NULL
+endnode
+endmodelgeom WMgSt_m_016
+donemodel WMgSt_m_016

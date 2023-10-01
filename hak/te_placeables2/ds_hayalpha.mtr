@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 ds_hayalpha 
+texture1 ds_hay_n 
+texture2 ds_hay_s 
+texture3 null 
+texture4 null 

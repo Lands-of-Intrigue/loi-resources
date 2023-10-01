@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_thatchin01 
+texture1 s_thatchin01_n 
+texture2 null 
+texture3 null 
+texture4 null 

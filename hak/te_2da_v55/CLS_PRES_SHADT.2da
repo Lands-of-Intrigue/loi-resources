@@ -1,0 +1,19 @@
+2DA V2.0
+
+   LABEL             ReqType ReqParam1      ReqParam2 
+1  ScriptVar         VAR     TE_AllowBlight 0         
+3  SKILL_Lore        SKILL   7              8         
+3  SKILL_Spellcraft  SKILL   16             8         
+3  CLERIC_Class      CLASSOR 2              5         
+5  DRUID_Class       CLASSOR 3              5         
+6  BARD_Class        CLASSOR 1              5         
+7  Sorc_Class        CLASSOR 9              6         
+8  Wiz_Class         CLASSOR 10             5         
+9  Ranger_Class      CLASSOR 7              12        
+10 Shadow_Weave_Feat FEAT    1300           ****      
+11 EMPOWER_SPELL     FEATOR  11             ****      
+12 EXTEND_SPELL      FEATOR  12             ****      
+13 MAX_SPELL         FEATOR  25             ****      
+14 QUICK_SPELL       FEATOR  29             ****      
+15 SILENT_SPELL      FEATOR  33             ****      
+16 STILL_SPELL       FEATOR  37             ****      

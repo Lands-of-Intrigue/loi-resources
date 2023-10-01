@@ -1,0 +1,29 @@
+2DA V2.0
+
+       Corner1     Edge      Corner2     Height     Model            
+0      Sand        ****      Sand        0          tca01_z01_01     
+1      Sand+       ****      Sand        0          tca01_z06_01     
+2      Sand+       ****      Sand+       1          tca01_z01_01     
+3      Sand        Wall      Sand        0          tca01_z05_01     
+4      Sand        ****      ****        0          tca01_z01_01     
+5      Sand+       ****      ****        1          tca01_z01_01     
+6      Sand+       Wall      Sand+       1          tca01_z05_01     
+7      Mountain    ****      Mountain    0          tca01_z02_01     
+8      Mountain    ****      ****        0          tca01_z02_01     
+9      Mountain+   ****      Mountain+   0          tca01_z02_01     
+10     Mountain+   ****      ****        0          tca01_z02_01     
+11     Mountain    ****      Sand        0          tca01_z03_01
+12     Water       ****      Water       0          tca01_z04_01
+13     Water       ****      ****        0          tca01_z04_01
+14     City        ****      City        0          tca01_z07_01
+15     City        ****      ****        0          tca01_z07_01
+16     City        ****      Sand        0          tca01_z08_01
+17     City        ****      City+       0          tca01_z09_01
+18     City+       ****      City+       1          tca01_z07_01
+19     City+       ****      ****        1          tca01_z07_01
+20     Sand        ****      Water       0          tca01_z10_01
+21     City        ****      Building    0          tca01_z11_01
+22     Building    ****      Building    0          tca01_z11_01
+23     Building    ****      ****        0          tca01_z11_01
+24     City        Wall      City        0          tca01_z12_01
+25     City*       Wall      City+       1          tca01_z12_01

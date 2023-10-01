@@ -1,0 +1,106 @@
+# Exported from NWmax 0.8 b60 at 2/8/2018 9:22:01 PM
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: fx_rain
+#local file: Unknown
+filedependancy Unknown
+newmodel fx_rain
+setsupermodel fx_rain NULL
+classification Character
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom fx_rain
+node dummy fx_rain
+  parent NULL
+endnode
+node emitter !_Tom_sperma
+  parent fx_rain
+  position 0.0 0.0 6.0
+  orientation 1.0 0.0 0.0 -3.14159
+  wirecolor 1.0 1.0 1.0 
+  update_sel 1
+  update Fountain
+  render_sel 5
+  render Aligned_to_World_Z
+  blend_sel 3
+  Blend Lighten
+  spawntype_sel 0
+  spawnType 0
+  xSize 1000.0
+  ySize 1000.0
+  inherit 1
+  inherit_local 1
+  inheritvel 0
+  inherit_part 0
+  renderorder 0
+  threshold 0.0
+  combinetime 0.0
+  deadspace 0.0
+  opacity 1.0
+  colorStart 1.0 1.0 1.0 
+  colorEnd 0.321569 0.74902 0.752941 
+  alphaStart 0.9
+  alphaEnd 0.9
+  sizeStart 0.05
+  sizeEnd 0.08
+  sizeStart_y 0.1
+  sizeEnd_y 0.2
+  birthrate 200
+  lifeExp 2.0
+  mass 1.0
+  spread 0.0872665
+  particleRot 0.0
+  velocity 2.4
+  randvel 0.2
+  bounce_co 0.06
+  blurlength 0.05
+  loop 0
+  bounce 1
+  m_isTinted 0
+  splat 0
+  affectedByWind false
+  texture fxpa_rain01
+  twosidedtex 1
+  xgrid 1
+  ygrid 1
+  fps 10
+  framestart 0
+  frameend 24
+  random 0
+  lightningDelay 0.0
+  lightningRadius 0.0
+  lightningSubDiv 0
+  lightningScale 0.0
+  blastRadius 0.0
+  blastLength 0.0
+  p2p 0
+  p2p_type Bezier
+  p2p_sel 1
+  p2p_bezier2 0.0
+  p2p_bezier3 0.0
+  grav 0.0
+  drag 0.0
+endnode
+endmodelgeom fx_rain
+#NWmax ANIM ASCII
+newanim rain fx_rain
+  length 3.33333
+  transtime 0.25
+  animroot fx_rain
+    node dummy fx_rain
+        parent NULL
+    endnode
+    node emitter !_Tom_sperma
+        parent fx_rain
+        positionkey
+            0.0 0.0 0.0 6.0
+            3.33333 0.0 0.0 6.0
+        endlist
+        orientationkey
+            0.0 1.0 0.0 0.0 -3.14159
+            3.33333 1.0 0.0 0.0 -3.14159
+        endlist
+    endnode
+doneanim rain fx_rain
+donemodel fx_rain

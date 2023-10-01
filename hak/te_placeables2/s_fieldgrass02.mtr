@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_fieldgrass02 
+texture1 s_fieldgrass02_n 
+texture2 s_fieldgrass02_s 
+texture3 null 
+texture4 null 

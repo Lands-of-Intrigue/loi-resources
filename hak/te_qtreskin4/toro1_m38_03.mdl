@@ -1,0 +1,1326 @@
+# Rewritten by CleanModels 3 Version 3.5.1 Sun Jul 28 19:45:29 2013
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel toro1_m38_03
+  classification TILE
+  setsupermodel toro1_m38_03 NULL
+  setanimationscale 1
+#MAXGEOM ASCII
+beginmodelgeom toro1_m38_03
+node dummy toro1_m38_03
+  parent NULL
+endnode
+node light toro1_m38_03ml1
+  parent toro1_m38_03
+  position -1.5 -1.5 8.5
+  wirecolor 1 0.894118 0
+  radius 14
+  multiplier 1
+  color 0 0 0
+  ambientonly 0
+  nDynamicType 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  fadinglight 1
+  orientation 0 0 0 0
+endnode
+node light toro1_m38_03ml2
+  parent toro1_m38_03
+  position 1.5 1.5 9
+  wirecolor 1 0.894118 0
+  radius 5
+  multiplier 1
+  color 0 0 0
+  ambientonly 0
+  nDynamicType 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  fadinglight 1
+  orientation 0 0 0 0
+endnode
+node aabb wok03
+  parent toro1_m38_03
+  position 0 0 0
+  wirecolor 0 1 0
+  ambient 0.588 0.588 0.588
+  diffuse 0 0.752941 0
+  specular 0 0 0
+  shininess 10
+  orientation 0 0 0 0
+  bitmap NULL
+  render 0
+  shadow 0
+  verts 45
+    -1.6 -1.8 4.87
+    -0.16 0.49 4.91
+    1.67 3.52 5.08
+    1.6 -5 5.51
+    2.53 -2.95 5
+    1.66 -2.94 5.19
+    4.54 -2.95 5
+    -0.22 -3.74 5.11
+    1.14 -2.21 4.91
+    2.41 -1.98 4.83
+    5 -1.79 4.79
+    4.14 0.83 4.69
+    4.59 -2.66 4.99
+    2.49 -2.68 4.98
+    5 5 5
+    -3.25 -5 5.07
+    2.01 -0.31 4.69
+    -1.91 2.94 5.06
+    -5 5 5
+    -5 -5 5
+    -5 0 5
+    0 5 5
+    2.5 5 5
+    -2.5 5 5
+    -5 2.5 5
+    -5 -2.5 5
+    -0.54 -5 5.11
+    5 -2.95 5.07
+    5 1.35 4.7
+    5 0.79 4.7
+    5 -3.09 13.36
+    1.89 -5 15.56
+    2 -3.16 13.36
+    2.49 -3.15 13.36
+    4.57 -3.16 13.36
+    2.53 -3.95 5
+    4.54 -3.95 5
+    2.49 -4.02 14.33
+    4.57 -4.02 14.33
+    5 -5 15.56
+    -1.36 -5 5.1
+    -1.41 -4.24 5.09
+    -0.73 -1.93 4.88
+    -0.74 -3 5.02
+    -0.67 -3.93 5.1
+  faces 68
+    8 13 9 0 0 0 0 14
+    9 13 12 0 0 0 0 14
+    12 10 9 0 0 0 0 14
+    12 27 10 0 0 0 0 3
+    11 9 10 0 0 0 0 14
+    5 8 7 0 0 0 0 3
+    7 3 5 0 0 0 0 3
+    28 11 29 0 0 0 0 14
+    13 4 6 0 0 0 0 4
+    6 12 13 0 0 0 0 4
+    5 4 13 0 0 0 0 14
+    13 8 5 0 0 0 0 14
+    28 14 11 0 0 0 0 3
+    1 8 16 0 0 0 0 3
+    1 16 2 0 0 0 0 3
+    2 16 11 0 0 0 0 3
+    2 22 21 0 0 0 0 3
+    17 2 23 0 0 0 0 3
+    2 21 23 0 0 0 0 3
+    23 18 17 0 0 0 0 3
+    8 9 16 0 0 0 0 14
+    16 9 11 0 0 0 0 14
+    17 1 2 0 0 0 0 3
+    15 41 0 0 0 0 0 3
+    20 15 0 0 0 0 0 3
+    17 18 24 0 0 0 0 3
+    24 20 17 0 0 0 0 3
+    17 20 0 0 0 0 0 3
+    15 20 25 0 0 0 0 3
+    25 19 15 0 0 0 0 3
+    26 3 7 0 0 0 0 3
+    15 40 41 0 0 0 0 3
+    12 6 27 0 0 0 0 3
+    10 29 11 0 0 0 0 14
+    2 14 22 0 0 0 0 3
+    2 11 14 0 0 0 0 3
+    31 32 3 0 0 0 0 2
+    32 5 3 0 0 0 0 2
+    5 32 4 0 0 0 0 2
+    34 30 6 0 0 0 0 2
+    32 33 4 0 0 0 0 2
+    30 27 6 0 0 0 0 2
+    35 36 6 0 0 0 0 4
+    6 4 35 0 0 0 0 4
+    37 38 36 0 0 0 0 2
+    36 35 37 0 0 0 0 2
+    6 36 38 0 0 0 0 2
+    6 38 34 0 0 0 0 2
+    35 4 33 0 0 0 0 2
+    35 33 37 0 0 0 0 2
+    37 32 31 0 0 0 0 2
+    37 31 39 0 0 0 0 2
+    39 30 38 0 0 0 0 2
+    38 37 39 0 0 0 0 2
+    34 38 30 0 0 0 0 2
+    33 32 37 0 0 0 0 2
+    44 26 7 0 0 0 0 3
+    44 7 43 0 0 0 0 3
+    42 7 8 0 0 0 0 3
+    17 0 1 0 0 0 0 3
+    42 8 1 0 0 0 0 3
+    0 42 1 0 0 0 0 3
+    43 7 42 0 0 0 0 3
+    0 43 42 0 0 0 0 7
+    41 43 0 0 0 0 0 7
+    41 44 43 0 0 0 0 7
+    41 40 44 0 0 0 0 7
+    44 40 26 0 0 0 0 7
+  aabb     -5 -5 4.69 5 5 15.56 -1
+    -5 -5 4.69 5 5 5.51 -1
+    -5 -5 4.87 1.67 5 5.51 -1
+    -5 -5 4.87 1.6 0 5.51 -1
+    -5 -5 4.87 -1.36 0 5.1 -1
+    -5 -5 4.87 -1.36 -1.8 5.1 -1
+    -5 -5 5 -3.25 -2.5 5.07 29
+    -3.25 -5 4.87 -1.36 -1.8 5.1 -1
+    -3.25 -5 5.07 -1.36 -4.24 5.1 31
+    -3.25 -5 4.87 -1.41 -1.8 5.09 23
+    -5 -5 4.87 -1.6 0 5.07 -1
+    -5 -5 5 -3.25 0 5.07 28
+    -5 -5 4.87 -1.6 0 5.07 24
+    -1.6 -5 4.87 1.6 -1.8 5.51 -1
+    -1.6 -5 4.87 -0.54 -1.8 5.11 -1
+    -1.41 -5 5.02 -0.54 -3 5.11 -1
+    -1.41 -5 5.09 -0.54 -3.93 5.11 -1
+    -1.36 -5 5.1 -0.54 -3.93 5.11 67
+    -1.41 -5 5.09 -0.67 -3.93 5.1 66
+    -1.41 -4.24 5.02 -0.67 -3 5.1 65
+    -1.6 -4.24 4.87 -0.73 -1.8 5.09 -1
+    -1.6 -4.24 4.87 -0.74 -1.8 5.09 64
+    -1.6 -3 4.87 -0.73 -1.8 5.02 63
+    -0.74 -5 4.88 1.6 -1.93 5.51 -1
+    -0.67 -5 5.1 1.6 -3.74 5.51 -1
+    -0.67 -5 5.1 -0.22 -3.74 5.11 56
+    -0.54 -5 5.11 1.6 -3.74 5.51 30
+    -0.74 -3.93 4.88 1.14 -1.93 5.11 -1
+    -0.74 -3.93 5.02 -0.22 -3 5.11 57
+    -0.74 -3.74 4.88 1.14 -1.93 5.11 -1
+    -0.74 -3.74 4.88 -0.22 -1.93 5.11 62
+    -0.73 -3.74 4.88 1.14 -1.93 5.11 58
+    -5 -2.21 4.87 1.67 5 5.08 -1
+    -5 -2.21 4.87 1.14 2.94 5.06 -1
+    -5 -1.8 4.87 -1.6 2.94 5.06 -1
+    -5 -1.8 4.87 -1.6 2.94 5.06 27
+    -5 0 5 -1.91 2.94 5.06 26
+    -1.91 -2.21 4.87 1.14 2.94 5.06 -1
+    -1.6 -2.21 4.87 1.14 0.49 4.91 -1
+    -1.6 -1.93 4.87 -0.16 0.49 4.91 61
+    -0.73 -2.21 4.88 1.14 0.49 4.91 60
+    -1.91 -1.8 4.87 -0.16 2.94 5.06 59
+    -5 0.49 4.91 1.67 5 5.08 -1
+    -5 2.5 5 -1.91 5 5.06 -1
+    -5 2.5 5 -1.91 5 5.06 25
+    -5 2.94 5 -1.91 5 5.06 19
+    -2.5 0.49 4.91 1.67 5 5.08 -1
+    -1.91 0.49 4.91 1.67 3.52 5.08 22
+    -2.5 2.94 5 1.67 5 5.08 -1
+    -2.5 2.94 5 1.67 5 5.08 17
+    -2.5 3.52 5 1.67 5 5.08 18
+    -0.22 -5 4.69 5 5 5.51 -1
+    -0.22 -5 4.69 5 0.83 5.51 -1
+    -0.22 -5 4.91 5 -2.21 5.51 -1
+    -0.22 -5 4.91 2.53 -2.21 5.51 -1
+    -0.22 -5 5.11 1.66 -2.94 5.51 6
+    -0.22 -3.74 4.91 2.53 -2.21 5.19 -1
+    -0.22 -3.74 4.91 1.66 -2.21 5.19 5
+    1.66 -2.95 4.98 2.53 -2.68 5.19 10
+    2.49 -3.95 4.98 5 -2.66 5.07 -1
+    2.49 -3.95 4.98 4.54 -2.68 5 -1
+    2.49 -2.95 4.98 4.54 -2.68 5 8
+    2.53 -3.95 5 4.54 -2.95 5 43
+    2.49 -3.95 4.98 5 -2.66 5.07 -1
+    2.49 -3.95 4.98 4.59 -2.66 5 -1
+    2.53 -3.95 5 4.54 -2.95 5 42
+    2.49 -2.95 4.98 4.59 -2.66 5 9
+    4.54 -2.95 4.99 5 -2.66 5.07 32
+    1.14 -2.95 4.69 5 0.83 5.19 -1
+    1.14 -2.94 4.69 2.49 -0.31 5.19 -1
+    1.14 -2.94 4.83 2.49 -1.98 5.19 -1
+    1.14 -2.94 4.91 2.49 -2.21 5.19 11
+    1.14 -2.68 4.83 2.49 -1.98 4.98 0
+    1.14 -2.21 4.69 2.41 -0.31 4.91 20
+    2.41 -2.95 4.69 5 0.83 5.07 -1
+    2.41 -2.95 4.79 5 -1.79 5.07 -1
+    2.41 -2.68 4.79 5 -1.79 4.99 -1
+    2.41 -2.68 4.83 4.59 -1.98 4.99 1
+    2.41 -2.66 4.79 5 -1.79 4.99 2
+    4.59 -2.95 4.79 5 -1.79 5.07 3
+    2.41 -1.98 4.69 5 0.83 4.83 4
+    -0.16 -2.21 4.69 5 5 5.08 -1
+    -0.16 -2.21 4.69 5 3.52 5.08 -1
+    -0.16 -2.21 4.69 5 0.83 4.91 -1
+    -0.16 -2.21 4.69 4.14 0.83 4.91 -1
+    -0.16 -2.21 4.69 2.01 0.49 4.91 13
+    2.01 -1.98 4.69 4.14 0.83 4.83 21
+    4.14 -1.79 4.69 5 0.83 4.79 33
+    -0.16 -0.31 4.69 5 3.52 5.08 -1
+    -0.16 -0.31 4.69 4.14 3.52 5.08 -1
+    -0.16 -0.31 4.69 2.01 3.52 5.08 14
+    1.67 -0.31 4.69 4.14 3.52 5.08 15
+    4.14 0.79 4.69 5 1.35 4.7 7
+    0 0.83 4.69 5 5 5.08 -1
+    0 3.52 5 5 5 5.08 -1
+    0 3.52 5 2.5 5 5.08 16
+    1.67 3.52 5 5 5 5.08 34
+    1.67 0.83 4.69 5 5 5.08 -1
+    4.14 0.83 4.69 5 5 5 12
+    1.67 0.83 4.69 5 5 5.08 35
+    1.6 -5 5 5 -2.94 15.56 -1
+    1.6 -5 5 5 -2.94 14.33 -1
+    1.6 -5 5 5 -2.94 14.33 -1
+    1.66 -3.95 5 5 -2.94 13.36 -1
+    2.49 -3.95 5 5 -2.95 13.36 -1
+    2.49 -3.95 5 2.53 -2.95 13.36 48
+    4.54 -3.09 5 5 -2.95 13.36 41
+    1.66 -3.16 5 2.53 -2.94 13.36 38
+    1.6 -5 5 4.57 -2.94 14.33 -1
+    1.6 -5 5.19 2 -2.94 13.36 37
+    2.49 -4.02 5 4.57 -2.95 14.33 -1
+    2.49 -4.02 5 4.54 -3.95 14.33 45
+    4.54 -4.02 5 4.57 -2.95 14.33 46
+    2 -4.02 5 5 -2.95 14.33 -1
+    2 -3.16 5 5 -2.95 13.36 -1
+    2 -3.16 5 2.53 -2.95 13.36 40
+    4.54 -3.16 5 5 -2.95 13.36 39
+    2.49 -4.02 5 4.57 -2.95 14.33 -1
+    2.49 -4.02 5 2.53 -3.15 14.33 49
+    4.54 -4.02 5 4.57 -2.95 14.33 47
+    1.6 -5 5 5 -3.09 15.56 -1
+    1.6 -5 5 4.57 -3.16 15.56 -1
+    2.49 -4.02 5 4.57 -3.95 14.33 44
+    1.6 -5 5.51 2 -3.16 15.56 36
+    1.89 -5 13.36 5 -3.09 15.56 -1
+    1.89 -5 13.36 5 -3.15 15.56 -1
+    1.89 -5 13.36 2.49 -3.15 15.56 -1
+    2 -4.02 13.36 2.49 -3.15 14.33 55
+    1.89 -5 13.36 2.49 -3.16 15.56 50
+    1.89 -5 14.33 5 -4.02 15.56 51
+    2.49 -5 13.36 5 -3.09 15.56 -1
+    2.49 -5 14.33 5 -4.02 15.56 53
+    4.57 -5 13.36 5 -3.09 15.56 -1
+    4.57 -4.02 13.36 5 -3.09 14.33 54
+    4.57 -5 13.36 5 -3.09 15.56 52
+endnode
+node trimesh ground
+  parent toro1_m38_03
+  position 0.23 0 4.99
+  orientation 0 0 0 0
+  wirecolor 0.47451 0.611765 0.247059
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 1
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap ttr01_grass02
+  verts 33
+    1.37 -5 0.52
+    2.29 -3.02 0
+    1.43 -2.94 0.2
+    4.31 -3.13 0.01
+    -0.45 -3.74 0.12
+    0.91 -2.21 -0.08
+    2.18 -1.98 -0.16
+    4.77 -1.46 -0.29
+    5.24 -1.7 -0.18
+    3.91 0.83 -0.3
+    4.36 -2.66 0
+    2.26 -2.68 -0.01
+    4.77 5 0.01
+    -3.48 -5 0.08
+    -1.83 -1.8 -0.12
+    -0.39 0.49 -0.08
+    1.78 -0.31 -0.3
+    1.44 3.52 0.09
+    -2.14 2.94 0.07
+    -5.23 5 0.01
+    -5.23 -5 0.01
+    -5.23 0 0.01
+    -0.23 5 0.01
+    2.27 5 0.01
+    -2.73 5 0.01
+    -5.23 2.5 0.01
+    -5.23 -2.5 0.01
+    1.97 -5 0.18
+    -0.77 -5 0.12
+    4.77 -3.11 0.1
+    4.77 -2.21 -0.13
+    4.77 1.35 -0.29
+    4.77 0.79 -0.29
+  faces 43
+    2 0 1 1 2 0 1 1
+    5 11 6 1 5 11 6 1
+    6 11 10 1 6 11 10 1
+    10 7 6 1 10 7 6 1
+    10 29 30 1 10 29 30 1
+    8 7 30 1 8 7 30 1
+    9 6 7 1 9 6 7 1
+    2 5 4 1 2 5 4 1
+    4 0 2 1 4 0 2 1
+    31 9 32 1 31 9 32 1
+    11 1 3 1 11 1 3 1
+    3 10 11 1 3 10 11 1
+    2 1 11 1 2 1 11 1
+    11 5 2 1 11 5 2 1
+    31 12 9 1 31 12 9 1
+    14 5 15 1 14 5 15 1
+    15 5 16 1 15 5 16 1
+    15 16 17 1 15 16 17 1
+    17 16 9 1 17 16 9 1
+    18 14 15 1 18 14 15 1
+    17 23 22 1 17 23 22 1
+    18 17 24 1 18 17 24 1
+    17 22 24 1 17 22 24 1
+    24 19 18 1 24 19 18 1
+    5 6 16 1 5 6 16 1
+    16 6 9 1 16 6 9 1
+    18 15 17 1 18 15 17 1
+    13 4 14 1 13 4 14 1
+    14 4 5 1 14 4 5 1
+    21 13 14 1 21 13 14 1
+    18 19 25 1 18 19 25 1
+    25 21 18 1 25 21 18 1
+    18 21 14 1 18 21 14 1
+    13 21 26 1 13 21 26 1
+    26 20 13 1 26 20 13 1
+    27 1 0 1 27 1 0 1
+    28 0 4 1 28 0 4 1
+    13 28 4 1 13 28 4 1
+    30 7 10 1 30 7 10 1
+    10 3 29 1 10 3 29 1
+    7 32 9 1 7 32 9 1
+    17 12 23 1 17 12 23 1
+    17 9 12 1 17 9 12 1
+  tverts 33
+    0.820313 -0.5 0
+    1.00391 -0.103516 0
+    0.832031 -0.0878906 0
+    1.4082 -0.126953 0
+    0.455078 -0.248047 0
+    0.728516 0.0585938 0
+    0.982422 0.103516 0
+    1.5 0.207031 0
+    1.59375 0.160156 0
+    1.32813 0.666016 0
+    1.41797 -0.03125 0
+    0.998047 -0.0351563 0
+    1.5 1.5 0
+    -0.150391 -0.5 0
+    0.179688 0.140625 0
+    0.46875 0.597656 0
+    0.902344 0.4375 0
+    0.833984 1.20313 0
+    0.117188 1.08789 0
+    -0.5 1.5 0
+    -0.5 -0.5 0
+    -0.5 0.5 0
+    0.5 1.5 0
+    1 1.5 0
+    0 1.5 0
+    -0.5 1 0
+    -0.5 0 0
+    0.939453 -0.5 0
+    0.392578 -0.5 0
+    1.5 -0.121094 0
+    1.5 0.0585938 0
+    1.5 0.769531 0
+    1.5 0.658203 0
+endnode
+node trimesh floorsteps08
+  parent toro1_m38_03
+  position 4.926 -0.205 4.66333
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 0
+  center undefined
+  bitmap tno01_wood011
+  wirecolor 1 0 0
+  verts 8
+    -0.266 -0.465 0.0566667
+    -0.006 -0.535 0.0666667
+    0.274 0.465 0.0566667
+    0.014 0.535 0.0566667
+    -0.276 -0.465 -0.0833333
+    -0.016 -0.535 -0.0833333
+    0.264 0.465 -0.0933333
+    0.004 0.535 -0.0933333
+  faces 10
+    0 1 2 1 8 9 10 1
+    2 3 0 1 10 11 8 1
+    4 5 1 2 0 1 2 5
+    1 0 4 2 2 3 0 5
+    5 6 2 4 4 5 6 4
+    2 1 5 4 6 7 4 4
+    6 7 3 2 0 1 2 6
+    3 2 6 2 2 3 0 6
+    7 4 0 4 4 5 6 3
+    0 3 7 4 6 7 4 3
+  tverts 12
+    0.535156 0.0644531 0
+    0.914063 0.0644531 0
+    0.916016 0.273438 0
+    0.537109 0.271484 0
+    0.152344 1 0
+    0.152344 0.00195313 0
+    0.292969 0.00195313 0
+    0.292969 1.00195 0
+    0.369141 0 0
+    0.630859 0 0
+    0.630859 1 0
+    0.369141 1 0
+endnode
+node trimesh floorsteps05
+  parent toro1_m38_03
+  position 3.16867 -1.46233 4.752
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 0
+  center undefined
+  bitmap tno01_wood011
+  wirecolor 1 0 0
+  verts 8
+    0.771333 0.212333 0.008
+    0.641333 0.452333 0.008
+    -0.758667 -0.197667 0.078
+    -0.638667 -0.447667 0.078
+    0.761333 0.192333 -0.102
+    0.631333 0.442333 -0.102
+    -0.768667 -0.207667 -0.032
+    -0.648667 -0.457667 -0.022
+  faces 10
+    0 1 2 1 0 1 2 1
+    2 3 0 1 2 3 0 1
+    4 5 1 2 4 5 6 5
+    1 0 4 2 6 7 4 5
+    5 6 2 4 8 9 10 4
+    2 1 5 4 10 11 8 4
+    6 7 3 2 4 5 6 6
+    3 2 6 2 6 7 4 6
+    7 4 0 4 8 9 10 3
+    0 3 7 4 10 11 8 3
+  tverts 12
+    0.369141 0 0
+    0.630859 0 0
+    0.630859 1 0
+    0.369141 1 0
+    0.535156 0.0644531 0
+    0.914063 0.0644531 0
+    0.916016 0.273438 0
+    0.537109 0.271484 0
+    0.152344 1 0
+    0.152344 0.00195313 0
+    0.292969 0.00195313 0
+    0.292969 1.00195 0
+endnode
+node trimesh house_stuccowindowframe01
+  parent toro1_m38_03
+  position 4.16 -2.96 10.46
+  orientation 0 0 0 0
+  wirecolor 0.356863 0.721569 0.137255
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 0
+  center undefined
+  bitmap ttr01_window07
+  verts 8
+    -0.85 -0.07 -0.91
+    0.85 -0.07 -0.81
+    -0.85 -0.15 0.93
+    0.85 -0.14 0.93
+    0.87 0.16 -0.85
+    -0.87 0.16 -0.95
+    -0.87 0.07 0.95
+    0.87 0.09 0.95
+  faces 8
+    4 5 0 1 6 8 0 65536
+    0 1 4 1 0 1 6 65536
+    2 0 5 2 2 3 7 65536
+    5 6 2 2 7 0 2 65536
+    1 3 7 2 4 5 0 65536
+    7 4 1 2 0 7 4 65536
+    2 6 7 1 0 9 10 65536
+    7 3 2 1 10 1 0 65536
+  tverts 11
+    0.996094 0.0625 0
+    0.00195313 0.046875 0
+    0.996094 0.0253906 0
+    0.00390625 0.015625 0
+    0.00390625 0.0078125 0
+    0.996094 0.0175781 0
+    0.00195313 0.0117188 0
+    0.00390625 0.046875 0
+    0.998047 0.0214844 0
+    0.998047 0.0292969 0
+    0.00195313 0.0195313 0
+endnode
+node trimesh floorsteps06
+  parent toro1_m38_03
+  position 3.404 -2.21633 4.84533
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 0
+  center undefined
+  bitmap tno01_wood011
+  wirecolor 1 0 0
+  verts 8
+    0.686 0.0163333 0.0446667
+    0.606 0.286333 -0.00533333
+    -0.674 0.00633333 0.0646667
+    -0.594 -0.273667 0.124667
+    0.666 -0.0136667 -0.0953333
+    0.596 0.266333 -0.145333
+    -0.684 -0.0136667 -0.0753333
+    -0.614 -0.293667 -0.0253333
+  faces 10
+    0 1 2 1 0 1 2 1
+    2 3 0 1 2 3 0 1
+    4 5 1 2 4 5 6 5
+    1 0 4 2 6 7 4 5
+    5 6 2 4 8 9 10 4
+    2 1 5 4 10 11 8 4
+    6 7 3 2 4 5 6 6
+    3 2 6 2 6 7 4 6
+    7 4 0 4 8 9 10 3
+    0 3 7 4 10 11 8 3
+  tverts 12
+    0.369141 0 0
+    0.630859 0 0
+    0.630859 1 0
+    0.369141 1 0
+    0.535156 0.0644531 0
+    0.914063 0.0644531 0
+    0.916016 0.273438 0
+    0.537109 0.271484 0
+    0.152344 1 0
+    0.152344 0.00195313 0
+    0.292969 0.00195313 0
+    0.292969 1.00195 0
+endnode
+node trimesh object07
+  parent toro1_m38_03
+  position 1.95 -3.17 6.67
+  orientation 0 0 0 0
+  wirecolor 0.631373 0.756863 0.8
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 0
+  center undefined
+  bitmap tno01_corner01
+  verts 6
+    0.15 0.22 -1.67
+    -0.15 0.22 -1.67
+    -0.15 -0.09 -1.67
+    0.16 0.08 1.67
+    -0.14 0.08 1.65
+    -0.14 -0.21 1.67
+  faces 4
+    0 1 4 1 0 3 7 5
+    4 3 0 1 7 6 0 5
+    1 2 5 2 1 2 5 4
+    5 4 1 2 5 4 1 4
+  tverts 8
+    0.119141 -0.578125 0
+    0.423828 -0.578125 0
+    0.876953 -0.578125 0
+    0.417969 -0.578125 0
+    0.480469 1.58203 0
+    0.933594 1.58203 0
+    0.119141 1.58203 0
+    0.417969 1.58203 0
+endnode
+node trimesh box44
+  parent toro1_m38_03
+  position -1.15 -2.31 6.39
+  orientation 0 0 0 0
+  wirecolor 0.901961 0.819608 0.458824
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 0
+  center undefined
+  bitmap tno01_wood011
+  verts 8
+    0.14 0.11 -1.5
+    -0.11 0.14 -1.5
+    0.1 -0.13 -1.5
+    -0.14 -0.1 -1.5
+    0.14 0.11 0
+    -0.11 0.14 0
+    0.1 -0.13 0
+    -0.14 -0.1 0
+  faces 10
+    4 5 7 1 4 5 6 65536
+    7 6 4 1 6 7 4 65536
+    0 1 5 2 1 0 2 4
+    5 4 0 2 2 3 1 4
+    1 3 7 4 1 0 2 3
+    7 5 1 4 2 3 1 3
+    3 2 6 2 1 0 2 5
+    6 7 3 2 2 3 1 5
+    2 0 4 4 1 0 2 2
+    4 6 2 4 2 3 1 2
+  tverts 8
+    0.5625 0.125 0
+    0.4375 0.125 0
+    0.5625 0.875 0
+    0.4375 0.875 0
+    0.4375 0.4375 0
+    0.5625 0.4375 0
+    0.5625 0.5625 0
+    0.4375 0.5625 0
+endnode
+node trimesh cylinder01
+  parent toro1_m38_03
+  position -1.06167 -3.46333 6.14
+  orientation 0 0 0 0
+  wirecolor 0.137255 0.301961 0.0431373
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 0
+  center undefined
+  bitmap tno01_wood011
+  verts 6
+    -0.108333 1.12333 0.01
+    -0.188333 1.12333 -0.1
+    -0.0583333 1.11333 -0.12
+    0.131667 -1.11667 0.15
+    0.0416667 -1.11667 0.04
+    0.181667 -1.12667 0.02
+  faces 6
+    0 4 3 1 2 3 5 2
+    0 1 4 1 2 0 3 2
+    1 5 4 2 1 6 4 2
+    1 2 5 2 1 7 6 2
+    2 3 5 4 2 3 5 2
+    2 0 3 4 2 0 3 2
+  tverts 8
+    0.539063 -0.166016 0
+    0.453125 -0.166016 0
+    0.460938 -0.166016 0
+    0.539063 1.16602 0
+    0.453125 1.16602 0
+    0.460938 1.16602 0
+    0.546875 1.16602 0
+    0.546875 -0.166016 0
+endnode
+node trimesh cylinder07
+  parent toro1_m38_03
+  position -1.08 -3.46333 5.565
+  orientation 0 0 0 0
+  wirecolor 0.776471 0.847059 0.74902
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 0
+  center undefined
+  bitmap tno01_wood011
+  verts 6
+    -0.03 1.11333 -0.025
+    -0.15 1.12333 0.045
+    -0.15 1.12333 -0.095
+    0.19 -1.12667 0.025
+    0.07 -1.11667 0.095
+    0.07 -1.11667 -0.045
+  faces 6
+    0 4 3 1 2 3 5 2
+    0 1 4 1 2 0 3 2
+    1 5 4 2 1 6 4 2
+    1 2 5 2 1 7 6 2
+    2 3 5 4 2 3 5 2
+    2 0 3 4 2 0 3 2
+  tverts 8
+    0.539063 -0.166016 0
+    0.453125 -0.166016 0
+    0.460938 -0.166016 0
+    0.539063 1.16602 0
+    0.453125 1.16602 0
+    0.460938 1.16602 0
+    0.546875 1.16602 0
+    0.546875 -0.166016 0
+endnode
+node trimesh doors
+  parent toro1_m38_03
+  position 3.53 -4.02 6.54
+  orientation 0 0 0 0
+  wirecolor 0.666667 0.556863 0.737255
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap tno01_doorway01
+  verts 8
+    -1 -1.07 -1.54
+    -1 1.07 -1.54
+    -1 -1.07 1.53
+    -1 0.93 1.51
+    1 -1.07 1.53
+    1 0.93 1.53
+    1 1.07 -1.54
+    1 -1.07 -1.54
+  faces 8
+    0 1 2 1 0 1 2 3
+    2 1 3 1 2 1 3 3
+    4 0 2 2 6 4 5 3
+    5 4 2 4 11 10 8 1
+    5 2 3 4 11 8 9 1
+    6 7 5 1 14 15 13 3
+    5 7 4 1 13 15 12 3
+    7 0 4 2 7 4 6 3
+  tverts 16
+    1.04102 0.279297 0
+    1.04102 0.974609 0
+    0.0410156 0.279297 0
+    0.0488281 0.929688 0
+    0.09375 0.265625 0
+    0.09375 0.521484 0
+    -0.0703125 0.521484 0
+    -0.0703125 0.265625 0
+    0.03125 0.519531 0
+    0.03125 0.539063 0
+    0.0722656 0.519531 0
+    0.0722656 0.539063 0
+    0.984375 0.222656 0
+    0.990234 0.875 0
+    -0.00976563 0.927734 0
+    -0.015625 0.232422 0
+endnode
+node trimesh stonestep_02
+  parent toro1_m38_03
+  position 3.53 -3.91 4.69
+  orientation 0 0 0 0
+  wirecolor 0.87451 0.737255 0.247059
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap tno01_doorway01
+  verts 8
+    -1.03 1.22 0.33
+    -1.23 -1.23 0.33
+    1.23 -1.23 0.33
+    1.04 1.22 0.33
+    -0.52 1.15 0.32
+    -1.05 1.23 0.17
+    1.06 1.23 0.17
+    -0.53 1.16 0.17
+  faces 9
+    0 1 2 1 6 7 8 65536
+    2 3 4 1 8 9 10 65536
+    0 2 4 1 6 8 10 65536
+    1 0 5 2 7 6 11 65536
+    2 6 3 2 8 12 9 65536
+    7 4 3 4 0 1 2 65536
+    3 6 7 4 2 3 0 65536
+    5 0 4 4 4 5 1 65536
+    4 7 5 4 1 0 4 65536
+  tverts 13
+    0.673828 0.310547 0
+    0.669922 0.501953 0
+    0.330078 0.486328 0
+    0.328125 0.310547 0
+    0.996094 0.310547 0
+    0.988281 0.515625 0
+    0.0820313 0.955078 0
+    0 0.304688 0
+    1 0.304688 0
+    0.921875 0.955078 0
+    0.289063 0.931641 0
+    0.0742188 0.958984 0
+    0.929688 0.958984 0
+endnode
+node dummy toro1_m38_03a
+  parent toro1_m38_03
+  position 0 0 0
+  orientation 0 0 0 0
+  wirecolor 1 0 0
+endnode
+node dummy cm3_repair_1
+  parent toro1_m38_03a
+  position 0 0 0
+  wirecolor 0.890196 0.596078 0.596078
+  orientation 0 0 0 0
+endnode
+node trimesh house_stuccowindow
+  parent cm3_repair_1
+  position 4.16 -3.07 10.47
+  wirecolor 0.756863 0.796079 0.603922
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center 0 0 0
+  bitmap ttr01_window07
+  orientation 0 0 0 0
+  verts 4
+    -0.85 0.04 -0.92
+    0.85 0.04 -0.82
+    -0.85 -0.04 0.92
+    0.85 -0.03 0.92
+  faces 2
+    2 3 1 1 0 1 2 0
+    1 0 2 1 2 3 0 0
+  tverts 4
+    0.976563 0.951172 0
+    0.015625 0.951172 0
+    0.015625 0.0566406 0
+    0.976563 0.0566406 0
+endnode
+endmodelgeom toro1_m38_03
+
+#MAXANIM ASCII
+newanim day toro1_m38_03
+  length 0.0333333
+  transtime 0.25
+  animroot toro1_m38_03
+  node dummy toro1_m38_03
+    parent NULL
+  endnode
+  node light toro1_m38_03ml1
+    parent toro1_m38_03
+  endnode
+  node light toro1_m38_03ml2
+    parent toro1_m38_03
+  endnode
+  node dummy wok03
+    parent toro1_m38_03
+  endnode
+  node dummy ground
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps08
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps05
+    parent toro1_m38_03
+  endnode
+  node dummy house_stuccowindowframe01
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps06
+    parent toro1_m38_03
+  endnode
+  node dummy object07
+    parent toro1_m38_03
+  endnode
+  node dummy box44
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder01
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder07
+    parent toro1_m38_03
+  endnode
+  node dummy doors
+    parent toro1_m38_03
+  endnode
+  node dummy stonestep_02
+    parent toro1_m38_03
+  endnode
+  node dummy toro1_m38_03a
+    parent toro1_m38_03
+  endnode
+  node dummy cm3_repair_1
+    parent toro1_m38_03a
+  endnode
+  node trimesh house_stuccowindow
+    parent cm3_repair_1
+    selfillumcolorkey
+      0 0 0 0
+      0.0333333 0 0 0
+    endlist
+  endnode
+doneanim day toro1_m38_03
+
+#MAXANIM ASCII
+newanim day2night toro1_m38_03
+  length 0.566667
+  transtime 0.25
+  animroot toro1_m38_03
+  node dummy toro1_m38_03
+    parent NULL
+  endnode
+  node light toro1_m38_03ml1
+    parent toro1_m38_03
+  endnode
+  node light toro1_m38_03ml2
+    parent toro1_m38_03
+  endnode
+  node dummy wok03
+    parent toro1_m38_03
+  endnode
+  node dummy ground
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps08
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps05
+    parent toro1_m38_03
+  endnode
+  node dummy house_stuccowindowframe01
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps06
+    parent toro1_m38_03
+  endnode
+  node dummy object07
+    parent toro1_m38_03
+  endnode
+  node dummy box44
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder01
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder07
+    parent toro1_m38_03
+  endnode
+  node dummy doors
+    parent toro1_m38_03
+  endnode
+  node dummy stonestep_02
+    parent toro1_m38_03
+  endnode
+  node dummy toro1_m38_03a
+    parent toro1_m38_03
+  endnode
+  node dummy cm3_repair_1
+    parent toro1_m38_03a
+  endnode
+  node trimesh house_stuccowindow
+    parent cm3_repair_1
+    selfillumcolorkey
+      0 0 0 0
+      0.566667 0.882353 0.882353 0.882353
+    endlist
+  endnode
+doneanim day2night toro1_m38_03
+
+#MAXANIM ASCII
+newanim night toro1_m38_03
+  length 0.0333333
+  transtime 0.25
+  animroot toro1_m38_03
+  node dummy toro1_m38_03
+    parent NULL
+  endnode
+  node light toro1_m38_03ml1
+    parent toro1_m38_03
+  endnode
+  node light toro1_m38_03ml2
+    parent toro1_m38_03
+  endnode
+  node dummy wok03
+    parent toro1_m38_03
+  endnode
+  node dummy ground
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps08
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps05
+    parent toro1_m38_03
+  endnode
+  node dummy house_stuccowindowframe01
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps06
+    parent toro1_m38_03
+  endnode
+  node dummy object07
+    parent toro1_m38_03
+  endnode
+  node dummy box44
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder01
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder07
+    parent toro1_m38_03
+  endnode
+  node dummy doors
+    parent toro1_m38_03
+  endnode
+  node dummy stonestep_02
+    parent toro1_m38_03
+  endnode
+  node dummy toro1_m38_03a
+    parent toro1_m38_03
+  endnode
+  node dummy cm3_repair_1
+    parent toro1_m38_03a
+  endnode
+  node trimesh house_stuccowindow
+    parent cm3_repair_1
+    selfillumcolorkey
+      0 0.882353 0.882353 0.882353
+      0.0333333 0.882353 0.882353 0.882353
+    endlist
+  endnode
+doneanim night toro1_m38_03
+
+#MAXANIM ASCII
+newanim night2day toro1_m38_03
+  length 0.6
+  transtime 0.25
+  animroot toro1_m38_03
+  node dummy toro1_m38_03
+    parent NULL
+  endnode
+  node light toro1_m38_03ml1
+    parent toro1_m38_03
+  endnode
+  node light toro1_m38_03ml2
+    parent toro1_m38_03
+  endnode
+  node dummy wok03
+    parent toro1_m38_03
+  endnode
+  node dummy ground
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps08
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps05
+    parent toro1_m38_03
+  endnode
+  node dummy house_stuccowindowframe01
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps06
+    parent toro1_m38_03
+  endnode
+  node dummy object07
+    parent toro1_m38_03
+  endnode
+  node dummy box44
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder01
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder07
+    parent toro1_m38_03
+  endnode
+  node dummy doors
+    parent toro1_m38_03
+  endnode
+  node dummy stonestep_02
+    parent toro1_m38_03
+  endnode
+  node dummy toro1_m38_03a
+    parent toro1_m38_03
+  endnode
+  node dummy cm3_repair_1
+    parent toro1_m38_03a
+  endnode
+  node trimesh house_stuccowindow
+    parent cm3_repair_1
+    selfillumcolorkey
+      0 0.882353 0.882353 0.882353
+      0.6 0 0 0
+    endlist
+  endnode
+doneanim night2day toro1_m38_03
+
+#MAXANIM ASCII
+newanim tiledefault toro1_m38_03
+  length 0.0333333
+  transtime 0.25
+  animroot toro1_m38_03
+  node dummy toro1_m38_03
+    parent NULL
+  endnode
+  node light toro1_m38_03ml1
+    parent toro1_m38_03
+  endnode
+  node light toro1_m38_03ml2
+    parent toro1_m38_03
+  endnode
+  node dummy wok03
+    parent toro1_m38_03
+  endnode
+  node dummy ground
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps08
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps05
+    parent toro1_m38_03
+  endnode
+  node dummy house_stuccowindowframe01
+    parent toro1_m38_03
+  endnode
+  node dummy floorsteps06
+    parent toro1_m38_03
+  endnode
+  node dummy object07
+    parent toro1_m38_03
+  endnode
+  node dummy box44
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder01
+    parent toro1_m38_03
+  endnode
+  node dummy cylinder07
+    parent toro1_m38_03
+  endnode
+  node dummy doors
+    parent toro1_m38_03
+  endnode
+  node dummy stonestep_02
+    parent toro1_m38_03
+  endnode
+  node dummy toro1_m38_03a
+    parent toro1_m38_03
+  endnode
+  node dummy cm3_repair_1
+    parent toro1_m38_03a
+  endnode
+  node trimesh house_stuccowindow
+    parent cm3_repair_1
+    selfillumcolorkey
+      0 0 0 0
+      0.0333333 0 0 0
+    endlist
+  endnode
+doneanim tiledefault toro1_m38_03
+donemodel toro1_m38_03

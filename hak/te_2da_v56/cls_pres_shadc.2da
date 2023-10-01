@@ -1,0 +1,7 @@
+2DA V2.0
+
+ LABEL ReqType ReqParam1 ReqParam2
+0 Base_Attack BAB 1 ****
+1 BG_Feat FEAT 1174 ****
+2 FEAT_WEAVE_RESONANCE FEAT 1599 ****
+3 FEAR_SHADOW_WEAVE_MAGIC FEAT 1300 ****

@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 ds_hhtrim01 
+texture1 ds_hhtrim01_n 
+texture2 ds_hhtrim01_s 
+texture3 null 
+texture4 null 

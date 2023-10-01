@@ -1,0 +1,18 @@
+# Exported from NWmax 0.8 b61 at 18/09/2018 17:52:54
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: WBlCl_b_015
+#local file: C:\Users\Pablo\Documents\3DS\2x.max
+filedependancy 2x.max
+newmodel WBlCl_b_015
+setsupermodel WBlCl_b_015 NULL
+classification Character
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom WBlCl_b_015
+node dummy WBlCl_b_015
+  parent NULL
+endnode
+endmodelgeom WBlCl_b_015
+donemodel WBlCl_b_015

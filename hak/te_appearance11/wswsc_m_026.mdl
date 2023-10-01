@@ -1,0 +1,18 @@
+# Exported from NWmax 0.8 b61 at 19/09/2018 19:01:14
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: WSwSc_m_026
+#local file: C:\Users\Pablo\Documents\3DS\Y.max
+filedependancy Y.max
+newmodel WSwSc_m_026
+setsupermodel WSwSc_m_026 NULL
+classification Character
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom WSwSc_m_026
+node dummy WSwSc_m_026
+  parent NULL
+endnode
+endmodelgeom WSwSc_m_026
+donemodel WSwSc_m_026

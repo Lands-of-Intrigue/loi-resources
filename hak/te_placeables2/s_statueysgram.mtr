@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_statueysgram 
+texture1 s_statueysgram_n 
+texture2 s_statueysgram_s 
+texture3 null 
+texture4 null 

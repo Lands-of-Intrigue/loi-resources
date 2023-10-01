@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 ds_bsworkbench 
+texture1 ds_bsworkbench_n 
+texture2 ds_bsworkbench_s 
+texture3 null 
+texture4 null 
