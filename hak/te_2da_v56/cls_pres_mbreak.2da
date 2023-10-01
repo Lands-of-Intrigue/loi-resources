@@ -1,0 +1,27 @@
+2DA V2.0
+
+ LABEL ReqType ReqParam1 ReqParam2
+0 Base_Attack BAB 10 ****
+1 FEAT_EXPERTISE FEAT 389 ****
+2 FEAT_POWER_ATTACK FEAT 28 ****
+3 Parry SKILL 10 8
+4 Discipline SKILL 3 8
+5 Not_Wiz CLASSNOT 10 ****
+6 Not_Bard CLASSNOT 1 ****
+7 Not_Cleric CLASSNOT 2 ****
+8 Not_Druid CLASSNOT 3 ****
+9 Not_Paladin CLASSNOT 6 ****
+10 Not_Ranger CLASSNOT 7 ****
+11 Not_Sorcerer CLASSNOT 9 ****
+12 Not_Harper CLASSNOT 28 ****
+13 Not_Archer CLASSNOT 29 ****
+14 Not_BlackGaurd CLASSNOT 31 ****
+15 Not_DivineChamp CLASSNOT 32 ****
+16 Not_PaleMast CLASSNOT 34 ****
+17 Not_War CLASSNOT 47 ****
+18 Not_ShadowC CLASSNOT 48 ****
+19 Not_SpellF CLASSNOT 49 ****
+20 Not_EldritchK CLASSNOT 55 ****
+21 Not_Mystic CLASSNOT 56 ****
+22 Not_Art CLASSNOT 57 ****
+23 Not_BCoat CLASSNOT 51 ****

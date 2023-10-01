@@ -1,0 +1,99 @@
+# Exported from NWmax 0.8 b54 at 8/2/2019 12:26:02 AM
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: it_midmisc_105
+#local file: Unknown
+filedependancy Unknown
+newmodel it_midmisc_105
+setsupermodel it_midmisc_105 null
+classification Character
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom it_midmisc_105
+node dummy it_midmisc_105
+  parent NULL
+endnode
+node trimesh MetalBar
+  parent it_midmisc_105
+  position 0.0 0.0 0.0
+  orientation 1.0 0.0 0.0 0.0
+  wirecolor 1.0 1.0 1.0 
+  tilefade 0
+  scale 1.0
+  render 1
+  Shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0 
+  ambient 1.0 1.0 1.0 
+  diffuse 1.0 1.0 1.0 
+  specular 0.0 0.0 0.0 
+  shininess 10
+  center 0.0 0.0 4.0 
+  bitmap iit_midmisc_105
+  verts 8
+    -0.09 -0.18 0.0
+    0.09 -0.18 0.0
+    -0.09 0.18 0.0
+    0.09 0.18 0.0
+    -0.072 -0.144 0.08
+    0.072 -0.144 0.08
+    -0.072 0.144 0.08
+    0.072 0.144 0.08
+  faces 12
+    0 2 3  2  0 1 2  2
+    3 1 0  2  3 4 5  2
+    4 5 7  4  6 7 8  1
+    7 6 4  4  9 10 11  1
+    0 1 5  8  26 27 28  5
+    5 4 0  8  29 30 31  5
+    1 3 7  16  18 19 20  4
+    7 5 1  16  21 16 13  4
+    3 2 6  32  32 33 34  6
+    6 7 3  32  35 25 24  6
+    2 0 4  64  22 12 23  3
+    4 6 2  64  15 17 14  3
+  tverts 36
+    0.788182 0.508094 0
+    0.362244 0.769638 0
+    0.192985 0.668219 0
+    0.192985 0.668219 0
+    0.600344 0.364404 0
+    0.788182 0.508094 0
+    0.600264 0.361211 0
+    0.787489 0.508364 0
+    0.366108 0.770763 0
+    0.366108 0.770763 0
+    0.192335 0.665303 0
+    0.600264 0.361211 0
+    0.191563 0.670217 0
+    0.611193 0.360581 0
+    0.611193 0.360581 0
+    0.0708267 0.536788 0
+    0.606047 0.146995 0
+    0.606047 0.146995 0
+    0.611193 0.360581 0
+    0.191563 0.670217 0
+    0.0708267 0.536788 0
+    0.0708267 0.536788 0
+    0.611193 0.360581 0
+    0.0708267 0.536788 0
+    0.908345 0.368568 0
+    0.783267 0.504301 0
+    0.60684 0.141356 0
+    0.907266 0.37273 0
+    0.783852 0.505215 0
+    0.783852 0.505215 0
+    0.6039 0.372773 0
+    0.60684 0.141356 0
+    0.91076 0.370984 0
+    0.605505 0.139609 0
+    0.603314 0.371859 0
+    0.603314 0.371859 0
+endnode
+endmodelgeom it_midmisc_105
+donemodel it_midmisc_105
