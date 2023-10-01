@@ -1,0 +1,18 @@
+# Exported from NWmax 0.8 b61 at 17/09/2018 23:49:33
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: WPlHb_b_015
+#local file: C:\Users\Pablo\Documents\3DS\2x.max
+filedependancy 2x.max
+newmodel WPlHb_b_015
+setsupermodel WPlHb_b_015 NULL
+classification Character
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom WPlHb_b_015
+node dummy WPlHb_b_015
+  parent NULL
+endnode
+endmodelgeom WPlHb_b_015
+donemodel WPlHb_b_015
