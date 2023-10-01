@@ -1,0 +1,4296 @@
+# Rewritten by CleanModels 3 Version 3.5.1 Sun Jul 28 19:48:04 2013
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel ttr01_h17_01
+  classification TILE
+  setsupermodel ttr01_h17_01 NULL
+  setanimationscale 1
+#MAXGEOM ASCII
+beginmodelgeom ttr01_h17_01
+node dummy ttr01_h17_01
+  parent NULL
+endnode
+node trimesh tree_9
+  parent ttr01_h17_01
+  position 0 0 4.76
+  wirecolor 0.160156 0.496094 0.664063
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    -1.85 4.05 3.31
+    -1.86 4.08 3.3
+    -2.01 3.95 3.31
+    -2.02 3.97 3.3
+    -2.12 3.84 3.36
+    -2.14 3.84 3.35
+    -2.14 3.72 3.48
+  faces 5
+    0 3 2 8 0 1 2 6
+    0 1 3 8 0 3 1 6
+    2 3 4 8 2 1 4 6
+    3 5 4 8 1 5 4 6
+    4 5 6 8 4 5 6 6
+  tverts 7
+    -0.0351563 -0.998047 0
+    0.158203 -0.199219 0
+    -0.0351563 -0.199219 0
+    0.158203 -0.998047 0
+    0.158203 0.599609 0
+    0.341797 0.599609 0
+    0.341797 1.40039 0
+endnode
+node trimesh tree_8
+  parent ttr01_h17_01
+  position -3.56 2.71 8.47
+  wirecolor 0.03125 0.0507813 0.917969
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    1.73 1.32 -0.43
+    1.71 1.34 -0.46
+    1.56 1.23 -0.43
+    1.55 1.24 -0.45
+    1.44 1.11 -0.37
+    1.46 1.12 -0.35
+    1.44 1.11 -0.38
+    1.44 1 -0.24
+  faces 7
+    1 2 3 8 3 1 2 6
+    1 0 2 8 3 0 1 6
+    2 5 4 8 1 4 5 6
+    3 4 6 8 2 5 6 6
+    3 2 4 8 2 1 5 6
+    4 5 7 8 5 4 7 6
+    6 4 7 8 6 5 8 6
+  tverts 9
+    0.75 -0.998047 0
+    0.75 -0.199219 0
+    0.535156 -0.199219 0
+    0.535156 -0.998047 0
+    0.964844 0.599609 0
+    0.75 0.599609 0
+    0.535156 0.599609 0
+    0.964844 1.40039 0
+    0.75 1.40039 0
+endnode
+node trimesh tree_7
+  parent ttr01_h17_01
+  position -3.56 0 12.89
+  wirecolor 0.386719 0.601563 0.917969
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    1.46 3.83 -4.77
+    1.44 3.71 -4.66
+    1.44 3.72 -4.65
+    1.48 3.6 -4.52
+    1.48 3.61 -4.52
+    1.48 3.62 -4.51
+    1.54 3.51 -4.37
+  faces 6
+    0 2 1 8 0 2 3 6
+    1 4 3 8 1 4 5 6
+    1 5 4 8 3 6 7 6
+    1 2 5 8 3 2 6 6
+    3 4 6 8 5 4 8 6
+    4 5 6 8 7 6 9 6
+  tverts 10
+    -0.0351563 -0.400391 0
+    0.75 -0.599609 0
+    0.158203 0.400391 0
+    -0.0351563 0.400391 0
+    0.964844 0.199219 0
+    0.75 0.199219 0
+    0.158203 1.19922 0
+    -0.0351563 1.19922 0
+    0.964844 0.998047 0
+    0.158203 1.99805 0
+endnode
+node trimesh tree_6
+  parent ttr01_h17_01
+  position 0 0 4.48
+  wirecolor 0.652344 0.429688 0.507813
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -2.01 3.95 3.59
+    -2.1 3.83 3.64
+    -2.12 3.84 3.64
+    -2.12 3.72 3.76
+    -2.14 3.72 3.76
+    -2.08 3.62 3.9
+    -2.09 3.61 3.9
+    -2.02 3.51 4.04
+  faces 6
+    0 2 1 8 0 1 2 6
+    1 2 3 8 2 1 3 6
+    2 4 3 8 1 4 3 6
+    3 6 5 8 3 6 5 6
+    3 4 6 8 3 4 6 6
+    5 6 7 8 5 6 7 6
+  tverts 8
+    -0.0351563 -1.19922 0
+    0.158203 -0.400391 0
+    -0.0351563 -0.400391 0
+    0.158203 0.400391 0
+    0.341797 0.400391 0
+    0.158203 1.19922 0
+    0.341797 1.19922 0
+    0.341797 1.99805 0
+endnode
+node trimesh tree_1_1_18
+  parent ttr01_h17_01
+  position -1.97 4.06 8.91
+  wirecolor 0.75 0.105469 0.882813
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    0.18 0.07 -2.91
+    0.06 0.08 -2.4
+    0.01 0.07 -2.42
+    -0.02 0.07 -1.84
+    0.11 -0.01 -1.27
+    0.05 0.01 -0.64
+    0.05 -0.01 -0.64
+    0 0 0
+  faces 4
+    2 1 0 8 2 1 0 1
+    1 2 3 8 1 2 3 1
+    6 5 4 8 5 6 4 1
+    5 6 7 8 6 5 7 1
+  tverts 8
+    0.375 -0.18164 0
+    0.375 0.18164 0
+    0.5 0.18164 0
+    0.5 0.544922 0
+    0.75 -0.0917969 0
+    0.875 0.271484 0
+    0.75 0.271484 0
+    0.875 0.634766 0
+endnode
+node trimesh tree_1_1_17
+  parent ttr01_h17_01
+  position -1.6 4.58 9.17
+  wirecolor 0.285156 0.355469 0.195313
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 14
+    -0.24 -0.59 -3.16
+    -0.38 -0.54 -2.69
+    -0.35 -0.58 -2.66
+    -0.42 -0.52 -2.09
+    -0.4 -0.55 -2.11
+    -0.25 -0.57 -1.53
+    -0.21 -0.58 -1.52
+    -0.17 -0.56 -1.52
+    -0.3 -0.55 -0.9
+    -0.27 -0.55 -0.89
+    -0.35 -0.53 -0.27
+    -0.32 -0.53 -0.27
+    -0.24 -0.55 0.36
+    -0.23 -0.54 0.36
+  faces 12
+    2 1 0 8 1 2 0 1
+    1 2 4 8 2 1 3 1
+    4 3 1 8 3 4 2 1
+    3 4 5 8 4 3 5 1
+    6 5 4 8 6 5 3 1
+    5 6 8 8 5 6 9 1
+    6 7 9 8 8 7 10 1
+    9 8 6 8 10 11 8 1
+    8 9 11 8 11 10 12 1
+    11 10 8 8 12 13 11 1
+    10 11 12 8 13 12 14 1
+    13 12 11 8 15 14 12 1
+  tverts 16
+    0.75 -0.18164 0
+    0.875 0.18164 0
+    0.75 0.18164 0
+    0.875 0.544922 0
+    0.75 0.544922 0
+    0.875 0.908203 0
+    1 0.908203 0
+    0.125 -0.0917969 0
+    0 -0.0917969 0
+    1 1.27148 0
+    0.125 0.271484 0
+    0 0.271484 0
+    0.125 0.634766 0
+    0 0.634766 0
+    0.125 0.998047 0
+    0.25 0.998047 0
+endnode
+node trimesh tree_1_1_16
+  parent ttr01_h17_01
+  position 0 -0.45 24.43
+  wirecolor 0.363281 0.222656 0.277344
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -1.78 4.52 -16.78
+    -1.81 4.54 -16.79
+    -1.88 4.55 -16.15
+    -1.91 4.55 -16.16
+    -1.95 4.54 -15.52
+    -1.94 4.55 -15.53
+    -1.86 4.52 -14.9
+    -1.84 4.52 -14.9
+  faces 6
+    0 1 2 8 0 1 2 1
+    3 2 1 8 3 2 1 1
+    2 3 5 8 2 3 5 1
+    4 5 3 8 4 5 3 1
+    5 4 6 8 5 4 6 1
+    6 7 5 8 6 7 5 1
+  tverts 8
+    0.375 -0.0917969 0
+    0.5 -0.0917969 0
+    0.5 0.271484 0
+    0.625 0.271484 0
+    0.75 0.634766 0
+    0.625 0.634766 0
+    0.75 0.998047 0
+    0.625 0.998047 0
+endnode
+node trimesh tree_1_1_15
+  parent ttr01_h17_01
+  position -2.45 4.13 6.4
+  wirecolor 0.398438 0.753906 0.132813
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 14
+    0.63 -0.2 -1.54
+    0.74 -0.02 -1.55
+    0.66 0.04 -1.54
+    0.58 0.02 -1.52
+    0.53 -0.06 -1.52
+    0.55 -0.15 -1.52
+    0.35 -0.13 -0.97
+    0.42 -0.13 -0.94
+    0.44 0.06 -0.94
+    0.37 0.06 -0.98
+    0.31 0 -1
+    0.31 -0.06 -0.99
+    0.67 -0.17 -0.43
+    0.71 -0.13 -0.45
+  faces 12
+    7 6 0 8 1 2 0 1
+    1 2 8 8 3 4 5 1
+    2 3 9 8 4 6 7 1
+    9 8 2 8 7 5 4 1
+    3 4 10 8 6 8 9 1
+    10 9 3 8 9 7 6 1
+    4 5 11 8 8 10 11 1
+    11 10 4 8 11 9 8 1
+    5 0 6 8 10 0 2 1
+    6 11 5 8 2 11 10 1
+    6 7 12 8 2 1 12 1
+    13 12 7 8 13 12 1 1
+  tverts 14
+    0.75 0.0917969 0
+    0.875 0.455078 0
+    0.75 0.455078 0
+    0.125 0.0917969 0
+    0.25 0.0917969 0
+    0.25 0.455078 0
+    0.375 0.0917969 0
+    0.375 0.455078 0
+    0.5 0.0917969 0
+    0.5 0.455078 0
+    0.625 0.0917969 0
+    0.625 0.455078 0
+    0.875 0.81836 0
+    1 0.81836 0
+endnode
+node trimesh tree_1_1_14
+  parent ttr01_h17_01
+  position -3.04 3.57 4.86
+  wirecolor 0.988281 0.796875 0.121094
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    1.22 0.36 0
+    1.3 0.39 -0.01
+    1.01 0.43 0.6
+    1.07 0.49 0.62
+    1.3 0.43 1.09
+    1.33 0.48 1.08
+  faces 4
+    0 1 2 8 0 1 2 1
+    3 2 1 8 3 2 1 1
+    2 3 4 8 2 3 5 1
+    5 4 3 8 6 7 4 1
+  tverts 8
+    0.75 0.0917969 0
+    0.875 0.0917969 0
+    0.875 0.455078 0
+    1 0.455078 0
+    0 0.455078 0
+    1 0.81836 0
+    0.125 0.81836 0
+    0 0.81836 0
+endnode
+node trimesh tree_1_1_13
+  parent ttr01_h17_01
+  position -3.48 0.17 4.12
+  wirecolor 0.578125 0.675781 0.832031
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    1.74 3.79 0.73
+    1.78 3.86 0.72
+    1.77 3.94 0.73
+    1.51 3.89 1.36
+    1.52 3.96 1.36
+    1.47 4.02 1.34
+    1.77 3.88 1.82
+    1.75 3.93 1.84
+  faces 6
+    0 1 3 8 0 1 2 1
+    4 3 1 8 5 6 3 1
+    5 4 2 8 7 5 4 1
+    3 4 6 8 6 5 8 1
+    4 5 7 8 5 7 9 1
+    7 6 4 8 9 8 5 1
+  tverts 10
+    0.875 0.0917969 0
+    1 0.0917969 0
+    1 0.455078 0
+    0 0.0917969 0
+    0.125 0.0917969 0
+    0.125 0.455078 0
+    0 0.455078 0
+    0.25 0.455078 0
+    0.125 0.81836 0
+    0.25 0.81836 0
+endnode
+node trimesh tree_1_1_12
+  parent ttr01_h17_01
+  position 1.53 2.79 3.39
+  wirecolor 0.625 0.707031 0.464844
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 9
+    -3.63 1.21 2.04
+    -3.54 1.4 2.07
+    -3.61 1.4 2.03
+    -3.37 1.2 2.62
+    -3.31 1.17 2.58
+    -3.32 1.34 2.61
+    -3.37 1.31 2.63
+    -3.48 1.21 3.12
+    -3.49 1.34 3.1
+  faces 5
+    4 3 0 8 3 4 0 1
+    1 2 5 8 1 2 5 1
+    6 5 2 8 6 5 2 1
+    3 4 7 8 4 3 7 1
+    5 6 8 8 5 6 8 1
+  tverts 9
+    0.75 0.455078 0
+    0.25 0.455078 0
+    0.375 0.455078 0
+    0.875 0.81836 0
+    0.75 0.81836 0
+    0.375 0.81836 0
+    0.5 0.81836 0
+    0.875 1.18164 0
+    0.5 1.18164 0
+endnode
+node trimesh tree_1_1_11
+  parent ttr01_h17_01
+  position 0.82 0 6.72
+  wirecolor 0.742188 0.640625 0.667969
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    -2.9 4.19 -1.3
+    -2.96 4.13 -1.32
+    -2.66 4.1 -0.7
+    -2.67 4.04 -0.69
+    -2.8 4.04 -0.24
+    -2.79 4.09 -0.25
+  faces 4
+    0 1 2 8 0 1 2 1
+    3 2 1 8 3 2 1 1
+    2 3 5 8 2 3 5 1
+    4 5 3 8 4 5 3 1
+  tverts 6
+    0.375 0.455078 0
+    0.5 0.455078 0
+    0.5 0.81836 0
+    0.625 0.81836 0
+    0.75 1.18164 0
+    0.625 1.18164 0
+endnode
+node trimesh tree_1_1_10
+  parent ttr01_h17_01
+  position 1.56 0 4.85
+  wirecolor 0.996094 0.4375 0.671875
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    -3.66 4 0.58
+    -3.7 4.13 0.55
+    -3.7 4.07 0.56
+    -3.4 3.99 1.16
+    -3.41 4.04 1.18
+    -3.54 4.04 1.63
+  faces 4
+    1 2 4 8 1 2 4 1
+    2 0 3 8 2 0 3 1
+    3 4 2 8 3 4 2 1
+    4 3 5 8 4 3 5 1
+  tverts 6
+    0.75 0.455078 0
+    0.5 0.455078 0
+    0.625 0.455078 0
+    0.75 0.81836 0
+    0.625 0.81836 0
+    0.75 1.18164 0
+endnode
+node trimesh tree_1_1_9
+  parent ttr01_h17_01
+  position -1.97533 4.05867 6.87067
+  wirecolor 0.914063 0.988281 0.480469
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 9
+    -0.00466667 -0.0186667 -0.390667
+    0.0253333 -0.0586667 -0.360667
+    0.0153333 0.0713333 -0.380667
+    0.00533333 0.0313333 -0.400667
+    -0.0446667 0.00133333 0.209333
+    -0.0246667 -0.0286667 0.189333
+    0.00533333 -0.0286667 0.169333
+    -0.0446667 0.0413333 0.209333
+    0.165333 -0.0586667 0.779333
+  faces 5
+    6 5 1 8 6 4 0 1
+    2 3 7 8 2 3 7 1
+    3 0 4 8 3 1 5 1
+    4 7 3 8 5 7 3 1
+    5 6 8 8 4 6 8 1
+  tverts 9
+    0.875 0.18164 0
+    0.75 0.18164 0
+    0.5 0.18164 0
+    0.625 0.18164 0
+    0.875 0.544922 0
+    0.75 0.544922 0
+    1 0.544922 0
+    0.625 0.544922 0
+    1 0.908203 0
+endnode
+node trimesh tree_1_1_8
+  parent ttr01_h17_01
+  position -2.54 3.95 6.61
+  wirecolor 0.847656 0.429688 0.308594
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    0.76 0.01 -0.64
+    0.59 0.05 -0.1
+    0.64 0.07 -0.07
+    0.57 0.08 0.43
+    0.61 0.1 0.42
+    0.73 0.05 1.04
+    0.77 0.07 1.04
+  faces 5
+    2 1 0 8 2 1 0 1
+    1 2 3 8 1 2 4 1
+    4 3 2 8 5 6 3 1
+    3 4 6 8 6 5 7 1
+    6 5 3 8 7 8 6 1
+  tverts 9
+    0.875 -0.18164 0
+    0.875 0.18164 0
+    1 0.18164 0
+    0 0.18164 0
+    1 0.544922 0
+    0.125 0.544922 0
+    0 0.544922 0
+    0.125 0.908203 0
+    0 0.908203 0
+endnode
+node trimesh tree_1_1_7
+  parent ttr01_h17_01
+  position -3.47 1.53 3.07
+  wirecolor 0.867188 0.660156 0.691406
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 9
+    1.69 2.43 2.9
+    1.73 2.47 2.88
+    1.76 2.52 2.87
+    1.57 2.49 3.47
+    1.59 2.53 3.48
+    1.6 2.58 3.47
+    1.54 2.52 3.96
+    1.54 2.56 3.96
+    1.71 2.52 4.58
+  faces 8
+    0 1 3 8 0 1 4 1
+    1 2 4 8 3 2 5 1
+    4 3 1 8 5 6 3 1
+    5 4 2 8 7 5 2 1
+    3 4 6 8 6 5 8 1
+    4 5 7 8 5 7 9 1
+    7 6 4 8 9 8 5 1
+    6 7 8 8 8 9 10 1
+  tverts 11
+    0.875 -0.18164 0
+    1 -0.18164 0
+    0.125 -0.18164 0
+    0 -0.18164 0
+    1 0.18164 0
+    0.125 0.18164 0
+    0 0.18164 0
+    0.25 0.18164 0
+    0.125 0.544922 0
+    0.25 0.544922 0
+    0.25 0.908203 0
+endnode
+node trimesh tree_1_1_6
+  parent ttr01_h17_01
+  position 0.47 -0.75 4.63
+  wirecolor 0.257813 0.214844 0.03125
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 11
+    -2.34 4.86 1.91
+    -2.49 4.81 2.45
+    -2.4 4.84 2.4
+    -2.42 4.88 2.42
+    -2.49 4.85 2.45
+    -2.33 4.8 3.01
+    -2.32 4.76 3.01
+    -2.23 4.8 3.02
+    -2.25 4.82 3.02
+    -2.28 4.84 3.01
+    -2.39 4.8 3.64
+  faces 7
+    3 2 0 8 3 2 0 1
+    6 5 1 8 5 6 1 1
+    2 3 8 8 2 3 8 1
+    8 7 2 8 8 7 2 1
+    9 8 3 8 9 8 3 1
+    4 1 5 8 4 1 6 1
+    5 6 10 8 6 5 10 1
+  tverts 11
+    0.25 0.18164 0
+    0.75 0.544922 0
+    0.25 0.544922 0
+    0.375 0.544922 0
+    0.625 0.544922 0
+    0.875 0.908203 0
+    0.75 0.908203 0
+    0.25 0.908203 0
+    0.375 0.908203 0
+    0.5 0.908203 0
+    0.875 1.27148 0
+endnode
+node trimesh tree_1_1_5
+  parent ttr01_h17_01
+  position 0 -0.38 18.27
+  wirecolor 0.105469 0.847656 0.121094
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    -1.91 4.52 -11.76
+    -1.95 4.51 -11.22
+    -1.99 4.51 -11.2
+    -1.81 4.47 -10.63
+    -1.84 4.46 -10.63
+    -1.91 4.48 -10
+  faces 4
+    2 1 0 8 2 1 0 1
+    1 2 3 8 1 2 3 1
+    4 3 2 8 4 3 2 1
+    3 4 5 8 3 4 5 1
+  tverts 6
+    0.375 0.18164 0
+    0.375 0.544922 0
+    0.5 0.544922 0
+    0.5 0.908203 0
+    0.625 0.908203 0
+    0.625 1.27148 0
+endnode
+node trimesh tree_1_1_4
+  parent ttr01_h17_01
+  position 0 0 10.42
+  wirecolor 0.53125 0.933594 0.382813
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -1.99 4.13 -3.35
+    -2.02 4.1 -3.34
+    -1.86 4.05 -2.78
+    -1.84 4.08 -2.78
+    -1.92 4.07 -2.15
+    -1.91 4.1 -2.15
+    -1.95 4.09 -1.51
+    -1.97 4.06 -1.51
+  faces 6
+    0 1 3 8 0 1 3 1
+    2 3 1 8 2 3 1 1
+    3 2 4 8 3 2 4 1
+    4 5 3 8 4 5 3 1
+    7 6 4 8 6 7 4 1
+    5 4 6 8 5 4 7 1
+  tverts 8
+    0.5 -0.455078 0
+    0.625 -0.455078 0
+    0.75 -0.0917969 0
+    0.625 -0.0917969 0
+    0.75 0.271484 0
+    0.625 0.271484 0
+    0.875 0.634766 0
+    0.75 0.634766 0
+endnode
+node trimesh tree_1_1_3
+  parent ttr01_h17_01
+  position -1.91238 4.05238 8.87238
+  wirecolor 0.890625 0.726563 0.886719
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 10
+    0.062381 -0.042381 -1.23238
+    -0.00761905 -0.00238095 -0.602381
+    0.012381 -0.022381 -0.602381
+    -0.037619 0.037619 0.037619
+    -0.057619 0.00761905 0.037619
+    -0.037619 -0.00238095 0.027619
+    0.052381 0.017619 0.657619
+    0.052381 0.00761905 0.657619
+    0.052381 -0.00238095 0.657619
+    0.072381 -0.022381 0.657619
+  faces 7
+    2 1 0 8 2 1 0 1
+    1 2 5 8 1 2 5 1
+    5 4 1 8 5 3 1 1
+    3 4 7 8 4 3 7 1
+    7 6 3 8 7 8 4 1
+    4 5 8 8 3 5 9 1
+    9 8 5 8 10 11 6 1
+  tverts 12
+    0.875 -0.0917969 0
+    0.875 0.271484 0
+    1 0.271484 0
+    0.875 0.634766 0
+    0.75 0.634766 0
+    1 0.634766 0
+    0 0.634766 0
+    0.875 0.998047 0
+    0.75 0.998047 0
+    1 0.998047 0
+    0.125 0.998047 0
+    0 0.998047 0
+endnode
+node trimesh tree_1_1_2
+  parent ttr01_h17_01
+  position -3.47 3 9.64
+  wirecolor 0.347656 0.46875 0.796875
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 10
+    1.7 1.02 -1.99
+    1.71 1.05 -1.99
+    1.6 1.03 -1.36
+    1.61 1.06 -1.36
+    1.61 1.08 -1.36
+    1.55 1.05 -0.74
+    1.55 1.07 -0.74
+    1.56 1.08 -0.74
+    1.64 1.04 -0.11
+    1.65 1.06 -0.11
+  faces 10
+    0 1 3 8 0 1 3 1
+    3 2 0 8 3 2 0 1
+    4 3 1 8 4 3 1 1
+    2 3 6 8 2 3 6 1
+    6 5 2 8 6 5 2 1
+    3 4 7 8 3 4 7 1
+    7 6 3 8 7 6 3 1
+    5 6 8 8 5 6 8 1
+    6 7 9 8 6 7 9 1
+    9 8 6 8 9 8 6 1
+  tverts 10
+    0.125 -0.0917969 0
+    0.25 -0.0917969 0
+    0.125 0.271484 0
+    0.25 0.271484 0
+    0.375 0.271484 0
+    0.125 0.634766 0
+    0.25 0.634766 0
+    0.375 0.634766 0
+    0.25 0.998047 0
+    0.375 0.998047 0
+endnode
+node trimesh tree_1_1_1
+  parent ttr01_h17_01
+  position 0 -0.32 15.56
+  wirecolor 0.730469 0.417969 0.652344
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 10
+    -1.76 4.37 -7.91
+    -1.78 4.39 -7.91
+    -1.86 4.4 -7.28
+    -1.88 4.42 -7.28
+    -1.91 4.4 -6.66
+    -1.93 4.41 -6.66
+    -1.94 4.42 -6.66
+    -1.82 4.38 -6.03
+    -1.83 4.38 -6.03
+    -1.84 4.39 -6.03
+  faces 9
+    0 1 2 8 0 1 2 1
+    3 2 1 8 3 2 1 1
+    2 3 5 8 2 3 5 1
+    5 4 2 8 5 4 2 1
+    6 5 3 8 6 5 3 1
+    4 5 8 8 4 5 8 1
+    8 7 4 8 8 7 4 1
+    5 6 9 8 5 6 9 1
+    9 8 5 8 9 8 5 1
+  tverts 10
+    0.25 -0.0917969 0
+    0.375 -0.0917969 0
+    0.375 0.271484 0
+    0.5 0.271484 0
+    0.375 0.634766 0
+    0.5 0.634766 0
+    0.625 0.634766 0
+    0.375 0.998047 0
+    0.5 0.998047 0
+    0.625 0.998047 0
+endnode
+node trimesh tree_2_6
+  parent ttr01_h17_01
+  position 0 0 5.95
+  wirecolor 0.234375 0.902344 0.652344
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -1.59 4.74 -0.25
+    -1.33 5.02 -0.1
+    -1.31 4.98 -0.11
+    -1.14 5.3 0.16
+    -1.16 5.3 0.17
+    -1.12 5.29 0.18
+    -1.13 5.3 0.17
+    -0.98 5.63 0.47
+  faces 7
+    0 1 2 8 1 2 3 2
+    1 4 3 8 2 4 5 2
+    2 3 6 8 3 5 7 2
+    2 1 3 8 3 2 5 2
+    3 4 7 8 5 4 8 2
+    5 6 7 8 6 7 9 2
+    6 3 7 8 7 5 0 2
+  tverts 10
+    0.75 1.99805 0
+    0.535156 -0.400391 0
+    0.75 0.400391 0
+    0.535156 0.400391 0
+    0.964844 1.19922 0
+    0.75 1.19922 0
+    0.341797 1.19922 0
+    0.535156 1.19922 0
+    0.964844 1.99805 0
+    0.535156 1.99805 0
+endnode
+node trimesh tree_2_5
+  parent ttr01_h17_01
+  position 1.48 0 1.64
+  wirecolor 0.53125 0.316406 0.421875
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    -3.46 4.13 3.52
+    -3.44 4.06 3.59
+    -3.14 4.45 3.7
+    -3.13 4.4 3.76
+    -3.07 4.35 3.76
+    -3.15 4.7 4.09
+    -3.1 4.68 4.12
+  faces 5
+    0 3 2 8 0 1 2 2
+    1 4 3 8 3 4 5 2
+    2 3 5 8 2 1 6 2
+    3 6 5 8 5 7 8 2
+    3 4 6 8 5 4 7 2
+  tverts 9
+    0.75 0.00195313 0
+    0.964844 0.800781 0
+    0.75 0.800781 0
+    -0.0351563 0.00195313 0
+    0.158203 0.800781 0
+    -0.0351563 0.800781 0
+    0.964844 1.59961 0
+    0.158203 1.59961 0
+    -0.0351563 1.59961 0
+endnode
+node trimesh tree_2_4
+  parent ttr01_h17_01
+  position -3.29 3.23 5.04
+  wirecolor 0.0976563 0.296875 0.214844
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    1.7 1.12 0.36
+    1.74 1.13 0.29
+    1.67 1.45 0.72
+    1.72 1.47 0.7
+    1.7 1.51 0.66
+    1.98 1.73 0.84
+    1.98 1.75 0.8
+  faces 4
+    0 3 2 8 0 3 2 2
+    1 4 3 8 1 4 3 2
+    2 3 5 8 2 3 5 2
+    3 4 6 8 3 4 6 2
+  tverts 7
+    0.158203 -0.199219 0
+    0.341797 -0.199219 0
+    0.158203 0.599609 0
+    0.341797 0.599609 0
+    0.535156 0.599609 0
+    0.341797 1.40039 0
+    0.535156 1.40039 0
+endnode
+node trimesh tree_2_3
+  parent ttr01_h17_01
+  position 0 0 5.09
+  wirecolor 0.746094 0.511719 0.335938
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    -1.66 4.45 0.25
+    -1.6 4.41 0.2
+    -1.65 4.74 0.61
+    -1.59 4.74 0.61
+    -1.33 5.02 0.76
+    -1.34 5.01 0.8
+    -1.16 5.3 1.03
+  faces 5
+    1 2 3 8 1 2 3 2
+    1 0 2 8 1 0 2 2
+    2 5 4 8 2 4 5 2
+    3 2 4 8 3 2 5 2
+    4 5 6 8 5 4 6 2
+  tverts 7
+    0.75 -1.19922 0
+    0.535156 -1.19922 0
+    0.75 -0.400391 0
+    0.535156 -0.400391 0
+    0.964844 0.400391 0
+    0.75 0.400391 0
+    0.964844 1.19922 0
+endnode
+node trimesh tree_2_2
+  parent ttr01_h17_01
+  position 0 0 2.17
+  wirecolor 0.339844 0.847656 0.328125
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    -1.67 4.7 3.56
+    -1.62 4.68 3.59
+    -1.34 5.01 3.72
+    -1.32 4.99 3.73
+    -1.16 5.3 3.95
+    -1.14 5.29 3.96
+    -0.98 5.63 4.25
+  faces 5
+    0 3 2 8 1 2 3 2
+    0 1 3 8 1 0 2 2
+    2 5 4 8 3 4 5 2
+    2 3 5 8 3 2 4 2
+    4 5 6 8 5 4 6 2
+  tverts 7
+    0.158203 -0.400391 0
+    -0.0351563 -0.400391 0
+    0.158203 0.400391 0
+    -0.0351563 0.400391 0
+    0.158203 1.19922 0
+    -0.0351563 1.19922 0
+    0.158203 1.99805 0
+endnode
+node trimesh tree_2_1
+  parent ttr01_h17_01
+  position -3.16 2.21 3.50396
+  wirecolor 0.460938 0.65625 0.179688
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    1.54 2.47 2.25604
+    1.84 2.78 2.39604
+    1.85 2.75 2.37604
+    1.85 2.77 2.33604
+    2.02 3.08 2.62604
+    2.04 3.08 2.62604
+    2.03 3.09 2.61604
+    2.18 3.42 2.91604
+  faces 6
+    0 2 1 8 0 2 1 2
+    1 5 4 8 1 5 4 2
+    1 2 5 8 1 2 5 2
+    2 6 5 8 2 6 5 2
+    2 3 6 8 2 3 6 2
+    4 5 7 8 4 5 7 2
+  tverts 8
+    0.158203 -0.400391 0
+    0.158203 0.400391 0
+    0.341797 0.400391 0
+    0.535156 0.400391 0
+    0.158203 1.19922 0
+    0.341797 1.19922 0
+    0.535156 1.19922 0
+    0.341797 1.99805 0
+endnode
+node trimesh tree_3_4
+  parent ttr01_h17_01
+  position -2.32 0 0.7
+  wirecolor 0.984375 0.566406 0.371094
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    0.39 4.05 5.1
+    0.02 4.25 5.21
+    0.05 4.31 5.21
+    -0.17 4.11 5.49
+    -0.17 4.16 5.52
+    -0.21 4.18 5.51
+    -0.45 4.26 5.66
+  faces 5
+    0 2 1 8 0 1 2 3
+    1 4 3 8 2 3 4 3
+    1 2 4 8 2 1 3 3
+    2 5 4 8 1 5 3 3
+    4 5 6 8 3 5 6 3
+  tverts 7
+    -0.0351563 -0.998047 0
+    0.158203 -0.199219 0
+    -0.0351563 -0.199219 0
+    0.158203 0.599609 0
+    -0.0351563 0.599609 0
+    0.341797 0.599609 0
+    0.341797 1.40039 0
+endnode
+node trimesh tree_3_3
+  parent ttr01_h17_01
+  position 0 0 5.67
+  wirecolor 0.703125 0.949219 0.800781
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -2.33 4.23 0.18
+    -2.28 4.33 0.17
+    -2.32 4.29 0.14
+    -2.54 4.11 0.5
+    -2.53 4.18 0.54
+    -2.56 4.16 0.5
+    -2.81 4.22 0.67
+    -2.79 4.25 0.66
+  faces 5
+    1 5 4 8 1 5 4 3
+    2 3 5 8 2 3 5 3
+    2 0 3 8 2 0 3 3
+    4 5 7 8 4 5 7 3
+    5 3 6 8 5 3 6 3
+  tverts 8
+    0.75 -0.199219 0
+    0.341797 -0.199219 0
+    0.535156 -0.199219 0
+    0.75 0.599609 0
+    0.341797 0.599609 0
+    0.535156 0.599609 0
+    0.75 1.40039 0
+    0.535156 1.40039 0
+endnode
+node trimesh tree_3_2
+  parent ttr01_h17_01
+  position 0 -0.04 4.95
+  wirecolor 0.886719 0.941406 0.0195313
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -2.49 4.2 1.27
+    -2.53 4.22 1.26
+    -2.79 4.28 1.44
+    -2.77 4.3 1.41
+    -2.79 4.29 1.38
+    -3.1 4.45 1.55
+    -3.11 4.46 1.54
+    -3.12 4.45 1.53
+  faces 6
+    0 3 2 8 0 3 2 3
+    1 4 3 8 1 4 3 3
+    2 6 5 8 2 6 5 3
+    2 3 6 8 2 3 6 3
+    3 7 6 8 3 7 6 3
+    3 4 7 8 3 4 7 3
+  tverts 8
+    0.158203 -0.400391 0
+    0.341797 -0.400391 0
+    0.158203 0.400391 0
+    0.341797 0.400391 0
+    0.535156 0.400391 0
+    0.158203 1.19922 0
+    0.341797 1.19922 0
+    0.535156 1.19922 0
+endnode
+node trimesh tree_3_1
+  parent ttr01_h17_01
+  position -2.35 4.73 6.2
+  wirecolor 0.207031 0.214844 0.585938
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 10
+    -0.21 -0.57 -0.03
+    -0.46 -0.51 0.14
+    -0.46 -0.52 0.17
+    -0.44 -0.49 0.19
+    -0.44 -0.48 0.13
+    -0.77 -0.33 0.28
+    -0.77 -0.34 0.29
+    -0.75 -0.32 0.3
+    -0.77 -0.32 0.28
+    -1.07 -0.33 0.58
+  faces 6
+    0 1 4 8 0 1 4 3
+    2 7 6 8 3 6 7 3
+    2 3 7 8 3 2 6 3
+    4 5 8 8 4 5 8 3
+    4 1 5 8 4 1 5 3
+    6 7 9 8 7 6 9 3
+  tverts 10
+    0.535156 -0.400391 0
+    0.75 0.400391 0
+    0.158203 -0.599609 0
+    -0.0351563 -0.599609 0
+    0.535156 0.400391 0
+    0.75 1.19922 0
+    0.158203 0.199219 0
+    -0.0351563 0.199219 0
+    0.535156 1.19922 0
+    0.158203 0.998047 0
+endnode
+node trimesh tree_4_9
+  parent ttr01_h17_01
+  position -1.79 3 7.06
+  wirecolor 0.273438 0.644531 0.132813
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    -0.15 0.71 -0.63
+    0 0.57 -0.37
+    -0.02 0.61 -0.34
+    0.07 0.35 -0.14
+    0.08 0.36 -0.11
+    0 0 0
+  faces 4
+    0 2 1 8 0 1 2 4
+    1 4 3 8 2 3 4 4
+    1 2 4 8 2 1 3 4
+    3 4 5 8 4 3 5 4
+  tverts 6
+    0.75 -1.19922 0
+    0.964844 -0.400391 0
+    0.75 -0.400391 0
+    0.964844 0.400391 0
+    0.75 0.400391 0
+    0.964844 1.19922 0
+endnode
+node trimesh tree_4_8
+  parent ttr01_h17_01
+  position -1.7975 3.02417 7.05333
+  wirecolor 0.4375 0.167969 0.707031
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    0.0375 0.335833 -0.113333
+    0.0475 0.325833 -0.133333
+    -0.0025 -0.0141667 -0.0133333
+    -0.0125 -0.00416667 0.00666667
+    -0.0125 -0.00416667 -0.0133333
+    -0.0025 -0.304167 0.156667
+  faces 4
+    0 4 3 8 1 5 4 4
+    1 2 4 8 2 3 5 4
+    3 4 5 8 4 5 6 4
+    4 2 5 8 5 3 0 4
+  tverts 7
+    0.75 0.998047 0
+    0.341797 -0.599609 0
+    0.535156 -0.599609 0
+    0.75 0.199219 0
+    0.341797 0.199219 0
+    0.535156 0.199219 0
+    0.535156 0.998047 0
+endnode
+node trimesh tree_4_7
+  parent ttr01_h17_01
+  position -1.79 3.57 6.69
+  wirecolor 0.683594 0.773438 0.4375
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    -0.14 0.5 -0.36
+    -0.08 0.48 -0.38
+    -0.15 0.14 -0.26
+    -0.24 0.17 -0.27
+    -0.18 0.14 -0.29
+    0 0 0
+  faces 4
+    0 4 3 8 2 3 1 4
+    0 1 4 8 2 4 3 4
+    1 2 4 8 4 0 3 4
+    4 2 5 8 3 0 5 4
+  tverts 6
+    0.75 0.800781 0
+    0.341797 0.800781 0
+    0.341797 0.00195313 0
+    0.535156 0.800781 0
+    0.535156 0.00195313 0
+    0.75 1.59961 0
+endnode
+node trimesh tree_4_6
+  parent ttr01_h17_01
+  position 0 0 5.03
+  wirecolor 0.105469 0.667969 0.871094
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    -2.01 3.74 1.45
+    -1.83 3.61 1.71
+    -1.85 3.56 1.7
+    -1.74 3.37 1.93
+    -1.76 3.36 1.91
+    -1.81 3.02 2.03
+  faces 4
+    0 2 1 8 0 2 1 4
+    1 4 3 8 1 4 3 4
+    1 2 4 8 1 2 4 4
+    3 4 5 8 3 4 5 4
+  tverts 6
+    0.158203 -1.19922 0
+    0.158203 -0.400391 0
+    0.341797 -0.400391 0
+    0.158203 0.400391 0
+    0.341797 0.400391 0
+    0.341797 1.19922 0
+endnode
+node trimesh tree_4_5
+  parent ttr01_h17_01
+  position -1.78833 3.02 7.06333
+  wirecolor 0.550781 0.964844 0.398438
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    0.0683333 0.33 -0.143333
+    0.0483333 0.35 -0.103333
+    -0.0116667 -0.01 -0.0233333
+    -0.00166667 -0.02 -0.00333333
+    -0.0116667 -0.01 0.00666667
+    -0.0216667 0 -0.00333333
+    -0.0116667 -0.3 0.146667
+  faces 4
+    0 3 2 8 0 2 3 4
+    1 5 4 8 1 5 4 4
+    2 3 6 8 3 2 6 4
+    4 5 6 8 4 5 7 4
+  tverts 8
+    0.75 -0.599609 0
+    0.158203 -0.599609 0
+    0.964844 0.199219 0
+    0.75 0.199219 0
+    0.158203 0.199219 0
+    0.341797 0.199219 0
+    0.964844 0.998047 0
+    0.341797 0.998047 0
+endnode
+node trimesh tree_4_4
+  parent ttr01_h17_01
+  position -2.93 0 3.01
+  wirecolor 0.375 0.71875 0.828125
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 7
+    1.11 4.06 3.36
+    1.06 4.07 3.41
+    0.99 3.71 3.42
+    0.98 3.73 3.48
+    0.92 3.74 3.47
+    1.12 3.61 3.71
+    1.1 3.61 3.73
+  faces 4
+    0 3 2 8 0 1 2 4
+    1 4 3 8 3 4 5 4
+    2 3 5 8 2 1 6 4
+    3 4 6 8 5 4 7 4
+  tverts 8
+    0.75 0.00195313 0
+    0.964844 0.800781 0
+    0.75 0.800781 0
+    -0.0351563 0.00195313 0
+    0.158203 0.800781 0
+    -0.0351563 0.800781 0
+    0.964844 1.59961 0
+    0.158203 1.59961 0
+endnode
+node trimesh tree_4_3
+  parent ttr01_h17_01
+  position 1.19 1.56 5
+  wirecolor 0.703125 0.40625 0.648438
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -3.22 2.18 1.42
+    -3 2.05 1.72
+    -3.02 2.05 1.74
+    -3.04 2 1.73
+    -3.01 1.98 1.7
+    -2.9 1.8 1.95
+    -2.93 1.81 1.96
+    -2.94 1.79 1.92
+  faces 4
+    0 4 3 8 0 4 3 4
+    1 6 5 8 2 5 6 4
+    1 2 6 8 2 1 5 4
+    3 4 7 8 3 4 7 4
+  tverts 8
+    0.341797 -0.199219 0
+    0.158203 -0.400391 0
+    -0.0351563 -0.400391 0
+    0.341797 0.599609 0
+    0.535156 0.599609 0
+    0.158203 0.400391 0
+    -0.0351563 0.400391 0
+    0.535156 1.40039 0
+endnode
+node trimesh tree_4_2
+  parent ttr01_h17_01
+  position 0 0 11.96
+  wirecolor 0.898438 0.636719 0.140625
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -1.97 3.71 -5.56
+    -1.79 3.57 -5.27
+    -1.85 3.56 -5.23
+    -1.82 3.54 -5.26
+    -1.72 3.35 -5.04
+    -1.76 3.36 -5.02
+    -1.75 3.35 -5.04
+    -1.81 3.02 -4.92
+  faces 4
+    0 1 3 8 0 1 3 4
+    2 6 5 8 2 6 5 4
+    3 1 4 8 3 1 4 4
+    5 6 7 8 5 6 7 4
+  tverts 8
+    0.535156 -0.199219 0
+    0.75 0.599609 0
+    0.341797 -0.400391 0
+    0.535156 0.599609 0
+    0.75 1.40039 0
+    0.341797 0.400391 0
+    0.535156 0.400391 0
+    0.535156 1.19922 0
+endnode
+node trimesh tree_4_1
+  parent ttr01_h17_01
+  position -3.4 2.55 8.33
+  wirecolor 0.308594 0.371094 0.46875
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    1.58 0.99 -1.63
+    1.68 0.8 -1.41
+    1.69 0.81 -1.38
+    1.65 0.8 -1.41
+    1.6 0.46 -1.29
+    1.61 0.45 -1.27
+    1.6 0.46 -1.26
+    1.6 0.17 -1.12
+  faces 4
+    0 1 3 8 0 1 3 4
+    2 6 5 8 2 5 6 4
+    3 1 4 8 3 1 4 4
+    5 6 7 8 6 5 7 4
+  tverts 8
+    0.535156 -0.400391 0
+    0.75 0.400391 0
+    -0.0351563 -0.599609 0
+    0.535156 0.400391 0
+    0.75 1.19922 0
+    0.158203 0.199219 0
+    -0.0351563 0.199219 0
+    0.158203 0.998047 0
+endnode
+node trimesh tree_5_5
+  parent ttr01_h17_01
+  position -1.59 4.08 7.75
+  wirecolor 0.316406 0.589844 0.65625
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 20
+    -0.23 0.01 0.06
+    -0.22 -0.05 0.07
+    -0.23 -0.07 0.03
+    -0.24 -0.04 -0.01
+    -0.25 0 0.01
+    0 0.04 0.01
+    0.01 0.01 0.03
+    0.01 -0.03 0.01
+    0 -0.02 -0.03
+    -0.01 0.03 -0.02
+    0.18 0.05 0.13
+    0.17 0.03 0.15
+    0.19 0 0.14
+    0.2 0.02 0.12
+    0.2 0.04 0.12
+    0.27 0.06 0.35
+    0.28 0.04 0.35
+    0.29 0.05 0.35
+    0.35 0.08 0.58
+    0.36 0.06 0.57
+  faces 21
+    0 6 5 8 0 1 2 5
+    0 1 6 8 0 3 1 5
+    1 2 7 8 4 6 5 5
+    2 8 7 8 6 7 5 5
+    2 3 8 8 6 8 7 5
+    3 9 8 8 8 9 7 5
+    3 4 9 8 8 10 9 5
+    4 5 9 8 10 2 9 5
+    4 0 5 8 10 0 2 5
+    5 6 11 8 2 1 11 5
+    8 14 13 8 7 15 14 5
+    8 9 14 8 7 9 15 5
+    9 10 14 8 9 12 15 5
+    9 5 10 8 9 2 12 5
+    12 13 16 8 13 14 17 5
+    13 17 16 8 14 18 17 5
+    13 14 17 8 14 15 18 5
+    14 15 17 8 15 16 18 5
+    14 10 15 8 15 12 16 5
+    16 17 19 8 17 18 20 5
+    17 15 18 8 18 16 19 5
+  tverts 21
+    0.75 -0.998047 0
+    0.964844 -0.199219 0
+    0.75 -0.199219 0
+    0.964844 -0.998047 0
+    -0.0351563 -0.998047 0
+    0.158203 -0.199219 0
+    0.158203 -0.998047 0
+    0.341797 -0.199219 0
+    0.341797 -0.998047 0
+    0.535156 -0.199219 0
+    0.535156 -0.998047 0
+    0.964844 0.599609 0
+    0.75 0.599609 0
+    0.158203 0.599609 0
+    0.341797 0.599609 0
+    0.535156 0.599609 0
+    0.75 1.40039 0
+    0.341797 1.40039 0
+    0.535156 1.40039 0
+    0.75 2.19922 0
+    0.535156 2.19922 0
+endnode
+node trimesh tree_5_4
+  parent ttr01_h17_01
+  position -1.06 4.51 7.6
+  wirecolor 0.292969 0.746094 0.679688
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 8
+    -0.53 -0.39 0.16
+    -0.52 -0.46 0.16
+    -0.53 -0.45 0.12
+    -0.35 -0.38 0.28
+    -0.36 -0.4 0.3
+    -0.34 -0.43 0.29
+    -0.33 -0.41 0.27
+    -0.27 -0.38 0.51
+  faces 4
+    0 4 3 8 0 3 4 5
+    1 6 5 8 1 6 5 5
+    1 2 6 8 1 2 6 5
+    3 4 7 8 4 3 7 5
+  tverts 8
+    0.75 -0.199219 0
+    0.158203 -0.199219 0
+    0.341797 -0.199219 0
+    0.964844 0.599609 0
+    0.75 0.599609 0
+    0.158203 0.599609 0
+    0.341797 0.599609 0
+    0.964844 1.40039 0
+endnode
+node trimesh tree_5_3
+  parent ttr01_h17_01
+  position 0 0 1.85
+  wirecolor 0.6875 0.117188 0.269531
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    -1.81 4.03 5.97
+    -1.58 4.09 5.93
+    -1.58 4.05 5.91
+    -1.42 4.11 6.05
+    -1.4 4.08 6.04
+    -1.33 4.12 6.26
+  faces 4
+    0 2 1 8 0 1 2 5
+    1 4 3 8 2 3 4 5
+    1 2 4 8 2 1 3 5
+    3 4 5 8 4 3 5 5
+  tverts 6
+    -0.0351563 -0.998047 0
+    0.158203 -0.199219 0
+    -0.0351563 -0.199219 0
+    0.158203 0.599609 0
+    -0.0351563 0.599609 0
+    0.158203 1.40039 0
+endnode
+node trimesh tree_5_2
+  parent ttr01_h17_01
+  position 0.43 4.38 4.45
+  wirecolor 0.390625 0.738281 0.472656
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 9
+    -1.84 -0.25 3.43
+    -1.83 -0.3 3.44
+    -1.75 -0.24 3.65
+    -1.76 -0.25 3.66
+    -1.76 -0.26 3.66
+    -1.74 -0.26 3.65
+    -1.67 -0.22 3.88
+    -1.67 -0.23 3.88
+    -1.67 -0.25 3.88
+  faces 5
+    0 3 2 8 0 2 3 5
+    1 5 4 8 1 5 4 5
+    2 7 6 8 3 6 7 5
+    2 3 7 8 3 2 6 5
+    4 5 8 8 4 5 8 5
+  tverts 9
+    0.75 -0.400391 0
+    0.158203 -0.400391 0
+    0.964844 0.400391 0
+    0.75 0.400391 0
+    0.158203 0.400391 0
+    0.341797 0.400391 0
+    0.964844 1.19922 0
+    0.75 1.19922 0
+    0.341797 1.19922 0
+endnode
+node trimesh tree_5_1
+  parent ttr01_h17_01
+  position 0 0 33.95
+  wirecolor 0.484375 0.394531 0.265625
+  bitmap toro_qbark05
+  center undefined
+  shininess 1
+  specular 0 0 0
+  diffuse 1 1 1
+  ambient 1 1 1
+  selfillumcolor 0 0 0
+  transparencyhint 0
+  alpha 1
+  rotatetexture 0
+  inheritcolor 0
+  beaming 0
+  shadow 1
+  render 1
+  scale 1
+  tilefade 0
+  orientation 0 0 0 0
+  verts 6
+    -1.31 4.12 -25.85
+    -1.3 4.13 -25.85
+    -1.24 4.16 -25.62
+    -1.24 4.13 -25.62
+    -1.23 4.14 -25.63
+    -1.04 4.16 -25.5
+  faces 4
+    0 4 3 8 1 5 4 5
+    1 2 4 8 2 3 5 5
+    3 4 5 8 4 5 6 5
+    4 2 5 8 5 3 0 5
+  tverts 7
+    0.75 0.998047 0
+    0.341797 -0.599609 0
+    0.535156 -0.599609 0
+    0.75 0.199219 0
+    0.341797 0.199219 0
+    0.535156 0.199219 0
+    0.535156 0.998047 0
+endnode
+node light ttr01_h17_01ml2
+  parent ttr01_h17_01
+  position -1.46 3.41 11.67
+  wirecolor 1 1 1
+  radius 5
+  multiplier 1
+  color 0.00392157 0.00392157 0.00392157
+  ambientonly 0
+  nDynamicType 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  fadinglight 1
+  orientation 0 0 0 0
+endnode
+node light ttr01_h17_01ml1
+  parent ttr01_h17_01
+  position 0 0 15
+  wirecolor 1 1 1
+  radius 14
+  multiplier 1
+  color 0 0 0
+  ambientonly 0
+  nDynamicType 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  fadinglight 1
+  orientation 0 0 0 0
+endnode
+node trimesh line1301
+  parent ttr01_h17_01
+  position -3.43 3.3 5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center -19 20 30.5
+  bitmap ttr01_leaf01
+  verts 9
+    0.03 0.04 0
+    -0.04 0.01 0
+    -0.06 0.04 0.22
+    -0.02 0.05 0.23
+    -0.02 0 0.24
+    -0.24 0.25 0.54
+    -0.2 0.29 0.55
+    -0.27 0.21 0.56
+    -0.41 0.4 0.61
+  faces 14
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 2 1 1 4 2 3
+    1 0 3 1 1 0 3 3
+    1 3 4 1 1 3 4 3
+    3 2 5 1 3 2 5 3
+    3 5 6 1 3 5 6 3
+    2 4 7 1 2 4 7 3
+    2 7 5 1 2 7 5 3
+    4 3 6 1 4 8 9 3
+    4 6 7 1 4 9 7 3
+    6 5 8 1 6 5 10 3
+    5 7 8 1 5 7 10 3
+    7 6 8 1 7 9 10 3
+  tverts 11
+    0.00195313 -0.998047 0
+    0.117188 -0.998047 0
+    0.119141 -0.222656 0
+    -0.00390625 -0.222656 0
+    0.1875 -0.222656 0
+    0.103516 1.22266 0
+    -0.00195313 1.22266 0
+    0.164063 1.22266 0
+    0.296875 -0.222656 0
+    0.296875 1.22266 0
+    0.162109 1.99805 0
+endnode
+node trimesh line1302
+  parent ttr01_h17_01
+  position -3.43 3.3 5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center 21.5 2 51
+  bitmap ttr01_leaf01
+  verts 9
+    0.02 -0.05 0
+    0.03 0.03 0
+    0.05 0.02 0.29
+    0.04 -0.02 0.29
+    0 0.01 0.3
+    0.25 0.04 0.79
+    0.26 -0.01 0.79
+    0.22 0.09 0.8
+    0.43 0.09 1.02
+  faces 14
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 2 1 1 4 2 3
+    1 0 3 1 1 0 3 3
+    1 3 4 1 1 3 4 3
+    3 2 5 1 3 2 5 3
+    3 5 6 1 3 5 6 3
+    2 4 7 1 2 4 7 3
+    2 7 5 1 2 7 5 3
+    4 3 6 1 4 8 9 3
+    4 6 7 1 4 9 7 3
+    6 5 8 1 6 5 10 3
+    5 7 8 1 5 7 10 3
+    7 6 8 1 7 9 10 3
+  tverts 11
+    0.00195313 -0.998047 0
+    0.117188 -0.998047 0
+    0.119141 -0.222656 0
+    -0.00390625 -0.222656 0
+    0.1875 -0.222656 0
+    0.103516 1.22266 0
+    -0.00195313 1.22266 0
+    0.164063 1.22266 0
+    0.296875 -0.222656 0
+    0.296875 1.22266 0
+    0.162109 1.99805 0
+endnode
+node trimesh line1300
+  parent ttr01_h17_01
+  position -3.43 3.3 5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center -8 -33 78.5
+  bitmap ttr01_leaf01
+  verts 9
+    -0.05 0 0
+    0.01 -0.05 0
+    -0.01 -0.08 0.45
+    -0.04 -0.05 0.45
+    0.01 -0.03 0.46
+    -0.11 -0.38 1.22
+    -0.16 -0.35 1.22
+    -0.06 -0.37 1.23
+    -0.17 -0.66 1.57
+  faces 14
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 2 1 1 4 2 3
+    1 0 3 1 1 0 3 3
+    1 3 4 1 1 3 4 3
+    3 2 5 1 3 2 5 3
+    3 5 6 1 3 5 6 3
+    2 4 7 1 2 4 7 3
+    2 7 5 1 2 7 5 3
+    4 3 6 1 4 8 9 3
+    4 6 7 1 4 9 7 3
+    6 5 8 1 6 5 10 3
+    5 7 8 1 5 7 10 3
+    7 6 8 1 7 9 10 3
+  tverts 11
+    0.00195313 -0.998047 0
+    0.117188 -0.998047 0
+    0.119141 -0.222656 0
+    -0.00390625 -0.222656 0
+    0.1875 -0.222656 0
+    0.103516 1.22266 0
+    -0.00195313 1.22266 0
+    0.164063 1.22266 0
+    0.296875 -0.222656 0
+    0.296875 1.22266 0
+    0.162109 1.99805 0
+endnode
+node trimesh line1304
+  parent ttr01_h17_01
+  position -2.48 -3.47 5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center -26.5 18.5 78.5
+  bitmap ttr01_leaf01
+  verts 9
+    0.03 0.04 0
+    -0.04 0 0
+    -0.07 0.03 0.45
+    -0.03 0.04 0.45
+    -0.02 -0.01 0.46
+    -0.32 0.22 1.22
+    -0.28 0.27 1.22
+    -0.33 0.17 1.23
+    -0.56 0.38 1.57
+  faces 14
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 2 1 1 4 2 3
+    1 0 3 1 1 0 3 3
+    1 3 4 1 1 3 4 3
+    3 2 5 1 3 2 5 3
+    3 5 6 1 3 5 6 3
+    2 4 7 1 2 4 7 3
+    2 7 5 1 2 7 5 3
+    4 3 6 1 4 8 9 3
+    4 6 7 1 4 9 7 3
+    6 5 8 1 6 5 10 3
+    5 7 8 1 5 7 10 3
+    7 6 8 1 7 9 10 3
+  tverts 11
+    0.00195313 -0.998047 0
+    0.117188 -0.998047 0
+    0.119141 -0.222656 0
+    -0.00390625 -0.222656 0
+    0.1875 -0.222656 0
+    0.103516 1.22266 0
+    -0.00195313 1.22266 0
+    0.164063 1.22266 0
+    0.296875 -0.222656 0
+    0.296875 1.22266 0
+    0.162109 1.99805 0
+endnode
+node trimesh line1303
+  parent ttr01_h17_01
+  position -2.48 -3.47 5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center -4 -22.5 51
+  bitmap ttr01_leaf01
+  verts 9
+    -0.05 -0.01 0
+    0.02 -0.05 0
+    0 -0.06 0.29
+    -0.03 -0.04 0.29
+    0.01 -0.01 0.3
+    -0.04 -0.26 0.79
+    -0.1 -0.24 0.79
+    0.01 -0.24 0.8
+    -0.05 -0.44 1.02
+  faces 14
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 2 1 1 4 2 3
+    1 0 3 1 1 0 3 3
+    1 3 4 1 1 3 4 3
+    3 2 5 1 3 2 5 3
+    3 5 6 1 3 5 6 3
+    2 4 7 1 2 4 7 3
+    2 7 5 1 2 7 5 3
+    4 3 6 1 4 8 9 3
+    4 6 7 1 4 9 7 3
+    6 5 8 1 6 5 10 3
+    5 7 8 1 5 7 10 3
+    7 6 8 1 7 9 10 3
+  tverts 11
+    0.00195313 -0.998047 0
+    0.117188 -0.998047 0
+    0.119141 -0.222656 0
+    -0.00390625 -0.222656 0
+    0.1875 -0.222656 0
+    0.103516 1.22266 0
+    -0.00195313 1.22266 0
+    0.164063 1.22266 0
+    0.296875 -0.222656 0
+    0.296875 1.22266 0
+    0.162109 1.99805 0
+endnode
+node aabb walkmesh
+  parent ttr01_h17_01
+  position 0 0 0
+  wirecolor 1 1 1
+  ambient 0.588 0.588 0.588
+  diffuse 0.705882 0 1
+  specular 0 0 0
+  shininess 10
+  orientation 0 0 0 0
+  bitmap NULL
+  render 0
+  shadow 0
+  verts 31
+    -0.18 -3.75 10
+    0 -5 10
+    1.1 -3.87 10
+    5 -5 10
+    2.41 -2.6 10
+    0 5 10
+    -0.3 4 10
+    0.75 3.18 10
+    3.3 3 10
+    5 5 10
+    0.63 -3.03 10
+    -4 2.9 5
+    -4.4 0 5
+    -1.36 -0.16 6.3
+    -1.3 2.3 6.6
+    -4 -2.9 5
+    -1.13 -2.78 6.6
+    1.09 -0.08 8.21
+    1 2 8.2
+    1.04 -2.16 8.2
+    3.95 0 10
+    -5 -5 5
+    -1.67 -3.72 5
+    -1 -5 5
+    -1 5 5
+    -5 5 5
+    -1.97 4.23 5
+    -5 -2.5 5
+    -5 0 5
+    5 0 10
+    -5 2.5 5
+  faces 48
+    0 1 2 0 0 0 0 7
+    3 4 2 0 0 0 0 3
+    5 6 7 0 0 0 0 3
+    8 9 5 0 0 0 0 3
+    10 2 4 0 0 0 0 3
+    8 5 7 0 0 0 0 3
+    11 12 13 0 0 0 0 3
+    11 13 14 0 0 0 0 3
+    15 16 13 0 0 0 0 3
+    15 13 12 0 0 0 0 3
+    14 13 17 0 0 0 0 3
+    14 17 18 0 0 0 0 3
+    13 19 17 0 0 0 0 3
+    16 19 13 0 0 0 0 3
+    18 17 20 0 0 0 0 3
+    18 20 8 0 0 0 0 3
+    20 17 19 0 0 0 0 3
+    20 19 4 0 0 0 0 3
+    15 21 22 0 0 0 0 3
+    23 22 21 0 0 0 0 3
+    24 25 26 0 0 0 0 3
+    11 26 25 0 0 0 0 3
+    27 21 15 0 0 0 0 3
+    28 27 15 0 0 0 0 3
+    15 12 28 0 0 0 0 3
+    29 4 3 0 0 0 0 3
+    4 29 20 0 0 0 0 3
+    30 28 11 0 0 0 0 3
+    12 11 28 0 0 0 0 3
+    8 20 29 0 0 0 0 3
+    29 9 8 0 0 0 0 3
+    11 25 30 0 0 0 0 3
+    24 26 6 0 0 0 0 7
+    24 6 5 0 0 0 0 7
+    26 14 18 0 0 0 0 7
+    26 18 6 0 0 0 0 7
+    18 8 7 0 0 0 0 7
+    7 6 18 0 0 0 0 7
+    14 26 11 0 0 0 0 7
+    22 23 0 0 0 0 0 7
+    0 23 1 0 0 0 0 7
+    16 22 19 0 0 0 0 7
+    19 22 0 0 0 0 0 7
+    4 19 10 0 0 0 0 7
+    0 10 19 0 0 0 0 7
+    22 16 15 0 0 0 0 7
+    10 0 2 0 0 0 0 3
+    3 2 1 0 0 0 0 3
+  aabb     -5 -5 5 5 5 10 -1
+    -5 -5 5 1.09 5 10 -1
+    -5 -5 5 1.04 0 10 -1
+    -5 -5 5 -1.36 0 6.3 -1
+    -5 -5 5 -1.67 -2.5 5 -1
+    -5 -5 5 -4 -2.5 5 22
+    -5 -5 5 -1.67 -2.9 5 18
+    -5 -2.9 5 -1.36 0 6.3 -1
+    -5 -2.9 5 -4 0 5 -1
+    -5 -2.9 5 -4 0 5 23
+    -5 -2.9 5 -4 0 5 24
+    -4.4 -2.9 5 -1.36 0 6.3 9
+    -5 -5 5 1.04 -0.16 10 -1
+    -5 -5 5 -1 -0.16 6.6 -1
+    -5 -5 5 -1 -3.72 5 19
+    -4 -3.72 5 -1.13 -0.16 6.6 -1
+    -4 -3.72 5 -1.13 -2.78 6.6 45
+    -4 -2.9 5 -1.13 -0.16 6.6 8
+    -1.67 -5 5 1.04 -0.16 10 -1
+    -1.67 -5 5 1.04 -2.16 10 -1
+    -1.67 -3.72 5 1.04 -2.16 8.2 41
+    -1.67 -5 5 -0.18 -3.72 10 39
+    -1.36 -2.78 6.3 1.04 -0.16 8.2 13
+    -5 -0.16 5 1.09 5 10 -1
+    -5 -0.16 5 -1 5 6.6 -1
+    -5 -0.16 5 -1.36 2.9 6.3 -1
+    -5 0 5 -4 2.9 5 -1
+    -5 0 5 -4 2.9 5 28
+    -5 0 5 -4 2.9 5 27
+    -4.4 -0.16 5 -1.36 2.9 6.3 6
+    -5 2.3 5 -1 5 6.6 -1
+    -5 2.5 5 -1.97 5 5 -1
+    -5 2.5 5 -4 5 5 31
+    -5 2.9 5 -1.97 5 5 21
+    -5 2.3 5 -1 5 6.6 -1
+    -5 4.23 5 -1 5 5 20
+    -4 2.3 5 -1.3 4.23 6.6 38
+    -4 -0.16 5 1.09 5 10 -1
+    -4 -0.16 5 1.09 4.23 8.21 -1
+    -4 -0.16 5 -1.3 2.9 6.6 7
+    -1.97 -0.16 5 1.09 4.23 8.21 -1
+    -1.36 -0.16 6.3 1.09 2.3 8.21 10
+    -1.97 2 5 1 4.23 8.2 34
+    -1.97 2 5 1 5 10 -1
+    -1.97 4 5 -0.3 5 10 32
+    -1.97 2 5 1 5 10 -1
+    -1.97 2 5 1 4.23 10 35
+    -1 4 5 0 5 10 33
+    -1.67 -5 5 5 5 10 -1
+    -1.67 -5 5 5 0 10 -1
+    -1.67 -5 5 2.41 -0.08 10 -1
+    -1.67 -5 5 1.09 -0.08 10 -1
+    -1.67 -3.75 5 1.09 -0.08 10 -1
+    -1.36 -2.16 6.3 1.09 -0.08 8.21 12
+    -1.67 -3.75 5 1.04 -2.16 10 42
+    -1 -5 5 0 -3.75 10 40
+    -0.18 -5 8.2 2.41 -2.16 10 -1
+    -0.18 -5 10 1.1 -3.03 10 -1
+    -0.18 -5 10 1.1 -3.75 10 0
+    -0.18 -3.87 10 1.1 -3.03 10 46
+    -0.18 -3.87 8.2 2.41 -2.16 10 -1
+    -0.18 -3.75 8.2 1.04 -2.16 10 44
+    0.63 -3.87 8.2 2.41 -2.16 10 -1
+    0.63 -3.03 8.2 2.41 -2.16 10 43
+    0.63 -3.87 10 2.41 -2.6 10 4
+    0 -5 8.2 5 0 10 -1
+    0 -5 8.2 5 0 10 -1
+    0 -5 8.2 5 0 10 -1
+    1.04 -2.16 8.2 3.95 0 10 16
+    0 -5 10 5 -3.87 10 47
+    1.04 -5 8.2 5 0 10 -1
+    1.1 -5 10 5 -2.6 10 1
+    1.04 -2.6 8.2 3.95 0 10 17
+    2.41 -5 10 5 0 10 -1
+    2.41 -5 10 5 0 10 25
+    2.41 -2.6 10 5 0 10 26
+    -1.3 -0.08 6.6 5 5 10 -1
+    -1.3 -0.08 6.6 3.3 5 10 -1
+    -1.3 -0.08 6.6 3.3 3.18 10 -1
+    -1.3 -0.08 6.6 1.09 2.3 8.21 11
+    0.75 2 8.2 3.3 3.18 10 36
+    -0.3 2 8.2 3.3 5 10 -1
+    -0.3 2 8.2 1 5 10 -1
+    -0.3 2 8.2 1 4 10 37
+    -0.3 3.18 10 0.75 5 10 2
+    0 3 10 3.3 5 10 5
+    0 -0.08 8.2 5 5 10 -1
+    1 -0.08 8.2 5 3 10 -1
+    1 -0.08 8.2 3.95 3 10 -1
+    1 -0.08 8.2 3.95 2 10 14
+    1 0 8.2 3.95 3 10 15
+    3.3 0 10 5 3 10 29
+    0 0 10 5 5 10 -1
+    0 3 10 5 5 10 3
+    3.3 0 10 5 5 10 30
+endnode
+node danglymesh cimesh068
+  parent ttr01_h17_01
+  position 0.76 4.33 9.81
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 0.682353 0.682353 0.682353
+  diffuse 0.682353 0.682353 0.682353
+  specular 0 0 0
+  shininess 1
+  period 1
+  tightness 1
+  displacement 0.025
+  showdispl true
+  displtype 1
+  center undefined
+  bitmap ttr01_leaf01
+  orientation 0 0 0 0
+  verts 55
+    -0.01 0.07 0.03
+    -0.01 0.01 0.5
+    -0.08 0.03 0.49
+    0.05 0.06 0.04
+    -0.04 0.16 1.33
+    -0.18 0.18 1.32
+    0 0.98 1.32
+    -0.02 -0.01 0.01
+    -0.17 -0.14 0.58
+    -0.12 -0.2 0.57
+    -0.06 0.03 0.02
+    -0.48 -0.46 1.32
+    -0.39 -0.58 1.3
+    -0.96 -1.03 1.92
+    0.04 0.01 0.02
+    -0.07 -0.22 0.62
+    0 -0.21 0.63
+    -0.01 0 0.02
+    -0.05 -0.65 0.92
+    0.08 -0.62 0.94
+    0.2 -1.41 0.95
+    -0.04 -0.05 -0.01
+    -0.16 -0.05 0.36
+    -0.14 -0.15 0.34
+    -0.05 0.02 0.02
+    -0.45 -0.09 0.61
+    -0.42 -0.28 0.56
+    -0.86 -0.25 0.41
+    -0.05 0.02 0.01
+    -0.15 -0.05 0.72
+    -0.21 -0.1 0.69
+    -0.01 0.06 0.04
+    -0.44 0.11 1.36
+    -0.57 0.02 1.31
+    -1.12 0.6 1.93
+    0.07 0.04 0.03
+    0.03 -0.19 0.34
+    0.11 -0.08 0.38
+    0.01 -0.04 0.01
+    0.15 -0.37 0.46
+    0.3 -0.17 0.53
+    0.61 -0.46 0.27
+    -0.01 0.06 0.03
+    -0.06 -0.22 0.92
+    -0.05 -0.15 0.93
+    0.2 -0.44 1.64
+    0.2 -0.31 1.67
+    0.78 -0.76 1.84
+    0.03 0.12 0.05
+    0.08 -0.04 0.56
+    0.02 0.07 0.57
+    0.07 0.04 0.04
+    0.45 0.13 0.65
+    0.34 0.32 0.68
+    0.9 0.43 1.15
+  faces 80
+    0 1 2 1 0 1 2 1
+    0 3 1 1 0 3 1 1
+    3 2 1 1 3 2 1 1
+    3 0 2 1 3 0 2 1
+    2 4 5 1 2 4 5 1
+    2 1 4 1 2 1 4 1
+    1 5 4 1 1 5 4 1
+    1 2 5 1 1 2 5 1
+    5 4 6 1 5 4 6 1
+    4 5 6 1 4 5 6 1
+    7 8 9 1 7 8 9 1
+    7 10 8 1 7 10 8 1
+    10 9 8 1 10 9 8 1
+    10 7 9 1 10 7 9 1
+    9 11 12 1 9 11 12 1
+    9 8 11 1 9 8 11 1
+    8 12 11 1 8 12 11 1
+    8 9 12 1 8 9 12 1
+    12 11 13 1 12 11 13 1
+    11 12 13 1 11 12 13 1
+    14 15 16 1 14 15 16 1
+    14 17 15 1 14 17 15 1
+    17 16 15 1 17 16 15 1
+    17 14 16 1 17 14 16 1
+    16 18 19 1 16 18 19 1
+    16 15 18 1 16 15 18 1
+    15 19 18 1 15 19 18 1
+    15 16 19 1 15 16 19 1
+    19 18 20 1 19 18 20 1
+    18 19 20 1 18 19 20 1
+    21 22 23 1 21 22 23 1
+    21 24 22 1 21 24 22 1
+    24 23 22 1 24 23 22 1
+    24 21 23 1 24 21 23 1
+    23 25 26 1 23 25 26 1
+    23 22 25 1 23 22 25 1
+    22 26 25 1 22 26 25 1
+    22 23 26 1 22 23 26 1
+    26 25 27 1 26 25 27 1
+    25 26 27 1 25 26 27 1
+    28 29 30 1 28 29 30 1
+    28 31 29 1 28 31 29 1
+    31 30 29 1 31 30 29 1
+    31 28 30 1 31 28 30 1
+    30 32 33 1 30 32 33 1
+    30 29 32 1 30 29 32 1
+    29 33 32 1 29 33 32 1
+    29 30 33 1 29 30 33 1
+    33 32 34 1 33 32 34 1
+    32 33 34 1 32 33 34 1
+    35 36 37 1 35 36 37 1
+    35 38 36 1 35 38 36 1
+    38 37 36 1 38 37 36 1
+    38 35 37 1 38 35 37 1
+    37 39 40 1 37 39 40 1
+    37 36 39 1 37 36 39 1
+    36 40 39 1 36 40 39 1
+    36 37 40 1 36 37 40 1
+    40 39 41 1 40 39 41 1
+    39 40 41 1 39 40 41 1
+    42 43 44 2 42 43 44 1
+    42 17 43 2 42 45 43 1
+    17 44 43 2 45 44 43 1
+    17 42 44 2 45 42 44 1
+    44 45 46 2 44 46 47 1
+    44 43 45 2 44 43 46 1
+    43 46 45 2 43 47 46 1
+    43 44 46 2 43 44 47 1
+    46 45 47 2 47 46 48 1
+    45 46 47 2 46 47 48 1
+    48 49 50 1 49 50 51 1
+    48 51 49 1 49 52 50 1
+    51 50 49 1 52 51 50 1
+    51 48 50 1 52 49 51 1
+    50 52 53 1 51 53 54 1
+    50 49 52 1 51 50 53 1
+    49 53 52 1 50 54 53 1
+    49 50 53 1 50 51 54 1
+    53 52 54 1 54 53 55 1
+    52 53 54 1 53 54 55 1
+  tverts 56
+    0.478516 0.419922 0
+    0.457031 0.457031 0
+    0.449219 0.419922 0
+    0.486328 0.449219 0
+    0.322266 0.515625 0
+    0.304688 0.445313 0
+    0 0.587891 0
+    0.513672 0.408203 0
+    0.501953 0.371094 0
+    0.53125 0.390625 0
+    0.492188 0.394531 0
+    0.542969 0.253906 0
+    0.597656 0.291016 0
+    0.685547 0.0214844 0
+    0.505859 0.439453 0
+    0.537109 0.417969 0
+    0.533203 0.455078 0
+    0.507813 0.412109 0
+    0.681641 0.427734 0
+    0.675781 0.498047 0
+    1 0.511719 0
+    0.527344 0.394531 0
+    0.486328 0.361328 0
+    0.529297 0.363281 0
+    0.496094 0.392578 0
+    0.462891 0.230469 0
+    0.544922 0.234375 0
+    0.515625 0 0
+    0.494141 0.392578 0
+    0.455078 0.398438 0
+    0.472656 0.361328 0
+    0.482422 0.421875 0
+    0.3125 0.310547 0
+    0.345703 0.236328 0
+    0.0234375 0.0429688 0
+    0.496094 0.460938 0
+    0.556641 0.449219 0
+    0.515625 0.5 0
+    0.527344 0.421875 0
+    0.623047 0.507813 0
+    0.546875 0.603516 0
+    0.707031 0.724609 0
+    0.484375 0.419922 0
+    0.509766 0.451172 0
+    0.482422 0.458984 0
+    0.505859 0.414063 0
+    0.546875 0.625 0
+    0.494141 0.638672 0
+    0.693359 0.917969 0
+    0.458984 0.445313 0
+    0.478516 0.5 0
+    0.431641 0.480469 0
+    0.494141 0.460938 0
+    0.427734 0.708984 0
+    0.339844 0.667969 0
+    0.289063 1 0
+  constraints 55
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    174
+    174
+    149
+    0
+    0
+    0
+    0
+    174
+    174
+    149
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    174
+    174
+    149
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+endnode
+node danglymesh cimesh01
+  parent ttr01_h17_01
+  position 0.56 -3.58 9.81
+  orientation 0 0 1 -2.03229
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 0.584314 0.584314 0.584314
+  diffuse 0.584314 0.584314 0.584314
+  specular 0 0 0
+  shininess 1
+  period 1
+  tightness 1
+  displacement 0.025
+  showdispl true
+  displtype 1
+  center undefined
+  bitmap ttr01_leaf01
+  verts 55
+    -0.01 0.07 0.03
+    -0.02 0.01 0.5
+    -0.08 0.04 0.49
+    0.05 0.06 0.04
+    -0.04 0.16 1.33
+    -0.18 0.18 1.32
+    0 0.98 1.32
+    -0.02 -0.01 0.01
+    -0.17 -0.14 0.58
+    -0.12 -0.2 0.57
+    -0.06 0.04 0.02
+    -0.48 -0.46 1.32
+    -0.39 -0.58 1.3
+    -0.96 -1.03 1.92
+    0.04 0.01 0.02
+    -0.07 -0.22 0.62
+    -0.01 -0.21 0.63
+    -0.01 0 0.02
+    -0.05 -0.65 0.92
+    0.08 -0.62 0.94
+    0.2 -1.41 0.95
+    -0.04 -0.05 -0.01
+    -0.16 -0.05 0.36
+    -0.14 -0.15 0.34
+    -0.05 0.02 0.02
+    -0.45 -0.09 0.61
+    -0.42 -0.28 0.56
+    -0.86 -0.25 0.41
+    -0.05 0.02 0.01
+    -0.15 -0.04 0.72
+    -0.21 -0.09 0.69
+    -0.01 0.06 0.04
+    -0.45 0.11 1.36
+    -0.57 0.02 1.31
+    -1.12 0.6 1.93
+    0.07 0.04 0.03
+    0.03 -0.19 0.34
+    0.11 -0.08 0.38
+    0.01 -0.04 0.01
+    0.15 -0.36 0.46
+    0.3 -0.17 0.53
+    0.61 -0.46 0.27
+    -0.01 0.06 0.03
+    -0.06 -0.22 0.92
+    -0.05 -0.15 0.93
+    0.2 -0.44 1.64
+    0.2 -0.31 1.67
+    0.78 -0.75 1.84
+    0.03 0.12 0.05
+    0.08 -0.04 0.56
+    0.02 0.08 0.57
+    0.07 0.04 0.04
+    0.45 0.13 0.65
+    0.34 0.33 0.68
+    0.9 0.44 1.15
+  faces 80
+    0 1 2 1 0 1 2 1
+    0 3 1 1 0 3 1 1
+    3 2 1 1 3 2 1 1
+    3 0 2 1 3 0 2 1
+    2 4 5 1 2 4 5 1
+    2 1 4 1 2 1 4 1
+    1 5 4 1 1 5 4 1
+    1 2 5 1 1 2 5 1
+    5 4 6 1 5 4 6 1
+    4 5 6 1 4 5 6 1
+    7 8 9 1 7 8 9 1
+    7 10 8 1 7 10 8 1
+    10 9 8 1 10 9 8 1
+    10 7 9 1 10 7 9 1
+    9 11 12 1 9 11 12 1
+    9 8 11 1 9 8 11 1
+    8 12 11 1 8 12 11 1
+    8 9 12 1 8 9 12 1
+    12 11 13 1 12 11 13 1
+    11 12 13 1 11 12 13 1
+    14 15 16 1 14 15 16 1
+    14 17 15 1 14 17 15 1
+    17 16 15 1 17 16 15 1
+    17 14 16 1 17 14 16 1
+    16 18 19 1 16 18 19 1
+    16 15 18 1 16 15 18 1
+    15 19 18 1 15 19 18 1
+    15 16 19 1 15 16 19 1
+    19 18 20 1 19 18 20 1
+    18 19 20 1 18 19 20 1
+    21 22 23 1 21 22 23 1
+    21 24 22 1 21 24 22 1
+    24 23 22 1 24 23 22 1
+    24 21 23 1 24 21 23 1
+    23 25 26 1 23 25 26 1
+    23 22 25 1 23 22 25 1
+    22 26 25 1 22 26 25 1
+    22 23 26 1 22 23 26 1
+    26 25 27 1 26 25 27 1
+    25 26 27 1 25 26 27 1
+    28 29 30 1 28 29 30 1
+    28 31 29 1 28 31 29 1
+    31 30 29 1 31 30 29 1
+    31 28 30 1 31 28 30 1
+    30 32 33 1 30 32 33 1
+    30 29 32 1 30 29 32 1
+    29 33 32 1 29 33 32 1
+    29 30 33 1 29 30 33 1
+    33 32 34 1 33 32 34 1
+    32 33 34 1 32 33 34 1
+    35 36 37 1 35 36 37 1
+    35 38 36 1 35 38 36 1
+    38 37 36 1 38 37 36 1
+    38 35 37 1 38 35 37 1
+    37 39 40 1 37 39 40 1
+    37 36 39 1 37 36 39 1
+    36 40 39 1 36 40 39 1
+    36 37 40 1 36 37 40 1
+    40 39 41 1 40 39 41 1
+    39 40 41 1 39 40 41 1
+    42 43 44 2 42 43 44 1
+    42 17 43 2 42 45 43 1
+    17 44 43 2 45 44 43 1
+    17 42 44 2 45 42 44 1
+    44 45 46 2 44 46 47 1
+    44 43 45 2 44 43 46 1
+    43 46 45 2 43 47 46 1
+    43 44 46 2 43 44 47 1
+    46 45 47 2 47 46 48 1
+    45 46 47 2 46 47 48 1
+    48 49 50 1 49 50 51 1
+    48 51 49 1 49 52 50 1
+    51 50 49 1 52 51 50 1
+    51 48 50 1 52 49 51 1
+    50 52 53 1 51 53 54 1
+    50 49 52 1 51 50 53 1
+    49 53 52 1 50 54 53 1
+    49 50 53 1 50 51 54 1
+    53 52 54 1 54 53 55 1
+    52 53 54 1 53 54 55 1
+  tverts 56
+    0.478516 0.419922 0
+    0.457031 0.457031 0
+    0.449219 0.419922 0
+    0.486328 0.449219 0
+    0.322266 0.515625 0
+    0.304688 0.445313 0
+    0 0.587891 0
+    0.513672 0.408203 0
+    0.501953 0.371094 0
+    0.53125 0.390625 0
+    0.492188 0.394531 0
+    0.542969 0.253906 0
+    0.597656 0.291016 0
+    0.685547 0.0214844 0
+    0.505859 0.439453 0
+    0.537109 0.417969 0
+    0.533203 0.455078 0
+    0.507813 0.412109 0
+    0.681641 0.427734 0
+    0.675781 0.498047 0
+    1 0.511719 0
+    0.527344 0.394531 0
+    0.486328 0.361328 0
+    0.529297 0.363281 0
+    0.496094 0.392578 0
+    0.462891 0.230469 0
+    0.544922 0.234375 0
+    0.515625 0 0
+    0.494141 0.392578 0
+    0.455078 0.398438 0
+    0.472656 0.361328 0
+    0.482422 0.421875 0
+    0.3125 0.310547 0
+    0.345703 0.236328 0
+    0.0234375 0.0429688 0
+    0.496094 0.460938 0
+    0.556641 0.449219 0
+    0.515625 0.5 0
+    0.527344 0.421875 0
+    0.623047 0.507813 0
+    0.546875 0.603516 0
+    0.707031 0.724609 0
+    0.484375 0.419922 0
+    0.509766 0.451172 0
+    0.482422 0.458984 0
+    0.505859 0.414063 0
+    0.546875 0.625 0
+    0.494141 0.638672 0
+    0.693359 0.917969 0
+    0.458984 0.445313 0
+    0.478516 0.5 0
+    0.431641 0.480469 0
+    0.494141 0.460938 0
+    0.427734 0.708984 0
+    0.339844 0.667969 0
+    0.289063 1 0
+  constraints 55
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    174
+    174
+    149
+    0
+    0
+    0
+    0
+    174
+    174
+    149
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    174
+    174
+    149
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+endnode
+node trimesh tree
+  parent ttr01_h17_01
+  position -2.01 3.97 8.05
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_qbark05
+  wirecolor 1 0 0
+  verts 19
+    0.18 0.06 -0.01
+    0.16 0.08 0.02
+    0.15 0.11 0.01
+    0.15 0.11 -0.03
+    0.16 0.08 -0.04
+    0.01 -0.03 -0.01
+    0 -0.02 0.02
+    -0.01 0 0.01
+    -0.02 0.01 -0.01
+    0 -0.02 -0.03
+    -0.09 -0.14 0.07
+    -0.13 -0.13 0.06
+    -0.11 -0.15 0.04
+    -0.11 -0.26 0.18
+    -0.13 -0.25 0.19
+    -0.13 -0.26 0.18
+    -0.07 -0.37 0.32
+    -0.08 -0.36 0.33
+    -0.01 -0.46 0.47
+  faces 17
+    0 6 5 8 1 2 3 6
+    0 1 6 8 1 4 2 6
+    2 8 7 8 6 7 5 6
+    2 3 8 8 6 8 7 6
+    3 9 8 8 8 9 7 6
+    3 4 9 8 8 10 9 6
+    5 6 10 8 3 2 11 6
+    7 8 11 8 5 7 12 6
+    8 12 11 8 7 13 12 6
+    8 9 12 8 7 9 13 6
+    11 15 14 8 12 16 15 6
+    11 12 15 8 12 13 16 6
+    12 13 15 8 13 14 16 6
+    14 15 17 8 15 16 18 6
+    15 16 17 8 16 17 18 6
+    15 13 16 8 16 14 17 6
+    17 16 18 8 18 17 0 6
+  tverts 19
+    0.75 1.99805 0
+    0.75 0.00195313 0
+    0.964844 0.800781 0
+    0.75 0.800781 0
+    0.964844 0.00195313 0
+    0.158203 -1.19922 0
+    0.158203 -1.99805 0
+    0.341797 -1.19922 0
+    0.341797 -1.99805 0
+    0.535156 -1.19922 0
+    0.535156 -1.99805 0
+    0.964844 1.59961 0
+    0.341797 -0.400391 0
+    0.535156 -0.400391 0
+    0.75 0.400391 0
+    0.341797 0.400391 0
+    0.535156 0.400391 0
+    0.75 1.19922 0
+    0.535156 1.19922 0
+endnode
+node trimesh line1297
+  parent ttr01_h17_01
+  position 0.36 -4.15 10
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 0.658824 0.572549 0.498039
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap ttr01_rock00
+  verts 8
+    0.46 -0.11 0
+    0.26 0.26 0
+    0.08 0.07 0.27
+    -0.17 0.34 0
+    -0.25 -0.06 0.24
+    -0.48 -0.05 0
+    0 -0.42 0
+    -0.04 -0.23 0.26
+  faces 9
+    0 1 2 1 0 1 2 3
+    2 3 4 1 2 3 4 3
+    1 3 2 1 1 3 2 3
+    3 5 4 1 3 5 4 3
+    5 6 7 1 5 6 7 3
+    5 7 4 1 5 7 4 3
+    7 0 2 1 7 0 2 3
+    6 0 7 1 6 0 7 3
+    4 7 2 1 4 7 2 1
+  tverts 8
+    0.251953 0.134766 0
+    0.148438 0.248047 0
+    0.111328 0.152344 0
+    0.00585938 0.220703 0
+    0.0253906 0.0546875 0
+    -0.0449219 0.0292969 0
+    0.142578 -0.0488281 0
+    0.109375 0.0214844 0
+endnode
+node trimesh ground
+  parent ttr01_h17_01
+  position 0 0 2.5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 1
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap ttr01_grass02
+  verts 36
+    -0.18 -3.75 7.5
+    0 -5 7.5
+    0.63 -3.03 7.5
+    2.5 -5 7.5
+    2.41 -2.6 7.5
+    0 5 7.5
+    -0.3 4 7.5
+    2.5 5 7.5
+    3.3 3 7.5
+    0.75 3.18 7.5
+    -4 2.9 2.5
+    -4.4 0 2.5
+    -1.36 -0.16 3.8
+    -1.3 2.3 4.1
+    -4 -2.9 2.5
+    -1.13 -2.78 4.1
+    1.09 -0.08 5.71
+    1 2 5.7
+    1.04 -2.16 5.7
+    3.95 0 7.5
+    -2.5 -5 2.5
+    -1.67 -3.72 2.5
+    -1 -5 2.5
+    -1 5 2.5
+    -2.5 5 2.5
+    -1.43 4.23 2.5
+    -5 -2.5 2.5
+    -5 -5 2.5
+    5 -2.5 7.5
+    5 -5 7.5
+    -5 0 2.5
+    5 0 7.5
+    -5 2.5 2.5
+    5 2.5 7.5
+    -5 5 2.5
+    5 5 7.5
+  faces 38
+    0 1 2 1 0 1 2 1
+    3 4 1 1 3 4 1 1
+    5 6 7 1 5 6 7 1
+    8 7 9 1 8 7 9 1
+    2 1 4 1 2 1 4 1
+    7 6 9 1 7 6 9 1
+    10 11 12 1 26 27 28 3
+    10 12 13 1 26 28 29 3
+    14 15 12 1 30 31 28 3
+    14 12 11 1 30 28 27 3
+    13 12 16 1 29 28 32 3
+    13 16 17 1 29 32 33 3
+    12 18 16 1 28 34 32 3
+    15 18 12 1 31 34 28 3
+    17 16 19 1 33 32 35 3
+    17 19 8 1 33 35 36 3
+    19 16 18 1 35 32 34 3
+    19 18 4 1 35 34 37 3
+    14 20 21 1 12 3 14 1
+    22 21 20 1 15 14 3 1
+    23 24 25 1 16 7 17 1
+    10 25 24 1 10 17 7 1
+    26 27 14 1 18 1 12 1
+    20 14 27 1 3 12 1 1
+    4 3 28 1 4 3 19 1
+    29 28 3 1 20 19 3 1
+    30 26 11 1 21 18 11 1
+    14 11 26 1 12 11 18 1
+    19 4 31 1 13 4 22 1
+    28 31 4 1 19 22 4 1
+    32 30 10 1 23 21 10 1
+    11 10 30 1 11 10 21 1
+    8 19 33 1 8 13 24 1
+    31 33 19 1 22 24 13 1
+    34 32 24 1 5 23 7 1
+    10 24 32 1 10 7 23 1
+    7 8 35 1 7 8 25 1
+    33 35 8 1 24 25 8 1
+  tverts 38
+    0.464844 -0.25 0
+    0.5 -0.5 0
+    0.626953 -0.105469 0
+    1 -0.5 0
+    0.982422 -0.0195313 0
+    0.5 1.5 0
+    0.439453 1.30078 0
+    1 1.5 0
+    1.16016 1.09961 0
+    0.650391 1.13672 0
+    0.699219 1.08008 0
+    0.619141 0.5 0
+    0.699219 -0.0800781 0
+    1.28906 0.5 0
+    1.16602 -0.244141 0
+    1.30078 -0.5 0
+    1.30078 1.5 0
+    1.21484 1.3457 0
+    0.5 0 0
+    1.5 0 0
+    1.5 -0.5 0
+    0.5 0.5 0
+    1.5 0.5 0
+    0.5 1 0
+    1.5 1 0
+    1.5 1.5 0
+    -0.443359 1.08008 0
+    -0.509766 0.5 0
+    0.140625 0.46875 0
+    0.183594 0.960938 0
+    -0.443359 -0.0800781 0
+    0.212891 -0.0566406 0
+    0.759766 0.484375 0
+    0.744141 0.900391 0
+    0.75 0.0683594 0
+    1.43555 0.5 0
+    1.32617 1.09961 0
+    1.17773 -0.0195313 0
+endnode
+node trimesh grassrimmid01
+  parent ttr01_h17_01
+  position 3.74 -3.73 4.68
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_grassrim01
+  verts 10
+    -4.87 0.95 1.92
+    -7.74 0.83 0.32
+    -2.7 1.57 3.52
+    -4.96 0.62 1.92
+    -7.83 0.5 0.37
+    -5.04 6.03 1.92
+    -2.74 5.73 3.52
+    -7.74 6.63 0.32
+    -5.21 6.37 1.92
+    -7.91 6.99 0.37
+  faces 6
+    3 2 0 1 4 5 6 3
+    4 3 1 1 0 1 2 1
+    0 1 3 1 3 2 1 1
+    5 6 8 1 11 12 13 3
+    8 9 5 1 7 8 9 1
+    7 5 9 1 10 9 8 1
+  tverts 14
+    1.08984 0.929688 0
+    -0.0332031 0.951172 0
+    1.04883 0.679688 0
+    -0.0742188 0.701172 0
+    0.878906 0.878906 0
+    -0.0761719 0.878906 0
+    0.798828 0.671875 0
+    1.05273 0.927734 0
+    -0.1875 0.925781 0
+    1.13477 0.689453 0
+    -0.113281 0.669922 0
+    -0.0507813 0.685547 0
+    1.03906 0.927734 0
+    -0.136719 0.908203 0
+endnode
+node trimesh cliff01
+  parent ttr01_h17_01
+  position 2.7 -1.8 4.14
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap ttr01_dirt01
+  verts 11
+    -4.37 -1.92 0.86
+    -3.7 -3.2 0.86
+    -2.95 -1.91 4.01
+    -2.3 -3.2 3.86
+    -3.83 -0.98 2.46
+    -1.66 -0.36 4.06
+    -2.88 -1.95 5.86
+    -2.7 -3.2 5.86
+    -0.29 -0.8 5.86
+    -2.07 -1.23 5.86
+    -6.7 -1.1 0.86
+  faces 10
+    0 1 2 1 0 1 2 3
+    2 1 3 1 2 1 3 3
+    4 0 5 1 4 5 6 3
+    5 0 2 1 7 0 2 3
+    2 3 6 1 2 3 8 1
+    7 6 3 1 9 8 3 1
+    8 5 9 1 10 7 11 1
+    2 9 5 1 2 11 7 1
+    9 2 6 1 11 2 8 1
+    0 4 10 1 5 4 12 1
+  tverts 13
+    0.25 0 0
+    0.00195313 0 0
+    0.25 0.630859 0
+    0.00195313 0.599609 0
+    0.583984 0.496094 0
+    0.589844 0.105469 0
+    0.882813 0.957031 0
+    0.5 0.640625 0
+    0.25 1 0
+    0.00195313 1 0
+    0.800781 1 0
+    0.501953 1 0
+    0.117188 0.0429688 0
+endnode
+node trimesh cliff02
+  parent ttr01_h17_01
+  position 2.96 2.73 5.06
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap ttr01_dirt01
+  verts 11
+    -3.96 2.27 -0.06
+    -4.39 1.5 -0.06
+    -2.62 1.07 3.09
+    -2.56 2.27 2.94
+    -4.26 -0.43 1.54
+    -1.96 -0.73 3.14
+    -3.26 1.27 4.94
+    -2.96 2.27 4.94
+    0.34 0.27 4.94
+    -2.21 0.45 4.94
+    -6.96 0.17 -0.06
+  faces 10
+    0 1 2 1 0 1 2 3
+    0 2 3 1 0 2 3 3
+    1 4 5 1 4 5 6 3
+    1 5 2 1 1 7 2 3
+    3 2 6 1 3 2 8 1
+    6 7 3 1 8 9 3 1
+    5 8 9 1 7 10 11 1
+    9 2 5 1 11 2 7 1
+    2 9 6 1 2 11 8 1
+    4 1 10 1 5 4 12 1
+  tverts 13
+    0.998047 0 0
+    0.75 0 0
+    0.75 0.626953 0
+    0.998047 0.599609 0
+    0.107422 0.140625 0
+    0.402344 0.474609 0
+    0.277344 0.949219 0
+    0.5 0.640625 0
+    0.75 1 0
+    0.998047 1 0
+    0.199219 1 0
+    0.5 1 0
+    0.771484 0.0507813 0
+endnode
+node trimesh grassrimtop
+  parent ttr01_h17_01
+  position 1.5 0.06 10
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 1
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap ttr01_grassrim01
+  verts 16
+    -1.8 3.94 0
+    -1.5 4.94 0
+    -2.05 3.67 -0.25
+    -1.75 4.94 -0.25
+    -0.75 3.12 0
+    -0.91 2.88 -0.25
+    -1.68 -3.81 0
+    -0.87 -3.09 0
+    -1.81 -3.56 -0.25
+    -1 -2.88 -0.25
+    -1.5 -5.06 0
+    -1.75 -5.06 -0.25
+    0.91 -2.66 0
+    0.87 -2.34 0
+    1.74 2.61 0
+    1.8 2.94 0
+  faces 12
+    0 1 2 1 0 1 2 3
+    2 1 3 1 2 1 3 3
+    4 0 5 1 4 0 5 3
+    5 0 2 1 5 0 2 3
+    6 7 8 1 4 0 5 3
+    8 7 9 1 5 0 2 3
+    10 6 11 1 6 4 7 3
+    11 6 8 1 7 4 5 3
+    12 13 9 1 0 2 8 3
+    9 7 12 1 8 9 0 3
+    14 15 4 1 5 4 10 3
+    4 5 14 1 10 11 5 3
+  tverts 12
+    1 0.0507813 0
+    2 0.0507813 0
+    1 0.449219 0
+    2 0.449219 0
+    0 0.0507813 0
+    0 0.449219 0
+    -0.996094 0.0507813 0
+    -0.996094 0.449219 0
+    1.95117 0.449219 0
+    1.95117 0.0507813 0
+    -1.41602 0.0507813 0
+    -1.41602 0.449219 0
+endnode
+node trimesh grassrimbot
+  parent ttr01_h17_01
+  position 0.5 0.06 5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 1
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_grassrim01
+  verts 8
+    -1.5 4.94 0
+    -1.93 4.17 0
+    -1.93 4.17 0.42
+    -1.5 4.94 1
+    -2.17 -3.78 0
+    -1.5 -5.06 0
+    -1.5 -5.06 1
+    -2.17 -3.78 0.44
+  faces 4
+    0 1 2 1 4 5 6 3
+    0 2 3 1 4 6 7 3
+    4 5 6 1 0 1 2 3
+    4 6 7 1 0 2 3 3
+  tverts 8
+    0.171875 0.1875 0
+    0.736328 0.1875 0
+    0.736328 0.96875 0
+    0.171875 0.53125 0
+    0.333984 0.1875 0
+    0.666016 0.1875 0
+    0.666016 0.515625 0
+    0.333984 0.96875 0
+endnode
+node trimesh line1299
+  parent ttr01_h17_01
+  position -2.67 4.4 5
+  orientation 0 0 0 0
+  wirecolor 1 1 1
+  tilefade 0
+  scale 1
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 0.658824 0.572549 0.498039
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap ttr01_rock00
+  verts 8
+    0.08 0.47 0
+    -0.27 0.24 0
+    -0.07 0.07 0.27
+    -0.31 -0.19 0
+    0.09 -0.24 0.24
+    0.1 -0.47 0
+    0.43 0.03 0
+    0.24 -0.02 0.26
+  faces 9
+    0 1 2 1 0 1 2 3
+    2 3 4 1 2 3 4 3
+    1 3 2 1 1 3 2 3
+    3 5 4 1 3 5 4 3
+    5 6 7 1 5 6 7 3
+    5 7 4 1 5 7 4 3
+    7 0 2 1 7 0 2 3
+    6 0 7 1 6 0 7 3
+    4 7 2 1 4 7 2 1
+  tverts 8
+    0.251953 0.134766 0
+    0.148438 0.248047 0
+    0.111328 0.152344 0
+    0.00585938 0.220703 0
+    0.0253906 0.0546875 0
+    -0.0449219 0.0292969 0
+    0.142578 -0.0488281 0
+    0.109375 0.0214844 0
+endnode
+node trimesh tree_1
+  parent ttr01_h17_01
+  position -1.84 4.05 9.53
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_qbark05
+  wirecolor 0.609375 0.175781 0.800781
+  verts 8
+    -0.02 0.02 0
+    -0.02 0.01 0
+    -0.02 0 0
+    0 -0.02 0
+    0.01 -0.01 0
+    0.02 0.01 0
+    0.01 0.01 0
+    0 0.02 0
+  faces 6
+    2 3 4 1 2 6 7 1
+    4 5 6 1 7 3 4 1
+    2 4 6 1 2 7 4 1
+    6 0 1 1 4 1 0 1
+    7 0 6 1 5 1 4 1
+    6 1 2 1 4 0 2 1
+  tverts 8
+    0.875 0.998047 0
+    0.75 0.998047 0
+    1 0.998047 0
+    0.125 0.998047 0
+    0 0.998047 0
+    0.625 0.998047 0
+    0.832031 0.998047 0
+    0.46875 0.998047 0
+endnode
+node trimesh tree_1_1
+  parent ttr01_h17_01
+  position -2.36 3.14 6.63
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_qbark05
+  wirecolor 1 0 0
+  verts 21
+    0.66 0.89 -1.79
+    0.65 0.97 -1.78
+    0.4 0.99 -1.15
+    0.35 1.05 -1.17
+    0.65 0.91 -0.69
+    0.63 0.96 -0.67
+    0.57 0.99 -0.63
+    0.52 0.96 -0.61
+    0.49 0.97 -0.09
+    0.45 1 -0.12
+    0.4 0.99 -0.14
+    0.39 0.95 -0.16
+    0.43 0.91 0.4
+    0.41 0.99 0.42
+    0.37 0.99 0.44
+    0.34 0.96 0.45
+    0.59 0.88 1.02
+    0.6 0.91 1.02
+    0.39 0.92 2.28
+    0.5 0.92 2.9
+    0.5 0.91 2.9
+  faces 10
+    0 1 2 8 0 1 2 1
+    6 5 3 8 6 5 3 1
+    4 5 8 8 4 5 8 1
+    5 6 9 8 5 6 9 1
+    9 8 5 8 9 8 5 1
+    11 10 7 8 11 10 7 1
+    8 9 13 8 8 9 13 1
+    15 14 10 8 15 14 10 1
+    17 16 12 8 17 16 12 1
+    20 19 18 8 20 19 18 1
+  tverts 21
+    0 0.0917969 0
+    0.125 0.0917969 0
+    0.125 0.455078 0
+    0.25 -0.544922 0
+    0.125 -0.18164 0
+    0.25 -0.18164 0
+    0.375 -0.18164 0
+    0.5 -0.18164 0
+    0.25 0.18164 0
+    0.375 0.18164 0
+    0.5 0.18164 0
+    0.625 0.18164 0
+    0.125 0.544922 0
+    0.375 0.544922 0
+    0.5 0.544922 0
+    0.625 0.544922 0
+    0.125 0.908203 0
+    0.25 0.908203 0
+    0.875 0.634766 0
+    0.875 0.998047 0
+    1 0.998047 0
+endnode
+node trimesh tree_2
+  parent ttr01_h17_01
+  wirecolor 1 0 0
+  position -1.92 4.11 5.09
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_qbark05
+  verts 17
+    -0.06 0.02 0.07
+    -0.04 -0.05 0.14
+    0.03 -0.1 0.11
+    0.06 -0.07 0.02
+    0 0 0
+    0.26 0.34 0.25
+    0.27 0.29 0.31
+    0.33 0.24 0.31
+    0.37 0.25 0.24
+    0.32 0.3 0.2
+    0.27 0.63 0.61
+    0.25 0.59 0.64
+    0.35 0.59 0.65
+    0.33 0.63 0.61
+    0.58 0.9 0.8
+    0.61 0.85 0.79
+    0.61 0.87 0.75
+  faces 13
+    0 1 6 8 0 3 1 2
+    1 2 7 8 4 6 5 2
+    2 8 7 8 6 7 5 2
+    2 3 8 8 6 8 7 2
+    3 9 8 8 8 9 7 2
+    3 4 9 8 8 10 9 2
+    4 5 9 8 10 2 9 2
+    4 0 5 8 10 0 2 2
+    5 11 10 8 2 11 12 2
+    7 8 12 8 5 7 13 2
+    8 9 13 8 7 9 14 2
+    10 11 14 8 12 11 15 2
+    12 16 15 8 13 17 16 2
+  tverts 18
+    0.75 -0.998047 0
+    0.964844 -0.199219 0
+    0.75 -0.199219 0
+    0.964844 -0.998047 0
+    -0.0351563 -0.998047 0
+    0.158203 -0.199219 0
+    0.158203 -0.998047 0
+    0.341797 -0.199219 0
+    0.341797 -0.998047 0
+    0.535156 -0.199219 0
+    0.535156 -0.998047 0
+    0.964844 0.599609 0
+    0.75 0.599609 0
+    0.341797 0.599609 0
+    0.535156 0.599609 0
+    0.964844 1.40039 0
+    0.341797 1.40039 0
+    0.535156 1.40039 0
+endnode
+node trimesh tree_3
+  parent ttr01_h17_01
+  position -2.3 4.28 5.87
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_qbark05
+  wirecolor 1 0 0
+  verts 24
+    0.32 -0.27 -0.13
+    0.37 -0.23 -0.07
+    0.4 -0.16 -0.1
+    0.38 -0.15 -0.18
+    0.33 -0.22 -0.2
+    -0.03 -0.05 -0.02
+    0 -0.03 0.04
+    0.03 0.03 0.04
+    0.02 0.05 -0.03
+    -0.02 0.01 -0.06
+    -0.24 -0.17 0.3
+    -0.19 -0.17 0.32
+    -0.19 -0.12 0.35
+    -0.23 -0.1 0.34
+    -0.26 -0.12 0.3
+    -0.51 -0.06 0.47
+    -0.51 -0.07 0.5
+    -0.49 -0.04 0.52
+    -0.82 0.12 0.61
+    -0.82 0.11 0.62
+    -0.8 0.13 0.63
+    -0.81 0.14 0.62
+    -0.82 0.13 0.61
+    -1.12 0.12 0.91
+  faces 23
+    0 6 5 8 1 2 3 3
+    0 1 6 8 1 4 2 3
+    1 2 7 8 5 7 6 3
+    2 8 7 8 7 8 6 3
+    2 3 8 8 7 9 8 3
+    3 9 8 8 9 10 8 3
+    3 4 9 8 9 11 10 3
+    4 5 9 8 11 3 10 3
+    4 0 5 8 11 1 3 3
+    5 11 10 8 3 12 13 3
+    5 6 11 8 3 2 12 3
+    7 8 13 8 6 8 16 3
+    8 9 14 8 8 10 17 3
+    10 16 15 8 13 18 19 3
+    10 11 16 8 13 12 18 3
+    11 17 16 8 15 20 21 3
+    11 12 17 8 15 14 20 3
+    15 19 18 8 19 22 23 3
+    15 16 19 8 19 18 22 3
+    18 19 23 8 23 22 27 3
+    20 21 23 8 24 25 28 3
+    21 22 23 8 25 26 29 3
+    22 18 23 8 26 23 0 3
+  tverts 30
+    0.75 1.99805 0
+    0.75 -1.99805 0
+    0.964844 -1.19922 0
+    0.75 -1.19922 0
+    0.964844 -1.99805 0
+    -0.0351563 -1.99805 0
+    0.158203 -1.19922 0
+    0.158203 -1.99805 0
+    0.341797 -1.19922 0
+    0.341797 -1.99805 0
+    0.535156 -1.19922 0
+    0.535156 -1.99805 0
+    0.964844 -0.400391 0
+    0.75 -0.400391 0
+    0.158203 -0.400391 0
+    -0.0351563 -0.400391 0
+    0.341797 -0.400391 0
+    0.535156 -0.400391 0
+    0.964844 0.400391 0
+    0.75 0.400391 0
+    0.158203 0.400391 0
+    -0.0351563 0.400391 0
+    0.964844 1.19922 0
+    0.75 1.19922 0
+    0.158203 1.19922 0
+    0.341797 1.19922 0
+    0.535156 1.19922 0
+    0.964844 1.99805 0
+    0.341797 1.99805 0
+    0.535156 1.99805 0
+endnode
+node trimesh tree_4
+  parent ttr01_h17_01
+  position -1.97 3.74 6.43
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_qbark05
+  wirecolor 1 0 0
+  verts 17
+    0.15 0.32 -0.06
+    0.1 0.33 -0.01
+    0.04 0.35 -0.03
+    0.04 0.33 -0.1
+    0.1 0.31 -0.12
+    0.03 -0.03 0
+    0.02 -0.01 0.06
+    -0.04 0 0.05
+    -0.06 0 -0.01
+    0 -0.03 -0.03
+    0.16 -0.13 0.29
+    0.14 -0.13 0.31
+    0.12 -0.18 0.3
+    0.15 -0.2 0.27
+    0.26 -0.38 0.52
+    0.23 -0.37 0.53
+    0.17 -0.73 0.64
+  faces 9
+    0 1 6 8 0 3 1 4
+    1 2 7 8 4 7 5 4
+    2 8 7 8 7 8 5 4
+    2 3 8 8 7 9 8 4
+    4 0 5 8 11 0 2 4
+    6 11 10 8 6 12 13 4
+    7 8 12 8 5 8 14 4
+    8 9 13 8 8 10 15 4
+    14 15 16 8 17 16 18 4
+  tverts 19
+    0.75 0.00195313 0
+    0.964844 0.800781 0
+    0.75 0.800781 0
+    0.964844 0.00195313 0
+    -0.0351563 0.00195313 0
+    0.158203 0.800781 0
+    -0.0351563 -0.199219 0
+    0.158203 0.00195313 0
+    0.341797 0.800781 0
+    0.341797 0.00195313 0
+    0.535156 0.800781 0
+    0.535156 0.00195313 0
+    0.158203 0.599609 0
+    -0.0351563 0.599609 0
+    0.341797 1.59961 0
+    0.535156 1.59961 0
+    0.158203 0.400391 0
+    -0.0351563 0.400391 0
+    0.158203 1.19922 0
+endnode
+node trimesh tree_5
+  parent ttr01_h17_01
+  position -1.04 4.16 8.45
+  orientation 0 0 0 0
+  tilefade 0
+  scale 1
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1
+  transparencyhint 0
+  selfillumcolor 0 0 0
+  ambient 1 1 1
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 1
+  center undefined
+  bitmap toro_qbark05
+  wirecolor 1 0 0
+  verts 7
+    -0.38 -0.05 -0.55
+    -0.29 -0.03 -0.34
+    -0.29 -0.04 -0.34
+    -0.2 0 -0.12
+    -0.2 -0.01 -0.12
+    -0.2 -0.03 -0.12
+    0 0 0
+  faces 5
+    0 2 1 8 0 1 2 5
+    1 5 4 8 2 5 6 5
+    1 2 5 8 2 1 5 5
+    3 4 6 8 4 3 7 5
+    4 5 6 8 6 5 8 5
+  tverts 9
+    -0.0351563 -0.400391 0
+    0.158203 0.400391 0
+    -0.0351563 0.400391 0
+    0.964844 0.199219 0
+    0.75 0.199219 0
+    0.158203 1.19922 0
+    -0.0351563 1.19922 0
+    0.964844 0.998047 0
+    0.158203 1.99805 0
+endnode
+endmodelgeom ttr01_h17_01
+donemodel ttr01_h17_01
