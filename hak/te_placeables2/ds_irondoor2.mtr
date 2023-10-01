@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 ds_irondoor2 
+texture1 ds_irondoor2_n 
+texture2 ds_irondoor2_s 
+texture3 null 
+texture4 null 

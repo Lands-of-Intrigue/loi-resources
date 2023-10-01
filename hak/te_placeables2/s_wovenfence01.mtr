@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_wovenfence01 
+texture1 s_wovenfence01_n 
+texture2 s_wovenfence01_s 
+texture3 null 
+texture4 null 

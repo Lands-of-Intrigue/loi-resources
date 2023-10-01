@@ -1,0 +1,10 @@
+# Exported from NWmax 0.8 c00 at 4/26/2018 6:26:51 PM
+# pwk file
+#
+#NWmax PWKMESH  ASCII
+node dummy 001_pwk_use01
+  parent plc_woodpcs_14_pwk
+  position 0.65 0.0 0.0
+  orientation 1.0 0.0 0.0 0.0
+  wirecolor 0.0235294 0.529412 0.227451 
+endnode

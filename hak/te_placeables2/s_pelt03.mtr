@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_pelt03 
+texture1 s_pelt03_n 
+texture2 s_pelt03_s 
+texture3 null 
+texture4 null 

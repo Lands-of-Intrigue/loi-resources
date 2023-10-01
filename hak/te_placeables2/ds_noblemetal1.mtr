@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 ds_noblemetal1 
+texture1 ds_noblemetal1_n 
+texture2 ds_noblemetal1_s 
+texture3 null 
+texture4 null 

@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 s_hangingmoss1 
+texture1 s_hangingmoss1_n 
+texture2 s_hangingmoss1_s 
+texture3 null 
+texture4 null 

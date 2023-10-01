@@ -1,0 +1,11 @@
+# Exported from blender at Saturday, 2019-02-02
+node dummy 004_pwk_use01
+  parent wit2_0004_pwk
+  position  0.00000 -1.47705  0.00000
+  orientation  1.00000  0.00000  0.00000  0.00000
+endnode
+node dummy 004_pwk_use02
+  parent wit2_0004_pwk
+  position  0.00000  1.40335  0.00000
+  orientation  1.00000  0.00000  0.00000  0.00000
+endnode

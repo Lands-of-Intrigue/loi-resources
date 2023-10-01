@@ -1,0 +1,9 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 maceofmolagbal 
+texture1 maceofmolagbal_n 
+texture2 maceofmolagbal_s 
+texture3 null 
+texture4 null 
