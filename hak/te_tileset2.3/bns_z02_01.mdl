@@ -1,0 +1,2205 @@
+# Rewritten by CleanModels 3.0 Thu Apr 26 08:49:10 2007
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel bns_z02_01
+setsupermodel bns_z02_01 null
+setanimationscale 1
+classification TILE
+#MAXGEOM ASCII
+beginmodelgeom bns_z02_01
+node dummy bns_z02_01
+  parent NULL
+endnode
+node light bns_z02_01ml2
+  parent bns_z02_01
+  orientation 0.0 0.0 -1.0 -1.5708
+  wirecolor 0.694118 0.694118 0.694118
+  radius 5.0
+  multiplier 1.0
+  color 0.004 0.004 0.004
+  ambientonly 0
+  ndynamictype 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  fadinglight 1
+  position 0 -1.5 2.5
+endnode
+node light bns_z02_01ml1
+  parent bns_z02_01
+  orientation 0.0 0.0 -1.0 -1.5708
+  wirecolor 0.337255 0.337255 0.337255
+  radius 14.0
+  multiplier 1.0
+  color 0.0 0.0 0.0
+  ambientonly 0
+  ndynamictype 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  fadinglight 1
+  position 0 0 5
+endnode
+node trimesh ground
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 1
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_grass02
+  position 0 0 0
+  verts 13
+    -5 -1.25 0.25
+    -5 -3.5 0
+    -2.5 -1.75 0.5
+    0 -1 0.75
+    5 -3.5 0
+    2.5 -1 0.5
+    5 -1.25 0.25
+    0 -2 0
+    -2.5 -5 0
+    0 -5 0
+    2.5 -5 0
+    -5 -5 0
+    5 -5 0
+  faces 12
+    2 0 1 1 2 0 1 65536
+    6 5 4 1 6 5 4 65536
+    8 1 11 1 8 1 11 65536
+    4 10 12 1 4 10 12 65536
+    10 7 9 1 10 7 9 65536
+    4 7 10 1 4 7 10 65536
+    9 7 8 1 9 7 8 65536
+    7 1 8 1 7 1 8 65536
+    2 1 7 1 2 1 7 65536
+    7 3 2 1 7 3 2 65536
+    4 5 7 1 4 5 7 65536
+    5 3 7 1 5 3 7 65536
+  tverts 13
+    0.25 -1.0 0
+    0.7 -1.0 0
+    0.35 -0.5 0
+    0.2 0.0 0
+    0.7 1.0 0
+    0.2 0.5 0
+    0.25 1.0 0
+    0.4 0.0 0
+    1.0 -0.5 0
+    1.0 0.0 0
+    1.0 0.5 0
+    1.0 -1.0 0
+    1.0 1.0 0
+endnode
+node trimesh dirt01
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 1
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_dirt03
+  position 0 0 0
+  verts 15
+    -5 -0.25 0.95
+    -2.5 -0.75 1.2
+    0 -0.5 1.45
+    2.5 0 1.35
+    5 -0.25 0.95
+    -5 0 1
+    -5 -1.25 0.25
+    -2.5 0 1.25
+    -2.5 -1.75 0.5
+    0 0 1.6
+    0 -1 0.75
+    2.5 0.25 1.5
+    2.5 -1 0.5
+    5 0 1
+    5 -1.25 0.25
+  faces 16
+    5 0 1 1 5 0 1 65536
+    1 7 5 1 1 7 5 65536
+    0 6 8 1 0 6 8 65536
+    8 1 0 1 8 1 0 65536
+    7 1 2 1 7 1 2 65536
+    2 9 7 1 2 9 7 65536
+    1 8 10 1 1 8 10 65536
+    10 2 1 1 10 2 1 65536
+    9 2 3 1 9 2 3 65536
+    3 11 9 1 3 11 9 65536
+    2 10 12 1 2 10 12 65536
+    12 3 2 1 12 3 2 65536
+    11 3 4 1 11 3 4 65536
+    4 13 11 1 4 13 11 65536
+    3 12 14 1 3 12 14 65536
+    14 4 3 1 14 4 3 65536
+  tverts 15
+    0.0499997 -1.0 0
+    0.15 -0.5 0
+    0.0999999 0.0 0
+    0.0 0.5 0
+    0.0500001 1.0 0
+    0.0 -1.0 0
+    0.25 -1.0 0
+    0.0 -0.5 0
+    0.35 -0.5 0
+    0.0 0.0 0
+    0.2 0.0 0
+    -0.05 0.5 0
+    0.2 0.5 0
+    0.0 1.0 0
+    0.25 1.0 0
+endnode
+node trimesh forest
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_treewall
+  position 0 2.63 0
+  verts 10
+    -5 -2.63 1
+    -2.5 -2.63 1.25
+    0 -2.63 1.6
+    2.5 -2.38 1.5
+    5 -2.63 1
+    -5 -2.63 4
+    -2.5 -2.63 4.5
+    0 -2.63 4.5
+    2.5 -2.38 3.5
+    5 -2.63 4
+  faces 8
+    0 1 6 1 0 1 6 65536
+    6 5 0 1 6 5 0 65536
+    1 2 7 1 1 2 7 65536
+    7 6 1 1 7 6 1 65536
+    2 3 8 1 2 3 8 65536
+    8 7 2 1 8 7 2 65536
+    3 4 9 1 3 4 9 65536
+    9 8 3 1 9 8 3 65536
+  tverts 10
+    -1.0 0.000499547 0
+    -0.5 0.0837496 0
+    0.0 0.2003 0
+    0.5 0.167 0
+    1.0 0.000499547 0
+    -1.0 0.999501 0
+    -0.5 0.999501 0
+    0.0 0.999501 0
+    0.5 0.999501 0
+    1.0 0.999501 0
+endnode
+node trimesh krona24
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol01
+  position 0 0 0
+  verts 7
+    -5 0 4
+    -2.5 0 4.5
+    0 0 4.5
+    2.5 0.25 3.5
+    5 0 4
+    5 5 4
+    -5 5 4
+  faces 5
+    6 0 1 1 6 0 1 65536
+    6 1 2 1 6 1 2 65536
+    5 6 2 1 5 6 2 65536
+    5 3 4 1 5 3 4 65536
+    2 3 5 1 2 3 5 65536
+  tverts 7
+    1.0 -1.0 0
+    1.0 -0.5 0
+    1.0 0.0 0
+    0.95 0.5 0
+    1.0 1.0 0
+    0.0 1.0 0
+    0.0 -1.0 0
+endnode
+node trimesh krona31
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol03
+  position 0 0 0
+  verts 10
+    -5 -1.25 3.5
+    -2.5 -1.25 4
+    0 -1.25 4
+    2.5 -1 3
+    5 -1.25 3.5
+    -5 0 4
+    -2.5 0 4.5
+    0 0 4.5
+    2.5 0.25 3.5
+    5 0 4
+  faces 8
+    6 5 0 1 6 5 0 65536
+    0 1 6 1 0 1 6 65536
+    7 6 1 1 7 6 1 65536
+    1 2 7 1 1 2 7 65536
+    8 7 2 1 8 7 2 65536
+    2 3 8 1 2 3 8 65536
+    9 8 3 1 9 8 3 65536
+    3 4 9 1 3 4 9 65536
+  tverts 10
+    0.8 -1.0 0
+    0.8 -0.5 0
+    0.8 0.0 0
+    0.8 0.5 0
+    0.8 1.0 0
+    0.00664103 -1.0 0
+    0.00664103 -0.5 0
+    0.00664103 0.0 0
+    0.00664103 0.5 0
+    0.00664103 1.0 0
+endnode
+node trimesh grass
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_grassrim01
+  position 0 0 0
+  verts 10
+    -5 -1.25 0.75
+    -2.5 -1.75 1
+    0 -1 1.25
+    2.5 -1 1
+    5 -1.25 0.75
+    -5 -1.25 0.25
+    -2.5 -1.75 0.5
+    0 -1 0.75
+    2.5 -1 0.5
+    5 -1.25 0.25
+  faces 8
+    5 6 1 0 5 6 1 65536
+    1 0 5 0 1 0 5 65536
+    6 7 2 0 6 7 2 65536
+    2 1 6 0 2 1 6 65536
+    7 8 3 0 7 8 3 65536
+    3 2 7 0 3 2 7 65536
+    8 9 4 0 8 9 4 65536
+    4 3 8 0 4 3 8 65536
+  tverts 10
+    -4.5 0.5 0
+    -2.0 0.5 0
+    0.5 0.5 0
+    3.0 0.5 0
+    5.5 0.5 0
+    -4.5 0.0 0
+    -2.0 0.0 0
+    0.5 0.0 0
+    3.0 0.0 0
+    5.5 0.0 0
+endnode
+node trimesh grass01
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_grassrim01
+  position 0 0 0
+  verts 10
+    -5 -1.25 0.75
+    -2.5 -1.75 1
+    0 -1 1.25
+    2.5 -1 1
+    5 -1.25 0.75
+    -5 -1.25 0.25
+    -2.5 -1.75 0.5
+    0 -1 0.75
+    2.5 -1 0.5
+    5 -1.25 0.25
+  faces 8
+    5 0 1 0 5 0 1 65536
+    1 6 5 0 1 6 5 65536
+    6 1 2 0 6 1 2 65536
+    2 7 6 0 2 7 6 65536
+    7 2 3 0 7 2 3 65536
+    3 8 7 0 3 8 7 65536
+    8 3 4 0 8 3 4 65536
+    4 9 8 0 4 9 8 65536
+  tverts 10
+    -4.5 0.5 0
+    -2.0 0.5 0
+    0.5 0.5 0
+    3.0 0.5 0
+    5.5 0.5 0
+    -4.5 0.0 0
+    -2.0 0.0 0
+    0.5 0.0 0
+    3.0 0.0 0
+    5.5 0.0 0
+endnode
+node trimesh tree01
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_bark01
+  position -2.5 -0.25 0
+  verts 19
+    0.74 0 0.7
+    0.37 0.64 0.7
+    -0.37 0.64 0.7
+    -0.74 0 0.7
+    -0.37 -0.64 0.7
+    0.37 -0.64 0.7
+    0.4 0 1.64
+    0.2 0.35 1.64
+    -0.2 0.35 1.64
+    -0.4 0 1.64
+    -0.2 -0.35 1.64
+    0.2 -0.35 1.64
+    0.32 0 5
+    0.16 0.27 5
+    -0.16 0.27 5
+    -0.32 0 5
+    -0.16 -0.27 5
+    0.16 -0.27 5
+    0 0 9
+  faces 30
+    0 1 7 8 0 1 7 65536
+    7 6 0 8 7 6 0 65536
+    1 2 8 8 19 2 8 65536
+    8 7 1 8 8 20 19 65536
+    2 3 9 8 21 3 9 65536
+    9 8 2 8 9 22 21 65536
+    3 4 10 8 3 4 10 65536
+    10 9 3 8 10 9 3 65536
+    4 5 11 8 23 5 11 65536
+    11 10 4 8 11 24 23 65536
+    5 0 6 8 25 0 6 65536
+    6 11 5 8 6 26 25 65536
+    6 7 13 8 6 7 13 65536
+    13 12 6 8 13 12 6 65536
+    7 8 14 8 20 8 14 65536
+    14 13 7 8 14 27 20 65536
+    8 9 15 8 22 9 15 65536
+    15 14 8 8 15 28 22 65536
+    9 10 16 8 9 10 16 65536
+    16 15 9 8 16 15 9 65536
+    10 11 17 8 24 11 17 65536
+    17 16 10 8 17 29 24 65536
+    11 6 12 8 26 6 12 65536
+    12 17 11 8 12 30 26 65536
+    12 13 18 8 12 13 18 65536
+    13 14 18 8 27 14 31 65536
+    14 15 18 8 28 15 32 65536
+    15 16 18 8 15 16 32 65536
+    16 17 18 8 29 17 33 65536
+    17 12 18 8 30 12 18 65536
+  tverts 34
+    0.260972 -0.33 0
+    0.389423 -0.33 0
+    0.315891 -0.33 0
+    0.739028 -0.33 0
+    0.867478 -0.33 0
+    0.832431 -0.33 0
+    0.260972 -0.141701 0
+    0.330254 -0.141701 0
+    0.28173 -0.141701 0
+    0.739028 -0.141701 0
+    0.80831 -0.141701 0
+    0.79827 -0.141701 0
+    0.260972 0.53 0
+    0.315533 0.53 0
+    0.273231 0.53 0
+    0.739028 0.53 0
+    0.793588 0.53 0
+    0.789771 0.53 0
+    0.260972 1.33 0
+    0.167569 -0.33 0
+    0.20173 -0.141701 0
+    0.610577 -0.33 0
+    0.669746 -0.141701 0
+    0.684109 -0.33 0
+    0.71827 -0.141701 0
+    0.132522 -0.33 0
+    0.19169 -0.141701 0
+    0.210229 0.53 0
+    0.684467 0.53 0
+    0.726769 0.53 0
+    0.206412 0.53 0
+    0.24173 1.33 0
+    0.739028 1.33 0
+    0.75827 1.33 0
+endnode
+node trimesh krona03
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 3.5
+  verts 7
+    3.19 0 0
+    1.6 2.76 0
+    -1.6 2.76 0
+    -3.19 0 0
+    -1.6 -2.76 0
+    1.6 -2.76 0
+    0 0 2
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona33
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 4.5
+  verts 7
+    0 -2.43 0
+    2.11 -1.22 0
+    2.11 1.22 0
+    0 2.43 0
+    -2.11 1.22 0
+    -2.11 -1.22 0
+    0 0 2
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona34
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 5.5
+  verts 7
+    1.36 -1.36 0
+    1.86 0.5 0
+    0.5 1.86 0
+    -1.36 1.36 0
+    -1.86 -0.5 0
+    -0.5 -1.86 0
+    0 0 2
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona35
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 6.5
+  verts 7
+    -0.98 -0.98 0
+    0.36 -1.34 0
+    1.34 -0.36 0
+    0.98 0.98 0
+    -0.36 1.34 0
+    -1.34 0.36 0
+    0 0 1.57
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona36
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 7.25
+  verts 7
+    0 0.99 0
+    -0.86 0.49 0
+    -0.86 -0.49 0
+    0 -0.99 0
+    0.86 -0.49 0
+    0.86 0.49 0
+    0 0 1.57
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona01
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 7.25
+  verts 7
+    0 0.99 0
+    -0.86 0.49 0
+    -0.86 -0.49 0
+    0 -0.99 0
+    0.86 -0.49 0
+    0.86 0.49 0
+    0 0 1.57
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona02
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 6.5
+  verts 7
+    -0.98 -0.98 0
+    0.36 -1.34 0
+    1.34 -0.36 0
+    0.98 0.98 0
+    -0.36 1.34 0
+    -1.34 0.36 0
+    0 0 1.57
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona04
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 5.5
+  verts 7
+    1.36 -1.36 0
+    1.86 0.5 0
+    0.5 1.86 0
+    -1.36 1.36 0
+    -1.86 -0.5 0
+    -0.5 -1.86 0
+    0 0 2
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona05
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 4.5
+  verts 7
+    0 -2.43 0
+    2.11 -1.22 0
+    2.11 1.22 0
+    0 2.43 0
+    -2.11 1.22 0
+    -2.11 -1.22 0
+    0 0 2
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona06
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -2.5 -0.25 3.5
+  verts 7
+    3.19 0 0
+    1.6 2.76 0
+    -1.6 2.76 0
+    -3.19 0 0
+    -1.6 -2.76 0
+    1.6 -2.76 0
+    0 0 2
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh tree02
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_bark01
+  position 2.5 0 0
+  verts 13
+    0 -0.3 0
+    0.26 -0.15 0
+    0.26 0.15 0
+    0 0.3 0
+    -0.26 0.15 0
+    -0.26 -0.15 0
+    0 -0.24 3.5
+    0.21 -0.12 3.5
+    0.21 0.12 3.5
+    0 0.24 3.5
+    -0.21 0.12 3.5
+    -0.21 -0.12 3.5
+    0 0 6.7
+  faces 18
+    0 1 7 8 0 1 7 65536
+    7 6 0 8 7 6 0 65536
+    1 2 8 8 1 2 8 65536
+    8 7 1 8 8 7 1 65536
+    2 3 9 8 13 3 9 65536
+    9 8 2 8 9 14 13 65536
+    3 4 10 8 3 4 10 65536
+    10 9 3 8 10 9 3 65536
+    4 5 11 8 4 5 11 65536
+    11 10 4 8 11 10 4 65536
+    5 0 6 8 5 0 6 65536
+    6 11 5 8 6 11 5 65536
+    6 7 12 8 6 7 12 65536
+    7 8 12 8 7 8 12 65536
+    8 9 12 8 14 9 15 65536
+    9 10 12 8 9 10 15 65536
+    10 11 12 8 10 11 15 65536
+    11 6 12 8 11 6 12 65536
+  tverts 16
+    0.75 0.0 0
+    0.916667 0.0 0
+    1.08333 0.0 0
+    0.25 0.0 0
+    0.416667 0.0 0
+    0.583333 0.0 0
+    0.75 0.5 0
+    0.916667 0.5 0
+    1.08333 0.5 0
+    0.25 0.5 0
+    0.416667 0.5 0
+    0.583333 0.5 0
+    0.833333 1.0 0
+    0.0833334 0.0 0
+    0.0833334 0.5 0
+    0.25 1.0 0
+endnode
+node trimesh krona37
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 2.5 0 3
+  verts 7
+    0 -2.43 0
+    2.11 -1.22 0
+    2.11 1.22 0
+    0 2.43 0
+    -2.11 1.22 0
+    -2.11 -1.22 0
+    0 0 1.5
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona38
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 2.5 0 4
+  verts 7
+    1.94 0 0
+    0.97 1.68 0
+    -0.97 1.68 0
+    -1.94 0 0
+    -0.97 -1.68 0
+    0.97 -1.68 0
+    0 0 1.5
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona39
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 2.5 0 5
+  verts 7
+    0.98 -0.98 0
+    1.33 0.36 0
+    0.36 1.33 0
+    -0.98 0.98 0
+    -1.33 -0.36 0
+    -0.36 -1.33 0
+    0 0 1.5
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona07
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 2.5 0 5
+  verts 7
+    0.98 -0.98 0
+    1.33 0.36 0
+    0.36 1.33 0
+    -0.98 0.98 0
+    -1.33 -0.36 0
+    -0.36 -1.33 0
+    0 0 1.5
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona08
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 2.5 0 4
+  verts 7
+    1.94 0 0
+    0.97 1.68 0
+    -0.97 1.68 0
+    -1.94 0 0
+    -0.97 -1.68 0
+    0.97 -1.68 0
+    0 0 1.5
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona09
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 2.5 0 3
+  verts 7
+    0 -2.43 0
+    2.11 -1.22 0
+    2.11 1.22 0
+    0 2.43 0
+    -2.11 1.22 0
+    -2.11 -1.22 0
+    0 0 1.5
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh tree03
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_bark01
+  position -1.5 -0.15 0.25
+  verts 8
+    -0.25 0.16 0
+    -0.16 -0.08 0
+    0.25 0.16 0
+    0.15 -0.06 0
+    -0.25 0.16 4.25
+    -0.16 -0.08 3.9
+    0.25 0.16 4.25
+    0.15 -0.06 3.9
+  faces 8
+    4 5 7 1 3 4 6 65536
+    7 6 4 1 6 5 3 65536
+    0 1 5 1 0 1 7 65536
+    5 4 0 1 7 8 0 65536
+    1 3 7 1 9 2 6 65536
+    7 5 1 1 6 4 9 65536
+    3 2 6 1 10 1 11 65536
+    6 7 3 1 11 12 10 65536
+  tverts 13
+    0.476372 0.125 0
+    0.523628 0.125 0
+    0.529131 0.125 0
+    0.45 0.875 0
+    0.467753 0.805592 0
+    0.55 0.875 0
+    0.529131 0.805592 0
+    0.523628 0.805592 0
+    0.476372 0.875 0
+    0.467753 0.125 0
+    0.47986 0.125 0
+    0.523628 0.875 0
+    0.47986 0.805592 0
+endnode
+node trimesh tree04
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_bark01
+  position 1.68 0.03 0.25
+  verts 8
+    -0.27 0.12 0
+    -0.15 -0.1 0
+    0.22 0.18 0
+    0.15 -0.05 0
+    -0.27 0.12 3.55
+    -0.15 -0.1 3.2
+    0.22 0.18 3.55
+    0.15 -0.05 3.2
+  faces 8
+    4 5 7 1 4 5 7 65536
+    7 6 4 1 7 6 4 65536
+    0 1 5 1 0 1 8 65536
+    5 4 0 1 8 9 0 65536
+    1 3 7 1 10 3 7 65536
+    7 5 1 1 7 5 10 65536
+    3 2 6 1 11 2 12 65536
+    6 7 3 1 12 13 11 65536
+  tverts 14
+    0.859411 0.125 0
+    0.906667 0.125 0
+    0.140589 0.125 0
+    0.685316 0.125 0
+    0.606186 0.875 0
+    0.623939 0.805592 0
+    0.706186 0.875 0
+    0.685316 0.805592 0
+    0.906667 0.805592 0
+    0.859411 0.875 0
+    0.623939 0.125 0
+    0.0968214 0.125 0
+    0.140589 0.875 0
+    0.0968214 0.805592 0
+endnode
+node trimesh krona40
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -3.5 3.5 3.75
+  verts 7
+    0 -2.31 0
+    2 -1.16 0
+    2 1.16 0
+    0 2.31 0
+    -2 1.16 0
+    -2 -1.16 0
+    0 0 1.75
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona41
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 3.5 3.5 3.75
+  verts 7
+    1.99 0 0
+    1 1.72 0
+    -1 1.72 0
+    -1.99 0 0
+    -1 -1.72 0
+    1 -1.72 0
+    0 0 1.25
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona10
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position -3.5 3.5 3.75
+  verts 7
+    0 -2.31 0
+    2 -1.16 0
+    2 1.16 0
+    0 2.31 0
+    -2 1.16 0
+    -2 -1.16 0
+    0 0 1.75
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona11
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 3.5 3.5 3.75
+  verts 7
+    1.99 0 0
+    1 1.72 0
+    -1 1.72 0
+    -1.99 0 0
+    -1 -1.72 0
+    1 -1.72 0
+    0 0 1.25
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh tree06
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_bark01
+  position 3.5 3.5 4
+  verts 4
+    0 -0.2 0
+    0.17 0.1 0
+    -0.17 0.1 0
+    0 0 1.5
+  faces 3
+    0 1 3 8 0 1 3 65536
+    1 2 3 8 4 2 5 65536
+    2 0 3 8 0 1 6 65536
+  tverts 7
+    0.47 0.35 0
+    0.53 0.35 0
+    0.534641 0.35 0
+    0.51 0.65 0
+    0.465359 0.35 0
+    0.5 0.65 0
+    0.49 0.65 0
+endnode
+node trimesh tree07
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_bark01
+  position -3.5 3.5 4
+  verts 4
+    0 -0.2 0
+    0.17 0.1 0
+    -0.17 0.1 0
+    0 0 1.75
+  faces 3
+    0 1 3 8 0 1 3 65536
+    1 2 3 8 4 2 5 65536
+    2 0 3 8 0 1 6 65536
+  tverts 7
+    0.47 0.35 0
+    0.53 0.35 0
+    0.534641 0.35 0
+    0.51 0.65 0
+    0.465359 0.35 0
+    0.5 0.65 0
+    0.49 0.65 0
+endnode
+node trimesh krona42
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 0 3.2 3.75
+  verts 7
+    0 -2.62 0
+    2.26 -1.31 0
+    2.26 1.31 0
+    0 2.61 0
+    -2.27 1.31 0
+    -2.27 -1.31 0
+    0 0 2
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona43
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 0 3.2 4.5
+  verts 7
+    2.34 0 0
+    1.17 2.03 0
+    -1.18 2.03 0
+    -2.35 0 0
+    -1.18 -2.03 0
+    1.17 -2.03 0
+    0 0 1.79
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona44
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 0 3.2 5.5
+  verts 7
+    -1.08 -1.08 0
+    0.39 -1.48 0
+    1.47 -0.4 0
+    1.07 1.08 0
+    -0.4 1.47 0
+    -1.48 0.39 0
+    0 0 1.79
+  faces 6
+    0 1 6 0 0 1 6 65536
+    1 2 6 0 1 2 6 65536
+    2 3 6 0 2 3 6 65536
+    3 4 6 0 3 4 6 65536
+    4 5 6 0 4 5 6 65536
+    5 0 6 0 5 0 6 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona12
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 0 3.2 3.75
+  verts 7
+    0 -2.62 0
+    2.26 -1.31 0
+    2.26 1.31 0
+    0 2.61 0
+    -2.27 1.31 0
+    -2.27 -1.31 0
+    0 0 2
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona13
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 0 3.2 4.5
+  verts 7
+    2.34 0 0
+    1.17 2.03 0
+    -1.18 2.03 0
+    -2.35 0 0
+    -1.18 -2.03 0
+    1.17 -2.03 0
+    0 0 1.79
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh krona14
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol02
+  position 0 3.2 5.5
+  verts 7
+    -1.08 -1.08 0
+    0.39 -1.48 0
+    1.47 -0.4 0
+    1.07 1.08 0
+    -0.4 1.47 0
+    -1.48 0.39 0
+    0 0 1.79
+  faces 6
+    0 6 1 0 0 6 1 65536
+    1 6 2 0 1 6 2 65536
+    2 6 3 0 2 6 3 65536
+    3 6 4 0 3 6 4 65536
+    4 6 5 0 4 6 5 65536
+    5 6 0 0 5 6 0 65536
+  tverts 7
+    0.9995 0.5 0
+    0.74975 0.933013 0
+    0.25025 0.933013 0
+    0.000499547 0.5 0
+    0.25025 0.0669873 0
+    0.74975 0.0669873 0
+    0.5 0.5 0
+endnode
+node trimesh tree08
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_bark01
+  position 0 3.25 4
+  verts 4
+    0 -0.2 0
+    0.17 0.1 0
+    -0.17 0.1 0
+    0 0 3.68
+  faces 3
+    0 1 3 8 0 1 3 65536
+    1 2 3 8 4 2 5 65536
+    2 0 3 8 0 1 6 65536
+  tverts 7
+    0.47 0.131517 0
+    0.53 0.131517 0
+    0.534641 0.131517 0
+    0.51 0.868483 0
+    0.465359 0.131517 0
+    0.5 0.868483 0
+    0.49 0.868483 0
+endnode
+node trimesh tree09
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_bark01
+  position -3.99 -0.15 0.25
+  verts 8
+    -0.25 0.16 0
+    -0.16 -0.07 0
+    0.25 0.16 0
+    0.15 -0.05 0
+    -0.25 0.16 3.95
+    -0.16 -0.07 3.6
+    0.25 0.16 3.95
+    0.15 -0.05 3.6
+  faces 8
+    4 5 7 1 4 5 7 65536
+    7 6 4 1 7 6 4 65536
+    0 1 5 1 0 1 8 65536
+    5 4 0 1 8 9 0 65536
+    1 3 7 1 10 3 7 65536
+    7 5 1 1 7 5 10 65536
+    3 2 6 1 11 2 12 65536
+    6 7 3 1 12 13 11 65536
+  tverts 14
+    0.147891 0.125 0
+    0.195147 0.125 0
+    0.852109 0.125 0
+    0.698101 0.125 0
+    0.61897 0.875 0
+    0.636724 0.805592 0
+    0.71897 0.875 0
+    0.698101 0.805592 0
+    0.195147 0.805592 0
+    0.147891 0.875 0
+    0.636724 0.125 0
+    0.808342 0.125 0
+    0.852109 0.875 0
+    0.808342 0.805592 0
+endnode
+node trimesh krona15
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.337255 0.337255 0.337255
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 1
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_treefol03
+  position 0 0 0
+  verts 10
+    -5 -1.25 3.5
+    -2.5 -1.25 4
+    0 -1.25 4
+    2.5 -1 3
+    5 -1.25 3.5
+    -5 0 4
+    -2.5 0 4.5
+    0 0 4.5
+    2.5 0.25 3.5
+    5 0 4
+  faces 8
+    6 1 0 1 6 1 0 65536
+    0 5 6 1 0 5 6 65536
+    7 2 1 1 7 2 1 65536
+    1 6 7 1 1 6 7 65536
+    8 3 2 1 8 3 2 65536
+    2 7 8 1 2 7 8 65536
+    9 4 3 1 9 4 3 65536
+    3 8 9 1 3 8 9 65536
+  tverts 10
+    0.8 -1.0 0
+    0.8 -0.5 0
+    0.8 0.0 0
+    0.8 0.5 0
+    0.8 1.0 0
+    0.00664103 -1.0 0
+    0.00664103 -0.5 0
+    0.00664103 0.0 0
+    0.00664103 0.5 0
+    0.00664103 1.0 0
+endnode
+node trimesh bl
+  parent bns_z02_01
+  orientation 0.0 0.0 0.0 0.0
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 1
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap ttf01_black
+  ambient 0 0 0
+  diffuse 0 0 0
+  position 0 0 0
+  wirecolor 1 0 0
+  verts 17
+    -5 5 0
+    5 5 0
+    -5 0 1
+    5 0 1
+    5 5 4
+    -5 5 4
+    5 0 4
+    -5 0 4
+    5 0 0
+    -5 0 0
+    -5 -0.25 0.95
+    -5 -1.25 0.25
+    -5 -3.5 0
+    5 -0.25 0.95
+    5 -1.25 0.25
+    5 -3.5 0
+    0 -2 0
+  faces 19
+    4 5 0 0 17 18 19 65536
+    0 1 4 0 19 20 17 65536
+    6 4 1 0 6 4 21 65536
+    1 3 6 0 21 3 6 65536
+    5 7 2 0 5 7 2 65536
+    2 0 5 0 2 22 5 65536
+    3 1 8 0 3 21 23 65536
+    0 2 9 0 22 2 24 65536
+    1 0 9 0 1 0 9 65536
+    1 9 8 0 1 9 8 65536
+    9 2 10 0 24 2 10 65536
+    9 10 11 0 24 10 11 65536
+    9 11 12 0 24 11 21 65536
+    8 13 3 0 23 13 3 65536
+    8 14 13 0 23 14 13 65536
+    14 8 15 0 14 23 22 65536
+    16 9 12 0 16 9 12 65536
+    16 8 9 0 16 8 9 65536
+    15 8 16 0 15 8 16 65536
+  tverts 25
+    -0.35 -0.5 0
+    -0.35 1.5 0
+    0.35 0.3 0
+    0.65 0.3 0
+    -0.35 0.9 0
+    1.35 0.9 0
+    0.65 0.9 0
+    0.35 0.9 0
+    0.65 1.5 0
+    0.65 -0.5 0
+    0.3 0.29 0
+    0.1 0.15 0
+    1.35 -0.5 0
+    0.7 0.29 0
+    0.9 0.15 0
+    1.35 1.5 0
+    1.05 0.5 0
+    1.5 0.9 0
+    -0.5 0.9 0
+    -0.5 0.1 0
+    1.5 0.1 0
+    -0.35 0.1 0
+    1.35 0.1 0
+    0.65 0.1 0
+    0.35 0.1 0
+endnode
+endmodelgeom bns_z02_01
+donemodel bns_z02_01
+ 

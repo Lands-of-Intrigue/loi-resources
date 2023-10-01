@@ -1,0 +1,41 @@
+#Exported from 3ds max by MDL Plug-in Suite 1.0b
+#http://www.bricksbuilder.com/nwn/utils/
+#MAXMODEL ASCII
+# model: bns_door05
+filedependancy bns_door05.max
+node dummy 02_DWK_dp_closed_01
+  parent bns_door05_DWK
+  position -0.0103516 -0.604761 0
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode
+node dummy 02_DWK_dp_open2_01
+  parent bns_door05_DWK
+  position -1.15703 -2.1255 0
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode
+node dummy 02_DWK_dp_open2_02
+  parent bns_door05_DWK
+  position 1.29523 -2.19843 0
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode
+node dummy 02_DWK_dp_open1_01
+  parent bns_door05_DWK
+  position -1.63594 2.46403 0
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode
+node dummy 02_DWK_dp_closed_02
+  parent bns_door05_DWK
+  position 0.00703125 0.713711 0
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode
+node dummy 02_DWK_dp_open1_02
+  parent bns_door05_DWK
+  position 1.5548 2.47468 0
+  orientation 0 0 0 0
+  wirecolor 0.0273438 0.0273438 0.0273438
+endnode

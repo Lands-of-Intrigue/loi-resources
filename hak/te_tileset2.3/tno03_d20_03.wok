@@ -1,0 +1,26 @@
+# Rewritten by CleanModels 3 Version 3.1.1c Wed Feb 20 20:22:29 2008
+#MAXWALKMESH  ASCII
+beginwalkmeshgeom tno03_d20_03
+node aabb cm247
+  parent tno03_d20_03
+  wirecolor 0.890196 0.890196 0.890196
+  ambient 0.588 0.588 0.588
+  diffuse 1 1 1
+  specular 0 0 0
+  shininess 10
+  orientation 0 0 0 0
+  bitmap NULL
+  position 0 0 0
+  verts 4
+    -5 -5 9.78
+    5 -5 11.78
+    -5 5 11.78
+    5 5 11.78
+  faces 2
+    0 1 2 1 0 0 0 2
+    3 2 1 2 0 0 0 2
+  aabb     -5 -5 9.78 5 5 11.78 -1
+    -5 -5 9.78 5 5 11.78 0
+    -5 -5 11.78 5 5 11.78 1
+endnode
+endwalkmeshgeom tno03_d20_03

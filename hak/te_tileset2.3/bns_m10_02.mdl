@@ -1,0 +1,233 @@
+# Rewritten by CleanModels 3.0 Sun Apr 29 14:49:12 2007
+#MAXMODEL ASCII
+filedependency Unknown
+newmodel bns_m10_02
+setsupermodel bns_m10_02 null
+setanimationscale 1
+classification TILE
+#MAXGEOM ASCII
+beginmodelgeom bns_m10_02
+node dummy bns_m10_02
+  parent NULL
+endnode
+node aabb walkm437
+  parent bns_m10_02
+  orientation 1.0 0.0 0.0 0.0
+  wirecolor 0.0 1.0 0.0
+  bitmap NULL
+  position 0 0 0
+  verts 4
+    5.0 5.0 0.0
+    -5.0 5.0 0.0
+    5.0 -5.0 0.0
+    -5.0 -5.0 0.0
+  faces 2
+    2 0 3 1 0 0 0 2
+    1 3 0 1 0 0 0 2
+  aabb     -5.0 -5.0 0.0 5.0 5.0 0.0 -1
+    -5.0 -5.0 0.0 5.0 5.0 0.0 1
+    -5.0 -5.0 0.0 5.0 5.0 0.0 0
+endnode
+node light bns_m10_02ml1
+  parent bns_m10_02
+  orientation 1.0 0.0 0.0 0.0
+  wirecolor 0.101961 0.101961 0.101961
+  radius 14.0
+  multiplier 1.0
+  color 0.0 0.0 0.0
+  ambientonly 0
+  ndynamictype 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  fadinglight 1
+  position -1.18 -1.35 4.04
+endnode
+node light bns_m10_02ml2
+  parent bns_m10_02
+  orientation 1.0 0.0 0.0 0.0
+  wirecolor 0.101961 0.101961 0.101961
+  radius 5.0
+  multiplier 1.0
+  color 0.00392157 0.00392157 0.00392157
+  ambientonly 0
+  ndynamictype 0
+  affectdynamic 1
+  shadow 0
+  lightpriority 5
+  fadinglight 1
+  position 1.38 1.52 4
+endnode
+node trimesh cap08
+  parent bns_m10_02
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.0313726 0.0313726 0.0313726
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_grass02
+  position 1.67 1.67 0
+  verts 4
+    3.33 -6.67 8
+    3.33 -3.34 8
+    0 -6.67 8
+    -3.34 -3.34 8
+  faces 2
+    2 0 3 -2147483648 1 0 2 65536
+    1 3 0 -2147483648 3 2 0 65536
+  tverts 4
+    0.30917 0.78152 0
+    0.4846 0.78152 0
+    0.66004 0.60608 0
+    0.30916 0.60608 0
+endnode
+node trimesh cap09
+  parent bns_m10_02
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.0313726 0.0313726 0.0313726
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap tts01_grass02
+  position -1.67 -1.67 0
+  verts 4
+    -3.33 6.67 8
+    -3.33 3.34 8
+    0 6.67 8
+    -0.18 1.92 8
+  faces 2
+    2 0 3 -2147483648 1 0 2 65536
+    1 3 0 -2147483648 3 2 0 65536
+  tverts 4
+    0.83547 0.2552 0
+    0.66002 0.2552 0
+    0.66971 0.50498 0
+    0.83546 0.43064 0
+endnode
+node trimesh corner58
+  parent bns_m10_02
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.0313726 0.0313726 0.0313726
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_mountain
+  position 1.67 1.67 0
+  verts 8
+    3.33 -3.34 8
+    3.33 3.33 0
+    0 -6.67 8
+    -3.34 -3.34 8
+    -3.31 -1.47 0
+    -6.67 -6.67 0
+    -6.6 -3.21 0
+    -6.4 -2.15 0
+  faces 6
+    3 0 4 -2147483648 3 0 4 65536
+    1 4 0 -2147483648 1 4 0 65536
+    5 2 6 -2147483648 5 8 6 65536
+    3 6 2 -2147483648 9 10 2 65536
+    6 3 7 -2147483648 6 11 12 65536
+    4 7 3 -2147483648 4 7 3 65536
+  tverts 13
+    2.30916 0.980178 0
+    2.30916 0.569921 0
+    0.515396 0.980178 0
+    2.66004 0.980178 0
+    2.65875 0.569921 0
+    2.78152 0.569921 0
+    2.59956 0.569921 0
+    2.8214 0.569921 0
+    2.78152 0.980178 0
+    0.339957 0.980178 0
+    0.168378 0.569921 0
+    2.60608 0.980178 0
+    2.54346 0.569921 0
+endnode
+node trimesh corner59
+  parent bns_m10_02
+  orientation 0.0 0.0 0.0 0.0
+  wirecolor 0.0313726 0.0313726 0.0313726
+  tilefade 0
+  scale 1.0
+  render 1
+  shadow 0
+  beaming 0
+  inheritcolor 0
+  rotatetexture 0
+  alpha 1.0
+  transparencyhint 0
+  selfillumcolor 0.0 0.0 0.0
+  ambient 0.588 0.588 0.588
+  diffuse 0.588 0.588 0.588
+  specular 0.0 0.0 0.0
+  shininess 10
+  center undefined
+  bitmap bns_mountain
+  position -1.67 -1.67 0
+  verts 8
+    -3.33 3.34 8
+    -3.33 -3.33 0
+    0 6.67 8
+    -0.18 1.92 8
+    -0.13 -1.15 3.88
+    6.67 6.67 0
+    3.22 2 0
+    3.8 -1.17 3.88
+  faces 6
+    3 0 4 -2147483648 3 0 4 65536
+    1 4 0 -2147483648 1 4 0 65536
+    5 2 6 -2147483648 5 2 6 65536
+    3 6 2 -2147483648 8 6 2 65536
+    6 3 7 -2147483648 6 8 9 65536
+    4 7 3 -2147483648 4 7 3 65536
+  tverts 10
+    0.164537 0.980178 0
+    0.164533 0.569921 0
+    0.7448 0.980178 0
+    0.33029 0.980178 0
+    0.332773 0.768997 0
+    0.7448 0.569921 0
+    0.499141 0.569921 0
+    0.539776 0.768997 0
+    0.495017 0.980178 0
+    0.332225 0.768997 0
+endnode
+endmodelgeom bns_m10_02
+donemodel bns_m10_02
