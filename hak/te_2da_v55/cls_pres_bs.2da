@@ -1,0 +1,14 @@
+2DA V2.0
+
+   LABEL               ReqType ReqParam1     ReqParam2 
+0  Base_Attack         BAB     5             ****      
+1  ScriptVar           VAR     TE_AllowBlade 0         
+3  FEAT_Combat_Casting FEAT    7             ****      
+4  FEAT_DODGE          FEAT    10            ****      
+5  WEAPFOCUS_LONG      FEATOR  106           ****      
+6  WEAPFOCUS_RAPIER    FEATOR  104           ****      
+7  FEAT_EXPERTISE      FEAT    389           ****      
+8  Skill_Tumble        SKILL   21            3         
+9  Skill_Perform       SKILL   11            3         
+10 RACE_ELF            RACE    1             ****      
+11 RACE_HELF           RACE    4             ****      

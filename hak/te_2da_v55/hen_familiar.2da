@@ -1,0 +1,21 @@
+2DA V2.0                                                       
+                                                               
+           NAME           BASERESREF    STRREF       DESCRIPTION
+0          Bat            te_fm_bat     16926300     16926301
+1          Cat            te_fm_cat     16926302     16926303
+2          Stirge         te_fm_stirge  16926304     16926305
+3          Imp            te_fm_imp     16926306     16926307
+4          Hawk           te_fm_falcon  16926308     16926309
+5          Lizard         te_fm_lizard  16926310     16926311
+6          Fairy          te_fm_pixie   16926312     16926313
+7          Raven          te_fm_blabir  16926314     16926315
+8          LanternArchon  te_fm_lant    16926316     16926317
+9          PseudoDragon   te_fm_pdrag   16926318     16926319
+10         Homunculus     te_fm_homc    16926320     16926321
+11         Owl            te_fm_owl     16926322     16926323
+12         Rat            te_fm_rat     16926324     16926325
+13         Snake          te_fm_snake   16926326     16926327
+14         Toad           te_fm_toad    16926328     16926329
+15         Weasel         te_fm_weas    16926330     16926331
+16         Quasit         te_fm_quas    16926332     16926333
+17         CarrionFeed    te_fm_carrion 16926334     16926335

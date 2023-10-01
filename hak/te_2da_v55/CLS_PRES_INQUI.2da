@@ -1,0 +1,7 @@
+2DA V2.0
+
+  LABEL         ReqType ReqParam1      ReqParam2 
+0 Base_Attack   BAB     5              ****      
+1 ScriptVar     VAR     TE_AllowInquis 0         
+2 Class_PALADIN CLASSOR 6              ****      
+3 CLASS_CLERIC  CLASSOR 2              ****      

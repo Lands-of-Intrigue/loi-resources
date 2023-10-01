@@ -1,0 +1,18 @@
+# Exported from NWmax 0.8 b60 at 28/12/2007 04:54:06
+# mdl file
+#
+#NWmax MODEL ASCII
+# model: wbwxl_b_025
+#local file: Unknown
+filedependancy Unknown
+newmodel wbwxl_t_025
+setsupermodel wbwxl_b_025 NULL
+classification Item
+setanimationscale 1.0
+#NWmax GEOM  ASCII
+beginmodelgeom wbwxl_b_025
+node dummy wbwxl_b_025
+  parent NULL
+endnode
+endmodelgeom wbwxl_b_025
+donemodel wbwxl_b_025

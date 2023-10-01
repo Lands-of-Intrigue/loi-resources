@@ -1,0 +1,28 @@
+2DA V2.0
+
+       Corner1     Edge       Corner2     Height     Model            
+0      Rock_floor  ****       Water       0          TTR01_Z05_01     
+1      Water       ****       Water       0          TTR01_Z02_01     
+2      Rock_floor+ ****       Water       0          TTR01_Z07_01     
+3      Rock_floor  ****       Rock_floor  0          tprs1_Z10_01     
+4      Rock_floor+ ****       Rock_floor  0          tprs1_Z01_01     
+5      Rock_floor+ ****       Rock_floor+ 1          tprs1_Z10_01     
+6      Rock_floor  Stream     Rock_floor  0          TTR01_Z15_01     
+7      Water       ****       ****        0          TTR01_Z02_01     
+8      Rock_floor  ****       Rock_floor+ 1          tprs1_z11_01
+9      Rock_hill+  ****       ****        1          tprs1_z11_01
+10     Rock_mound+ ****       ****        1          tprs1_z11_01
+11     Rock_hill   ****       ****        0          tprs1_z11_01
+12     Rock_floor  ****       ****        0          tprs1_Z10_01     
+13     Rock_floor+ ****       ****        1          tprs1_Z10_01
+15     Rock_floor+ Stream     Rock_floor+ 1          TTR01_Z15_01     
+18     Rock_mound  ****       Rock_mound  0          tprs1_Z02_01     
+19     Rock_hill   ****       Rock_hill   0          tprs1_Z03_01     
+20     Rock_floor  ****       Rock_mound  0          tprs1_Z04_01     
+21     Rock_floor  ****       Rock_hill   0          tprs1_Z05_01     
+22     Rock_mound  ****       Rock_hill   0          tprs1_Z06_01     
+23     Rock_hill   ****       Rock_floor+ 0          tprs1_Z07_01     
+24     Rock_mound  ****       Rock_floor+ 0          tprs1_Z08_01
+25     Rock_hill   ****       Rock_mound+ 0          tprs1_Z06_01          
+26     Rock_mound  ****       ****        0          tprs1_z11_01
+
